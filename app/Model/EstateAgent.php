@@ -5,5 +5,5 @@
  */
 class EstateAgent extends AppModel
 {
-
+	public static $hasMany = array("Estate");
 }

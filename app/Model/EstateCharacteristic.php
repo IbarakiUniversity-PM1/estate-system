@@ -5,5 +5,5 @@
  */
 class EstateCharacteristic extends AppModel
 {
-
+	public static $hasMany = array("EstateCharacteristicReference");
 }

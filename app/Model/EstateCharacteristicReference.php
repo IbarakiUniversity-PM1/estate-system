@@ -5,5 +5,6 @@
  */
 class EstateCharacteristicReference extends AppModel
 {
+	public static $hasOne = array("Estate", "EstateCharacteristic");
 	public static $validate = array();
 }

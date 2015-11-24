@@ -5,5 +5,5 @@
  */
 class EstateType extends AppModel
 {
-
+	public static $hasMany = array("EstateRoom");
 }

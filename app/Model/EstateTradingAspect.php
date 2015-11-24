@@ -5,5 +5,5 @@
  */
 class EstateTradingAspect extends AppModel
 {
-
+	public static $hasMany = array("Estate");
 }
