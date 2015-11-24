@@ -1,0 +1,25 @@
+# User specific & automatically generated files #
+#################################################
+build
+dist
+tags
+*.mo
+*.diff
+*.err
+*.orig
+*.rej
+*.swo
+*.swp
+*.vi
+*.lock
+bin
+
+# OS generated files #
+######################
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+*.db
+*~
