@@ -5,7 +5,7 @@ class EstateRegistrationController extends AppController{
     public $uses = array('Estate', 'EstateAgent', 'EstateTradingAspect', 'EstateStructure', 'EstateType',
                         'EstateTvType', 'EstateInternetType');
     
-    
+
     public function register(){
         //レイアウトを切る
         $this->layout = "";
@@ -69,7 +69,7 @@ class EstateRegistrationController extends AppController{
         ));
         }
         $this->set('estateTvTypeList', $estateTvTypeList);
-  
+        
     }
     
     public function confirm(){

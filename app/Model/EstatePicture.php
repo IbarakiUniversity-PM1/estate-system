@@ -5,6 +5,6 @@
  */
 class EstatePicture extends AppModel
 {
-	public static $hasOne = array("Estate");
-	public static $validate = array();
+        public $hasOne = array("Estate");
+	public $validate = array();
 }
