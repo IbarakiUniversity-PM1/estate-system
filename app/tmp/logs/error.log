@@ -498,3 +498,14 @@ Stack Trace:
 #10 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
 #11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2015-11-25 23:55:23 Error: [MissingActionException] Action EstateRegistrationController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'EstateRegistrationController',
+  'action' => 'index',
+)
+Request URL: /estate-system/estateregistration/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#2 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
