@@ -8,7 +8,7 @@ class Estate extends AppModel
 	/**
 	 * @var array 自分の持つテーブルと、多対1の関係になるテーブルを持つモデル
 	 */
-	public $hasOne = array(
+	public $belongsTo = array(
 		"EstateTradingAspect",
 		"EstateStructure",
 		"EstateTvType",
@@ -21,7 +21,7 @@ class Estate extends AppModel
 	public $hasMany = array(
 		"EstateCharacteristicReference",
 		"EstateFrankOpinion",
-		"MainFacillitiesDistance",
+		"EstateMainFacillitiesDistance",
 		"EstatePicture",
 		"EstateRoom"
 	);
@@ -29,5 +29,9 @@ class Estate extends AppModel
 	 * @var array 入力チェックの定義
 	 */
 	public $validate = array();
+	/**
+	 * @var string 主キー
+	 */
+	public $primaryKey = "estate_id";
 }
 

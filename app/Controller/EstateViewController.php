@@ -33,7 +33,8 @@ class EstateViewController extends AppController
 	 */
 	public function estateList()
 	{
-
+		$this->set("title_for_layout", "物件検索");
+		$this->set("estates", $this->Estate->find("all"));
 	}
 
 	/**
