@@ -27,4 +27,20 @@ class EstateViewController extends AppController
 		"EstateWindow",
 		"EstateMainFacilities"
 	);
+
+	/**
+	 * 物件検索・絞り込み
+	 */
+	public function estateList()
+	{
+
+	}
+
+	/**
+	 * 物件詳細
+	 */
+	public function detail()
+	{
+
+	}
 }
