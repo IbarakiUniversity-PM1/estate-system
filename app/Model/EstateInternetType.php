@@ -5,5 +5,6 @@
  */
 class EstateInternetType extends AppModel
 {
-	public static $hasMany = array("Estate");
+        public $primaryKey = "estate_internet_type_id";
+	public $hasMany = array("Estate");
 }

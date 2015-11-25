@@ -5,5 +5,6 @@
  */
 class EstateAgent extends AppModel
 {
-	public static $hasMany = array("Estate");
+        public $primaryKey = 'estate_agent_id'; //追加: 主キー設定
+	public $hasMany = array("Estate"); //編集: static外した
 }

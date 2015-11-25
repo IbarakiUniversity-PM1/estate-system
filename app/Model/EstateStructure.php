@@ -5,5 +5,6 @@
  */
 class EstateStructure extends AppModel
 {
-	public static $hasMany = array("Estate");
+        public $primaryKey = "estate_structure_id";
+	public $hasMany = array("Estate");
 }

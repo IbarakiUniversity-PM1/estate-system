@@ -5,5 +5,6 @@
  */
 class EstateTvType extends AppModel
 {
-	public static $hasMany = array("Estate");
+        public $primaryKey = "estate_tv_type_id";
+	public $hasMany = array("Estate");
 }

@@ -5,5 +5,6 @@
  */
 class EstateTradingAspect extends AppModel
 {
-	public static $hasMany = array("Estate");
+        public $primaryKey = "estate_trading_aspect_id"; //追加: 主キー設定
+	public $hasMany = array("Estate"); //編集: static外す
 }

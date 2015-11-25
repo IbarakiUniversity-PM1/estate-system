@@ -5,5 +5,6 @@
  */
 class EstateType extends AppModel
 {
-	public static $hasMany = array("EstateRoom");
+        public $primaryKey = "estate_type_id";
+	public $hasMany = array("EstateRoom");
 }
