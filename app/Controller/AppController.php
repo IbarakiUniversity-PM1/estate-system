@@ -32,5 +32,6 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller
 {
+	//TODO:本番環境にアップロードする際のコメントアウト
 	public $components = array('DebugKit.Toolbar');
 }

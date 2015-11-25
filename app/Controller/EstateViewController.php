@@ -8,7 +8,7 @@ class EstateViewController extends AppController
 	/**
 	 * @var array 扱うモデルのリスト
 	 */
-	public static $uses = array(
+	public $uses = array(
 		"Estate",
 		"EstateAgent",
 		"EstateInternetType",
