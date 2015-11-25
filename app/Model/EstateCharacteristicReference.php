@@ -5,6 +5,15 @@
  */
 class EstateCharacteristicReference extends AppModel
 {
-	public static $hasOne = array("Estate", "EstateCharacteristic");
+	/**
+	 * @var array 自分の持つテーブルと、多対1の関係になるテーブルを持つモデル
+	 */
+	public static $hasOne = array(
+		"Estate",
+		"EstateCharacteristic"
+	);
+	/**
+	 * @var array 入力チェックの定義
+	 */
 	public static $validate = array();
 }
