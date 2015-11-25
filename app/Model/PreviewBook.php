@@ -5,7 +5,16 @@
  */
 class PreviewBook extends AppModel
 {
-	public static $useTable = false;
-	public static $_schema = array();
-	public static $validate = array();
+	/**
+	 * @var bool テーブルを使うかどうか
+	 */
+	public $useTable = false;
+	/**
+	 * @var array 内見予約で扱う情報の定義
+	 */
+	public $_schema = array();
+	/**
+	 * @var array 入力チェックの定義
+	 */
+	public $validate = array();
 }

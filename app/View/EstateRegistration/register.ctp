@@ -20,7 +20,8 @@ echo $this->Form->input('estate_structure_id', array('label'=>'物件構造','ty
 echo $this->Form->input('estate_type_id', array('label'=>'部屋種別','type' => 'select', 'options' => array($estateTypeList)));
 echo $this->Form->input('estate_internet_type_id', array('label'=>'インターネット回線','type' => 'select', 'options' => array($estateInternetTypeList)));
 echo $this->Form->input('estate_tv_type_id', array('label'=>'テレビ','type' => 'select', 'options' => array($estateTvTypeList)));
-echo $this->Form->input('distance');
+
+
 
 echo $this->Form->end('登録');
 

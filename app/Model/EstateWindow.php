@@ -5,6 +5,12 @@
  */
 class EstateWindow extends AppModel
 {
-	public static $hasOne = array("EstateRoom");
-	public static $validate = array();
+	/**
+	 * @var array 自分の持つテーブルと、多対1の関係になるテーブルを持つモデル
+	 */
+	public $hasOne = array("EstateRoom");
+	/**
+	 * @var array 入力チェックの定義
+	 */
+	public $validate = array();
 }
