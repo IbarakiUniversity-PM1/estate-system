@@ -13,7 +13,7 @@
 		$cells[] = $e["Estate"]["address"];
 		$cells[] = $this->Number->currency($e["Estate"]["rent"], '円', array('wholePosition' => 'after', 'zero' => '', 'places' => 0));
 		$cells[] = $e["Estate"]["floor_plan"] . "<br>" . $this->Number->currency($e["Estate"]["area"], 'km', array('wholePosition' => 'after', 'zero' => '', 'places' => 0)) . "&sup2;";
-		$cells[] = "";
+		$cells[] = $e["Estate"]["direction"];
 		$cells[] = $this->Number->currency($e["Estate"]["age"], '年', array('wholePosition' => 'after', 'zero' => '', 'places' => 0));
 		$cells[] = $e["EstateAgent"]["name"];
 		echo "		" . $this->Html->tableCells($cells) . PHP_EOL;
