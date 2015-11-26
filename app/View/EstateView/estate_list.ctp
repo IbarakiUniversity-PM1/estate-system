@@ -1,3 +1,4 @@
+<?php var_dump($estates) ?>
 <table>
 	<thead>
 	<?php echo $this->Html->tableHeaders(array("物件画像", "住所", "家賃", "間取り<br>面積", "窓の向き", "築年数", "不動産業者名")) . PHP_EOL ?>
@@ -6,7 +7,7 @@
 	<?php foreach ($estates as $e) {
 		$cells = array();
 		if (empty($e["EstatePicture"])) {
-			$cells[] = "(No Image)";
+			$cells[] = null;
 		} else {
 			$cells[] = $this->Html->image("estate" . DS . $e["EstatePicture"][0]["picture_file_name"], array("alt" => $e["Estate"]["name"]));
 		}
