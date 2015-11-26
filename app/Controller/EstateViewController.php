@@ -33,26 +33,29 @@ class EstateViewController extends AppController
 	 */
 	public function estateList()
 	{
-		$options = array();
+		//データ取得の際のオプション
+		$options = array("joins" => array(), "order" => array(), "group" => array(), "limit" => 10);
 		if ($this->request->is("post")) { //物件検索・絞り込み
+			//タイトルをセット
 			$this->set("title_for_layout", "物件検索結果");
 		} else { //トップ画面
+			//タイトルをセット
 			$this->set("title_for_layout", "オススメ物件一覧");
-			$dbo = $this->Estate->getDataSource();
-			$options["joins"] = array(
-				array(
-					"type" => "left",
-					"table" => "estate_main_facilities_distances",
-					"alias" => "EstateMainFacilitiesDistance",
-					"conditions" =>
-						array(
-							"Estate.estate_id = EstateMainFacilitiesDistance.estate_id",
-							"EstateMainFacilitiesDistance.estate_main_facilities_id=1"
-						)
-				)
+			//距離をJOIN
+			$options["joins"][] = array(
+				"type" => "left",
+				"table" => "estate_main_facilities_distances",
+				"alias" => "EstateMainFacilitiesDistance",
+				"conditions" =>
+					array(
+						"Estate.estate_id = EstateMainFacilitiesDistance.estate_id",
+						"EstateMainFacilitiesDistance.estate_main_facilities_id=1"
+					)
 			);
-			$options["order"] = array("EstateMainFacilitiesDistance.distance");
+			$options["order"][] = "EstateMainFacilitiesDistance.distance";
 		}
+		//窓の向きをJOIN
+		$dbo = $this->Estate->getDataSource();
 		$estateRoomWindow = array();
 		for ($i = 0; $i < 2; $i++) {
 			$estateRoomWindow[] = $dbo->buildStatement(
@@ -92,16 +95,25 @@ class EstateViewController extends AppController
 				"EstateRoomWindow0.n < EstateRoomWindow1.n"
 			)
 		);
-		$options["group"] = array("EstateRoomWindow0.estate_id,EstateRoomWindow0.direction HAVING COUNT(EstateRoomWindow1.estate_id) = 0");
+		$options["group"][] = "EstateRoomWindow0.estate_id,EstateRoomWindow0.direction HAVING COUNT(EstateRoomWindow1.estate_id) = 0";
+		//サムネイル画像をJOIN
+		$options["joins"][] = array(
+			"type" => "left",
+			"table" => "estate_pictures",
+			"alias" => "EstatePicture",
+			"conditions" => array(
+				"Estate.estate_id=EstatePicture.estate_id",
+				"EstatePicture.thumbnail_flag=1"
+			)
+		);
+		//Estateにバーチャルフィールドを作成(築年数,窓の向き,サムネイル画像)
 		$this->Estate->virtualFields = array(
 			"age" => "strftime('%Y',datetime(strftime('%s',datetime('now','localtime'))-Estate.age/1000,'unixepoch'))-1970",
-			"direction" => "EstateRoomWindow0.direction"
+			"direction" => "EstateRoomWindow0.direction",
+			"picture_file_name" => "EstatePicture.picture_file_name"
 		);
-		$this->Estate->hasMany["EstatePicture"]["conditions"] = "EstatePicture.thumbnail_flag=1";
+		//データを取得し、Viewの$estatesにセット
 		$this->set("estates", $this->Estate->find("all",$options));
-		foreach ($this->Estate->hasMany as $k => $v) {
-			$this->Estate->hasMany[$k]["conditions"] = "";
-		}
 	}
 
 	/**

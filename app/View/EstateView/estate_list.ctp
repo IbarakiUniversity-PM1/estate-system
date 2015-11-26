@@ -5,10 +5,10 @@
 	<tbody>
 	<?php foreach ($estates as $e) {
 		$cells = array();
-		if (empty($e["EstatePicture"])) {
-			$cells[] = null;
+		if (isset($e["Estate"]["picture_file_name"])) {
+			$cells[] = $this->Html->image("estate" . DS . $e["Estate"]["picture_file_name"], array("alt" => $e["Estate"]["name"]));
 		} else {
-			$cells[] = $this->Html->image("estate" . DS . $e["EstatePicture"][0]["picture_file_name"], array("alt" => $e["Estate"]["name"]));
+			$cells[] = null;
 		}
 		$cells[] = $e["Estate"]["address"];
 		$cells[] = $this->Number->currency($e["Estate"]["rent"], '円', array('wholePosition' => 'after', 'zero' => '', 'places' => 0));
