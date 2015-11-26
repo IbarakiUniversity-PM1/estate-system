@@ -55,16 +55,14 @@ class EstateViewController extends AppController
 			$options["order"][] = "EstateMainFacilitiesDistance.distance";
 		}
 		//窓の向きをJOIN
-		$dbo = $this->Estate->getDataSource();
 		$estateRoomWindow = array();
+		$dbo = $this->Estate->getDataSource();
 		for ($i = 0; $i < 2; $i++) {
 			$estateRoomWindow[] = $dbo->buildStatement(
 				array(
 					'fields' => array("EstateRoom.estate_id", "EstateWindow.direction", "COUNT(*) as n"),
 					'table' => $dbo->fullTableName($this->EstateRoom),
 					'alias' => 'EstateRoom',
-					'limit' => null,
-					'offset' => null,
 					'joins' => array(
 						array(
 							"type" => 'LEFT',
@@ -74,7 +72,6 @@ class EstateViewController extends AppController
 						)
 					),
 					'conditions' => array(),
-					'order' => null,
 					'group' => "EstateRoom.estate_id,EstateWindow.direction"
 				),
 				$this->EstateRoom
