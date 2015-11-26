@@ -37,7 +37,9 @@ class EstateViewController extends AppController
 		$this->Estate->virtualFields = array(
 			'age' => "strftime('%Y',datetime(strftime('%s',datetime('now','localtime'))-age/1000,'unixepoch'))-1970"
 		);
+		$this->Estate->hasMany['EstatePicture']['conditions'] = 'EstatePicture.thumbnail_flag=1';
 		$this->set("estates", $this->Estate->find("all"));
+		$this->Estate->hasMany['EstatePicture']['conditions'] = null;
 	}
 
 	/**

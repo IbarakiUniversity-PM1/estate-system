@@ -39,7 +39,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $this->Flash->render(); ?>
 
 		<h2><?php echo $this->fetch('title'); ?></h2>
-		<?php echo $this->fetch('content'); ?>
+		<?php echo str_replace("\n", "\n		", $this->fetch('content')); ?>
 
 	</div>
 	<div id="footer">
