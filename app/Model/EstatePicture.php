@@ -19,4 +19,16 @@ class EstatePicture extends AppModel
 	 */
 	public $primaryKey = "estate_picture_id";
 
+
+    public $actsAs = array(
+    'UploadPack.Upload' => array(
+        'image' => array(     //ここでは、"_file_name"を除いたカラム名を書く
+            'quality' => 95,  //画質指定、デフォルトでは75
+            'styles' => array(
+                'thumb' => '85x85' //リサイズしたいサイズを書く
+            )
+        )
+    ),
+    );
+
 }

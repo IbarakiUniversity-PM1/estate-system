@@ -1,9 +1,9 @@
 <?php
 
 class EstateRegistrationController extends AppController{
-	public $helpers = array("Html", "Form"); //書いてあるといろいろ便利
+	public $helpers = array("Html", "Form", "UploadPack.Upload"); //書いてあるといろいろ便利
 	public $uses = array("Estate", "EstateAgent", "EstateTradingAspect", "EstateStructure", "EstateType",
-		"EstateTvType", "EstateInternetType");
+		"EstateTvType", "EstateInternetType", "EstatePicture");
 
 
     public function register(){
