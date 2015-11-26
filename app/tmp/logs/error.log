@@ -775,3 +775,41 @@ Stack Trace:
 #9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
 #10 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2015-11-26 17:19:32 Error: [MissingControllerException] Controller class EstatedeleteController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatedeleteController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estatedelete/delete/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-26 17:19:52 Error: [MissingControllerException] Controller class EstateeditController could not be found.
+Exception Attributes: array (
+  'class' => 'EstateeditController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estateedit/edit/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-26 17:32:11 Error: Fatal Error (1): Call to a member function delete() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstatedeleteController.php, line 12]
+2015-11-26 17:32:11 Error: [FatalErrorException] Call to a member function delete() on a non-object
+Request URL: /estate-system/estatedelete/delete/12
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 12)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 12, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 12, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-26 17:36:31 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstatedeleteController.php, line 16]
+2015-11-26 17:36:31 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /estate-system/estatedelete/delete/2
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 16, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 16, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

@@ -1,14 +1,14 @@
 <?php
 
 class EstateRegistrationController extends AppController{
-	public $helpers = array("Html", "Form", "UploadPack.Upload"); //書いてあるといろいろ便利
+	public $helpers = array("Html", "Form","Flash", "UploadPack.Upload"); //書いてあるといろいろ便利
 	public $uses = array("Estate", "EstateAgent", "EstateTradingAspect", "EstateStructure", "EstateType",
 		"EstateTvType", "EstateInternetType", "EstatePicture");
 
 
     public function register(){
         //レイアウトを切る
-        $this->layout = "";
+        /* $this->layout = ""; */
 
         //プルダウンメニュー作成(不動産業者)
 		$estateAgentList = array("empty" => "なし");
@@ -92,5 +92,10 @@ class EstateRegistrationController extends AppController{
 
 	}
 
+   public function index(){
+
+      $this->set('estates', $this->Estate->find('all'));
+
+   } 
 }
 
