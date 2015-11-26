@@ -47,6 +47,7 @@ a img {
 h1, h2, h3, h4 {
 	font-weight: normal;
 	margin-bottom: 0.5em;
+	text-align: center;
 }
 
 h1 {
@@ -185,7 +186,7 @@ th a.desc:after {
 table tr td {
 	padding: 6px;
 	text-align: center;
-	vertical-align: top;
+	vertical-align: middle;
 	border-bottom: 1px solid #ddd;
 }
 

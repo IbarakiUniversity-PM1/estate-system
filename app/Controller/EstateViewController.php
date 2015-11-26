@@ -34,6 +34,9 @@ class EstateViewController extends AppController
 	public function estateList()
 	{
 		$this->set("title_for_layout", "物件検索");
+		$this->Estate->virtualFields = array(
+			'age' => "strftime('%Y',datetime(strftime('%s',datetime('now','localtime'))-age/1000,'unixepoch'))-1970"
+		);
 		$this->set("estates", $this->Estate->find("all"));
 	}
 
