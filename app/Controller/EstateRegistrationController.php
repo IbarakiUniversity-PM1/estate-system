@@ -70,6 +70,16 @@ class EstateRegistrationController extends AppController{
         }
 		$this->set("estateTvTypeList", $estateTvTypeList);
 
+
+        if ($this->request->is('post')) {
+            $this->Estate->create();
+            if ($this->Estate->save($this->request->data)) {
+                /* $this->Flash->success(__('Your post has been saved.')); */
+                return $this->redirect(array('action' => 'register'));
+            }
+            $this->Flash->error(__('Unable to add your post.'));
+        }
+
     }
 
 	public function confirm()
