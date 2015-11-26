@@ -2,7 +2,7 @@
 
 <?php
 
-echo $this->Form->create('Estate', array('enctype' => 'multipart/form-data'));
+echo $this->Form->create('Estate', array('url' => array('controller' => 'estateregistration', 'action' => 'confirm'), 'enctype' => 'multipart/form-data'));
 echo $this->Form->input('name', array('label' => '物件名'));
 echo $this->Form->input('address', array('label' => '住所'));
 echo $this->Form->input('estate_agent_id', array('label'=>'不動産業者名','type' => 'select', 'options' => array( $estateAgentList)));

@@ -8,7 +8,7 @@ class EstateRegistrationController extends AppController{
 
     public function register(){
         //レイアウトを切る
-        /* $this->layout = ""; */
+        $this->layout = "";
 
         //プルダウンメニュー作成(不動産業者)
 		$estateAgentList = array("empty" => "なし");
