@@ -22,11 +22,8 @@ echo $this->Form->input('estate_internet_type_id', array('label'=>'インター�
 echo $this->Form->input('estate_tv_type_id', array('label'=>'テレビ','type' => 'select', 'options' => array($estateTvTypeList)));
 
 
-echo $this->Form->input('floor_plan_picture', array('type' => 'file', 'label' => 'false'));
-/* echo $this->Form->input('fllor_plan_picture_file_name'); */
-/* echo $this->Form->input('picture',array('type'=>'file','label'=>'画像')); */
-/* echo $this->Form->input('picture'); */
-echo $this->Form->input('parking_flag');
+echo $this->Form->input('floor_plan_picture', array('type' => 'file', 'label' => '間取り図'));
+echo $this->Form->input('EstatePicture.picture',array('type'=>'file','label'=>'画像'));
 
 echo $this->Form->end('登録');
 
