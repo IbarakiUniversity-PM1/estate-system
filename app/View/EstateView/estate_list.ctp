@@ -1,4 +1,3 @@
-<?php var_dump($estates) ?>
 <table>
 	<thead>
 	<?php echo $this->Html->tableHeaders(array("物件画像", "住所", "家賃", "間取り<br>面積", "窓の向き", "築年数", "不動産業者名")) . PHP_EOL ?>
