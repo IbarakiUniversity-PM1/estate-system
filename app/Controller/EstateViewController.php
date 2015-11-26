@@ -33,12 +33,16 @@ class EstateViewController extends AppController
 	 */
 	public function estateList()
 	{
-		$this->set("title_for_layout", "物件検索");
-		$this->Estate->virtualFields = array(
-			'age' => "strftime('%Y',datetime(strftime('%s',datetime('now','localtime'))-age/1000,'unixepoch'))-1970"
-		);
+		if($this->request->is("post")){
+			$this->set("title_for_layout", "物件検索結果");
+			$options=array();
+		}else {
+			$this->set("title_for_layout", "オススメ物件一覧");
+			$options=array(/*"order"=>array("EstateMainFacillitiesDistance.distance")*/);
+		}
+		$this->Estate->virtualFields = array('age' => "strftime('%Y',datetime(strftime('%s',datetime('now','localtime'))-age/1000,'unixepoch'))-1970");
 		$this->Estate->hasMany['EstatePicture']['conditions'] = 'EstatePicture.thumbnail_flag=1';
-		$this->set("estates", $this->Estate->find("all"));
+		$this->set("estates", $this->Estate->find("all",$options));
 		$this->Estate->hasMany['EstatePicture']['conditions'] = null;
 	}
 
