@@ -62,51 +62,6 @@ class EstateViewController extends AppController
 			//茨城大学日立キャンパスからの距離の昇順で並べる
 			$options["order"][] = "EstateMainFacilitiesDistance.distance";
 		}
-		//物件IDと窓の向きの組み合わせ、及び、その個数をカラムとするテーブルを取得する
-		$dbo = $this->Estate->getDataSource();
-		$estateRoomWindow =
-			$dbo->buildStatement(
-				array(
-					"fields" =>
-						array(
-							"EstateRoom.estate_id",
-							"EstateWindow.direction",
-							"COUNT(*) as n"
-						),
-					"table" => $dbo->fullTableName($this->EstateRoom),
-					"alias" => "EstateRoom",
-					"joins" => array(
-						array(
-							"type" => "LEFT",
-							"alias" => "EstateWindow",
-							"table" => "estate_windows",
-							"conditions" => "EstateRoom.estate_room_id=EstateWindow.estate_room_id"
-						)
-					),
-					"conditions" => array(),
-					"group" => "EstateRoom.estate_id,EstateWindow.direction"
-				),
-				$this->EstateRoom
-			);
-		//物件IDと窓の向きの組み合わせ、及び、その個数をカラムとするテーブルをJOINする
-		$estateRoomWindowConditions =
-			array(
-				array("Estate.estate_id = EstateRoomWindow0.estate_id"),
-				array(
-					"EstateRoomWindow0.estate_id = EstateRoomWindow1.estate_id",
-					"EstateRoomWindow0.n < EstateRoomWindow1.n"
-				)
-			);
-		for ($i = 0; $i < 2; $i++) {
-			$options["joins"][] = array(
-				"type" => "LEFT",
-				"table" => "({$estateRoomWindow})",
-				"alias" => "EstateRoomWindow" . $i,
-				"conditions" => $estateRoomWindowConditions[$i]
-			);
-		}
-		//最も多い窓の向きを持つ行に絞り込む
-		$options["group"][] = "EstateRoomWindow0.estate_id,EstateRoomWindow0.direction HAVING COUNT(EstateRoomWindow1.estate_id) = 0";
 		//サムネイル画像をJOINする
 		$options["joins"][] = array(
 			"type" => "LEFT",
@@ -122,8 +77,6 @@ class EstateViewController extends AppController
 		$this->Estate->virtualFields = array(
 			//築年数(本来の値に上書きする形となっている)
 			"age" => "strftime('%Y',datetime(strftime('%s',datetime('now','localtime'))-Estate.age/1000,'unixepoch'))-1970",
-			//窓の向き
-			"direction" => "EstateRoomWindow0.direction",
 			//サムネイル画像
 			"picture_file_name" => "EstatePicture.picture_file_name"
 		);
