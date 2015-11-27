@@ -37,12 +37,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <div id="container">
 	<div id="content">
 		<?php echo $this->Flash->render() . PHP_EOL; ?>
-		<div>
-
-		</div>
+		<?php echo str_replace(PHP_EOL, PHP_EOL . "		", rtrim($this->fetch('nav'))) . PHP_EOL; ?>
 		<div id="main">
 			<h2><?php echo $this->fetch('title'); ?></h2>
-			<?php echo str_replace(PHP_EOL, PHP_EOL . "					", rtrim($this->fetch('content'))) . PHP_EOL; ?>
+			<?php echo str_replace(PHP_EOL, PHP_EOL . "			", rtrim($this->fetch('content'))) . PHP_EOL; ?>
 		</div>
 	</div>
 	<div id="footer">
