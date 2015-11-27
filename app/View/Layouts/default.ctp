@@ -36,11 +36,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 <div id="container">
 	<div id="content">
-		<?php echo $this->Flash->render(); ?>
+		<?php echo $this->Flash->render() . PHP_EOL; ?>
+		<div>
 
-		<h2><?php echo $this->fetch('title'); ?></h2>
-		<?php echo str_replace("\n", "\n		", $this->fetch('content')); ?>
-
+		</div>
+		<div>
+			<h2><?php echo $this->fetch('title'); ?></h2>
+			<?php echo str_replace(PHP_EOL, PHP_EOL . "					", rtrim($this->fetch('content'))) . PHP_EOL; ?>
+		</div>
 	</div>
 	<div id="footer">
 		<?php echo $this->Html->link(
@@ -48,9 +51,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			'http://www.cakephp.org/',
 			array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
 		); ?>
-		<p>
-			<?php echo $cakeVersion; ?>
-		</p>
+		<p><?php echo $cakeVersion; ?></p>
 	</div>
 </div>
 </body>
