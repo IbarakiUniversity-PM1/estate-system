@@ -125,6 +125,10 @@ p {
 	border-left: 2px solid #555;
 }
 
+#content #nav {
+	width: 20%;
+}
+
 #content #main {
 	overflow-y: scroll;
 }
