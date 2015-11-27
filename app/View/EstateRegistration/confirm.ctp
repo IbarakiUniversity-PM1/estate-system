@@ -39,19 +39,19 @@ echo $this->Form->hidden('contract_period');
 echo $this->Form->value('parking_fee', array('label' => '駐車場料金(円)'));
 echo $this->Form->hidden('parking_fee');
 
-echo $this->Form->value('estate_trading_aspect_id', array('label'=>'取引態様','type' => 'select', 'options' => array($estateTradingAspectList)));
+echo $this->Form->value('estate_trading_aspect_id', array('label'=>'取引態様'));
 echo $this->Form->hidden('estate_trading_aspect_id');
 
-echo $this->Form->value('estate_structure_id', array('label'=>'物件構造','type' => 'select', 'options' => array($estateStructureList)));
+echo $this->Form->value('estate_structure_id', array('label'=>'物件構造'));
 echo $this->Form->hidden('estate_structure_id');
 
-echo $this->Form->value('estate_type_id', array('label'=>'部屋種別','type' => 'select', 'options' => array($estateTypeList)));
+echo $this->Form->value('estate_type_id', array('label'=>'部屋種別'));
 echo $this->Form->hidden('estate_type_id');
 
-echo $this->Form->value('estate_internet_type_id', array('label'=>'インターネット回線','type' => 'select', 'options' => array($estateInternetTypeList)));
+echo $this->Form->value('estate_internet_type_id', array('label'=>'インターネット回線'));
 echo $this->Form->hidden('estate_internet_type_id');
 
-echo $this->Form->value('estate_tv_type_id', array('label'=>'テレビ','type' => 'select', 'options' => array($estateTvTypeList)));
+echo $this->Form->value('estate_tv_type_id', array('label'=>'テレビ'));
 echo $this->Form->hidden('estate_tv_type_id');
 
 echo $this->Form->value('floor_plan_picture', array('type' => 'file', 'label' => '間取り図'));
