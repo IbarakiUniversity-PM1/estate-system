@@ -4,5 +4,148 @@
     <database-info product="SQLite" version="3.8.9" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
     <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed"/>
     <schema name="" catalog=""/>
+    <table name="administrators" schema="" catalog="" type="TABLE">
+      <column name="administrator_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="VARCHAR(10)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR(50)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="e_mail_address" sqlType="VARCHAR(300)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <primary-key columns="administrator_id"/>
+    </table>
+    <table name="estate_agents" schema="" catalog="" type="TABLE">
+      <column name="estate_agent_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="phone_number" sqlType="VARCHAR" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="e_mail_address" sqlType="VARCHAR" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <primary-key columns="estate_agent_id"/>
+    </table>
+    <table name="estate_characteristic" schema="" catalog="" type="TABLE">
+      <column name="estate_characteristic_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_characteristic_id"/>
+    </table>
+    <table name="estate_characteristic_references" schema="" catalog="" type="TABLE">
+      <column name="estate_characteristic_reference_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="estate_characteristic_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="estate_characteristic_reference_id"/>
+      <foreign-key name="#FAKE_estate_characteristic_references_1" columns="estate_characteristic_id" ref-table="estate_characteristic" ref-schema="" ref-catalog="" ref-columns="estate_characteristic_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <foreign-key name="#FAKE_estate_characteristic_references_2" columns="estate_id" ref-table="estates" ref-schema="" ref-catalog="" ref-columns="estate_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="estate_frank_opinion_types" schema="" catalog="" type="TABLE">
+      <column name="estate_frank_opinion_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_frank_opinion_type_id"/>
+    </table>
+    <table name="estate_frank_opinions" schema="" catalog="" type="TABLE">
+      <column name="estate_frank_opinion_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="estate_frank_opinion_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="frank_opinion" sqlType="NVARCHAR(1000)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_frank_opinion_id"/>
+      <foreign-key name="#FAKE_estate_frank_opinions_1" columns="estate_frank_opinion_type_id" ref-table="estate_frank_opinion_types" ref-schema="" ref-catalog="" ref-columns="estate_frank_opinion_type_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <foreign-key name="#FAKE_estate_frank_opinions_2" columns="estate_id" ref-table="estates" ref-schema="" ref-catalog="" ref-columns="estate_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="estate_internet_types" schema="" catalog="" type="TABLE">
+      <column name="estate_internet_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVERCHAR" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_internet_type_id"/>
+    </table>
+    <table name="estate_main_facilities" schema="" catalog="" type="TABLE">
+      <column name="estate_main_facilities_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_main_facilities_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="name" sqlType="NVRCHAR(30)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_main_facilities_id"/>
+      <foreign-key name="#FAKE_estate_main_facilities_1" columns="estate_main_facilities_type_id" ref-table="estate_main_facilities_types" ref-schema="" ref-catalog="" ref-columns="estate_main_facilities_type_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="estate_main_facilities_types" schema="" catalog="" type="TABLE">
+      <column name="estate_main_facilities_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_main_facilities_type_id"/>
+    </table>
+    <table name="estate_main_facillities_distances" schema="" catalog="" type="TABLE">
+      <column name="estate_main_facillities_distance_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="estate_main_facilities_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="distance" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <primary-key columns="estate_main_facillities_distance_id"/>
+      <foreign-key name="#FAKE_estate_main_facillities_distances_1" columns="estate_main_facilities_id" ref-table="estate_main_facilities" ref-schema="" ref-catalog="" ref-columns="estate_main_facilities_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <foreign-key name="#FAKE_estate_main_facillities_distances_2" columns="estate_id" ref-table="estates" ref-schema="" ref-catalog="" ref-columns="estate_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="estate_pictures" schema="" catalog="" type="TABLE">
+      <column name="estate_picture_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="picture_file_name" sqlType="NVARCHAR(100)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="thumbnail_flag" sqlType="BOOLEAN" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <primary-key columns="estate_picture_id"/>
+      <foreign-key name="#FAKE_estate_pictures_1" columns="estate_id" ref-table="estates" ref-schema="" ref-catalog="" ref-columns="estate_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="estate_rooms" schema="" catalog="" type="TABLE">
+      <column name="estate_room_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="estate_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="floor" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="room_number" sqlType="NVARCHAR(10)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="occupancy_date" sqlType="DATE" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="corner_suite_flag" sqlType="BOOLEAN" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="contracted_flag" sqlType="BOOLEAN" precision="0" scale="-1" nullable="false" jdbcType="4" def="RkFMU0U="/>
+      <primary-key columns="estate_room_id"/>
+      <foreign-key name="#FAKE_estate_rooms_1" columns="estate_type_id" ref-table="estate_types" ref-schema="" ref-catalog="" ref-columns="estate_type_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <foreign-key name="#FAKE_estate_rooms_2" columns="estate_id" ref-table="estates" ref-schema="" ref-catalog="" ref-columns="estate_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="estate_structures" schema="" catalog="" type="TABLE">
+      <column name="estate_structure_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_structure_id"/>
+    </table>
+    <table name="estate_trading_aspects" schema="" catalog="" type="TABLE">
+      <column name="estate_trading_aspect_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR(20)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_trading_aspect_id"/>
+    </table>
+    <table name="estate_tv_types" schema="" catalog="" type="TABLE">
+      <column name="estate_tv_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_tv_type_id"/>
+    </table>
+    <table name="estate_types" schema="" catalog="" type="TABLE">
+      <column name="estate_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_type_id"/>
+    </table>
+    <table name="estate_windows" schema="" catalog="" type="TABLE">
+      <column name="estate_window_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_room_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="direction" sqlType="NVARCHAR(5)" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <primary-key columns="estate_window_id"/>
+      <foreign-key name="#FAKE_estate_windows_1" columns="estate_room_id" ref-table="estate_rooms" ref-schema="" ref-catalog="" ref-columns="estate_room_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
+    <table name="estates" schema="" catalog="" type="TABLE">
+      <column name="estate_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_trading_aspect_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="estate_structure_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_tv_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="estate_agent_id" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="estate_internet_type_id" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="name" sqlType="NVARCHAR(50)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="address" sqlType="NVARCHAR(100)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="rent" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="deposit" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="key_money" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="common_service_pay" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="parking_flag" sqlType="BOOLEAN" precision="0" scale="-1" nullable="false" jdbcType="4" def="RkFMU0U="/>
+      <column name="parking_fee" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="area" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="floor_plan" sqlType="VARCHAR(5)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <column name="story" sqlType="INTEGER" precision="0" scale="-1" nullable="false" jdbcType="4"/>
+      <column name="age" sqlType="DATE" precision="0" scale="-1" nullable="true" jdbcType="12"/>
+      <column name="contract_period" sqlType="INTEGER" precision="0" scale="-1" nullable="true" jdbcType="4"/>
+      <column name="floor_plan_picture_file_name" sqlType="NVARCHAR(100)" precision="0" scale="-1" nullable="false" jdbcType="12"/>
+      <primary-key columns="estate_id"/>
+      <foreign-key name="#FAKE_estates_1" columns="estate_internet_type_id" ref-table="estate_internet_types" ref-schema="" ref-catalog="" ref-columns="estate_internet_type_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <foreign-key name="#FAKE_estates_2" columns="estate_agent_id" ref-table="estate_agents" ref-schema="" ref-catalog="" ref-columns="estate_agent_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <foreign-key name="#FAKE_estates_3" columns="estate_tv_type_id" ref-table="estate_tv_types" ref-schema="" ref-catalog="" ref-columns="estate_tv_type_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <foreign-key name="#FAKE_estates_4" columns="estate_structure_id" ref-table="estate_structures" ref-schema="" ref-catalog="" ref-columns="estate_structure_id" update-rule="3" delete-rule="3" deferrability="1"/>
+      <foreign-key name="#FAKE_estates_5" columns="estate_trading_aspect_id" ref-table="estate_trading_aspects" ref-schema="" ref-catalog="" ref-columns="estate_trading_aspect_id" update-rule="3" delete-rule="3" deferrability="1"/>
+    </table>
   </data-source>
 </component>

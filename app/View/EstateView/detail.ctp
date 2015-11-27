@@ -1,1 +1,1 @@
-<?php
+<?php $this->assign("nav", true) ?>
