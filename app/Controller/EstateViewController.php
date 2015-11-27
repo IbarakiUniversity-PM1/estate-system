@@ -37,6 +37,7 @@ class EstateViewController extends AppController
 			"joins" => array(),
 			"order" => array(),
 			"group" => array(),
+			"conditions" => array(),
 			//取得件数を10件に設定する
 			"limit" => 10
 		);
@@ -72,6 +73,14 @@ class EstateViewController extends AppController
 				"EstatePicture.thumbnail_flag=1"
 			)
 		);
+		//部屋情報をJOINする(全ての部屋が契約済みな物件は、表示されないようにする)
+		$options["joins"][] = array(
+			"type" => "LEFT",
+			"table" => "estate_rooms",
+			"alias" => "EstateRoom",
+			"conditions" => array("Estate.estate_id=EstateRoom.estate_id")
+		);
+		$options["conditions"][] = "EstateRoom.contracted_flag=0";
 		//Estateにバーチャルフィールドを作成する
 		$this->Estate->virtualFields = array(
 			//築年数(本来の値に上書きする形となっている)
