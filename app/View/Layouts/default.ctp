@@ -40,7 +40,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div>
 
 		</div>
-		<div>
+		<div id="main">
 			<h2><?php echo $this->fetch('title'); ?></h2>
 			<?php echo str_replace(PHP_EOL, PHP_EOL . "					", rtrim($this->fetch('content'))) . PHP_EOL; ?>
 		</div>
