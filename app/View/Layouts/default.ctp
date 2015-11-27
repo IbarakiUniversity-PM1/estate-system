@@ -40,7 +40,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php
 		//Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
 		if ($this->fetch('nav')) {
-			echo str_replace(PHP_EOL, PHP_EOL . "		", rtrim($this->element("nav"))) . PHP_EOL;
+			echo str_replace(PHP_EOL, PHP_EOL . "		", rtrim($this->requestAction('/navigation/nav/', array('return')))) . PHP_EOL;
 		}
 		?>
 		<div id="main">
