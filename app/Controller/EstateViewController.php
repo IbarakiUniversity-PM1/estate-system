@@ -41,10 +41,7 @@ class EstateViewController extends AppController
 			//取得件数を10件に設定する
 			"limit" => 10
 		);
-		if ($this->request->is("post")) { //物件検索・絞り込み
-			//タイトルをセットする
-			$this->set("title_for_layout", "物件検索結果");
-		} else { //トップ画面
+		if (empty($this->request->query)) { //トップ画面
 			//タイトルをセットする
 			$this->set("title_for_layout", "オススメ物件一覧");
 			//茨城大学日立キャンパスからの距離をJOINする
@@ -61,6 +58,10 @@ class EstateViewController extends AppController
 			);
 			//茨城大学日立キャンパスからの距離の昇順で並べる
 			$options["order"][] = "EstateMainFacilitiesDistance.distance";
+		} else { //物件検索・絞り込み
+			//タイトルをセットする
+			$this->set("title_for_layout", "物件検索結果");
+			$options["conditions"]["Estate.estate_id"] = $this->request->query;
 		}
 		//サムネイル画像をJOINする
 		$options["joins"][] = array(
