@@ -24,7 +24,6 @@ class EstateViewController extends AppController
 		"EstateFrankOpinionType",
 		"EstateCharacteristicReference",
 		"EstateMainFacilitiesType",
-		"EstateWindow",
 		"EstateMainFacilities"
 	);
 
