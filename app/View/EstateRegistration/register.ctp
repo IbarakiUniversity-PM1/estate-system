@@ -11,6 +11,8 @@ echo $this->Form->input('Estate.key_money', array('label' => '礼金(円)'));
 echo $this->Form->input('Estate.deposit', array('label' => '敷金(円)'));
 echo $this->Form->input('Estate.common_service_pay', array('label' => '共益費(円)'));
 echo $this->Form->input('Estate.floor_plan', array('label' => '間取り'));
+echo $this->Form->input('Estate.window_direction', array('label'=>'窓の向き'));
+
 echo $this->Form->input('Estate.story', array('label' => '階建'));
 echo $this->Form->input('Estate.area', array('label' => '面積(m^2)'));
 echo $this->Form->input('Estate.contract_period', array('label' => '契約期間(年)'));
