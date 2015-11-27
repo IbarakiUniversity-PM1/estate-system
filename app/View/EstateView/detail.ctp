@@ -1,1 +1,1 @@
-<?php $this->assign("nav", $this->element("nav")) ?>
+<?php $this->assign("nav", true) ?>
