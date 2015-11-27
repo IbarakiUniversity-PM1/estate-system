@@ -7,7 +7,7 @@
 		<tbody>
 		<?php foreach ($estate_agents as $e) {
 			$e = $e["EstateAgent"];
-			echo "		" . $this->Html->tableCells(array($e["name"] . "<br>" . $e["phone_number"])) . PHP_EOL;
+			echo "		" . $this->Html->tableCells(array($e["name"] . "<br>TEL : " . $e["phone_number"])) . PHP_EOL;
 		} ?>
 		</tbody>
 	</table>
