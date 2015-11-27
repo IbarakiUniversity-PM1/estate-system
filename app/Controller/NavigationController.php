@@ -20,6 +20,6 @@ class NavigationController extends AppController
 		//不動産業者テーブルの内容を取得し、$estate_agentsにセット
 		$this->set("estate_agents", $this->EstateAgent->find("all"));
 		//検索条件指定・提供不動産業者用エレメントを呼び出す
-		$this->render('../Elements/nav');
+		$this->render(".." . DS . "Elements" . DS . "nav");
 	}
 }
