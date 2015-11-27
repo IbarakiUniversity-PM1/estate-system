@@ -27,6 +27,8 @@ echo $this->Form->input('EstatePicture.0.picture',array('type'=>'file','label'=>
 
 echo $this->Form->input('EstatePicture.0.thumbnail_flag');
 
+debug($test);
+
 echo $this->Form->end('登録');
 
 ?>
