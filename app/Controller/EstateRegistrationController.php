@@ -3,7 +3,7 @@
 class EstateRegistrationController extends AppController{
     public $helpers = array("Html", "Form","Flash", "UploadPack.Upload"); //書いてあるといろいろ便利
     public $uses = array("Estate", "EstateAgent", "EstateTradingAspect", "EstateStructure", "EstateType",
-        "EstateTvType", "EstateInternetType", "EstatePicture");
+        "EstateTvType", "EstateInternetType", "EstatePicture", "EstateCharacteristic","EstateCharacteristicReference");
 
 
     public function register(){
@@ -69,7 +69,9 @@ class EstateRegistrationController extends AppController{
         ));
         }
         $this->set("estateTvTypeList", $estateTvTypeList);
-
+        
+        $test = $this->EstateCharacteristic->find("all");
+        $this->set("test", $test);
 
         if ($this->request->is('post')) {
             $this->Estate->create();
@@ -81,6 +83,7 @@ class EstateRegistrationController extends AppController{
             }
             $this->Flash->error(__('Unable to add your post.'));
         }
+        
 
     }
 

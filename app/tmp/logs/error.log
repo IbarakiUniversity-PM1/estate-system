@@ -351,3 +351,240 @@ Stack Trace:
 #12 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
 #13 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2015-11-27 18:24:55 Error: [MissingHelperException] Helper class EstateCharacteristicHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EstateCharacteristicHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('EstateCharacter...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('EstateCharacter...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp(30): View->__get('EstateCharacter...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 18:25:10 Error: [MissingHelperException] Helper class EstateCharacteristicHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EstateCharacteristicHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('EstateCharacter...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('EstateCharacter...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp(31): View->__get('EstateCharacter...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 18:25:27 Error: [MissingHelperException] Helper class EstateCharacteristicHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EstateCharacteristicHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('EstateCharacter...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('EstateCharacter...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp(31): View->__get('EstateCharacter...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 18:29:34 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:32:07 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:32:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/js/fields.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 18:32:12 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:32:51 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:34:20 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:35:03 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(73): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:38:38 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1174): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1373): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1597): DboSource->fields(Object(EstateCharacteristic), 'EstateCharacter...', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1259): DboSource->generateAssociationQuery(Object(EstateCharacteristicReference), Object(EstateCharacteristic), 'belongsTo', 'EstateCharacter...', Array, Array, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(EstateCharacteristicReference), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(73): Model->find('all')
+#8 [internal function]: EstateRegistrationController->register()
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-11-27 18:38:51 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1174): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1373): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1597): DboSource->fields(Object(EstateCharacteristic), 'EstateCharacter...', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1259): DboSource->generateAssociationQuery(Object(EstateCharacteristicReference), Object(EstateCharacteristic), 'belongsTo', 'EstateCharacter...', Array, Array, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(EstateCharacteristicReference), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(73): Model->find('all')
+#8 [internal function]: EstateRegistrationController->register()
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-11-27 18:39:39 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1174): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1373): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1597): DboSource->fields(Object(EstateCharacteristic), 'EstateCharacter...', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1259): DboSource->generateAssociationQuery(Object(EstateCharacteristicReference), Object(EstateCharacteristic), 'belongsTo', 'EstateCharacter...', Array, Array, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(EstateCharacteristicReference), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(73): Model->find('all')
+#8 [internal function]: EstateRegistrationController->register()
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
