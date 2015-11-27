@@ -588,3 +588,13 @@ Stack Trace:
 #11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
 #12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2015-11-27 18:57:24 Error: Fatal Error (1): Call to undefined function cout() in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp, line 32]
+2015-11-27 18:57:24 Error: [FatalErrorException] Call to undefined function cout()
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 32, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 32, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
