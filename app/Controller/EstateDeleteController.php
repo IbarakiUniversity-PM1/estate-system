@@ -12,7 +12,7 @@ class EstateDeleteController extends AppController{
             throw new MethodNotException();
         }
 
-        if($this->Estate->delete($estate_id)){
+        if($this->Estate->delete($estate_id, $cascade = true)){
 //            $this->Flash->success(__('The post with id: %s has been deleted.', h($estate_id)));
         }else{
 //            $this->Flash->error(__('The post with id: %s could not be deleted.', h($estate_id)));
