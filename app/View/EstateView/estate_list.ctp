@@ -13,7 +13,7 @@
 		}
 		$cells[] = $e["Estate"]["address"];
 		$cells[] = $this->Number->currency($e["Estate"]["rent"], '円', array('wholePosition' => 'after', 'zero' => '無料', 'places' => 0));
-		$cells[] = $e["Estate"]["floor_plan"] . "<br>" . $this->Number->currency($e["Estate"]["area"], 'km', array('wholePosition' => 'after', 'zero' => 0, 'places' => 0)) . "&sup2;";
+		$cells[] = $e["Estate"]["floor_plan"] . "<br>" . $this->Number->currency($e["Estate"]["area"], 'm', array('wholePosition' => 'after', 'zero' => 0, 'places' => 0)) . "&sup2;";
 		$cells[] = $e["Estate"]["window_direction"];
 		$cells[] = $this->Number->currency($e["Estate"]["age"], '年', array('wholePosition' => 'after', 'zero' => '1年未満', 'places' => 0));
 		$cells[] = $e["EstateAgent"]["name"];
