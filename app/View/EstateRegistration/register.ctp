@@ -26,7 +26,23 @@ echo $this->Form->input('Estate.floor_plan_picture', array('type' => 'file', 'la
 echo $this->Form->input('EstatePicture.0.picture',array('type'=>'file','label'=>'画像'));
 echo $this->Form->input('EstatePicture.0.thumbnail_flag');
 
-debug($test);
+echo $this->Form->input('frank_opinion_agent', array('rows' => 3, 'label' => '生の声(不動産業者)'));
+echo $this->Form->input('frank_opinion_owner', array('rows' => 3, 'label' => '生の声(大家)'));
+echo $this->Form->input('frank_opinion_resident', array('rows' => 3, 'label' => '生の声(入居者)'));
+echo $this->Form->input('bath_toilet', array('label'=>'バストイレ別'));
+echo $this->Form->input('gas_stove', array('label'=>'ガスキッチン有り'));
+echo $this->Form->input('woman_only', array('label'=>'女性限定'));
+echo $this->Form->input('student_only', array('label'=>'学生限定'));
+echo $this->Form->input('room_share', array('label'=>'ルームシェア可'));
+echo $this->Form->input('laundry_area', array('label'=>'洗濯機置き場(室内)'));
+echo $this->Form->input('air_conditioner', array('label' => 'エアコン有り'));
+echo $this->Form->input('elevator', array('label' => 'エレベータ有り'));
+echo $this->Form->input('auto_lock', array('label' => 'オートロック有り'));
+echo $this->Form->input('interphone', array('label' => 'インターフォン有り'));
+echo $this->Form->input('pet_breeding' , array('label' => 'ペット飼育可'));
+echo $this->Form->input('playing_an_instrument', array('label' => '楽器演奏可'));
+
+//debug($test);
 
 
 echo $this->Form->end('登録');
