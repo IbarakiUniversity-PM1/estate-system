@@ -1961,3 +1961,30 @@ Stack Trace:
 #11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
 >>>>>>> cbfc07dc54046a6fcd03364a8406c3f76374b723
+2015-11-28 18:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/images_3.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 18:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/images.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 18:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/images_2.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
