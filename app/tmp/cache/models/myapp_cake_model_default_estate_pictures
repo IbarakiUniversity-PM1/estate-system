@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 1448703703
+=======
+1448701067
+>>>>>>> cbfc07dc54046a6fcd03364a8406c3f76374b723
 a:4:{s:17:"estate_picture_id";a:5:{s:4:"type";s:7:"integer";s:4:"null";b:0;s:7:"default";s:0:"";s:6:"length";i:11;s:3:"key";s:7:"primary";}s:9:"estate_id";a:4:{s:4:"type";s:7:"integer";s:4:"null";b:0;s:7:"default";s:0:"";s:6:"length";N;}s:17:"picture_file_name";a:4:{s:4:"type";s:6:"string";s:4:"null";b:1;s:7:"default";s:0:"";s:6:"length";i:100;}s:14:"thumbnail_flag";a:4:{s:4:"type";s:7:"boolean";s:4:"null";b:0;s:7:"default";s:0:"";s:6:"length";N;}}

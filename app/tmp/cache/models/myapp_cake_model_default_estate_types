@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 1448703156
+=======
+1448700969
+>>>>>>> cbfc07dc54046a6fcd03364a8406c3f76374b723
 a:2:{s:14:"estate_type_id";a:5:{s:4:"type";s:7:"integer";s:4:"null";b:0;s:7:"default";s:0:"";s:6:"length";i:11;s:3:"key";s:7:"primary";}s:4:"name";a:4:{s:4:"type";s:6:"string";s:4:"null";b:1;s:7:"default";s:0:"";s:6:"length";N;}}
