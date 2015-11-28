@@ -37,10 +37,12 @@ class Estate extends AppModel
     public $actsAs = array(
         'UploadPack.Upload' => array(
             'floor_plan_picture' => array(     //ここでは、"_file_name"を除いたカラム名を書く
+
                 'quality' => 75,  //画質指定、デフォルトでは75
                 'styles' => array(
                     'thumb' => '85x85' //リサイズしたいサイズを書く
-                )
+                ),
+
             )
         )
     );
