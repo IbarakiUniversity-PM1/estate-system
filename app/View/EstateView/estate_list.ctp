@@ -42,6 +42,7 @@ echo $this->Form->create("Estate", array("type" => "get"));
         $cells[] = $e["Estate"]["window_direction"];
         $cells[] = $this->Number->currency($e["Estate"]["age"], "年", array("wholePosition" => "after", "zero" => "1年未満", "places" => 0));
         $cells[] = $e["EstateAgent"]["name"];
+        $cells[] = $this->Html->link('詳細画面へ', array('action' => 'detail', $e['Estate']['estate_id']));
         echo "        " . $this->Html->tableCells($cells) . PHP_EOL;
         $i++;
     } ?>
