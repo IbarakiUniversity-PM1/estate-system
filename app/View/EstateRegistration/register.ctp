@@ -16,10 +16,11 @@ echo $this->Form->input('Estate.window_direction', array('label'=>'窓の向き'
 echo $this->Form->input('Estate.story', array('label' => '階建'));
 echo $this->Form->input('Estate.area', array('label' => '面積(m^2)'));
 echo $this->Form->input('Estate.contract_period', array('label' => '契約期間(年)'));
+echo $this->Form->input('Estate.parking_flag', array('label' => '駐車場料金有り'));
 echo $this->Form->input('Estate.parking_fee', array('label' => '駐車場料金(円)'));
 echo $this->Form->input('Estate.estate_trading_aspect_id', array('label'=>'取引態様','type' => 'select', 'options' => array($estateTradingAspectList)));
 echo $this->Form->input('Estate.estate_structure_id', array('label'=>'物件構造','type' => 'select', 'options' => array($estateStructureList)));
-echo $this->Form->input('Estate.estate_type_id', array('label'=>'部屋種別','type' => 'select', 'options' => array($estateTypeList)));
+//echo $this->Form->input('Estate.estate_type_id', array('label'=>'部屋種別','type' => 'select', 'options' => array($estateTypeList)));
 echo $this->Form->input('Estate.estate_internet_type_id', array('label'=>'インターネット回線','type' => 'select', 'options' => array($estateInternetTypeList)));
 echo $this->Form->input('Estate.estate_tv_type_id', array('label'=>'テレビ','type' => 'select', 'options' => array($estateTvTypeList)));
 echo $this->Form->input('Estate.floor_plan_picture', array('type' => 'file', 'label' => '間取り図'));

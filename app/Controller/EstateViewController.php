@@ -8,6 +8,8 @@ class EstateViewController extends AppController
 	/**
 	 * @var array 扱うモデルのリスト
 	 */
+    
+        public $helpers = array("Html", "Form","Flash", "UploadPack.Upload"); 
 	public $uses = array(
 		"Estate",
 		"EstateAgent",
@@ -104,9 +106,21 @@ class EstateViewController extends AppController
 	/**
 	 * 物件詳細
 	 */
-	public function detail()
+	public function detail($id = null)
 	{
-
+            
+            debug($id);
+            $this->set("title_for_layout", "物件詳細画面");
+//            if(!$id){
+//            throw new NotFoundException(__('Invalid post'));
+//            }
+        
+            $this->Estate->id = $id;
+            
+//            if(!$id) {
+//                throw new NotFoundException(__('Invalid post'));
+//            }
+            $this->set('estate', $this->Estate->read());
 	}
         
         private function search(&$options){
