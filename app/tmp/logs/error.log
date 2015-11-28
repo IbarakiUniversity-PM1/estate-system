@@ -630,3 +630,29 @@ Stack Trace:
 #10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
 #11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2015-11-28 13:26:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estates.floor_plan_picture_file_name
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(Estate), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3007): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(80): Model->saveAssociated(Array, Array)
+#7 [internal function]: EstateRegistrationController->register()
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-28 13:40:22 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstatedeleteController.php, line 16]
+2015-11-28 13:40:22 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /estate-system/estatedelete/delete/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 16, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 16, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
