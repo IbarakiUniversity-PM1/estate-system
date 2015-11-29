@@ -1,0 +1,23 @@
+.sampleTable {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.sampleTable th,
+.sampleTable td {
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+    text-align: left;
+}
+.sampleTable th {
+    background-color: #FFFFFF;
+}
+
+.sampleTable table {
+  width: 200px;
+}
+#base {
+          
+          width: 400px;
+}
+
+
