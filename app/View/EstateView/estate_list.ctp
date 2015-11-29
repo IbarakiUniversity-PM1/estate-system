@@ -26,83 +26,32 @@ echo $this->Form->create("Estate", array("type" => "get"));
         ) . PHP_EOL ?>
     </thead>
     <tbody>
-    <?php
+    <?php $i=0 ?>
+    <?php foreach ($estates as $estate) :?>
+        <tr data-href="EstateView/detail/<?php echo $estate["Estate"]["estate_id"]?>">
+            <td><input type="hidden" name=<?php echo $i?> id="Estate0EstateId_" value="0"/><input type="checkbox" name=<?php echo $i?> value=<?php echo $estate["Estate"]["estate_id"]?> id="Estate0EstateId"/><label for="Estate0EstateId"></label></td>
+            <td><img src="/estate-system/img/../upload/estate_pictures/<?php echo $estate["Estate"]["estate_id"]?>/<?php echo str_replace(".jpeg", "_thumb.jpeg", $estate["Estate"]["picture_file_name"]) ?>" alt="test"/></td>
+            <td><?php echo $estate["Estate"]["address"]?></td>
+            <td><?php echo $estate["Estate"]["rent"]?>円</td>
+            <td><?php echo $estate["Estate"]["floor_plan"]?><br><?php echo $estate["Estate"]["area"]?>m&sup2;</td>
+            <td><?php echo $estate["Estate"]["window_direction"]?></td>
+            <td><?php echo $estate["Estate"]["age"]?></td>
+            <td><?php echo $estate["EstateAgent"]["name"]?></td>
+        </tr>
+        <?php $i++ ?>
+    <?php endforeach;?>
 
-    $i = 0;
-    foreach ($estates as $e) {
-        $cells = array();
-        $cells[] =
-            $this->Form->input($this->Form->defaultModel . "." . $i . ".estate_id.",
-                array(
-                    "type" => "checkbox",
-                    "label" => "",
-                    "value" => $e["Estate"]["estate_id"],
-                    "div" => false));
-        if (isset($e["Estate"]["picture_file_name"])) {
-            $cells[] = $this->Html->image('../upload/estate_pictures/' . $e["Estate"]["estate_id"] . '/' . str_replace(".jpeg", "_thumb.jpeg", $e["Estate"]["picture_file_name"])   , array("alt" => $e["Estate"]["name"]));
-        } else {
-            $cells[] = null;
-        }
-        $cells[] = $e["Estate"]["address"];
-        $cells[] = $this->Number->currency($e["Estate"]["rent"], "円", array("wholePosition" => "after", "zero" => "無料", "places" => 0));
-        $cells[] = $e["Estate"]["floor_plan"] . "<br>" . $this->Number->currency($e["Estate"]["area"], "m", array("wholePosition" => "after", "zero" => 0, "places" => 0)) . "&sup2;";
-        $cells[] = $e["Estate"]["window_direction"];
-        $cells[] = $this->Number->currency($e["Estate"]["age"], "年", array("wholePosition" => "after", "zero" => "1年未満", "places" => 0));
-        $cells[] = $e["EstateAgent"]["name"];
-        echo "        " . $this->Html->tableCells(
-            $cells,
-            array('data-href'=>"EstateView/detail/" . $e["Estate"]["estate_id"])) . PHP_EOL;
-        $i++;
-
-    } ?>
     </tbody>
 </table>
 </div>
 
-<div id="refine">
-    <table>
-        <thead>
-            <?php echo $this->Html->tableHeaders(
-    array(
-        $this->Form->submit("絞込", array("div" => false)),
-
-    )
-) . PHP_EOL ?>
-        </thead>
-        <tbody>
-            <?php
-
-    $i = 0;
-            foreach ($estates as $e) {
-                $cells = array();
-                $cells[] =
-                    $this->Form->input($this->Form->defaultModel . "." . $i . ".estate_id.",
-                                       array(
-                                           "type" => "checkbox",
-                                           "label" => "",
-                                           "value" => $e["Estate"]["estate_id"],
-                                           "div" => false));
-
-                echo "        " . $this->Html->tableCells(
-                    $cells,
-                    array('data-href'=>"EstateView/detail/" . $e["Estate"]["estate_id"])) . PHP_EOL;
-                $i++;
-
-            } ?>
-        </tbody>
-    </table>
-</div>
-
-
 <?php echo $this->Form->end();?>
-
-
-
 
 <?php $this->Html->scriptStart(array('inline' => false)); ?>
 //scriptタグは自動でできます。
 
 <?php $this->Html->scriptEnd(); ?>
 
-<script type="text/javascript">(function(){window.setting={styling:".preview th{background:#333333;color:#ffffff;padding:5px;}.preview tr{border-bottom:1px solid #ccc;}.preview td{border:dotted #ccc;border-width:0px 1px;padding:5px;}.preview tr:nth-child(even){background:#f6f6ff;}.clickable:hover{cursor:pointer;background:#ffddff;}"};if(setting.styling){var a=document.createElement("style"),b=document.getElementsByTagName("head")[0];a.type="text/css";try{a.appendChild(document.createTextNode(setting.styling))}catch(c){if(a.styleSheet)a.styleSheet.cssText= setting.styling}b.appendChild(a)}})();jQuery(function(a){a("tr[data-href]","#estate-list, refine").addClass("clickable").click(function(b){if(!a(b.target).is("a"))window.location=a(b.target).closest("tr").data("href")});a("tbody tr[data-href]","#estate-list, refine").addClass("clickable").click(function(){window.location=a(this).attr("data-href")}).find("a").hover(function(){a(this).parents("tr").unbind("click")},function(){a(this).parents("tr").click(function(){window.location=a(this).attr("data-href")})})});</script>
+<script type="text/javascript">(function(){window.setting={styling:".preview th{background:#333333;color:#ffffff;padding:5px;}.preview tr{border-bottom:1px solid #ccc;}.preview td{border:dotted #ccc;border-width:0px 1px;padding:5px;}.preview tr:nth-child(even){background:#f6f6ff;}.clickable:hover{cursor:pointer;background:#ffddff;}"};if(setting.styling){var a=document.createElement("style"),b=document.getElementsByTagName("head")[0];a.type="text/css";try{a.appendChild(document.createTextNode(setting.styling))}catch(c){if(a.styleSheet)a.styleSheet.cssText= setting.styling}b.appendChild(a)}})();
+    jQuery(function(a){a("tr[data-href]","#estate-list, refine").addClass("clickable").click(function(b){if(!a(b.target).is("a"))window.location=a(b.target).closest("tr").data("href")});a("tbody tr[data-href]","#estate-list, refine").addClass("clickable").click(function(){window.location=a(this).attr("data-href")}).find("a").hover(function(){a(this).parents("tr").unbind("click")},function(){a(this).parents("tr").click(function(){window.location=a(this).attr("data-href")})})});</script>
 
