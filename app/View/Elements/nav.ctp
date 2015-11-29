@@ -82,18 +82,18 @@
                     <p><input type="checkbox" name="common_service_pay" value="true">共益費:なし</p>
                     <p><input type="checkbox" name="key_money" value="true">礼金:なし</p>
                     <p><input type="checkbox" name="deposit" value="0">敷金:なし</p>
-                    <p><input type="checkbox" name="chara[]" value="bath_toilet"> バストイレ別</p>
-                    <p><input type="checkbox" name="chara[]" value="gas_stove"> ガスキッチン有り</p>
-                    <p><input type="checkbox" name="chara[]" value="woman_only"> 女性限定</p>
+                    <p><input type="checkbox" name="chara[]" value="bath_toilet">バストイレ:別</p>
+                    <p><input type="checkbox" name="chara[]" value="gas_stove">ガスキッチン:あり</p>
+                    <p><input type="checkbox" name="chara[]" value="woman_only">女性限定</p>
                     <p><input type="checkbox" name="chara[]" value="student_only"> 学生限定</p>
-                    <p><input type="checkbox" name="chara[]" value="room_share"> ルームシェア可</p>
-                    <p><input type="checkbox" name="chara[]" value="laundry_area"> 洗濯機置き場(室内)</p>
-                    <p><input type="checkbox" name="chara[]" value="air_conditioner"> エアコン有り</p>
-                    <p><input type="checkbox" name="chara[]" value="elevator"> エレベータ有り</p>
-                    <p><input type="checkbox" name="chara[]" value="auto_lock"> オートロック有り</p>
-                    <p><input type="checkbox" name="chara[]" value="interphone"> インターホン有り</p>
-                    <p><input type="checkbox" name="chara[]" value="pet_breeding"> ペット飼育可</p>
-                    <p><input type="checkbox" name="chara[]" value="playing_an_instrument"> 楽器演奏可</p>
+                    <p><input type="checkbox" name="chara[]" value="room_share">ルームシェア:可能</p>
+                    <p><input type="checkbox" name="chara[]" value="laundry_area">洗濯機置き場:室内</p>
+                    <p><input type="checkbox" name="chara[]" value="air_conditioner"> エアコン:あり</p>
+                    <p><input type="checkbox" name="chara[]" value="elevator">エレベータ:あり</p>
+                    <p><input type="checkbox" name="chara[]" value="auto_lock">オートロック:あり</p>
+                    <p><input type="checkbox" name="chara[]" value="interphone">インターホン:あり</p>
+                    <p><input type="checkbox" name="chara[]" value="pet_breeding">ペット飼育:可能</p>
+                    <p><input type="checkbox" name="chara[]" value="playing_an_instrument">楽器演奏:可能</p>
                     <p><input type="checkbox" name="window_direction" value="true">窓の向き:南</p>
   
                     <p><input type="submit" name="button" /></p>
