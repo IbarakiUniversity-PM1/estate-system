@@ -1,5 +1,5 @@
 <div id="nav">
-    <h3>こうがく不動産</h3>
+    <h3><a href="/estate-system">こうがく不動産</a></h3>
     <table>
         <thead>
         <?php echo $this->Html->tableHeaders(array("提供不動産業者")) . PHP_EOL ?>

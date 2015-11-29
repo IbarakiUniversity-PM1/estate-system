@@ -11,7 +11,7 @@ echo $this->Form->create("Estate", array("type" => "get"));
 
 
 
-<table>
+<table cellspacing="0" cellpadding="0" >
     <thead>
     <?php echo $this->Html->tableHeaders(
             array(
@@ -105,6 +105,3 @@ echo $this->Form->create("Estate", array("type" => "get"));
         });
     });
 </script>
-
-
-

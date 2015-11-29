@@ -6,29 +6,29 @@
 class EstateViewController extends AppController
 {
 
-	/**
-	 * @var array 扱うモデルのリスト
-	 */
-    
-        public $helpers = array("Html", "Form","Flash", "UploadPack.Upload"); 
-	public $uses = array(
-		"Estate",
-		"EstateAgent",
-		"EstateInternetType",
-		"EstateFrankOpinion",
-		"EstateMainFacilitiesDistance",
-		"EstateTvType",
-		"EstateTradingAspect",
-		"EstateRoom",
-		"EstateType",
-		"EstateStructure",
-		"EstatePicture",
-		"EstateCharacteristic",
-		"EstateFrankOpinionType",
-		"EstateCharacteristicReference",
-		"EstateMainFacilitiesType",
-		"EstateMainFacilities"
-	);
+    /**
+     * @var array 扱うモデルのリスト
+     */
+
+        public $helpers = array("Html", "Form","Flash", "UploadPack.Upload");
+    public $uses = array(
+        "Estate",
+        "EstateAgent",
+        "EstateInternetType",
+        "EstateFrankOpinion",
+        "EstateMainFacilitiesDistance",
+        "EstateTvType",
+        "EstateTradingAspect",
+        "EstateRoom",
+        "EstateType",
+        "EstateStructure",
+        "EstatePicture",
+        "EstateCharacteristic",
+        "EstateFrankOpinionType",
+        "EstateCharacteristicReference",
+        "EstateMainFacilitiesType",
+        "EstateMainFacilities"
+    );
 
 
     /**
@@ -99,26 +99,26 @@ class EstateViewController extends AppController
     }
 
 
-	/**
-	 * 物件詳細
-	 */
-	public function detail($id = null)
-	{
-            
+    /**
+     * 物件詳細
+     */
+    public function detail($id = null)
+    {
+
             debug($id);
             $this->set("title_for_layout", "物件詳細画面");
 //            if(!$id){
 //            throw new NotFoundException(__('Invalid post'));
 //            }
-        
+
             $this->Estate->id = $id;
-            
+
 //            if(!$id) {
 //                throw new NotFoundException(__('Invalid post'));
 //            }
             $this->set('estate', $this->Estate->read());
-	}
-        
+    }
+
         private function search(&$options){
             if(!isset($_GET['rent'])
                 && !isset($_GET['area'])
@@ -136,7 +136,7 @@ class EstateViewController extends AppController
                                 $options["conditions"]["rent <="] = $_GET['rent_num'];
                             }
                             if(isset($_GET['area'])){
-                                $options["conditions"]["area <="] = $_GET['area_num'];
+                                $options["conditions"]["area >="] = $_GET['area_num'];
                             }
                             if(isset($_GET['age'])){
                                 $options["conditions"]["area <="] = $_GET['age_num'];
