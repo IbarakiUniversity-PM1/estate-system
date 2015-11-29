@@ -1,0 +1,2133 @@
+2015-11-27 14:04:35 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 14:06:23 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 14:06:24 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 14:07:35 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 14:07:36 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 14:09:18 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 14:10:53 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 14:10:56 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 14:11:03 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateRegistration/confirm.ctp, line 4]
+2015-11-27 14:11:03 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration/confirm
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 4, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 4, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:12:21 Error: [MissingViewException] View file "EstateRegistration/complete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'EstateRegistration/complete.ctp',
+)
+Request URL: /estate-system/estateregistration/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/View/View.php(731): View->_getViewFileName(NULL)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#4 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 14:14:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estates.estate_trading_aspect_id
+Request URL: /estate-system/estateregistration/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(Estate), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2051): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(87): Model->save(Array)
+#6 [internal function]: EstateRegistrationController->complete()
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-27 14:15:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estates.estate_trading_aspect_id
+Request URL: /estate-system/estateregistration/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(Estate), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2051): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(87): Model->save(Array)
+#6 [internal function]: EstateRegistrationController->complete()
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-27 14:16:20 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateRegistration/register.ctp, line 30]
+2015-11-27 14:16:20 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:16:21 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateRegistration/register.ctp, line 30]
+2015-11-27 14:16:21 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:18:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estates.estate_trading_aspect_id
+Request URL: /estate-system/estateregistration/complete
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(Estate), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2051): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(87): Model->save(Array)
+#6 [internal function]: EstateRegistrationController->complete()
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-11-27 14:20:43 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateRegistration/register.ctp, line 30]
+2015-11-27 14:20:43 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:20:45 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateRegistration/register.ctp, line 30]
+2015-11-27 14:20:45 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:21:02 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateRegistration/register.ctp, line 30]
+2015-11-27 14:21:02 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:21:03 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateRegistration/register.ctp, line 30]
+2015-11-27 14:21:03 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 30, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:24:39 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php, line 86]
+2015-11-27 14:24:39 Error: [FatalErrorException] parse error
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 86)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 86, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 86, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:24:41 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php, line 86]
+2015-11-27 14:24:41 Error: [FatalErrorException] parse error
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 86)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 86, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 86, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 14:48:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estate_pictures.thumbnail_flag
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(EstatePicture), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2866): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3064): Model->saveMany(Array, Array)
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2776): Model->saveAssociated(Array, Array)
+#8 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(76): Model->saveAll(Array)
+#9 [internal function]: EstateRegistrationController->register()
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#11 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#13 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-27 14:52:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estate_pictures.thumbnail_flag
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(EstatePicture), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2866): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3064): Model->saveMany(Array, Array)
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2776): Model->saveAssociated(Array, Array)
+#8 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(76): Model->saveAll(Array)
+#9 [internal function]: EstateRegistrationController->register()
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#11 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#13 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-27 14:58:44 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estate_pictures.thumbnail_flag
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(EstatePicture), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2866): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3064): Model->saveMany(Array, Array)
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2776): Model->saveAssociated(Array, Array)
+#8 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(78): Model->saveAll(Array)
+#9 [internal function]: EstateRegistrationController->register()
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#11 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#13 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-27 15:13:09 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateRegistration/register.ctp, line 28]
+2015-11-27 15:13:09 Error: [FatalErrorException] parse error
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 28)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 28, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 28, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 15:14:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estate_pictures.thumbnail_flag
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(EstatePicture), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2866): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3064): Model->saveMany(Array, Array)
+#7 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(78): Model->saveAssociated(Array)
+#8 [internal function]: EstateRegistrationController->register()
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#12 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-11-27 15:32:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estate_pictures.thumbnail_flag
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(EstatePicture), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2866): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3064): Model->saveMany(Array, Array)
+#7 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(78): Model->saveAssociated(Array)
+#8 [internal function]: EstateRegistrationController->register()
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#12 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-11-27 15:35:03 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estate_pictures.thumbnail_flag
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(EstatePicture), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3007): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2864): Model->saveAssociated(Array, Array)
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3064): Model->saveMany(Array, Array)
+#8 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(78): Model->saveAssociated(Array, Array)
+#9 [internal function]: EstateRegistrationController->register()
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#11 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#13 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-27 15:40:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estate_pictures.thumbnail_flag
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(EstatePicture), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3007): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2864): Model->saveAssociated(Array, Array)
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3064): Model->saveMany(Array, Array)
+#8 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(78): Model->saveAssociated(Array, Array)
+#9 [internal function]: EstateRegistrationController->register()
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#11 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#13 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-11-27 18:24:55 Error: [MissingHelperException] Helper class EstateCharacteristicHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EstateCharacteristicHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('EstateCharacter...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('EstateCharacter...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp(30): View->__get('EstateCharacter...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 18:25:10 Error: [MissingHelperException] Helper class EstateCharacteristicHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EstateCharacteristicHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('EstateCharacter...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('EstateCharacter...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp(31): View->__get('EstateCharacter...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 18:25:27 Error: [MissingHelperException] Helper class EstateCharacteristicHelper could not be found.
+Exception Attributes: array (
+  'class' => 'EstateCharacteristicHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('EstateCharacter...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('EstateCharacter...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp(31): View->__get('EstateCharacter...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 18:29:34 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:32:07 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:32:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/js/fields.js
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 18:32:12 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:32:51 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:34:20 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(74): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:35:03 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(73): Model->find('all', Array)
+#4 [internal function]: EstateRegistrationController->register()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-11-27 18:38:38 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1174): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1373): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1597): DboSource->fields(Object(EstateCharacteristic), 'EstateCharacter...', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1259): DboSource->generateAssociationQuery(Object(EstateCharacteristicReference), Object(EstateCharacteristic), 'belongsTo', 'EstateCharacter...', Array, Array, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(EstateCharacteristicReference), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(73): Model->find('all')
+#8 [internal function]: EstateRegistrationController->register()
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-11-27 18:38:51 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1174): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1373): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1597): DboSource->fields(Object(EstateCharacteristic), 'EstateCharacter...', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1259): DboSource->generateAssociationQuery(Object(EstateCharacteristicReference), Object(EstateCharacteristic), 'belongsTo', 'EstateCharacter...', Array, Array, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(EstateCharacteristicReference), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(73): Model->find('all')
+#8 [internal function]: EstateRegistrationController->register()
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-11-27 18:39:39 Error: [MissingTableException] Table estate_characteristics for model EstateCharacteristic was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'estate_characteristics',
+  'class' => 'EstateCharacteristic',
+  'ds' => 'default',
+)
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estate_characte...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1174): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1373): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1597): DboSource->fields(Object(EstateCharacteristic), 'EstateCharacter...', '')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1259): DboSource->generateAssociationQuery(Object(EstateCharacteristicReference), Object(EstateCharacteristic), 'belongsTo', 'EstateCharacter...', Array, Array, false)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(EstateCharacteristicReference), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateregistrationController.php(73): Model->find('all')
+#8 [internal function]: EstateRegistrationController->register()
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-11-27 18:57:24 Error: Fatal Error (1): Call to undefined function cout() in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp, line 32]
+2015-11-27 18:57:24 Error: [FatalErrorException] Call to undefined function cout()
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 32, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 32, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 19:15:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estates.window_direction
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(Estate), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3007): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(80): Model->saveAssociated(Array, Array)
+#7 [internal function]: EstateRegistrationController->register()
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-27 19:20:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estates.floor_plan_picture_file_name
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(Estate), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3007): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(80): Model->saveAssociated(Array, Array)
+#7 [internal function]: EstateRegistrationController->register()
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-28 13:26:22 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estates.floor_plan_picture_file_name
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(Estate), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3007): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(80): Model->saveAssociated(Array, Array)
+#7 [internal function]: EstateRegistrationController->register()
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-28 13:40:22 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstatedeleteController.php, line 16]
+2015-11-28 13:40:22 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /estate-system/estatedelete/delete/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 16, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 16, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 13:56:27 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: EstateRoom.contracted_flag
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#6 /Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php(93): Model->find('all', Array)
+#7 [internal function]: EstateViewController->estateList('home')
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-28 13:56:52 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/images_2.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 14:19:30 Error: Fatal Error (4): parse error, expecting `"variable (T_VARIABLE)"' or `'$'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 57]
+2015-11-28 14:19:30 Error: [FatalErrorException] parse error, expecting `"variable (T_VARIABLE)"' or `'$''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 57, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 57, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:19:34 Error: Fatal Error (4): parse error, expecting `"variable (T_VARIABLE)"' or `'$'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 57]
+2015-11-28 14:19:34 Error: [FatalErrorException] parse error, expecting `"variable (T_VARIABLE)"' or `'$''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 57, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 57, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:19:34 Error: Fatal Error (4): parse error, expecting `"variable (T_VARIABLE)"' or `'$'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 57]
+2015-11-28 14:19:34 Error: [FatalErrorException] parse error, expecting `"variable (T_VARIABLE)"' or `'$''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 57)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 57, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 57, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:24:36 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 94]
+2015-11-28 14:24:36 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 94)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 94, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 94, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:29:44 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 8]
+2015-11-28 14:29:44 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:29:45 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 8]
+2015-11-28 14:29:45 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:29:45 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 8]
+2015-11-28 14:29:45 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:29:46 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 8]
+2015-11-28 14:29:46 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:29:50 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/index
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 14:30:00 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/index
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 14:30:01 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 8]
+2015-11-28 14:30:01 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:30:01 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 8]
+2015-11-28 14:30:01 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 8, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:31:57 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/index
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 14:31:58 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/index
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 14:33:16 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 36]
+2015-11-28 14:33:16 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 36, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 36, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:33:18 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 36]
+2015-11-28 14:33:18 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 36, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 36, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:33:55 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 36]
+2015-11-28 14:33:55 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 36, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 36, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 14:33:56 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 36]
+2015-11-28 14:33:56 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/do030b/p...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/do030b/p...', 36, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/do030b/p...', 36, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 15:05:37 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateRegistration/register.ctp, line 33]
+2015-11-28 15:05:37 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 33, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 33, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+<<<<<<< HEAD
+2015-11-28 15:56:31 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Estate->findById('1')
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 15:57:15 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Estate->findById('1')
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 15:57:54 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Estate->findById('1')
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 15:57:58 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Estate->findById('1')
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 16:00:14 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/estateview/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateviewController.php(113): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateviewController.php(113): Estate->findById('1')
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 16:01:52 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(113): Estate->findById('1')
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 16:02:38 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(114): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(114): Estate->findById('1')
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 16:03:25 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(114): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(114): Estate->findById(1)
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 16:03:30 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(114): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(114): Estate->findById(1)
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 16:03:54 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.id
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(553): Model->find('first', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(882): DboSource->query('findById', Array, Object(Estate))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(114): Model->__call('findById', Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(114): Estate->findById(1)
+#10 [internal function]: EstateViewController->detail('1')
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-11-28 16:20:02 Error: [MissingHelperException] Helper class uploadHelper could not be found.
+Exception Attributes: array (
+  'class' => 'uploadHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('upload')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('upload')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp(5): View->__get('upload')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-28 16:20:58 Error: [MissingHelperException] Helper class uploadImageHelper could not be found.
+Exception Attributes: array (
+  'class' => 'uploadImageHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('uploadImage')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('uploadImage')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp(5): View->__get('uploadImage')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-28 16:21:06 Error: [MissingHelperException] Helper class uploadImageHelper could not be found.
+Exception Attributes: array (
+  'class' => 'uploadImageHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('uploadImage')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('uploadImage')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp(5): View->__get('uploadImage')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-28 16:31:01 Error: [MissingHelperException] Helper class uploadImageHelper could not be found.
+Exception Attributes: array (
+  'class' => 'uploadImageHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('uploadImage')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('uploadImage')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp(5): View->__get('uploadImage')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-28 16:31:03 Error: [MissingHelperException] Helper class uploadImageHelper could not be found.
+Exception Attributes: array (
+  'class' => 'uploadImageHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('uploadImage')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('uploadImage')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp(5): View->__get('uploadImage')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-28 16:31:15 Error: Fatal Error (1): Call to undefined function image() in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp, line 5]
+2015-11-28 16:31:15 Error: [FatalErrorException] Call to undefined function image()
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 5, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 5, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:31:22 Error: Fatal Error (1): Call to undefined function image() in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp, line 5]
+2015-11-28 16:31:22 Error: [FatalErrorException] Call to undefined function image()
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 5, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 5, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:32:11 Error: [MissingHelperException] Helper class uploadImageHelper could not be found.
+Exception Attributes: array (
+  'class' => 'uploadImageHelper',
+  'plugin' => false,
+)
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/HelperCollection.php(83): HelperCollection->load('uploadImage')
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(1209): HelperCollection->__isset('uploadImage')
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp(5): View->__get('uploadImage')
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(654): include('/Applications/X...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(615): View->_evaluate('/Applications/X...', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(734): View->_render('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-28 16:32:48 Error: Fatal Error (1): Call to undefined function image() in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp, line 5]
+2015-11-28 16:32:48 Error: [FatalErrorException] Call to undefined function image()
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 5, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 5, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:24:03 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 17:24:14 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/css/bootstrap.min.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+=======
+2015-11-28 15:52:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 15:56:01 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 15:56:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 15:56:35 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 15:58:20 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:00:39 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: EstateRoom.contracted_flag
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#6 /Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php(101): Model->find('all', Array)
+#7 [internal function]: EstateViewController->estateList('home')
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-11-28 16:00:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:00:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_41.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:00:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_33.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:00:55 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/images_2.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:07:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:07:48 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:08:24 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:08:46 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:08:47 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:10:02 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:10:03 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:10:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:10:39 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:10:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:12:17 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:13:31 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:13:34 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:17:45 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 35]
+2015-11-28 16:17:45 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 35, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 35, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:17:46 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 35]
+2015-11-28 16:17:46 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 35, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 35, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:18:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:19:31 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/images_2_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:19:41 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1images_2_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:19:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1images_2_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:20:32 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3images_2_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:20:41 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_2_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:20:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_2_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:21:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_2_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:23:03 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:23:04 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2015_11_04_11_28_00.png
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:30:34 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1/images_2_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:15 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:15 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:42 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:43 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:43 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:44 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:44 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:31:45 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:32:10 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:32:10 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:32:11 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:32:11 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:32:12 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/images_3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:32:12 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:32:41 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/image3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:32:41 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3/image3.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:33:25 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4/images_3_original.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:43:38 Error: Fatal Error (1): Call to undefined function str() in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 35]
+2015-11-28 16:43:38 Error: [FatalErrorException] Call to undefined function str()
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/do030b/p...', 35)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/do030b/p...', 35, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/do030b/p...', 35, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:44:00 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/3DS%E3%80%80images_3._thumb.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:44:00 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/4DS%E3%80%80images._thumb.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:44:15 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 35]
+2015-11-28 16:44:15 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 35, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 35, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:50:01 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 31]
+2015-11-28 16:50:01 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:50:02 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 31]
+2015-11-28 16:50:02 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:50:22 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 31]
+2015-11-28 16:50:22 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:50:23 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 31]
+2015-11-28 16:50:23 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:50:24 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 31]
+2015-11-28 16:50:24 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:50:24 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 31]
+2015-11-28 16:50:24 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:50:25 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 31]
+2015-11-28 16:50:25 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 31)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 31, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 16:53:06 Error: [MissingControllerException] Controller class RegisterController could not be found.
+Exception Attributes: array (
+  'class' => 'RegisterController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 16:58:09 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 36]
+2015-11-28 16:58:09 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 36, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 36, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:12:18 Error: Fatal Error (64): Cannot redeclare Estate::$validate in [/Users/do030b/public_html/estate-system/app/Model/Estate.php, line 60]
+2015-11-28 17:12:18 Error: [FatalErrorException] Cannot redeclare Estate::$validate
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/do030b/p...', 60)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/do030b/p...', 60, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/do030b/p...', 60, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:12:56 Error: Fatal Error (64): Cannot redeclare Estate::$validate in [/Users/do030b/public_html/estate-system/app/Model/Estate.php, line 60]
+2015-11-28 17:12:56 Error: [FatalErrorException] Cannot redeclare Estate::$validate
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/do030b/p...', 60)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/do030b/p...', 60, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/do030b/p...', 60, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:13:12 Error: Fatal Error (64): Cannot redeclare Estate::$validate in [/Users/do030b/public_html/estate-system/app/Model/Estate.php, line 62]
+2015-11-28 17:13:12 Error: [FatalErrorException] Cannot redeclare Estate::$validate
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/do030b/p...', 62)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/do030b/p...', 62, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/do030b/p...', 62, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:14:56 Error: Fatal Error (64): Cannot redeclare Estate::$validate in [/Users/do030b/public_html/estate-system/app/Model/Estate.php, line 88]
+2015-11-28 17:14:56 Error: [FatalErrorException] Cannot redeclare Estate::$validate
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/do030b/p...', 88)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/do030b/p...', 88, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/do030b/p...', 88, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:15:13 Error: Fatal Error (64): Cannot redeclare EstatePicture::$validate in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 47]
+2015-11-28 17:15:13 Error: [FatalErrorException] Cannot redeclare EstatePicture::$validate
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/do030b/p...', 47)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/do030b/p...', 47, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/do030b/p...', 47, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:15:20 Error: Fatal Error (64): Cannot redeclare Estate::$validate in [/Users/do030b/public_html/estate-system/app/Model/Estate.php, line 88]
+2015-11-28 17:15:20 Error: [FatalErrorException] Cannot redeclare Estate::$validate
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/do030b/p...', 88)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/do030b/p...', 88, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/do030b/p...', 88, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:15:30 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/Model/Estate.php, line 49]
+2015-11-28 17:15:30 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/estateregistration
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 49, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 49, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:16:58 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/do030b/public_html/estate-system/app/Model/EstatePicture.php, line 35]
+2015-11-28 17:16:58 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 35, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 35, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 17:28:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 19 NOT NULL constraint failed: estates.floor_plan_picture_file_name
+Request URL: /estate-system/estateregistration/register
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(377): PDOStatement->execute(Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('INSERT INTO "ma...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(860): DboSource->execute('INSERT INTO "ma...')
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2234): DboSource->create(Object(Estate), Array, Array)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(2045): Model->_doSave(Array, Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(3007): Model->save(Array, Array)
+#6 /Users/do030b/public_html/estate-system/app/Controller/EstateregistrationController.php(80): Model->saveAssociated(Array, Array)
+#7 [internal function]: EstateRegistrationController->register()
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateRegistrationController), Array)
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateRegistrationController), Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+>>>>>>> cbfc07dc54046a6fcd03364a8406c3f76374b723
+2015-11-28 18:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/images_3.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 18:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/images.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-28 18:49:04 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/img/estate/images_2.jpeg
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 14:17:59 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 30]
+2015-11-29 14:17:59 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 30, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 30, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 14:18:54 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 32]
+2015-11-29 14:18:54 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/?isSearch=true&rent_num=10000&area_num=1&age=true&age_num=7&button=%E9%80%81%E4%BF%A1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 32, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 32, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 14:18:59 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 32]
+2015-11-29 14:18:59 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 32, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 32, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 14:26:33 Error: [MissingControllerException] Controller class Estate-systemController could not be found.
+Exception Attributes: array (
+  'class' => 'Estate-systemController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estate-system/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 14:26:56 Error: [MissingControllerException] Controller class 1Controller could not be found.
+Exception Attributes: array (
+  'class' => '1Controller',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 14:27:21 Error: [MissingControllerException] Controller class Estate-systemController could not be found.
+Exception Attributes: array (
+  'class' => 'Estate-systemController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 14:27:24 Error: [MissingControllerException] Controller class Estate-systemController could not be found.
+Exception Attributes: array (
+  'class' => 'Estate-systemController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estate-system/EstateView/detail/3
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 14:28:15 Error: [MissingControllerException] Controller class Estate-systemController could not be found.
+Exception Attributes: array (
+  'class' => 'Estate-systemController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 14:28:18 Error: [MissingControllerException] Controller class Estate-systemController could not be found.
+Exception Attributes: array (
+  'class' => 'Estate-systemController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estate-system/EstateView/detail/3
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 14:28:30 Error: [MissingControllerException] Controller class Estate-systemController could not be found.
+Exception Attributes: array (
+  'class' => 'Estate-systemController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-29 14:30:48 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 50]
+2015-11-29 14:30:48 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 50)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 50, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 50, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 14:41:54 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 35]
+2015-11-29 14:41:54 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 35, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 35, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 14:42:07 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 35]
+2015-11-29 14:42:07 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 35)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 35, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 35, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 14:43:18 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 51]
+2015-11-29 14:43:18 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 51, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 51, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 15:01:05 Error: Fatal Error (4): parse error, expecting `"variable (T_VARIABLE)"' or `'$'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 32]
+2015-11-29 15:01:05 Error: [FatalErrorException] parse error, expecting `"variable (T_VARIABLE)"' or `'$''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 32, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 32, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
