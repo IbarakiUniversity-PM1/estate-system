@@ -1,9 +1,9 @@
 <div id="nav">
-	<h3>こうがく不動産</h3>
-	<table>
-		<thead>
-		<?php echo $this->Html->tableHeaders(array("提供不動産業者")) . PHP_EOL ?>
-		</thead>
+    <h3>こうがく不動産</h3>
+    <table>
+        <thead>
+        <?php echo $this->Html->tableHeaders(array("提供不動産業者")) . PHP_EOL ?>
+        </thead>
                 <tbody>
                 <form action="/estate-system/" method="get">
                     <p><input type="hidden" name="isSearch" value="true"</p>
@@ -52,7 +52,7 @@
                             <option value="17">17</option>
                             <option value="18">18</option>
                             <option value="19">19</option>
-                            <option value="20">20</option> 
+                            <option value="20">20</option>
                         </select> m^2以上
                     </p>
                     <p><input type="checkbox" name="age" value="true"> 築年数:
@@ -76,7 +76,7 @@
                             <option value="17">17</option>
                             <option value="18">18</option>
                             <option value="19">19</option>
-                            <option value="20">20</option> 
+                            <option value="20">20</option>
                         </select> 年以内
                     </p>
                     <p><input type="checkbox" name="common_service_pay" value="true">共益費:なし</p>
@@ -95,15 +95,15 @@
                     <p><input type="checkbox" name="chara[]" value="pet_breeding">ペット飼育:可能</p>
                     <p><input type="checkbox" name="chara[]" value="playing_an_instrument">楽器演奏:可能</p>
                     <p><input type="checkbox" name="window_direction" value="true">窓の向き:南</p>
-  
+
                     <p><input type="submit" name="button" /></p>
                     </form>
                 </tbody>
-		<tbody>
-		<?php foreach ($estate_agents as $e) {
-			$e = $e["EstateAgent"];
-			echo "		" . $this->Html->tableCells(array($e["name"] . "<br>TEL : " . $e["phone_number"])) . PHP_EOL;
-		} ?>
-		</tbody>
-	</table>
+        <tbody>
+        <?php foreach ($estate_agents as $e) {
+            $e = $e["EstateAgent"];
+            echo "        " . $this->Html->tableCells(array($e["name"] . "<br>TEL : " . $e["phone_number"])) . PHP_EOL;
+        } ?>
+        </tbody>
+    </table>
 </div>

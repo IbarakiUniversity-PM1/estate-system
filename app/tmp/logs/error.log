@@ -2161,3 +2161,125 @@ Stack Trace:
 #3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-11-29 17:11:21 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 20]
+2015-11-29 17:11:21 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/?0=2&1=0
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 20, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 20, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 17:11:29 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 20]
+2015-11-29 17:11:29 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 20, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 20, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 17:11:38 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 20]
+2015-11-29 17:11:38 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 20, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 20, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 17:11:48 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 20]
+2015-11-29 17:11:48 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 20)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 20, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 20, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 18:00:53 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 26]
+2015-11-29 18:00:53 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 26, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 26, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 18:00:54 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 26]
+2015-11-29 18:00:54 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 26, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 26, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 18:01:07 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 26]
+2015-11-29 18:01:07 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 26, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 26, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 18:01:23 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 45]
+2015-11-29 18:01:23 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 45, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 45, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 18:01:51 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 45]
+2015-11-29 18:01:51 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 45, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 45, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 18:02:18 Error: Fatal Error (4): parse error in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 45]
+2015-11-29 18:02:18 Error: [FatalErrorException] parse error
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error', '/Users/do030b/p...', 45)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/do030b/p...', 45, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/do030b/p...', 45, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 18:04:27 Error: [MissingActionException] Action EstateViewController::EstateView() could not be found.
+Exception Attributes: array (
+  'controller' => 'EstateViewController',
+  'action' => 'EstateView',
+)
+Request URL: /estate-system/EstateView/EstateView/detail/1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#2 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-29 18:05:57 Error: [MissingActionException] Action EstateViewController::detail1() could not be found.
+Exception Attributes: array (
+  'controller' => 'EstateViewController',
+  'action' => 'detail1',
+)
+Request URL: /estate-system/EstateView/detail1
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#2 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

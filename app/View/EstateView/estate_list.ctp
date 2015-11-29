@@ -5,11 +5,12 @@
 $this->assign("nav", true);
 echo $this->Form->create("Estate", array("type" => "get"));
 //debug($estates);
+
 ?>
 
 
 
-<div id="estate-list" class="preview">
+
 <table>
     <thead>
     <?php echo $this->Html->tableHeaders(
@@ -21,15 +22,19 @@ echo $this->Form->create("Estate", array("type" => "get"));
                 "間取り<br>面積",
                 "窓の向き",
                 "築年数",
-                "不動産業者名"
+                "不動産業者名",
+                "詳細画面"
             )
         ) . PHP_EOL ?>
     </thead>
-    <tbody>
+    <tbody　class ="table_scroll">
     <?php $i=0 ?>
     <?php foreach ($estates as $estate) :?>
+
+
+
         <tr data-href="EstateView/detail/<?php echo $estate["Estate"]["estate_id"]?>">
-            <td><input type="hidden" name=<?php echo $i?> id="Estate0EstateId_" value="0"/><input type="checkbox" name=<?php echo $i?> value=<?php echo $estate["Estate"]["estate_id"]?> id="Estate0EstateId"/><label for="Estate0EstateId"></label></td>
+            <td id="checkbox_td"><input type="hidden" name=<?php echo $i?> id="Estate0EstateId_" value="0"/><input type="checkbox" name=<?php echo $i?> value=<?php echo $estate["Estate"]["estate_id"]?> id="Estate0EstateId"/><label for="Estate0EstateId"></label></td>
             <td><img src="/estate-system/img/../upload/estate_pictures/<?php echo $estate["Estate"]["estate_id"]?>/<?php echo str_replace(".jpeg", "_thumb.jpeg", $estate["Estate"]["picture_file_name"]) ?>" alt="test"/></td>
             <td><?php echo $estate["Estate"]["address"]?></td>
             <td><?php echo $estate["Estate"]["rent"]?>円</td>
@@ -37,13 +42,14 @@ echo $this->Form->create("Estate", array("type" => "get"));
             <td><?php echo $estate["Estate"]["window_direction"]?></td>
             <td><?php echo $estate["Estate"]["age"]?></td>
             <td><?php echo $estate["EstateAgent"]["name"]?></td>
+            <td><?php echo $this->Html->link("詳細画面へ", array('action'=>'detail/' . $estate["Estate"]["estate_id"]))?></td>
         </tr>
         <?php $i++ ?>
     <?php endforeach;?>
 
     </tbody>
 </table>
-</div>
+
 
 <?php echo $this->Form->end();?>
 
@@ -52,6 +58,53 @@ echo $this->Form->create("Estate", array("type" => "get"));
 
 <?php $this->Html->scriptEnd(); ?>
 
-<script type="text/javascript">(function(){window.setting={styling:".preview th{background:#333333;color:#ffffff;padding:5px;}.preview tr{border-bottom:1px solid #ccc;}.preview td{border:dotted #ccc;border-width:0px 1px;padding:5px;}.preview tr:nth-child(even){background:#f6f6ff;}.clickable:hover{cursor:pointer;background:#ffddff;}"};if(setting.styling){var a=document.createElement("style"),b=document.getElementsByTagName("head")[0];a.type="text/css";try{a.appendChild(document.createTextNode(setting.styling))}catch(c){if(a.styleSheet)a.styleSheet.cssText= setting.styling}b.appendChild(a)}})();
-    jQuery(function(a){a("tr[data-href]","#estate-list, refine").addClass("clickable").click(function(b){if(!a(b.target).is("a"))window.location=a(b.target).closest("tr").data("href")});a("tbody tr[data-href]","#estate-list, refine").addClass("clickable").click(function(){window.location=a(this).attr("data-href")}).find("a").hover(function(){a(this).parents("tr").unbind("click")},function(){a(this).parents("tr").click(function(){window.location=a(this).attr("data-href")})})});</script>
+<style>
+    tbody tr:hover {
+        background: #dde1e1;
+    }
+    tbody:hover, label {
+        cursor: pointer;
+    }
+    thead{
+        background: black;
+        color: #fff;
+    }
+    tbody.table_scroll {
+        overflow-y: scroll;
+        height: 150px;
+    }
+/*
+    thead.table_head,tbody.table_scroll{
+        display: block;
+    }
+    thead.table_head {
+        background-color: #DCDCDC;
+    }
+
+    td,th{
+        text-align: left;
+        width: 120px;
+    }
+*/
+</style>
+
+
+<script type="text/javascript">
+
+    jQuery(function($) {
+        //data-hrefの属性を持つtrを選択しclassにclickableを付加
+        $('tr[data-href]').addClass('clickable')
+        //クリックイベント
+            .click(function(e) {
+            //e.targetはクリックした要素自体、それが#Estate0EstateId要素以外であれば
+            if(!$(e.target).is('#Estate0EstateId, #checkbox_td')){
+                //その要素の先祖要素で一番近いtrの
+                //data-href属性の値に書かれているURLに遷移する
+                window.location = $(e.target).closest('tr').data('href');
+            };
+        });
+    });
+</script>
+
+
 
