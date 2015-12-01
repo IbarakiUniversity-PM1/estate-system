@@ -1,7 +1,7 @@
 <?php
 
 /**
- * 検索条件指定・提供不動産業者コントローラ
+ * 物件検索条件指定・提供不動産業者コントローラ
  */
 class NavigationController extends AppController
 {
@@ -11,7 +11,7 @@ class NavigationController extends AppController
 	public $uses = array("EstateAgent");
 
 	/**
-	 * 検索条件指定・提供不動産業者
+	 * 物件検索条件指定・提供不動産業者を表示
 	 */
 	public function nav()
 	{
@@ -19,7 +19,7 @@ class NavigationController extends AppController
 		$this->EstateAgent->recursive = -1;
 		//不動産業者テーブルの内容を取得し、$estate_agentsにセット
 		$this->set("estate_agents", $this->EstateAgent->find("all"));
-		//検索条件指定・提供不動産業者用エレメントを呼び出す
+		//物件検索条件指定・提供不動産業者用エレメントを呼び出す
 		$this->render(".." . DS . "Elements" . DS . "nav");
 	}
 }

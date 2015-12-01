@@ -22,7 +22,11 @@ class Estate extends AppModel
 		"EstateCharacteristicReference",
 		"EstateFrankOpinion",
 		"EstateMainFacilitiesDistance",
-		"EstatePicture" => array('className' => 'EstatePicture', 'foreignKey' => 'estate_id', 'dependent' => true),
+		"EstatePicture" => array(
+			'className' => 'EstatePicture',
+			'foreignKey' => 'estate_id',
+			'dependent' => true
+		),
 		"EstateRoom"
 	);
 	/**
@@ -46,15 +50,15 @@ class Estate extends AppModel
 	 */
 	public $primaryKey = "estate_id";
 	/**
-	 * @var array
+	 * @var array 扱うビヘイビアのリスト
 	 */
 	public $actsAs = array(
 		'UploadPack.Upload' => array(
-			'floor_plan_picture' => array(     //ここでは、"_file_name"を除いたカラム名を書く
-				'quality' => 75,  //画質指定、デフォルトでは75
+			//ここでは、"_file_name"を除いたカラム名を書く
+			'floor_plan_picture' => array(
+				'quality' => 75, //画質指定、デフォルトでは75
 				'styles' => array('thumb' => '85x85') //リサイズしたいサイズを書く
 			)
 		)
 	);
 }
-

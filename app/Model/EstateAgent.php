@@ -13,5 +13,4 @@ class EstateAgent extends AppModel
 	 * @var string 主キー
 	 */
 	public $primaryKey = "estate_agent_id";
-
 }

@@ -5,7 +5,6 @@
  */
 class EstateRoom extends AppModel
 {
-
 	/**
 	 * @var array 自分の持つテーブルと、多対1の関係になるテーブルを持つモデル
 	 */
@@ -21,5 +20,4 @@ class EstateRoom extends AppModel
 	 * @var string 主キー
 	 */
 	public $primaryKey = "estate_room_id";
-
 }

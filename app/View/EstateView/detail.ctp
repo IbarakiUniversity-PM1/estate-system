@@ -144,3 +144,6 @@
 
 <?php echo $this->Html->image('../upload/estates/' . $estate["Estate"]["estate_id"] . '/' . str_replace(".jpeg", "_thumb.jpeg", $estate['Estate']['floor_plan_picture_file_name'])   , array("alt" => $estate["Estate"]["name"]));?>
 <?php echo $this->Html->image('../upload/estate_pictures/' . $estate["Estate"]["estate_id"] . '/' . str_replace(".jpeg", "_thumb.jpeg", $estate['EstatePicture'][0]['picture_file_name'])   , array("alt" => $estate["Estate"]["name"]));?>
+
+<?php echo $this->Html->link('内見予約画面へ', array('controller' => 'previewbook', 'action' => 'book', $estate['Estate']['estate_id'])); ?>
+
