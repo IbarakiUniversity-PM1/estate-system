@@ -38,7 +38,7 @@ class EstateRegistrationController extends AppController
 		//タイトルをセットする
 		$this->set("title_for_layout", "物件登録");
 		//プルダウンメニュー作成(不動産業者)
-		$estateAgentList = array("empty" => "なし");
+		$estateAgentList = array();
 		$estateAgents = $this->EstateAgent->find("all", array("fields" => array("estate_agent_id", "name")));
 		foreach ($estateAgents as $estateAgent) {
 			$estateAgentList = array_merge($estateAgentList, array(
@@ -48,7 +48,7 @@ class EstateRegistrationController extends AppController
 		$this->set("estateAgentList", $estateAgentList);
 
 		//プルダウンメニュー作成(取引態様)
-		$estateTradingAspectList = array("empty" => "なし");
+		$estateTradingAspectList = array();
 		$estateTradingAspects = $this->EstateTradingAspect->find("all", array("fields" => array("estate_trading_aspect_id", "name")));
 		foreach ($estateTradingAspects as $estateTradingAspect) {
 			$estateTradingAspectList = array_merge($estateTradingAspectList, array(
@@ -58,7 +58,7 @@ class EstateRegistrationController extends AppController
 		$this->set("estateTradingAspectList", $estateTradingAspectList);
 
 		// 構造
-		$estateStructureList = array("empty" => "なし");
+		$estateStructureList = array();
 		$estateStructures = $this->EstateStructure->find("all", array("fields" => array("estate_structure_id", "name")));
 		foreach ($estateStructures as $estateStructure) {
 			$estateStructureList = array_merge($estateStructureList, array(
@@ -68,7 +68,7 @@ class EstateRegistrationController extends AppController
 		$this->set("estateStructureList", $estateStructureList);
 
 		// 部屋種別
-		$estateTypeList = array("empty" => "なし");
+		$estateTypeList = array();
 		$estateTypes = $this->EstateType->find("all", array("fields" => array("estate_type_id", "name")));
 		foreach ($estateTypes as $estateType) {
 			$estateTypeList = array_merge($estateTypeList, array(
@@ -78,7 +78,7 @@ class EstateRegistrationController extends AppController
 		$this->set("estateTypeList", $estateTypeList);
 
 		// インターネット回線
-		$estateInternetTypeList = array("empty" => "なし");
+		$estateInternetTypeList = array();
 		$estateInternetTypes = $this->EstateInternetType->find("all", array("fields" => array("estate_internet_type_id", "name")));
 		foreach ($estateInternetTypes as $estateInternetType) {
 			$estateInternetTypeList = array_merge($estateInternetTypeList, array(
@@ -88,7 +88,7 @@ class EstateRegistrationController extends AppController
 		$this->set("estateInternetTypeList", $estateInternetTypeList);
 
 		// テレビ
-		$estateTvTypeList = array("empty" => "なし");
+		$estateTvTypeList = array();
 		$estateTvTypes = $this->EstateTvType->find("all", array("fields" => array("estate_tv_type_id", "name")));
 		foreach ($estateTvTypes as $estateTvType) {
 			$estateTvTypeList = array_merge($estateTvTypeList, array(
@@ -106,9 +106,10 @@ class EstateRegistrationController extends AppController
 
 			if ($this->Estate->saveAssociated($this->request->data, array('deep' => true))) {
 				/* $this->Flash->success(__('Your post has been saved.')); */
-				return $this->redirect(array('action' => 'index'));
+				$this->redirect(array('action' => 'index'));
+			} else {
+				$this->Flash->error(__('Unable to add your post.'));
 			}
-			$this->Flash->error(__('Unable to add your post.'));
 		}
 	}
 
