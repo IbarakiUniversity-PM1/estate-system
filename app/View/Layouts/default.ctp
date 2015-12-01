@@ -30,7 +30,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 	echo "		" . $this->fetch('meta') . PHP_EOL;
 	echo "		" . $this->fetch('css') . PHP_EOL;
-	echo "		" . $this->Html->script('http://code.jquery.com/jquery-1.9.1.min.js') . PHP_EOL;
+	echo "		" . $this->Html->script('http://code.jquery.com/jquery-1.11.3.min.js') . PHP_EOL;
 	echo "		" . $this->fetch('script') . PHP_EOL;
 	?>
 </head>

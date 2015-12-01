@@ -1,6 +1,5 @@
 jQuery(
 	function ($) {
-		//data-hrefの属性を持つtrを選択しclassにclickableを付加
 		$('tr[data-href]').click(
 			function (e) {
 				//e.targetはクリックした要素自体、それが#Estate0EstateId要素以外であれば

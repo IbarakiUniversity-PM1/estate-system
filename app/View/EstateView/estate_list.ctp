@@ -8,7 +8,13 @@ $this->Html->script("estate_list", array("inline" => false));
 	<thead>
 	<?php echo $this->Html->tableHeaders(
 			array(
-				$this->Form->button("絞込", array("id" => "refine")),
+				$this->Form->button(
+					"絞込",
+					array(
+						"id" => "refine",
+						"type" => "button"
+					)
+				),
 				"物件画像",
 				"住所",
 				"家賃",
