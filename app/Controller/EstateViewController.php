@@ -62,7 +62,7 @@ class EstateViewController extends AppController
 					array(
 						"Estate.estate_id = EstateMainFacilitiesDistance.estate_id",
 						//茨城大学日立キャンパスからの距離に限定する
-						"EstateMainFacilitiesDistance.estate_main_facilities_id=1"
+						"EstateMainFacilitiesDistance.estate_main_facilities_id=0"
 					)
 			);
 			//茨城大学日立キャンパスからの距離の昇順で並べる
