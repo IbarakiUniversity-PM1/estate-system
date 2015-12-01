@@ -148,9 +148,10 @@ class EstateViewController extends AppController
 		}
 	}
 
-    /**
-     * 物件詳細
-     */
+	/**
+	 * 物件詳細
+	 * @param null $id
+	 */
     public function detail($id = null)
     {
 
