@@ -2,7 +2,7 @@ jQuery(
 	function ($) {
 		$('tr[data-href]').click(
 			function (e) {
-				//e.targetはクリックした要素自体、それが#Estate0EstateId要素以外であれば
+				//e.targetはクリックした要素自体、それがestate_checkクラスか、Div以外であれば
 				if (!$(e.target).is('.estate_check') && !$(e.target).is('div')) {
 					//その要素の先祖要素で一番近いtrのdata-href属性の値に書かれているURLに遷移する
 					window.location = $(e.target).closest('tr').data('href');
