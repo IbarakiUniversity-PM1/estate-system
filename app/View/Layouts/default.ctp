@@ -24,13 +24,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 	<title><?php echo $this->fetch('title'); ?> - こうがく不動産</title>
 	<?php
-	echo "		" . $this->Html->meta('icon') . "\n";
+	echo "		" . $this->Html->meta('icon') . PHP_EOL;
 
-	echo "		" . $this->Html->css('cake.generic') . "\n";
+	echo "		" . $this->Html->css('cake.generic') . PHP_EOL;
 
-	echo "		" . $this->fetch('meta') . "\n";
-	echo "		" . $this->fetch('css') . "\n";
-	echo "		" . $this->fetch('script') . "\n";
+	echo "		" . $this->fetch('meta') . PHP_EOL;
+	echo "		" . $this->fetch('css') . PHP_EOL;
+	echo "		" . $this->fetch('script') . PHP_EOL;
+
+	echo "		" . $this->Html->script('http://code.jquery.com/jquery-1.9.1.min.js');
 	?>
 </head>
 <body>

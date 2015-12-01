@@ -9,9 +9,11 @@ class EstateViewController extends AppController
     /**
      * @var array 扱うモデルのリスト
      */
-
-        public $helpers = array("Html", "Form","Flash", "UploadPack.Upload");
-    public $uses = array(
+	public $helpers = array("Html", "Form", "Flash", "UploadPack.Upload");
+	/**
+	 * @var array
+	 */
+	public $uses = array(
         "Estate",
         "EstateAgent",
         "EstateInternetType",
@@ -29,7 +31,6 @@ class EstateViewController extends AppController
         "EstateMainFacilitiesType",
         "EstateMainFacilities"
     );
-
 
     /**
      * 物件検索・絞込・トップ画面
@@ -98,6 +99,54 @@ class EstateViewController extends AppController
         $this->set("estates", $this->Estate->find("all",$options));
     }
 
+	private function search(&$options)
+	{
+		if (!isset($_GET['rent'])
+			&& !isset($_GET['area'])
+			&& !isset($_GET['age'])
+			&& !isset($_GET['common_service_pay'])
+			&& !isset($_GET['deposit'])
+			&& !isset($_GET['key_money'])
+			&& !isset($_GET['window_direction'])
+			&& !isset($_GET['chara'])
+		) {
+			$this->redirect('/');
+		}
+
+		if (isset($_GET['rent'])) {
+			$options["conditions"]["rent <="] = $_GET['rent_num'];
+		}
+		if (isset($_GET['area'])) {
+			$options["conditions"]["area >="] = $_GET['area_num'];
+		}
+		if (isset($_GET['age'])) {
+			$options["conditions"]["area <="] = $_GET['age_num'];
+		}
+		if (isset($_GET['common_service_pay'])) {
+			$options["conditions"]["common_service_pay"] = 0;
+		}
+		if (isset($_GET['deposit'])) {
+			$options["conditions"]["deposit"] = 0;
+		}
+		if (isset($_GET['key_money'])) {
+			$options["conditions"]["key_money"] = 0;
+		}
+		if (isset($_GET['window_direction'])) {
+			$options["conditions"]["window_direction"] = '南';
+		}
+
+		//filter_input(INPUT_GET, "キー")のラッパー関数経由でアクセス法
+//                            if(filter_input(INPUT_GET, "rent")){
+//                                $options["conditions"]["rent <="] = filter_input(INPUT_GET, "rent_num");
+//                            }
+
+		if (isset($_GET['chara'])) {
+			$chara = $_GET['chara'];
+			for ($i = 0; $i < count($chara); $i++) {
+				$options["conditions"][$chara[$i]] = true;
+			}
+		}
+	}
 
     /**
      * 物件詳細
@@ -118,52 +167,4 @@ class EstateViewController extends AppController
 //            }
             $this->set('estate', $this->Estate->read());
     }
-
-        private function search(&$options){
-            if(!isset($_GET['rent'])
-                && !isset($_GET['area'])
-                && !isset($_GET['age'])
-                && !isset($_GET['common_service_pay'])
-                && !isset($_GET['deposit'])
-                && !isset($_GET['key_money'])
-                && !isset($_GET['window_direction'])
-                && !isset($_GET['chara'])
-                ){
-                    $this->redirect('/');
-                            }
-
-                            if(isset($_GET['rent'])){
-                                $options["conditions"]["rent <="] = $_GET['rent_num'];
-                            }
-                            if(isset($_GET['area'])){
-                                $options["conditions"]["area >="] = $_GET['area_num'];
-                            }
-                            if(isset($_GET['age'])){
-                                $options["conditions"]["area <="] = $_GET['age_num'];
-                            }
-                            if(isset($_GET['common_service_pay'])){
-                                $options["conditions"]["common_service_pay"] = 0;
-                            }
-                            if(isset($_GET['deposit'])){
-                                $options["conditions"]["deposit"] = 0;
-                            }
-                            if(isset($_GET['key_money'])){
-                                $options["conditions"]["key_money"] = 0;
-                            }
-                            if(isset($_GET['window_direction'])){
-                                $options["conditions"]["window_direction"] = '南';
-                            }
-
-                            //filter_input(INPUT_GET, "キー")のラッパー関数経由でアクセス法
-//                            if(filter_input(INPUT_GET, "rent")){
-//                                $options["conditions"]["rent <="] = filter_input(INPUT_GET, "rent_num");
-//                            }
-
-                            if(isset($_GET['chara'])){
-                                $chara = $_GET['chara'];
-                                for($i = 0; $i < count($chara); $i++){
-                                    $options["conditions"][$chara[$i]] = true;
-                                }
-                            }
-        }
 }
