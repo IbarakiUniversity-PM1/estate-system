@@ -121,11 +121,16 @@ p {
 #content div {
 	background: #fff;
 	display: table-cell;
+	border-left: 2px solid #555;
 	padding: 20px;
 	cursor: default;
 }
 
-#content #nav {
+#main div {
+	border-left: none;
+}
+
+#nav {
 	width: 20%;
 }
 
