@@ -31,7 +31,7 @@ class EstateRegistrationController extends AppController
 	);
 
 	/**
-	 *
+	 * 登録画面
 	 */
 	public function register()
 	{
@@ -105,15 +105,15 @@ class EstateRegistrationController extends AppController
 			var_dump($this->request->data);
 
 			if ($this->Estate->saveAssociated($this->request->data, array('deep' => true))) {
-				/* $this->Flash->success(__('Your post has been saved.')); */
-				return $this->redirect(array('action' => 'index'));
+				//$this->Flash->success(__('Your post has been saved.'));
+				$this->redirect(array('action' => 'index'));
 			}
 			$this->Flash->error(__('Unable to add your post.'));
 		}
 	}
 
 	/**
-	 *
+	 * 登録確認画面
 	 */
 	public function confirm()
 	{
@@ -121,7 +121,7 @@ class EstateRegistrationController extends AppController
 	}
 
 	/**
-	 *
+	 * 登録完了
 	 */
 	public function complete()
 	{
@@ -133,4 +133,3 @@ class EstateRegistrationController extends AppController
 		$this->set('estates', $this->Estate->find('all'));
 	}
 }
-
