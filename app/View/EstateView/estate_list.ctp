@@ -54,12 +54,12 @@ $this->Html->script("estate_list", array("inline" => false));
 					),
 					$estate["Estate"]["floor_plan"] . "<br>" . $this->Number->currency(
 						$estate["Estate"]["area"],
-						'円',
+						"m",
 						array(
 							'wholePosition' => 'after',
 							'zero' => 0,
 							'places' => 0)
-					),
+					) . "&sup2;",
 					$estate["Estate"]["window_direction"],
 					$this->Number->currency(
 						$estate["Estate"]["age"],
