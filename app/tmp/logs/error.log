@@ -2283,3 +2283,400 @@ Stack Trace:
 #1 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
 #2 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-12-01 13:52:24 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/EstateView/detail.ctp, line 148]
+2015-12-01 13:52:24 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /estate-system/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 148)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 148, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 148, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 13:56:20 Error: Fatal Error (1): Call to a member function read() on null in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 21]
+2015-12-01 13:56:20 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 13:56:33 Error: Fatal Error (1): Call to a member function read() on null in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 21]
+2015-12-01 13:56:33 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 13:57:35 Error: Fatal Error (1): Call to a member function read() on null in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 21]
+2015-12-01 13:57:35 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 13:57:59 Error: Fatal Error (1): Call to a member function read() on null in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 21]
+2015-12-01 13:57:59 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 13:58:33 Error: Fatal Error (1): Call to a member function read() on null in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 21]
+2015-12-01 13:58:33 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 13:58:56 Error: Fatal Error (1): Call to a member function read() on null in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 21]
+2015-12-01 13:58:56 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 14:00:56 Error: Fatal Error (1): Call to a member function read() on null in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 21]
+2015-12-01 14:00:56 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 14:04:11 Error: Fatal Error (1): Call to a member function read() on null in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 21]
+2015-12-01 14:04:11 Error: [FatalErrorException] Call to a member function read() on null
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Applications/X...', 21)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Applications/X...', 21, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 14:11:11 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/Previewbook/book.ctp, line 4]
+2015-12-01 14:11:11 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 4, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 4, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 14:20:53 Error: Fatal Error (4): syntax error, unexpected end of file, expecting ',' or ';' in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/Previewbook/book.ctp, line 14]
+2015-12-01 14:20:53 Error: [FatalErrorException] syntax error, unexpected end of file, expecting ',' or ';'
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 14, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 14, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 15:13:23 Error: Fatal Error (1): Unsupported operand types in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/Helper/FormHelper.php, line 1078]
+2015-12-01 15:13:23 Error: [FatalErrorException] Unsupported operand types
+Request URL: /estate-system/previewbook/book/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Applications/X...', 1078)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Applications/X...', 1078, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Applications/X...', 1078, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 15:19:40 Error: Fatal Error (4): syntax error, unexpected '}' in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 36]
+2015-12-01 15:19:40 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 36, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 36, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 15:55:22 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/Previewbook/confirm.ctp, line 23]
+2015-12-01 15:55:22 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 23, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 23, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 16:15:58 Error: Fatal Error (4): syntax error, unexpected '{' in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 32]
+2015-12-01 16:15:58 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 32, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 32, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 16:18:26 Error: Fatal Error (1): Call to undefined function ebug() in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 39]
+2015-12-01 16:18:26 Error: [FatalErrorException] Call to undefined function ebug()
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Applications/X...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Applications/X...', 39, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Applications/X...', 39, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 16:18:47 Error: Fatal Error (1): Class 'CakeEmail' not found in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php, line 40]
+2015-12-01 16:18:47 Error: [FatalErrorException] Class 'CakeEmail' not found
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(1, 'Class 'CakeEmai...', '/Applications/X...', 40)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'CakeEmai...', '/Applications/X...', 40, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 1, 'Class 'CakeEmai...', '/Applications/X...', 40, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-01 16:21:06 Error: [SocketException] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(116): CakeSocket->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(98): SmtpTransport->_connect()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/CakeEmail.php(1332): SmtpTransport->send(Object(CakeEmail))
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php(45): CakeEmail->send('\xE6\x9C\xAC\xE6\x96\x87')
+#4 [internal function]: PreviewbookController->confirm()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(PreviewbookController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(PreviewbookController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-12-01 16:27:54 Error: [SocketException] stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Peer certificate CN=`smtp.gmail.com' did not match expected CN=`ssl://smtp.gmail.com'
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Failed to enable crypto
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: unable to connect to ssl://smtp.gmail.com:465 (Unknown error)
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(116): CakeSocket->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(98): SmtpTransport->_connect()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/CakeEmail.php(1332): SmtpTransport->send(Object(CakeEmail))
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php(45): CakeEmail->send('\xE6\x9C\xAC\xE6\x96\x87')
+#4 [internal function]: PreviewbookController->confirm()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(PreviewbookController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(PreviewbookController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-12-01 16:28:57 Error: [SocketException] stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Peer certificate CN=`smtp.gmail.com' did not match expected CN=`ssl://smtp.gmail.com'
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Failed to enable crypto
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: unable to connect to ssl://smtp.gmail.com:465 (Unknown error)
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(116): CakeSocket->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(98): SmtpTransport->_connect()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/CakeEmail.php(1332): SmtpTransport->send(Object(CakeEmail))
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php(45): CakeEmail->send('\xE6\x9C\xAC\xE6\x96\x87')
+#4 [internal function]: PreviewbookController->confirm()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(PreviewbookController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(PreviewbookController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-12-01 16:36:21 Error: [SocketException] stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Peer certificate CN=`smtp.gmail.com' did not match expected CN=`ssl://smtp.gmail.com'
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Failed to enable crypto
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: unable to connect to ssl://smtp.gmail.com:465 (Unknown error)
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(116): CakeSocket->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(98): SmtpTransport->_connect()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/CakeEmail.php(1332): SmtpTransport->send(Object(CakeEmail))
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php(45): CakeEmail->send('\xE6\x9C\xAC\xE6\x96\x87')
+#4 [internal function]: PreviewbookController->confirm()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(PreviewbookController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(PreviewbookController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-12-01 16:38:40 Error: [SocketException] stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Peer certificate CN=`smtp.gmail.com' did not match expected CN=`ssl://smtp.gmail.com'
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Failed to enable crypto
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: unable to connect to ssl://smtp.gmail.com:465 (Unknown error)
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(116): CakeSocket->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(98): SmtpTransport->_connect()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/CakeEmail.php(1332): SmtpTransport->send(Object(CakeEmail))
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php(45): CakeEmail->send('\xE6\x9C\xAC\xE6\x96\x87')
+#4 [internal function]: PreviewbookController->confirm()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(PreviewbookController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(PreviewbookController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-12-01 16:46:10 Error: [SocketException] stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Peer certificate CN=`smtp.gmail.com' did not match expected CN=`ssl://smtp.gmail.com'
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: Failed to enable crypto
+stream_socket_client() [<a href='http://php.net/function.stream-socket-client'>function.stream-socket-client</a>]: unable to connect to ssl://smtp.gmail.com:465 (Unknown error)
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(116): CakeSocket->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(98): SmtpTransport->_connect()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/CakeEmail.php(1332): SmtpTransport->send(Object(CakeEmail))
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php(45): CakeEmail->send('\xE6\x9C\xAC\xE6\x96\x87')
+#4 [internal function]: PreviewbookController->confirm()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(PreviewbookController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(PreviewbookController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-12-01 17:07:12 Error: [SocketException] stream_socket_client(): Peer certificate CN=`smtp.gmail.com' did not match expected CN=`ssl://smtp.gmail.com'
+stream_socket_client(): Failed to enable crypto
+stream_socket_client(): unable to connect to ssl://smtp.gmail.com:465 (Unknown error)
+Request URL: /estate-system/previewbook/confirm
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(116): CakeSocket->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/SmtpTransport.php(98): SmtpTransport->_connect()
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Network/Email/CakeEmail.php(1332): SmtpTransport->send(Object(CakeEmail))
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/PreviewbookController.php(50): CakeEmail->send('\xE6\x9C\xAC\xE6\x96\x87')
+#4 [internal function]: PreviewbookController->confirm()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(PreviewbookController), Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(PreviewbookController), Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-12-01 17:15:17 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/estate_list
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-01 17:15:38 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/estate_list
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-01 17:16:44 Error: [MissingControllerException] Controller class EstatesController could not be found.
+Exception Attributes: array (
+  'class' => 'EstatesController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/estates/estate_list
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-01 17:16:50 Error: [MissingControllerException] Controller class PreviewbooksController could not be found.
+Exception Attributes: array (
+  'class' => 'PreviewbooksController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/previewbooks/estate_list
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-01 17:18:03 Error: [MissingControllerException] Controller class PreviewbooksController could not be found.
+Exception Attributes: array (
+  'class' => 'PreviewbooksController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/previewbooks/estate_list
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-01 17:18:07 Error: [MissingActionException] Action EstateViewController::estate_list() could not be found.
+Exception Attributes: array (
+  'controller' => 'EstateViewController',
+  'action' => 'estate_list',
+)
+Request URL: /estate-system/estateview/estate_list
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-12-01 17:18:43 Error: [MissingViewException] View file "EstateView/estatelist.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'EstateView/estatelist.ctp',
+)
+Request URL: /estate-system/estateview/estatelist
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(731): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-01 17:19:13 Error: [MissingViewException] View file "EstateView/estatelist.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'EstateView/estatelist.ctp',
+)
+Request URL: /estate-system/estateview/estatelist
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(731): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-01 17:21:34 Error: [MissingActionException] Action EstateViewController::EstateView() could not be found.
+Exception Attributes: array (
+  'controller' => 'EstateViewController',
+  'action' => 'EstateView',
+)
+Request URL: /estate-system/EstateView/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-12-01 17:21:39 Error: [MissingActionException] Action EstateViewController::EstateView() could not be found.
+Exception Attributes: array (
+  'controller' => 'EstateViewController',
+  'action' => 'EstateView',
+)
+Request URL: /estate-system/EstateView/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-12-01 17:22:17 Error: [MissingActionException] Action EstateViewController::EstateView() could not be found.
+Exception Attributes: array (
+  'controller' => 'EstateViewController',
+  'action' => 'EstateView',
+)
+Request URL: /estate-system/EstateView/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-12-01 17:22:19 Error: [MissingActionException] Action EstateViewController::EstateView() could not be found.
+Exception Attributes: array (
+  'controller' => 'EstateViewController',
+  'action' => 'EstateView',
+)
+Request URL: /estate-system/EstateView/EstateView/detail/1
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
