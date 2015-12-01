@@ -1,12 +1,12 @@
-<?php echo $this->Html->script("estate_refine"); ?>
-
 <?php
 $this->assign("nav", true);
+$this->Html->css("estate_list", array("inline" => false));
+$this->Html->script("estate_list", array("inline" => false));
 ?>
 
-<table cellspacing="0" cellpadding="0">
-    <thead>
-    <?php echo $this->Html->tableHeaders(
+<table>
+	<thead>
+	<?php echo $this->Html->tableHeaders(
 			array(
 				$this->Form->button("絞込",
 					array(
@@ -25,13 +25,15 @@ $this->assign("nav", true);
 			)
 		) . PHP_EOL ?>
 	</thead>
-	<tbody class="table_scroll">
+	<tbody>
 	<?php
 	$i = 0;
 	foreach ($estates as $estate) {
+		$option = array("data-href" => "EstateView" . DS . "detail" . DS . $estate["Estate"]["estate_id"]);
 		echo $this->Html->tableCells(
 				array(
-					$this->Form->input("estate_check" . $i,
+					$this->Form->input(
+						"estate_check" . $i,
 						array(
 							"type" => "checkbox",
 							"class" => "estate_check",
@@ -46,30 +48,19 @@ $this->assign("nav", true);
 					$estate["Estate"]["window_direction"],
 					$estate["Estate"]["age"],
 					$estate["EstateAgent"]["name"],
-					$this->Html->link("詳細画面へ", array('action' => 'detail', $estate["Estate"]["estate_id"]))
+					$this->Html->link(
+						"詳細画面へ",
+						array(
+							"action" => "detail",
+							$estate["Estate"]["estate_id"]
+						)
+					)
 				),
-				array("data-href" => "EstateView/detail/" . $estate["Estate"]["estate_id"]),
-				array("data-href" => "EstateView/detail/" . $estate["Estate"]["estate_id"])
+				$option,
+				$option
 			) . PHP_EOL;
 		$i++;
 	}
 	?>
 	</tbody>
 </table>
-
-<style>
-    tbody tr:hover {
-        background: #dde1e1;
-    }
-    tbody:hover, label {
-        cursor: pointer;
-    }
-    thead{
-        background: black;
-        color: #fff;
-    }
-    tbody.table_scroll {
-        overflow-y: scroll;
-        height: 150px;
-    }
-</style>

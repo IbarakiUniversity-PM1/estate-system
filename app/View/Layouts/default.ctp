@@ -30,9 +30,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 	echo "		" . $this->fetch('meta') . PHP_EOL;
 	echo "		" . $this->fetch('css') . PHP_EOL;
+	echo "		" . $this->Html->script('http://code.jquery.com/jquery-1.9.1.min.js') . PHP_EOL;
 	echo "		" . $this->fetch('script') . PHP_EOL;
-
-	echo "		" . $this->Html->script('http://code.jquery.com/jquery-1.9.1.min.js');
 	?>
 </head>
 <body>
@@ -52,9 +51,19 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</div>
 	<div id="footer">
 		<?php echo $this->Html->link(
-			$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+			$this->Html->image(
+				'cake.power.gif',
+				array(
+					'alt' => $cakeDescription,
+					'border' => '0'
+				)
+			),
 			'http://www.cakephp.org/',
-			array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
+			array(
+				'target' => '_blank',
+				'escape' => false,
+				'id' => 'cake-powered'
+			)
 		); ?>
 		<p><?php echo $cakeVersion; ?></p>
 	</div>
