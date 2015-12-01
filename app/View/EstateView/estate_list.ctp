@@ -44,10 +44,31 @@ $this->Html->script("estate_list", array("inline" => false));
 					),
 					$this->Html->image(".." . DS . "upload" . DS . "estate_pictures" . DS . $estate["Estate"]["estate_id"] . DS . str_replace(".jpeg", "_thumb.jpeg", $estate["Estate"]["picture_file_name"]), array("alt" => $estate["Estate"]["name"])),
 					$estate["Estate"]["address"],
-					$estate["Estate"]["rent"] . "円",
-					$estate["Estate"]["floor_plan"] . "<br>" . $estate["Estate"]["area"] . "m&sup2;",
+					$this->Number->currency(
+						$estate["Estate"]["rent"],
+						'円',
+						array(
+							'wholePosition' => 'after',
+							'zero' => "無料",
+							'places' => 0)
+					),
+					$estate["Estate"]["floor_plan"] . "<br>" . $this->Number->currency(
+						$estate["Estate"]["area"],
+						'円',
+						array(
+							'wholePosition' => 'after',
+							'zero' => 0,
+							'places' => 0)
+					),
 					$estate["Estate"]["window_direction"],
-					$estate["Estate"]["age"],
+					$this->Number->currency(
+						$estate["Estate"]["age"],
+						'年',
+						array(
+							'wholePosition' => 'after',
+							'zero' => "1年未満",
+							'places' => 0)
+					),
 					$estate["EstateAgent"]["name"],
 					$this->Html->link(
 						"詳細画面へ",

@@ -1,5 +1,3 @@
-<h2>物件登録画面</h2>
-
 <?php
 
 echo $this->Form->create('Estate', array('url' => array('controller' => 'estateregistration', 'action' => 'register'), 'enctype' => 'multipart/form-data'));

@@ -35,6 +35,8 @@ class EstateRegistrationController extends AppController
 	 */
 	public function register()
 	{
+		//タイトルをセットする
+		$this->set("title_for_layout", "物件登録");
 		//プルダウンメニュー作成(不動産業者)
 		$estateAgentList = array("empty" => "なし");
 		$estateAgents = $this->EstateAgent->find("all", array("fields" => array("estate_agent_id", "name")));
