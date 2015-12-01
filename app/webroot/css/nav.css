@@ -1,0 +1,16 @@
+#content {
+	display: table;
+}
+
+#nav {
+	width: 20%;
+}
+
+#content div {
+	display: table-cell;
+	border-left: 2px solid #555;
+}
+
+#main div {
+	border-left: none;
+}

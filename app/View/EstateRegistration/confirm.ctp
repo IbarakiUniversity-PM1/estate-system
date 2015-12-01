@@ -30,7 +30,7 @@ echo $this->Form->hidden('name');
 //echo $this->Form->value('story', array('label' => '階建'));
 //echo $this->Form->hidden('story');
 //
-//echo $this->Form->value('area', array('label' => '面積(m^2)'));
+//echo $this->Form->value('area', array('label' => '面積(m&sup2;)'));
 //echo $this->Form->hidden('area');
 //
 //echo $this->Form->value('contract_period', array('label' => '契約期間(年)'));

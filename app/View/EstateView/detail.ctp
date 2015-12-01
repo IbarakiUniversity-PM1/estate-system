@@ -39,13 +39,13 @@
   </tr>
   <tr>
     <td style="background:#ccccff">面積</td>
-    <td><?php echo h($estate['Estate']['area']); ?>m^2</td>
+    <td><?php echo h($estate['Estate']['area']); ?>m&sup2;</td>
   </tr>
   <tr>
     <td style="background:#ccccff">間取</td>
     <td><?php echo h($estate['Estate']['floor_plan']); ?></td>
   </tr>
-  
+
   <tr>
     <td style="background:#ccccff">物件構造</td>
     <td><?php echo h($estate['EstateStructure']['name']); ?></td>
@@ -73,47 +73,47 @@
 </table>
 
 
-  <?php 
+  <?php
   $str_characteristic = "";
   if($estate['Estate']['bath_toilet']){
-      $str_characteristic .= 'バストイレ:別'.PHP_EOL;    
+      $str_characteristic .= 'バストイレ:別'.PHP_EOL;
   }
   if($estate['Estate']['gas_stove']) {
-      $str_characteristic .= 'ガスキッチン:あり'.PHP_EOL;    
+      $str_characteristic .= 'ガスキッチン:あり'.PHP_EOL;
   }
   if($estate['Estate']['woman_only']) {
-      $str_characteristic .= '女性限定'.PHP_EOL;    
+      $str_characteristic .= '女性限定'.PHP_EOL;
   }
   if($estate['Estate']['student_only']) {
-      $str_characteristic .= '学生限定'.PHP_EOL;    
+      $str_characteristic .= '学生限定'.PHP_EOL;
   }
   if($estate['Estate']['room_share']) {
-      $str_characteristic .= 'ルームシェア:可能'.PHP_EOL;    
+      $str_characteristic .= 'ルームシェア:可能'.PHP_EOL;
   }
   if($estate['Estate']['laundry_area']) {
-      $str_characteristic .= '洗濯機置き場:室内'.PHP_EOL;    
+      $str_characteristic .= '洗濯機置き場:室内'.PHP_EOL;
   }
   if($estate['Estate']['air_conditioner']) {
-      $str_characteristic .= 'エアコン:あり'.PHP_EOL;    
+      $str_characteristic .= 'エアコン:あり'.PHP_EOL;
   }
   if($estate['Estate']['elevator']) {
-      $str_characteristic .= 'エレベータ:あり'.PHP_EOL;    
+      $str_characteristic .= 'エレベータ:あり'.PHP_EOL;
   }
   if($estate['Estate']['auto_lock']) {
-      $str_characteristic .= 'オートロック:あり'.PHP_EOL;    
+      $str_characteristic .= 'オートロック:あり'.PHP_EOL;
   }
   if($estate['Estate']['interphone']) {
-      $str_characteristic .= 'インターホン:あり'.PHP_EOL;    
+      $str_characteristic .= 'インターホン:あり'.PHP_EOL;
   }
   if($estate['Estate']['pet_breeding']) {
-      $str_characteristic .= 'ペット飼育:可能'.PHP_EOL;    
+      $str_characteristic .= 'ペット飼育:可能'.PHP_EOL;
   }
   if($estate['Estate']['playing_an_instrument']) {
-      $str_characteristic .= '楽器演奏:可能'.PHP_EOL;    
+      $str_characteristic .= '楽器演奏:可能'.PHP_EOL;
   }
-  
+
   ?>
-  
+
   <table border="1" rules="all" style="width: 200px; height: 100px;;">
     <caption>特徴</caption>
     <tr>
@@ -146,3 +146,4 @@
 <?php echo $this->Html->image('../upload/estate_pictures/' . $estate["Estate"]["estate_id"] . '/' . str_replace(".jpeg", "_thumb.jpeg", $estate['EstatePicture'][0]['picture_file_name'])   , array("alt" => $estate["Estate"]["name"]));?>
 
 <?php echo $this->Html->link('内見予約画面へ',array('controller' => 'previewbook', 'action'=>'book',$estate['Estate']['estate_id'])); ?>
+

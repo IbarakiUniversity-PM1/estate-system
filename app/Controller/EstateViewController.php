@@ -7,11 +7,11 @@ class EstateViewController extends AppController
 {
 
     /**
-     * @var array 扱うモデルのリスト
+	 * @var array 扱うヘルパーのリスト
      */
 	public $helpers = array("Html", "Form", "Flash", "UploadPack.Upload");
 	/**
-	 * @var array
+	 * @var array 扱うモデルのリスト
 	 */
 	public $uses = array(
         "Estate",
