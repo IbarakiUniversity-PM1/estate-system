@@ -3,7 +3,7 @@
 /**
  * 内見予約モデル
  */
-class Previewbook extends AppModel
+class PreviewBook extends AppModel
 {
 	/**
 	 * @var bool テーブルを使うかどうか
