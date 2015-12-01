@@ -118,7 +118,7 @@ p {
 	display: table;
 }
 
-#content div {
+#nav, #main {
 	background: #fff;
 	display: table-cell;
 	padding: 20px;
