@@ -115,23 +115,17 @@ p {
 	clear: both;
 	color: #333;
 	overflow: auto;
-	display: table;
 }
 
 #content div {
 	background: #fff;
-	display: table-cell;
 	border-left: 2px solid #555;
 	padding: 20px;
-	cursor: default;
 }
 
 #main div {
 	border-left: none;
-}
-
-#nav {
-	width: 20%;
+	cursor: default;
 }
 
 #footer {

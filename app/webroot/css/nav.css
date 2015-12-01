@@ -1,0 +1,11 @@
+#content {
+	display: table;
+}
+
+#nav {
+	width: 20%;
+}
+
+#content div {
+	display: table-cell;
+}
