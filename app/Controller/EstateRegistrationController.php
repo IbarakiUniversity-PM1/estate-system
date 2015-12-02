@@ -6,15 +6,6 @@
 class EstateRegistrationController extends AppController
 {
 	/**
-	 * @var array 扱うヘルパーのリスト
-	 */
-	/*public $helpers = array(
-		"Html",
-		"Form",
-		"Flash",
-		"UploadPack.Upload"
-	);*/
-	/**
 	 * @var array 扱うモデルのリスト
 	 */
 	public $uses = array(
@@ -97,7 +88,7 @@ class EstateRegistrationController extends AppController
 				//$this->Flash->success(__('Your post has been saved.'));
 				$this->redirect(array('action' => 'index'));
 			}
-			$this->Flash->error(__('Unable to add your post.'));
+			$this->Flash->error('Unable to add your post.');
 		}
 	}
 
