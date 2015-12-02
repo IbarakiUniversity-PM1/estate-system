@@ -104,6 +104,13 @@ class Estate extends AppModel
 				"message" => "必須項目です。"
 			)
 		),
+		"parking_fee" => array(
+			array(
+				"rule" => "notEmpty",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		),
 		"area" => array(
 			array(
 				"rule" => "notEmpty",

@@ -1,4 +1,5 @@
 <?php
+$this->Html->script("estate_registration/register", array("inline" => false));
 echo $this->Form->create(
 	"Estate",
 	array(
@@ -64,7 +65,10 @@ echo $this->Form->input(
 );
 echo $this->Form->input(
 	"Estate.parking_fee",
-	array("label" => "駐車場料金(円)")
+	array(
+		"label" => "駐車場料金(円)",
+		"div" => array("id" => "EstateParkingFeeDiv")
+	)
 );
 echo $this->Form->input(
 	"Estate.estate_trading_aspect_id",

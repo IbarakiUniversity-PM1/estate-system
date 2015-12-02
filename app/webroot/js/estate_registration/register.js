@@ -1,25 +1,22 @@
 jQuery(
 	function ($) {
-		$('tr[data-href]').click(
-			function (e) {
-				//e.targetはクリックした要素自体、それがestate_checkクラスか、Div以外であれば
-				if (!$(e.target).is('.estate_check') && !$(e.target).is('div')) {
-					//その要素の先祖要素で一番近いtrのdata-href属性の値に書かれているURLに遷移する
-					window.location = $(e.target).closest('tr').data('href');
-				}
+		//駐車場フラグを変更したときの挙動
+		var $estate_parking_flag_function = function () {
+			if ($('#EstateParkingFlag').is(':checked')) { //駐車場フラグが立っているとき
+				//駐車場料金の入力フォームを表示
+				$('#EstateParkingFeeDiv').show();
+			} else { //駐車場フラグが降ろされているとき
+				//駐車場料金の入力フォームを隠す
+				$('#EstateParkingFeeDiv').hide();
 			}
-		);
-		$('#refine').click(
-			function () {
-				var $tr;
-				for (var $i = 0; $i < $('.estate_check').length; $i++) {
-					if (!$('.estate_check')[$i].checked) {
-						$tr = $('.estate_check')[$i].parentNode.parentNode.parentNode;
-						$tr.parentNode.deleteRow($tr.sectionRowIndex);
-						$i--;
-					}
-				}
+			//もし、駐車場料金の入力フォームが空ならば、『0』をセットする
+			if ($('#EstateParkingFee').val() === '') {
+				$('#EstateParkingFee').val(0);
 			}
-		);
+		};
+		//駐車場フラグを変更したときの挙動をセット
+		$('#EstateParkingFlag').click($estate_parking_flag_function);
+		//駐車場フラグを変更したときの挙動を実行
+		$estate_parking_flag_function();
 	}
 );
