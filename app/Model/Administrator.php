@@ -23,7 +23,7 @@ class Administrator extends AppModel
 				"message" => "10文字以内です。"
 			),
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
@@ -38,7 +38,7 @@ class Administrator extends AppModel
 				"message" => "50文字以内です。"
 			),
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
@@ -53,7 +53,7 @@ class Administrator extends AppModel
 				"message" => "300文字以内です。"
 			),
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)

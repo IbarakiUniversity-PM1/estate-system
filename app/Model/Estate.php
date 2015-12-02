@@ -35,14 +35,14 @@ class Estate extends AppModel
 	public $validate = array(
 		"estate_trading_aspect_id" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"estate_agent_id" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
@@ -53,7 +53,7 @@ class Estate extends AppModel
 				"message" => "50文字以内です。"
 			),
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
@@ -64,56 +64,56 @@ class Estate extends AppModel
 				"message" => "100文字以内です。"
 			),
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"rent" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"deposit" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"key_money" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"common_service_pay" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"parking_flag" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"parking_fee" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"area" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
@@ -128,14 +128,14 @@ class Estate extends AppModel
 				"message" => "5文字以内です。"
 			),
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"story" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
@@ -146,7 +146,7 @@ class Estate extends AppModel
 				"message" => "100文字以内です。"
 			),
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)

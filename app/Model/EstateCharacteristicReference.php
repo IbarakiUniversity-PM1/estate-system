@@ -18,14 +18,14 @@ class EstateCharacteristicReference extends AppModel
 	public $validate = array(
 		"estate_id" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"estate_characteristic_id" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)

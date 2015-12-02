@@ -19,7 +19,7 @@ class EstateMainFacilities extends AppModel
 	public $validate = array(
 		"estate_main_facilities_type_id" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)

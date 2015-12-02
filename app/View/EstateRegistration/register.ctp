@@ -3,7 +3,10 @@ $this->Html->script("estate_registration/register", array("inline" => false));
 echo $this->Form->create(
 	"Estate",
 	array(
-		"url" => array("action" => "confirm"),
+		"url" => array(
+			"controller" => "EstateRegistration",
+			"action" => "confirm"
+		),
 		"enctype" => "multipart/form-data"
 	)
 );

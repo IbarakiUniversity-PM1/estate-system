@@ -18,7 +18,7 @@ class EstateRoom extends AppModel
 	public $validate = array(
 		"estate_id" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
@@ -29,14 +29,14 @@ class EstateRoom extends AppModel
 				"message" => "10文字以内です。"
 			),
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		),
 		"contracted_flag" => array(
 			array(
-				"rule" => "notEmpty",
+				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
