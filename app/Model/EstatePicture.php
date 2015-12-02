@@ -12,7 +12,28 @@ class EstatePicture extends AppModel
 	/**
 	 * @var array 入力チェックの定義
 	 */
-	public $validate = array();
+	public $validate = array(
+		"estate_id" => array(
+			array(
+				"rule" => "notEmpty",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		),
+		"file_name" => array(
+			array(
+				"rule" => array("maxLength", 100),
+				"message" => "100文字以内です。"
+			)
+		),
+		"thumbnail_flag" => array(
+			array(
+				"rule" => "notEmpty",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		)
+	);
 	/**
 	 * @var string 主キー
 	 */

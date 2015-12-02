@@ -16,7 +16,21 @@ class EstateMainFacilities extends AppModel
 	/**
 	 * @var array 入力チェックの定義
 	 */
-	public $validate = array();
+	public $validate = array(
+		"estate_main_facilities_type_id" => array(
+			array(
+				"rule" => "notEmpty",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		),
+		"name" => array(
+			array(
+				"rule" => array("maxLength", 30),
+				"message" => "30文字以内です。"
+			)
+		)
+	);
 	/**
 	 * @var string 主キー
 	 */

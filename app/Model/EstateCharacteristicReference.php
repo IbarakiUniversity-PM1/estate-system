@@ -15,7 +15,22 @@ class EstateCharacteristicReference extends AppModel
 	/**
 	 * @var array 入力チェックの定義
 	 */
-	public $validate = array();
+	public $validate = array(
+		"estate_id" => array(
+			array(
+				"rule" => "notEmpty",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		),
+		"estate_characteristic_id" => array(
+			array(
+				"rule" => "notEmpty",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		)
+	);
 	/**
 	 * @var string 主キー
 	 */
