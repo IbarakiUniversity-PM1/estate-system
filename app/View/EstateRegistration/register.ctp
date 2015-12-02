@@ -27,12 +27,12 @@ echo $this->Form->input(
 	array("label" => "家賃(円)")
 );
 echo $this->Form->input(
-	"Estate.key_money",
-	array("label" => "礼金(円)")
-);
-echo $this->Form->input(
 	"Estate.deposit",
 	array("label" => "敷金(円)")
+);
+echo $this->Form->input(
+	"Estate.key_money",
+	array("label" => "礼金(円)")
 );
 echo $this->Form->input(
 	"Estate.common_service_pay",
@@ -60,7 +60,7 @@ echo $this->Form->input(
 );
 echo $this->Form->input(
 	"Estate.parking_flag",
-	array("label" => "駐車場料金有り")
+	array("label" => "駐車場")
 );
 echo $this->Form->input(
 	"Estate.parking_fee",

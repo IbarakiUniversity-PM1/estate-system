@@ -1,5 +1,5 @@
 <?php $this->assign("nav", true) ?>
-<?php echo $this->Html->css(array('detail'), false, array('inline'=>false)); ?>
+<?php echo $this->Html->css(array('estate_view/detail'), false, array('inline' => false)); ?>
 <?php debug($estate);
 ?>
 

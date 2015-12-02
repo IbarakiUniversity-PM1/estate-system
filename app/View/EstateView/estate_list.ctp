@@ -1,7 +1,7 @@
 <?php
 $this->assign("nav", true);
-$this->Html->css("estate_list", array("inline" => false));
-$this->Html->script("estate_list", array("inline" => false));
+$this->Html->css("estate_view/estate_list", array("inline" => false));
+$this->Html->script("estate_view/estate_list", array("inline" => false));
 ?>
 
 <table>
