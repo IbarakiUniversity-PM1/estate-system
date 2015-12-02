@@ -80,15 +80,11 @@ class EstateRegistrationController extends AppController
 	 */
 	public function confirm()
 	{
-		if ($this->request->is('post')) {
-			$this->Estate->create();
-			var_dump($this->request->data);
+		// タイトルをセットする
+		$this->set("title_for_layout", "物件登録確認");
 
-			if ($this->Estate->saveAssociated($this->request->data, array('deep' => true))) {
-				//$this->Flash->success(__('Your post has been saved.'));
-				$this->redirect(array('action' => 'index'));
-			}
-			$this->Flash->error('Unable to add your post.');
+		if ($this->request->is('post')) {
+			$this->set("Data", $this->request->data);
 		}
 	}
 
@@ -97,7 +93,12 @@ class EstateRegistrationController extends AppController
 	 */
 	public function complete()
 	{
-
+		if ($this->request->is('post')) {
+			$this->Estate->create();
+			if ($this->Estate->saveAssociated($this->request->data, array('deep' => true))) {
+				$this->redirect(array('action' => 'index'));
+			}
+		}
 	}
 
 	public function index()
