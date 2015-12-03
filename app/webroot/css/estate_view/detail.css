@@ -3,6 +3,7 @@
 .sampleTable {
     border-collapse: collapse;
     table-layout: fixed;
+
 }
 .sampleTable th,
 .sampleTable td {
@@ -15,11 +16,61 @@
 }
 
 .sampleTable table {
-  width: 200px;
+    width: 200px;
+    margin-left: 0px;
 }
+
+#estate_contents{
+    width: auto;
+}
+
 #base {
+    width: 250px;
+    margin-left: 0px;
+    float: left;
+}
 
-	width: 400px;
+#distance{
+    width: auto;
+    margin: auto auto;
+    float: left;
 }
 
 
+#char {
+    width: auto;
+    margin-right: 0px;
+    float: left;
+}
+
+#room {
+    margin: 0 auto;
+    float: left;
+}
+
+#opinion_agent{
+
+}
+
+#opinion_owner{
+
+}
+
+#opinion_resident{
+
+}
+
+
+#estate_img img{
+    width: 240px;
+    height: 180px;
+}
+#floor_img img{
+    width: 240px;
+    height: 180px;
+}
+
+#gmap{
+    width: 240px;
+    height: 180px;
+}
