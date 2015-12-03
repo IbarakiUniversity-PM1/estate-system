@@ -166,7 +166,6 @@ table {
 	color: #333;
 	margin-bottom: 10px;
 	width: 100%;
-	table-layout: fixed;
 	border-collapse:collapse;
 	border:0;
 }
@@ -376,7 +375,7 @@ form div.submit {
 	margin-top: 10px;
 }
 
-label {
+label, .label {
 	display: block;
 	font-size: 110%;
 	margin-bottom: 3px;

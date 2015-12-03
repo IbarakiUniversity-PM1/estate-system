@@ -7,3 +7,7 @@ tbody tr:hover {
 tbody:hover {
 	cursor: pointer;
 }
+
+.uniformity {
+	table-layout: fixed;
+}
