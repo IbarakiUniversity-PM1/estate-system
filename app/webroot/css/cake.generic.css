@@ -455,6 +455,10 @@ form .submit input[type=submit]:hover {
 	background: #5BA150;
 }
 
+form button:hover {
+	background: #E3EAE2;
+}
+
 /* Form errors */
 form .error {
 	background: #FFDACC;
