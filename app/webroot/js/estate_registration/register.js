@@ -35,9 +35,9 @@ jQuery(
 				};
 				reader.readAsDataURL(file);
 				//対象が物件画像であるとき、行を増やす
-				if ($(e.target.parentNode.parentNode.parentNode.parentNode).is('#estate_pictures')) {
-					$(e.target.parentNode.parentNode.parentNode).append($(e.target.parentNode.parentNode).html());
-				}
+				/*if ($(e.target.parentNode.parentNode.parentNode.parentNode).is('#estate_pictures')) {
+				 $(e.target.parentNode.parentNode.parentNode).append($(e.target.parentNode.parentNode.parentNode).html());
+				 }*/
 			} else { //画像でないとき
 				$(e.target.parentNode.parentNode).find('.previews').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
 			}
