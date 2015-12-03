@@ -28,11 +28,14 @@ jQuery(
 			if (file.type.match('image.*')) { //画像であるとき
 				var reader = new FileReader();
 				reader.onload = function () {
-					$(e.target.parentNode).find('.previews').html($('<img>').attr('src', reader.result));
+					$(e.target.parentNode.parentNode).find('.previews').html($('<img>').attr('src', reader.result));
 				};
 				reader.readAsDataURL(file);
+				if ($(e.target.parentNode.parentNode.parentNode.parentNode).is('#estate_pictures')) {
+					$(e.target.parentNode.parentNode.parentNode).append($(e.target.parentNode.parentNode).html());
+				}
 			} else { //画像でないとき
-				$(e.target.parentNode).find('.previews').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
+				$(e.target.parentNode.parentNode).find('.previews').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
 			}
 		});
 	}

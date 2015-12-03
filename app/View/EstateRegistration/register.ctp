@@ -114,34 +114,73 @@ echo $this->Form->input(
 		"options" => array($estateTvTypeList)
 	)
 );
-echo $this->Form->input(
-	"Estate.floor_plan_picture",
-	array(
-		"type" => "file",
-		"label" => "間取り図(jpeg)" . PHP_EOL .
+echo $this->Html->div("label", "間取り図(jpeg)");
+?>
+<table>
+	<thead>
+	<?php echo $this->Html->tableHeaders(
+			array(
+				"プレビュー",
+				"ファイル名"
+			)
+		) . PHP_EOL ?>
+	</thead>
+	<tbody>
+	<?php echo $this->Html->tablecells(
+			array(
+				$this->Html->div(
+					"previews",
+					"指定なし"
+				),
+				$this->Form->input(
+					"Estate.floor_plan_picture",
+					array(
+						"type" => "file",
+						"label" => false,
+						"div" => false
+					)
+				)
+			)
+		) . PHP_EOL ?>
+	</tbody>
+</table>
+<?php echo $this->Html->div("label", "物件画像(jpeg)") ?>
+<table id="estate_pictures">
+	<thead>
+	<?php echo $this->Html->tableHeaders(
+			array(
+				"サムネイル",
+				"プレビュー",
+				"ファイル名"
+			)
+		) . PHP_EOL ?>
+	</thead>
+	<tbody>
+	<?php echo $this->Html->tablecells(
+			array(
+				$this->Form->input(
+					"EstatePicture.0.thumbnail_flag",
+					array(
+						"label" => false,
+						"div" => false)
+				),
 			$this->Html->div(
 				"previews",
 				"指定なし"
+			),
+				$this->Form->input(
+					"EstatePicture.0.picture",
+					array(
+						"type" => "file",
+						"label" => false,
+						"div" => false
+					)
 			)
-	)
-);
-echo $this->Form->input(
-	"EstatePicture.0.picture",
-	array(
-		"type" => "file",
-		"label" => "物件画像(jpeg)" . PHP_EOL .
-			$this->Html->div(
-				"previews",
-				"指定なし"
 			)
-	)
-);
-echo $this->Form->input(
-	"EstatePicture.0.thumbnail_flag",
-	array(
-		"label" => "サムネイル"
-	)
-);
+		) . PHP_EOL ?>
+	</tbody>
+</table>
+<?php
 echo $this->Form->input(
 	"frank_opinion_agent",
 	array(
