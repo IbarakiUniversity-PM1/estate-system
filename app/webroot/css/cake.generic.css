@@ -168,6 +168,7 @@ table {
 	width: 100%;
 	border-collapse:collapse;
 	border:0;
+	table-layout: fixed;
 }
 
 thead{
@@ -215,10 +216,6 @@ td.actions {
 table td.actions a {
 	margin: 0 6px;
 	padding: 2px 5px;
-}
-
-table img {
-	width: 100%;
 }
 
 /* SQL log */

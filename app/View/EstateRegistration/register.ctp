@@ -164,10 +164,10 @@ echo $this->Html->div("label", "間取り図(jpeg)");
 						"label" => false,
 						"div" => false)
 				),
-			$this->Html->div(
-				"previews",
-				"指定なし"
-			),
+				$this->Html->div(
+					"previews",
+					"指定なし"
+				),
 				$this->Form->input(
 					"EstatePicture.0.picture",
 					array(
