@@ -1,4 +1,5 @@
 <?php
+$this->Html->css("estate_registration/register", array("inline" => false));
 $this->Html->script("estate_registration/register", array("inline" => false));
 echo $this->Form->create(
 	"Estate",
@@ -119,7 +120,7 @@ echo $this->Form->input(
 		"type" => "file",
 		"label" => "間取り図(jpeg)" . PHP_EOL .
 			$this->Html->div(
-				"images",
+				"previews",
 				"指定なし"
 			)
 	)
@@ -130,7 +131,7 @@ echo $this->Form->input(
 		"type" => "file",
 		"label" => "物件画像(jpeg)" . PHP_EOL .
 			$this->Html->div(
-				"images",
+				"previews",
 				"指定なし"
 			)
 	)

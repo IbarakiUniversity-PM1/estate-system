@@ -28,14 +28,11 @@ jQuery(
 			if (file.type.match('image.*')) { //画像であるとき
 				var reader = new FileReader();
 				reader.onload = function () {
-					$(e.target.parentNode).find('.images').html($('<img>').attr({
-						'src': reader.result,
-						'width': '150px'
-					}));
+					$(e.target.parentNode).find('.previews').html($('<img>').attr('src', reader.result));
 				};
 				reader.readAsDataURL(file);
 			} else { //画像でないとき
-				$(e.target.parentNode).find('.images').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
+				$(e.target.parentNode).find('.previews').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
 			}
 		});
 	}
