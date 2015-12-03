@@ -429,10 +429,16 @@ input[type=radio] {
 	line-height: 26px;
 }
 
-input[type=submit] {
+input[type=submit],
+button {
 	display: inline;
 	font-size: 110%;
 	width: auto;
+}
+
+form .submit input[type=submit],
+form button {
+	padding: 8px 10px;
 }
 
 form .submit input[type=submit] {
@@ -443,7 +449,6 @@ form .submit input[type=submit] {
 	border-color: #2d6324;
 	color: #fff;
 	text-shadow: rgba(0, 0, 0, 0.5) 0 -1px 0;
-	padding: 8px 10px;
 }
 
 form .submit input[type=submit]:hover {
@@ -595,6 +600,7 @@ p.error em {
 
 /* Buttons and button links */
 input[type=submit],
+button,
 .actions ul li a,
 .actions a {
 	font-weight: normal;
@@ -629,6 +635,7 @@ input[type=submit],
 }
 
 input[type=submit]:active,
+button:active,
 .actions ul li a:active,
 .actions a:active {
 	background: #eee;
