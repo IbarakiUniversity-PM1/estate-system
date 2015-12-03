@@ -124,10 +124,15 @@ echo $this->Form->input(
 	"EstatePicture.0.picture",
 	array(
 		"type" => "file",
-		"label" => "画像(jpeg)"
+		"label" => "物件画像(jpeg)"
 	)
 );
-echo $this->Form->input("EstatePicture.0.thumbnail_flag");
+echo $this->Form->input(
+	"EstatePicture.0.thumbnail_flag",
+	array(
+		"label" => "サムネイル"
+	)
+);
 echo $this->Form->input(
 	"frank_opinion_agent",
 	array(
@@ -197,5 +202,9 @@ echo $this->Form->input(
 	"playing_an_instrument",
 	array("label" => "楽器演奏可")
 );
-echo $this->Form->end("登録");
+echo $this->Html->div(
+	"buttons",
+	$this->Form->submit("登録")
+);
+$this->Form->end();
 ?>

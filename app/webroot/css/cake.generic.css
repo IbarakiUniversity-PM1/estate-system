@@ -853,3 +853,13 @@ pre {
 #url-rewriting-warning {
 	display: none;
 }
+
+.buttons {
+	width: 100%;
+	display: table;
+}
+
+.buttons div {
+	display: table-cell;
+	text-align: center;
+}

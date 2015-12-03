@@ -69,12 +69,20 @@ echo $this->Form->hidden("EstatePicture.picture");
 ?>
 <h3>上記の内容でよろしいですか？</h3>
 <?php
-echo $this->Form->submit("はい");
-echo $this->Form->button(
-	"いいえ",
-	array(
-		"onClick" => "history.back()",
-		"type" => "button"
+echo $this->Html->div(
+	"buttons",
+	$this->Form->submit(
+		"はい"
+	) . PHP_EOL .
+	$this->Html->div(
+		"",
+		$this->Form->button(
+			"いいえ",
+			array(
+				"onClick" => "history.back()",
+				"type" => "button"
+			)
+		)
 	)
-)
+);
 ?>
