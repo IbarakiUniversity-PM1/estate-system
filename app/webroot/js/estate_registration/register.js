@@ -14,9 +14,29 @@ jQuery(
 				$('#EstateParkingFee').val(0);
 			}
 		};
+
 		//駐車場フラグを変更したときの挙動をセット
 		$('#EstateParkingFlag').click($estate_parking_flag_function);
+
 		//駐車場フラグを変更したときの挙動を実行
 		$estate_parking_flag_function();
+
+		// アップロードするファイルを選択
+		$('input[type=file]').change(function (e) {
+			var file = $(e.target).prop('files')[0];
+
+			if (file.type.match('image.*')) { //画像であるとき
+				var reader = new FileReader();
+				reader.onload = function () {
+					$(e.target.parentNode).find('.images').html($('<img>').attr({
+						'src': reader.result,
+						'width': '150px'
+					}));
+				};
+				reader.readAsDataURL(file);
+			} else { //画像でないとき
+				$(e.target.parentNode).find('.images').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
+			}
+		});
 	}
 );

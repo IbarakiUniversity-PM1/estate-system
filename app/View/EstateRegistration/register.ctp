@@ -117,14 +117,22 @@ echo $this->Form->input(
 	"Estate.floor_plan_picture",
 	array(
 		"type" => "file",
-		"label" => "間取り図(jpeg)"
+		"label" => "間取り図(jpeg)" . PHP_EOL .
+			$this->Html->div(
+				"images",
+				"指定なし"
+			)
 	)
 );
 echo $this->Form->input(
 	"EstatePicture.0.picture",
 	array(
 		"type" => "file",
-		"label" => "物件画像(jpeg)"
+		"label" => "物件画像(jpeg)" . PHP_EOL .
+			$this->Html->div(
+				"images",
+				"指定なし"
+			)
 	)
 );
 echo $this->Form->input(
