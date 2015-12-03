@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 tbody tr:hover {
 	background: #dde1e1;
 }

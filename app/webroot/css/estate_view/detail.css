@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .sampleTable {
     border-collapse: collapse;
     table-layout: fixed;
@@ -16,8 +18,8 @@
   width: 200px;
 }
 #base {
-          
-          width: 400px;
+
+	width: 400px;
 }
 
 
