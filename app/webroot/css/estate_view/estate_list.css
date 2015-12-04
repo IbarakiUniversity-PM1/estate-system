@@ -1,13 +1,13 @@
 @charset "utf-8";
 
 table img {
-	width: 100%;
+    width: 100%;
 }
 
 tbody:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 tbody tr:hover {
-	background: #dde1e1;
+    background: #dde1e1;
 }

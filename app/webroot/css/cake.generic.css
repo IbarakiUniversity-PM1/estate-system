@@ -870,3 +870,7 @@ pre {
 	display: table-cell;
 	text-align: center;
 }
+
+.model {
+	display: none;
+}

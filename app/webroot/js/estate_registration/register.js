@@ -1,7 +1,7 @@
 jQuery(
-	function ($) {
+	function () {
 		//駐車場フラグを変更したときの挙動
-		var $estate_parking_flag_function = function () {
+		function estate_parking_flag_function() {
 			if ($('#EstateParkingFlag').is(':checked')) { //駐車場フラグが立っているとき
 				//駐車場料金の入力フォームを表示
 				$('#EstateParkingFeeDiv').show();
@@ -13,15 +13,40 @@ jQuery(
 			if ($('#EstateParkingFee').val() === '') {
 				$('#EstateParkingFee').val(0);
 			}
-		};
-
+		}
 		//駐車場フラグを変更したときの挙動をセット
-		$('#EstateParkingFlag').click($estate_parking_flag_function);
+		$('#EstateParkingFlag').click(estate_parking_flag_function);
 
 		//駐車場フラグを変更したときの挙動を実行
-		$estate_parking_flag_function();
+		estate_parking_flag_function();
 
-		// アップロードするファイルを選択
+		//物件画像のidとnameにナンバリングを行う
+		function numbering_estate_pictures() {
+			var $i = 0;
+			//ひな形と同一のidとnameをセット
+			$('#estate_pictures').find('tbody tr').each(function () {
+				$(this).find('input').each(function () {
+					$(this).attr({
+						'id': $('.model').find('input[type=' + $(this).attr('type') + ']').attr('id'),
+						'name': $('.model').find('input[type=' + $(this).attr('type') + ']').attr('name')
+					});
+				});
+				$i++;
+			});
+			//2行以上あるならば、idとnameのナンバリングを行う
+			if (1 < $i) {
+				$('#estate_pictures').find('tbody tr').each(function (i, e) {
+					$(e).find('input').each(function () {
+						$(this).attr({
+							'id': $(this).attr('id') + i,
+							'name': $(this).attr('name') + '[' + i + ']'
+						});
+					});
+				});
+			}
+		}
+
+		// アップロードするファイルを選択したときの挙動をセット
 		$('input[type=file]').change(function (e) {
 			var file = $(e.target).prop('files')[0];
 
@@ -34,13 +59,22 @@ jQuery(
 					}));
 				};
 				reader.readAsDataURL(file);
-				//対象が物件画像であるとき、行を増やす
-				/*if ($(e.target.parentNode.parentNode.parentNode.parentNode).is('#estate_pictures')) {
-				 $(e.target.parentNode.parentNode.parentNode).append($(e.target.parentNode.parentNode.parentNode).html());
-				 }*/
+				//対象が物件画像であるとき、行を増やし、idとnameのナンバリングを行う
+				if ($(e.target.parentNode.parentNode.parentNode.parentNode).is('#estate_pictures')) {
+					$(e.target.parentNode.parentNode.parentNode).append($('.model tbody').html());
+					numbering_estate_pictures();
+				}
 			} else { //画像でないとき
 				$(e.target.parentNode.parentNode).find('.previews').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
 			}
+		});
+
+		//登録ボタンを押下したときの挙動をセット
+		$('#confirm').click(function () {
+			$('.buttons').innerHTML = '';
+			$('.buttons').append($('input', {
+				'class': 'submit'
+			}));
 		});
 	}
 );

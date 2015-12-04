@@ -131,10 +131,9 @@ echo $this->Html->div("label", "間取り図(jpeg)");
 					"previews",
 					"指定なし"
 				),
-				$this->Form->input(
+				$this->Form->file(
 					"Estate.floor_plan_picture",
 					array(
-						"type" => "file",
 						"label" => false,
 						"div" => false
 					)
@@ -143,8 +142,17 @@ echo $this->Html->div("label", "間取り図(jpeg)");
 		) . PHP_EOL ?>
 	</tbody>
 </table>
-<?php echo $this->Html->div("label", "物件画像(jpeg)") ?>
-<table id="estate_pictures">
+<?php
+echo $this->Html->div("label", "物件画像(jpeg)");
+for ($i = 0; $i < 2; $i++) { ?>
+	<table <?php
+	if ($i == 0) {
+		echo "class=\"model\"";
+	} else {
+		echo "id=\"estate_pictures\"";
+	}
+	?>>
+		<?php if ($i == 1) { ?>
 	<thead>
 	<?php echo $this->Html->tableHeaders(
 			array(
@@ -154,32 +162,34 @@ echo $this->Html->div("label", "間取り図(jpeg)");
 			)
 		) . PHP_EOL ?>
 	</thead>
+		<?php } ?>
 	<tbody>
-	<?php echo $this->Html->tablecells(
+	<?php
+	echo $this->Html->tablecells(
 			array(
 				$this->Form->input(
-					"EstatePicture.0.thumbnail_flag",
+					"EstatePicture.thumbnail_flag",
 					array(
 						"label" => false,
-						"div" => false)
+						"div" => false
+					)
 				),
 				$this->Html->div(
 					"previews",
 					"指定なし"
 				),
-				$this->Form->input(
-					"EstatePicture.0.picture",
+				$this->Form->file(
+					"EstatePicture.picture",
 					array(
-						"type" => "file",
 						"label" => false,
 						"div" => false
 					)
-			)
+				)
 			)
 		) . PHP_EOL ?>
 	</tbody>
 </table>
-<?php
+<?php }
 echo $this->Form->input(
 	"frank_opinion_agent",
 	array(
@@ -251,7 +261,12 @@ echo $this->Form->input(
 );
 echo $this->Html->div(
 	"buttons",
-	$this->Form->submit("登録")
+	$this->Form->button(
+		"登録",
+		array(
+			"id" => "confirm",
+			"type" => "button")
+	)
 );
 $this->Form->end();
 ?>

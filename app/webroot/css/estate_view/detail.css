@@ -21,7 +21,13 @@
 }
 
 #estate_contents{
-    width: auto;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+#estate_info{
+    margin-left: 0px;
+    float: left;
 }
 
 #base {
@@ -44,12 +50,20 @@
 }
 
 #room {
+    width: 300px;
     margin: 0 auto;
     float: left;
 }
 
-#opinion_agent{
 
+
+#opinion{
+/*    align-items: center;*/
+
+}
+
+#opinion_agent{
+/*    float:right;*/
 }
 
 #opinion_owner{

@@ -20,26 +20,27 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
-	<?php echo $this->Html->charset(); ?>
+    <?php echo $this->Html->charset(); ?>
 
-	<title><?php echo $this->fetch('title'); ?> - こうがく不動産</title>
-	<?php
-	echo "		" . $this->Html->meta('icon') . PHP_EOL;
+    <title><?php echo $this->fetch('title'); ?> - こうがく不動産</title>
+    <?php
+    echo "        " . $this->Html->meta('icon') . PHP_EOL;
 
-	echo "		" . $this->Html->css('cake.generic') . PHP_EOL;
+    echo "        " . $this->Html->css('cake.generic') . PHP_EOL;
 
-	echo "		" . $this->fetch('meta') . PHP_EOL;
-	echo "		" . $this->fetch('css') . PHP_EOL;
-	//Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
-	if ($this->fetch('nav')) {
-		echo "		" . $this->Html->css("elements/nav") . PHP_EOL;
-	}
-	echo "		" . $this->Html->script('http://code.jquery.com/jquery-1.11.3.min.js') . PHP_EOL;
-	echo "		" . $this->Html->script('cake.generic') . PHP_EOL;
-	echo "		" . $this->fetch('script') . PHP_EOL;
-	?>
+    echo "        " . $this->fetch('meta') . PHP_EOL;
+    echo "        " . $this->fetch('css') . PHP_EOL;
+    //Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
+    if ($this->fetch('nav')) {
+        echo "        " . $this->Html->css("elements/nav") . PHP_EOL;
+    }
+    echo "        " . $this->Html->script('http://code.jquery.com/jquery-1.11.3.min.js') . PHP_EOL;
+    echo "        " . $this->Html->script('cake.generic') . PHP_EOL;
+    echo "        " . $this->fetch('script') . PHP_EOL;
+    ?>
 </head>
 <body>
+
     <div id="container">
 	<div id="content">
 		<?php echo $this->Flash->render() . PHP_EOL; ?>

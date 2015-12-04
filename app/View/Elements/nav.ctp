@@ -1,10 +1,10 @@
 <div id="nav">
     <h3><a href="/estate-system">こうがく不動産</a></h3>
-    <table>
-        <thead>
-        <?php echo $this->Html->tableHeaders(array("提供不動産業者")) . PHP_EOL ?>
-        </thead>
-                <tbody>
+
+    <ul>
+
+        <li>
+            <div id=search1>
                 <form action="/estate-system/" method="get">
                     <p><input type="hidden" name="isSearch" value="true"</p>
                     <p><input type="checkbox" name="rent" value="true"> 家賃
@@ -96,14 +96,35 @@
                     <p><input type="checkbox" name="chara[]" value="playing_an_instrument">楽器演奏:可能</p>
                     <p><input type="checkbox" name="window_direction" value="true">窓の向き:南</p>
 
-                    <p><input type="submit" name="button" /></p>
-                    </form>
-                </tbody>
-        <tbody>
-        <?php foreach ($estate_agents as $e) {
-            $e = $e["EstateAgent"];
-            echo "        " . $this->Html->tableCells(array($e["name"] . "<br>TEL : " . $e["phone_number"])) . PHP_EOL;
-        } ?>
-        </tbody>
-    </table>
+                    <p><input type="submit" name="button" value="検索" /></p>
+                </form>
+
+
+
+            </div>
+
+
+        </li>
+
+
+        <li>
+            <div id="agent_list">
+                <table>
+                    <thead>
+                        <?php echo $this->Html->tableHeaders(array("提供不動産業者")) . PHP_EOL ?>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($estate_agents as $e) {
+    $e = $e["EstateAgent"];
+    echo "        " . $this->Html->tableCells(array($e["name"] . "<br>TEL : " . $e["phone_number"])) . PHP_EOL;
+} ?>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </li>
+    </ul>
+
+
 </div>

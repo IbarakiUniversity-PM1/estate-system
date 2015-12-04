@@ -37,6 +37,7 @@ Request URL: /estate-system/upload/estate_pictures/1/images_3_origin.jpeg
 Stack Trace:
 #0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+<<<<<<< HEAD
 2015-12-04 12:01:59 Error: [MissingViewException] View file "EstateRegistration/complete.ctp" is missing.
 Exception Attributes: array (
   'file' => 'EstateRegistration/complete.ctp',
@@ -117,6 +118,24 @@ Stack Trace:
 #4 [internal function]: App::shutdown()
 #5 {main}
 2015-12-04 17:10:45 Error: [MissingControllerException] Controller class CssController could not be found.
+=======
+2015-12-03 17:56:47 Error: [MissingControllerException] Controller class CssController could not be found.
+>>>>>>> 8cb4239ca3f74a0ddba585ce486c6eeeb5c80534
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+<<<<<<< HEAD
+Request URL: /estate-system/css/preview/bbok.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+=======
+Request URL: /estate-system/css/estate_registration/register.css
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+>>>>>>> 8cb4239ca3f74a0ddba585ce486c6eeeb5c80534
+#1 {main}
+2015-12-04 17:21:20 Error: [MissingControllerException] Controller class CssController could not be found.
 Exception Attributes: array (
   'class' => 'CssController',
   'plugin' => NULL,
