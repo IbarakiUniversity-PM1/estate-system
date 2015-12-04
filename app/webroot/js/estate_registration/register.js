@@ -71,15 +71,23 @@ jQuery(
 		function change_estate_picuture(e) {
 			var file = $(e.target).prop('files')[0];
 
-			if (file.type.match('image.*')) { //画像であるとき
+			if (file.type.match('image.[(jpeg)|(png)|(gif)]')) { //表示できる画像であるとき
 				var reader = new FileReader();
+
+				// 画像を読み込んだときの挙動をセット
 				reader.onload = function () {
-					$(e.target).parent().parent().find('.previews').html($('<img>').attr({
-						'src': reader.result,
-						'width': ($(e.target).parent().parent().parent().parent()[0].rows[0].cells.length * 100 / 9) + '%'
-					}));
+					//プレビュー欄に画像を表示(サイズは、物件検索結果画面のサムネイル画像と同じぐらいのサイズになるようにしている)
+					$(e.target).parent().parent().find('.previews')
+						.empty()
+						.append($('<img>', {
+							'src': reader.result,
+							'width': ($(e.target).parent().parent().parent().parent()[0].rows[0].cells.length * 100 / 9) + '%'
+						}));
 				};
+
+				//画像を読み込む
 				reader.readAsDataURL(file);
+
 				//対象が物件画像であり、一番下の行であるならば、行を増やし、idとnameのナンバリングを行う
 				if ($(e.target).parent().parent().parent().parent().is('#estate_pictures') && $(e.target).parent().parent().parent().parent().find('tbody tr').length == $(e.target).parent().parent().parent().parent().find('tbody tr').index($(e.target).parent().parent()) + 1) {
 					var s = $('.model tr').clone();
@@ -89,7 +97,11 @@ jQuery(
 					numbering_estate_pictures();
 				}
 			} else { //画像でないとき
-				$(e.target).parent().parent().find('.previews').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
+				//ファイル情報をリセット
+				$(e.target).val('');
+				$(e.target).parent().parent().find('.previews')
+					.empty() //プレビュー欄を空にする
+					.append($('<div>', {'class': 'error-message'}).append('対応していないファイル形式です。')); //プレビュー欄にエラーメッセージを表示
 			}
 		}
 
