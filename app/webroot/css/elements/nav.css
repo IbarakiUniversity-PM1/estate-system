@@ -1,7 +1,7 @@
 @charset "utf-8";
 *{padding:0;margin:0;}
 ul,li{list-style:none;}
-#content{width: 100% height:auto;margin-top:10px;}
+#content{width: 100%; height: auto; margin-top:10px;}
 
 /* サイドバー */
 #nav,#main{display:inline-block;}

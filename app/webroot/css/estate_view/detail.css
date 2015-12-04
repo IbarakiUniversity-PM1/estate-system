@@ -50,7 +50,7 @@
 }
 
 #room {
-    width 300px;
+    width: 300px;
     margin: 0 auto;
     float: left;
 }
@@ -84,7 +84,7 @@
     height: 180px;
 }
 
-#gmap{
-    width: 240px;
-    height: 180px;
+#test{
+    width: 300px;
+    height: 300px;
 }
