@@ -9,10 +9,6 @@ jQuery(
 				//駐車場料金の入力フォームを隠す
 				$('#EstateParkingFeeDiv').hide();
 			}
-			//もし、駐車場料金の入力フォームが空ならば、『0』をセットする
-			if ($('#EstateParkingFee').val() === '') {
-				$('#EstateParkingFee').val(0);
-			}
 		}
 		//駐車場フラグを変更したときの挙動をセット
 		$('#EstateParkingFlag').click(change_estate_parking_flag);
@@ -111,9 +107,7 @@ jQuery(
 		//登録ボタンを押下したときの挙動をセット
 		$('#confirm').click(function () {
 			$('.buttons').innerHTML = '';
-			$('.buttons').append($('input', {
-				'class': 'submit'
-			}));
+			$('.buttons').append($('input', {'class': 'submit'}));
 		});
 	}
 );

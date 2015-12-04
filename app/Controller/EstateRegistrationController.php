@@ -84,7 +84,7 @@ class EstateRegistrationController extends AppController
 		$this->set("title_for_layout", "物件登録確認");
 
 		if ($this->request->is('post')) {
-			$this->set("Data", $this->request->data);
+			$this->set("data", $this->request->data);
 		}
 	}
 
