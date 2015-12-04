@@ -31,10 +31,14 @@ jQuery(
 				numbering_estate_pictures();
 			});
 
-			// 削除ボタンを表示
-			$('#estate_pictures').find('tbody button').each(function (i, e) {
+			$('#estate_pictures').find('tbody tr').each(function (i, e) {
+				// 末尾の行以外の削除ボタンを表示
 				if (i + 1 < $('#estate_pictures').find('tbody tr').length) {
-					$(e).show();
+					$(e).find('button').show();
+				}
+				// 末尾の行以外のラジオボタンを表示(ただし、1行しかないときは、その行のラジオボタンを表示する)
+				if (i == 0 || i + 1 < $('#estate_pictures').find('tbody tr').length) {
+					$(e).find('input').show();
 				}
 			});
 
@@ -80,6 +84,7 @@ jQuery(
 				if ($(e.target).parent().parent().parent().parent().is('#estate_pictures') && $(e.target).parent().parent().parent().parent().find('tbody tr').length == $(e.target).parent().parent().parent().parent().find('tbody tr').index($(e.target).parent().parent()) + 1) {
 					var s = $('.model tr').clone();
 					$(s).find('button').hide();
+					$(s).find('input[type=radio]').hide();
 					$(e.target).parent().parent().parent().append($(s));
 					numbering_estate_pictures();
 				}
