@@ -22,6 +22,22 @@ jQuery(
 
 		//物件画像のidとnameにナンバリングを行う
 		function numbering_estate_pictures() {
+			//物件画像を変更したときの挙動をセット
+			$('input[type=file]').change(change_estate_picuture);
+
+			//物件画像を削除するときの挙動をセット
+			$('#estate_pictures').find('button').click(function (e) {
+				$(e.target).parent().parent().remove();
+				numbering_estate_pictures();
+			});
+
+			// 削除ボタンを表示
+			$('#estate_pictures').find('tbody button').each(function (i, e) {
+				if (i + 1 < $('#estate_pictures').find('tbody tr').length) {
+					$(e).show();
+				}
+			});
+
 			var $i = 0;
 			//ひな形と同一のidとnameをセット
 			$('#estate_pictures').find('tbody tr').each(function () {
@@ -47,32 +63,32 @@ jQuery(
 			}
 		}
 
+		//物件画像を変更したときの挙動
 		function change_estate_picuture(e) {
 			var file = $(e.target).prop('files')[0];
 
 			if (file.type.match('image.*')) { //画像であるとき
 				var reader = new FileReader();
 				reader.onload = function () {
-					$(e.target.parentNode.parentNode).find('.previews').html($('<img>').attr({
+					$(e.target).parent().parent().find('.previews').html($('<img>').attr({
 						'src': reader.result,
-						'width': ($(e.target.parentNode.parentNode.parentNode.parentNode)[0].rows[0].cells.length * 100 / 9) + '%'
+						'width': ($(e.target).parent().parent().parent().parent()[0].rows[0].cells.length * 100 / 9) + '%'
 					}));
 				};
 				reader.readAsDataURL(file);
 				//対象が物件画像であり、一番下の行であるならば、行を増やし、idとnameのナンバリングを行う
-				if ($(e.target.parentNode.parentNode.parentNode.parentNode).is('#estate_pictures') && $(e.target.parentNode.parentNode.parentNode.parentNode).find('tbody tr').length == $(e.target.parentNode.parentNode.parentNode.parentNode).find('tbody tr').index(e.target.parentNode.parentNode) + 1) {
+				if ($(e.target).parent().parent().parent().parent().is('#estate_pictures') && $(e.target).parent().parent().parent().parent().find('tbody tr').length == $(e.target).parent().parent().parent().parent().find('tbody tr').index($(e.target).parent().parent()) + 1) {
 					var s = $('.model tr').clone();
-					$(s).change(change_estate_picuture);
-					$(e.target.parentNode.parentNode.parentNode).append(s);
+					$(s).find('button').hide();
+					$(e.target).parent().parent().parent().append($(s));
 					numbering_estate_pictures();
 				}
 			} else { //画像でないとき
-				$(e.target.parentNode.parentNode).find('.previews').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
+				$(e.target).parent().parent().find('.previews').html('<div class=\'error-message\'>対応していないファイル形式です</div>');
 			}
 		}
 
-		// アップロードするファイルを選択したときの挙動をセット
-		$('input[type=file]').change(change_estate_picuture);
+		numbering_estate_pictures();
 
 		//登録ボタンを押下したときの挙動をセット
 		$('#confirm').click(function () {

@@ -1,4 +1,5 @@
 <?php
+$this->Html->css("estate_registration/register", array("inline" => false));
 $this->Html->script("estate_registration/register", array("inline" => false));
 echo $this->Form->create(
 	"Estate",
@@ -158,7 +159,8 @@ for ($i = 0; $i < 2; $i++) { ?>
 			array(
 				"サムネイル",
 				"プレビュー",
-				"ファイル名"
+				"ファイル名",
+				""
 			)
 		) . PHP_EOL ?>
 	</thead>
@@ -183,6 +185,13 @@ for ($i = 0; $i < 2; $i++) { ?>
 					array(
 						"label" => false,
 						"div" => false
+					)
+				),
+				$this->Form->button(
+					"削除",
+					array(
+						"div" => false,
+						"type" => "button"
 					)
 				)
 			)
