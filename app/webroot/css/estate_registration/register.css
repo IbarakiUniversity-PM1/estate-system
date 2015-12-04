@@ -3,3 +3,7 @@
 #estate_pictures button {
 	display: none;
 }
+
+input[type=radio] {
+	float: none;
+}

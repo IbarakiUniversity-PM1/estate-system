@@ -1,6 +1,7 @@
 <?php
 $this->Html->css("estate_registration/register", array("inline" => false));
 $this->Html->script("estate_registration/register", array("inline" => false));
+
 echo $this->Form->create(
 	"Estate",
 	array(
@@ -167,14 +168,20 @@ for ($i = 0; $i < 2; $i++) { ?>
 		<?php } ?>
 	<tbody>
 	<?php
+	$options = array(
+		"label" => false,
+		"div" => false,
+		"type" => "radio",
+		"options" => array(0 => null)
+	);
+	if ($i == 1) {
+		$options["value"] = 0;
+	}
 	echo $this->Html->tablecells(
 			array(
 				$this->Form->input(
 					"EstatePicture.thumbnail_flag",
-					array(
-						"label" => false,
-						"div" => false
-					)
+					$options
 				),
 				$this->Html->div(
 					"previews",

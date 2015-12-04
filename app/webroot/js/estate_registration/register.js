@@ -20,7 +20,7 @@ jQuery(
 		//駐車場フラグを変更したときの挙動を実行
 		change_estate_parking_flag();
 
-		//物件画像のidとnameにナンバリングを行う
+		//物件画像のナンバリングを行う
 		function numbering_estate_pictures() {
 			//物件画像を変更したときの挙動をセット
 			$('input[type=file]').change(change_estate_picuture);
@@ -50,17 +50,17 @@ jQuery(
 				$i++;
 			});
 
-			//2行以上あるならば、idとnameのナンバリングを行う
-			if (1 < $i) {
-				$('#estate_pictures').find('tbody tr').each(function (i, e) {
-					$(e).find('input').each(function () {
-						$(this).attr({
-							'id': $(this).attr('id') + i,
-							'name': $(this).attr('name') + '[' + i + ']'
-						});
-					});
+			//ナンバリングを行う
+			$('#estate_pictures').find('tbody tr').each(function (i, e) {
+				$(e).find('input').each(function () {
+					$(this).attr('id', $(this).attr('id') + i);
+					if ($(this).attr('type') === 'radio') {
+						$(this).attr('value', i);
+					} else {
+						$(this).attr('name', $(this).attr('name') + '[' + i + ']');
+					}
 				});
-			}
+			});
 		}
 
 		//物件画像を変更したときの挙動
@@ -88,6 +88,7 @@ jQuery(
 			}
 		}
 
+		//物件画像のナンバリングを行う
 		numbering_estate_pictures();
 
 		//登録ボタンを押下したときの挙動をセット
