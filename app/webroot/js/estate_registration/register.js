@@ -10,6 +10,7 @@ jQuery(
 				$('#EstateParkingFeeDiv').hide();
 			}
 		}
+
 		//駐車場フラグを変更したときの挙動をセット
 		$('#EstateParkingFlag').click(change_estate_parking_flag);
 
