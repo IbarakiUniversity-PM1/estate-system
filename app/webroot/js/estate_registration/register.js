@@ -76,10 +76,7 @@ jQuery(
 					//プレビュー欄に画像を表示(サイズは、物件検索結果画面のサムネイル画像と同じぐらいのサイズになるようにしている)
 					$(e.target).parent().parent().find('.previews')
 						.empty()
-						.append($('<img>', {
-							'src': reader.result,
-							'width': ($(e.target).parent().parent().parent().parent()[0].rows[0].cells.length * 100 / 9) + '%'
-						}));
+						.append($('<img>', {'src': reader.result}));
 				};
 
 				//画像を読み込む

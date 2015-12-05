@@ -7,3 +7,8 @@
 input[type=radio] {
 	float: none;
 }
+
+.previews img {
+	width: 85px;
+	height: 85px;
+}
