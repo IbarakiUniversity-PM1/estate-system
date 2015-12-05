@@ -35,9 +35,8 @@ class EstateRegistrationController extends AppController
 				}
 			}
 			unset($this->request->data['Estate']['thumbnail']);
-			var_dump($this->request->data);
 			$this->Estate->create();
-			if ($this->Estate->saveAll($this->request->data/*, array('deep' => true)*/)) {
+			if ($this->Estate->saveAll($this->request->data, array('deep' => true))) {
 				$this->redirect(array('action' => 'index'));
 			}
 			debug($this->Estate->validationErrors);
