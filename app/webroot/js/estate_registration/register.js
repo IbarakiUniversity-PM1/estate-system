@@ -73,7 +73,7 @@ jQuery(
 
 				//画像を読み込んだときの挙動をセット
 				reader.onload = function () {
-					//プレビュー欄に画像を表示(サイズは、物件検索結果画面のサムネイル画像と同じぐらいのサイズになるようにしている)
+					//プレビュー欄に画像を表示(サイズはサムネイル画像と同じサイズになるようにしている)
 					$(e.target).parent().parent().find('.previews')
 						.empty()
 						.append($('<img>', {'src': reader.result}));
