@@ -6,10 +6,6 @@
 class EstateRegistrationController extends AppController
 {
 	/**
-	 * @var array 扱うヘルパーのリスト
-	 */
-	public $helpers = array("UploadPack.Upload");
-	/**
 	 * @var array 扱うモデルのリスト
 	 */
 	public $uses = array(
@@ -31,11 +27,11 @@ class EstateRegistrationController extends AppController
 	public function register()
 	{
 		if ($this->request->is('post')) {
-			//var_dump($this->request->data);
 			$this->Estate->create();
-			if ($this->Estate->saveAll($this->request->data, array('deep' => true))) {
+			if ($this->Estate->saveAll($this->request->data/*, array('deep' => true)*/)) {
 				$this->redirect(array('action' => 'index'));
 			}
+			debug($this->Estate->validationErrors);
 		}
 
 		// 不動産業者

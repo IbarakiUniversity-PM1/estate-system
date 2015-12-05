@@ -109,7 +109,7 @@ echo $this->Form->input(
 		"options" => array($estateTvTypeList)
 	)
 );
-/*echo $this->Html->div("label", "間取り図(jpeg)");
+echo $this->Html->div("label", "間取り図(jpeg)");
 ?>
 <table>
 	<thead>
@@ -139,7 +139,7 @@ echo $this->Form->input(
 	</tbody>
 </table>
 <?php
-echo $this->Html->div("label", "物件画像(jpeg)");
+/*echo $this->Html->div("label", "物件画像(jpeg)");
 for ($i = 0; $i < 2; $i++) { ?>
 	<table <?php
 	if ($i == 0) {

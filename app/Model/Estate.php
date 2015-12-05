@@ -133,17 +133,6 @@ class Estate extends AppModel
 				"message" => "必須項目です。"
 			)
 		),
-		"floor_plan_picture_name" => array(
-			array(
-				"rule" => array("maxLength", 100),
-				"message" => "100文字以内です。"
-			),
-			array(
-				"rule" => "notBlank",
-				"required" => "create",
-				"message" => "必須項目です。"
-			)
-		),
 		"window_direction" => array(
 			array(
 				"rule" => array("maxLength", 5),
