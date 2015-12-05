@@ -6,6 +6,10 @@
 class EstateRegistrationController extends AppController
 {
 	/**
+	 * @var array 扱うヘルパーのリスト
+	 */
+	public $helpers = array("UploadPack.Upload");
+	/**
 	 * @var array 扱うモデルのリスト
 	 */
 	public $uses = array(

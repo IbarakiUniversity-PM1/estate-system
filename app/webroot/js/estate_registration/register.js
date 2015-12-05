@@ -124,11 +124,14 @@ jQuery(
 			$('h2').html('物件登録確認');
 			document.title = $('h2').html() + ' - こうがく不動産';
 			$('#main').find('form *').attr('disabled', true);
-			$('input').each(function () {
-				if (!$(this).is('input[type=file]') && (!$(this).is('input[type=radio]') || $(this).is(':checked'))) {
+			$('select, input').each(function () {
+				if ($(this).is('select') || (!$(this).is('input[type=file]') && (!$(this).is('input[type=radio]') || $(this).is(':checked')))) {
 					var s = $(this).clone();
 					$(s).attr('id', $(s).attr('id') + '_');
 					$(s).attr('type', 'hidden');
+					if ($(this).is('select')) {
+						s = $($(s)[0].outerHTML.replace('select', 'input')).attr('value', $(this).find('option:selected').attr('value'));
+					}
 					$(this).parent().append(s);
 				}
 			});
