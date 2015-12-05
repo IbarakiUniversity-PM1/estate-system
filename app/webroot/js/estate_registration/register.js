@@ -111,8 +111,7 @@ jQuery(
 			document.title = $('h2').html() + ' - こうがく不動産';
 			$('*').removeAttr('disabled');
 			$('#register').parent().show();
-			$('h3').hide();
-			$('.submit').hide();
+			$('h3, .submit').hide();
 			$('#back').html('戻る').unbind('click').click(function () {
 				history.back();
 			});
@@ -123,10 +122,9 @@ jQuery(
 			$('h2').html('物件登録確認');
 			document.title = $('h2').html() + ' - こうがく不動産';
 			$('*').attr('disabled', true);
-			$('.buttons,.buttons *').removeAttr('disabled');
+			$('.buttons, .buttons *').removeAttr('disabled');
 			$('#register').parent().hide();
-			$('h3').show();
-			$('.submit').show();
+			$('h3, .submit').show();
 			$('#back').html('いいえ').unbind('click').click(click_no);
 		});
 

@@ -32,6 +32,7 @@ class EstateRegistrationController extends AppController
 				$this->redirect(array('action' => 'index'));
 			}
 		}
+
 		// 不動産業者
 		$estateAgentList = array();
 		foreach ($this->EstateAgent->find("all") as $estateAgent) {
