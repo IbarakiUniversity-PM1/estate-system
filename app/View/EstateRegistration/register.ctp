@@ -277,11 +277,15 @@ echo $this->Form->input(
 );
 echo $this->Html->div(
 	"buttons",
-	$this->Form->button(
-		"登録",
-		array(
-			"id" => "confirm",
-			"type" => "button")
+	$this->Html->div(
+		"",
+		$this->Form->button(
+			"登録",
+			array(
+				"id" => "confirm",
+				"type" => "button"
+			)
+		)
 	)
 );
 $this->Form->end();
