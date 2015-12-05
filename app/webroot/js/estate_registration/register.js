@@ -103,9 +103,6 @@ jQuery(
 			}
 		}
 
-		//物件画像のナンバリングを行う
-		numbering_estate_pictures();
-
 		//いいえボタンを押下したときの挙動
 		function click_no() {
 			$('h2').html('物件登録');
@@ -113,9 +110,13 @@ jQuery(
 			$('*').removeAttr('disabled');
 			$('h3, .submit').hide();
 			$('#register').parent().show();
+			$('input[type=file], #register').show();
+			$('input[type=hidden]').remove();
 			$('#back').html('戻る').unbind('click').click(function () {
 				history.back();
 			});
+			//物件画像のナンバリングを行う
+			numbering_estate_pictures();
 		}
 
 		//登録ボタンを押下したときの挙動をセット
@@ -123,14 +124,19 @@ jQuery(
 			$('h2').html('物件登録確認');
 			document.title = $('h2').html() + ' - こうがく不動産';
 			$('*').attr('disabled', true);
-			$('.buttons, .buttons *, form').removeAttr('disabled');
+			$('input').each(function () {
+				if (!$(this).is('input[type=file]') && (!$(this).is('input[type=radio]') || $(this).is(':checked'))) {
+					var s = $(this).clone();
+					$(s).attr('id', $(s).attr('id') + '_');
+					$(s).attr('type', 'hidden');
+					$(this).parent().append(s);
+				}
+			});
+			$('.buttons, .buttons *, form, input[type=hidden], input[type=file]').removeAttr('disabled');
 			$('h3, .submit').show();
+			$('input[type=file], button').hide();
 			$('#register').parent().hide();
-			$('#back').html('いいえ').unbind('click').click(click_no);
-		});
-
-		$('.submit').click(function () {
-			$('*').removeAttr('disabled');
+			$('#back').show().html('いいえ').unbind('click').click(click_no);
 		});
 
 		click_no();
