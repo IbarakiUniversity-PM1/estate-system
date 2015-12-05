@@ -20,7 +20,7 @@ jQuery(
 		//物件画像のナンバリングを行う
 		function numbering_estate_pictures() {
 			//物件画像を変更したときの挙動をセット
-			$('input[type=file]').change(change_estate_picuture);
+			$('input[type=file]').change(change_estate_picture);
 
 			//物件画像を削除するときの挙動をセット
 			$('#estate_pictures').find('button').click(function (e) {
@@ -65,7 +65,7 @@ jQuery(
 		}
 
 		//物件画像を変更したときの挙動
-		function change_estate_picuture(e) {
+		function change_estate_picture(e) {
 			var file = $(e.target).prop('files')[0];
 
 			if (file.type.match('image.[(jpeg)|(png)|(gif)]')) { //表示できる画像であるとき
