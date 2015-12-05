@@ -29,11 +29,11 @@ jQuery(
 			});
 
 			$('#estate_pictures').find('tbody tr').each(function (i, e) {
-				// 末尾の行以外の削除ボタンを表示
+				//末尾の行以外の削除ボタンを表示
 				if (i + 1 < $('#estate_pictures').find('tbody tr').length) {
 					$(e).find('button').show();
 				}
-				// 末尾の行以外のラジオボタンを表示(ただし、1行しかないときは、その行のラジオボタンを表示する)
+				//末尾の行以外のラジオボタンを表示(ただし、1行しかないときは、その行のラジオボタンを表示する)
 				if (i == 0 || i + 1 < $('#estate_pictures').find('tbody tr').length) {
 					$(e).find('input').show().attr('required', true);
 				}
@@ -71,7 +71,7 @@ jQuery(
 			if (file.type.match('image.[(jpeg)|(png)|(gif)]')) { //表示できる画像であるとき
 				var reader = new FileReader();
 
-				// 画像を読み込んだときの挙動をセット
+				//画像を読み込んだときの挙動をセット
 				reader.onload = function () {
 					//プレビュー欄に画像を表示(サイズは、物件検索結果画面のサムネイル画像と同じぐらいのサイズになるようにしている)
 					$(e.target).parent().parent().find('.previews')
