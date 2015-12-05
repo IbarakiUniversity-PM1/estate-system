@@ -107,7 +107,7 @@ jQuery(
 		function click_no() {
 			$('h2').html('物件登録');
 			document.title = $('h2').html() + ' - こうがく不動産';
-			$('*').removeAttr('disabled');
+			$('#main').find('form *').removeAttr('disabled');
 			$('h3, .submit').hide();
 			$('#register').parent().show();
 			$('input[type=file], #register').show();
@@ -123,7 +123,7 @@ jQuery(
 		$('#register').click(function () {
 			$('h2').html('物件登録確認');
 			document.title = $('h2').html() + ' - こうがく不動産';
-			$('*').attr('disabled', true);
+			$('#main').find('form *').attr('disabled', true);
 			$('input').each(function () {
 				if (!$(this).is('input[type=file]') && (!$(this).is('input[type=radio]') || $(this).is(':checked'))) {
 					var s = $(this).clone();
@@ -132,7 +132,7 @@ jQuery(
 					$(this).parent().append(s);
 				}
 			});
-			$('.buttons, .buttons *, form, input[type=hidden], input[type=file]').removeAttr('disabled');
+			$('.buttons, .buttons *, input[type=hidden], input[type=file]').removeAttr('disabled');
 			$('h3, .submit').show();
 			$('input[type=file], button').hide();
 			$('#register').parent().hide();

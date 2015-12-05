@@ -185,7 +185,8 @@ for ($i = 0; $i < 2; $i++) { ?>
 					"EstatePicture.picture",
 					array(
 						"label" => false,
-						"div" => false
+						"div" => false,
+						"required" => false
 					)
 				),
 				$this->Form->button(
