@@ -63,7 +63,7 @@ class EstatePicture extends AppModel
 			//ここでは、"_file_name"を除いたカラム名を書く
 			'picture' => array(
 				'quality' => 75, //画質指定、デフォルトでは75
-				'styles' => array('thumb' => '85x85') //リサイズしたいサイズを書く
+				'styles' => array('thumb' => '85w') //リサイズしたいサイズを書く
 			)
 		)
 	);
