@@ -22,28 +22,28 @@ jQuery(
 			//物件画像を変更したときの挙動をセット
 			$('input[type=file]').change(change_estate_picture);
 
-			var estate_pictures = $('#estate_pictures');
+			var $estate_pictures = $('#estate_pictures');
 
 			//物件画像を削除するときの挙動をセット
-			estate_pictures.find('button').click(function (e) {
+			$estate_pictures.find('button').click(function (e) {
 				$(e.target).parent().parent().remove();
 				numbering_estate_pictures();
 			});
 
-			estate_pictures.find('tbody tr').each(function (i, e) {
+			$estate_pictures.find('tbody tr').each(function (i, e) {
 				//末尾の行以外の削除ボタンを表示
-				if (i + 1 < estate_pictures.find('tbody tr').length) {
+				if (i + 1 < $estate_pictures.find('tbody tr').length) {
 					$(e).find('button').show();
 				}
 				//末尾の行以外のラジオボタンを表示(ただし、1行しかないときは、その行のラジオボタンを表示する)
-				if (i == 0 || i + 1 < estate_pictures.find('tbody tr').length) {
+				if (i == 0 || i + 1 < $estate_pictures.find('tbody tr').length) {
 					$(e).find('input').show().attr('required', true);
 				}
 			});
 
 			var $i = 0;
 			//ひな形と同一のidとnameをセット
-			estate_pictures.find('tbody tr').each(function () {
+			$estate_pictures.find('tbody tr').each(function () {
 				$(this).find('input').each(function () {
 					var model = $('.model');
 					$(this).attr({
@@ -55,7 +55,7 @@ jQuery(
 			});
 
 			//ナンバリングを行う
-			estate_pictures.find('tbody tr').each(function (i, e) {
+			$estate_pictures.find('tbody tr').each(function (i, e) {
 				$(e).find('input').each(function () {
 					if ($(this).attr('type') === 'radio') {
 						$(this).attr('value', i);
@@ -105,9 +105,9 @@ jQuery(
 
 		//いいえボタンを押下したときの挙動
 		function click_no() {
-			var h2 = $('h2');
-			h2.html('物件登録');
-			document.title = h2.html() + ' - こうがく不動産';
+			var $h2 = $('h2');
+			$h2.html('物件登録');
+			document.title = $h2.html() + ' - こうがく不動産';
 			$('#main').find('form *').removeAttr('disabled');
 			$('h3, .submit').hide();
 			$('#register').parent().show();
@@ -122,9 +122,9 @@ jQuery(
 
 		//登録ボタンを押下したときの挙動をセット
 		$('#register').click(function () {
-			var h2 = $('h2');
-			h2.html('物件登録確認');
-			document.title = h2.html() + ' - こうがく不動産';
+			var $h2 = $('h2');
+			$h2.html('物件登録確認');
+			document.title = $h2.html() + ' - こうがく不動産';
 			$('#main').find('form *').attr('disabled', true);
 			$('select, input').each(function () {
 				if ($(this).is('select') || (!$(this).is('input[type=file]') && (!$(this).is('input[type=radio]') || $(this).is(':checked')))) {
