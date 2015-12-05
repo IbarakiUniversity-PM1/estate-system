@@ -109,7 +109,7 @@ echo $this->Form->input(
 		"options" => array($estateTvTypeList)
 	)
 );
-echo $this->Html->div("label", "間取り図(jpeg)");
+/*echo $this->Html->div("label", "間取り図(jpeg)");
 ?>
 <table>
 	<thead>
@@ -269,7 +269,7 @@ echo $this->Form->input(
 echo $this->Form->input(
 	"playing_an_instrument",
 	array("label" => "楽器演奏可")
-);
+);*/
 ?>
 <h3>上記の内容でよろしいですか？</h3>
 <?php

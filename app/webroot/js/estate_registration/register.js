@@ -130,6 +130,7 @@ jQuery(
 					$(s).attr('id', $(s).attr('id') + '_');
 					$(s).attr('type', 'hidden');
 					if ($(this).is('select')) {
+						$(s).find('option').remove();
 						s = $($(s)[0].outerHTML.replace('select', 'input')).attr('value', $(this).find('option:selected').attr('value'));
 					}
 					$(this).parent().append(s);
