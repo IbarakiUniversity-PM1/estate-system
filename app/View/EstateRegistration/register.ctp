@@ -4,13 +4,7 @@ $this->Html->script("estate_registration/register", array("inline" => false));
 
 echo $this->Form->create(
 	"Estate",
-	array(
-		"url" => array(
-			"controller" => "EstateRegistration",
-			"action" => "confirm"
-		),
-		"enctype" => "multipart/form-data"
-	)
+	array("enctype" => "multipart/form-data")
 );
 echo $this->Form->input(
 	"Estate.name",
@@ -275,6 +269,9 @@ echo $this->Form->input(
 	"playing_an_instrument",
 	array("label" => "楽器演奏可")
 );
+?>
+<h3>上記の内容でよろしいですか？</h3>
+<?php
 echo $this->Html->div(
 	"buttons",
 	$this->Html->div(
@@ -282,7 +279,20 @@ echo $this->Html->div(
 		$this->Form->button(
 			"登録",
 			array(
-				"id" => "confirm",
+				"id" => "register",
+				"type" => "button"
+			)
+		)
+	) . PHP_EOL .
+	$this->Form->submit(
+		"はい"
+	) . PHP_EOL .
+	$this->Html->div(
+		"",
+		$this->Form->button(
+			"",
+			array(
+				"id" => "back",
 				"type" => "button"
 			)
 		)

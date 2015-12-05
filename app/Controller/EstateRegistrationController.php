@@ -26,9 +26,12 @@ class EstateRegistrationController extends AppController
 	 */
 	public function register()
 	{
-		// タイトルをセットする
-		$this->set("title_for_layout", "物件登録");
-
+		if ($this->request->is('post')) {
+			$this->Estate->create();
+			if ($this->Estate->saveAssociated($this->request->data, array('deep' => true))) {
+				$this->redirect(array('action' => 'index'));
+			}
+		}
 		// 不動産業者
 		$estateAgentList = array();
 		foreach ($this->EstateAgent->find("all") as $estateAgent) {
@@ -73,32 +76,6 @@ class EstateRegistrationController extends AppController
 
 		// 物件特徴
 		$this->set("estateCharacteristic", $test = $this->EstateCharacteristic->find("all"));
-	}
-
-	/**
-	 * 登録確認画面
-	 */
-	public function confirm()
-	{
-		// タイトルをセットする
-		$this->set("title_for_layout", "物件登録確認");
-
-		if ($this->request->is('post')) {
-			$this->set("data", $this->request->data);
-		}
-	}
-
-	/**
-	 * 登録完了
-	 */
-	public function complete()
-	{
-		if ($this->request->is('post')) {
-			$this->Estate->create();
-			if ($this->Estate->saveAssociated($this->request->data, array('deep' => true))) {
-				$this->redirect(array('action' => 'index'));
-			}
-		}
 	}
 
 	public function index()

@@ -105,10 +105,31 @@ jQuery(
 		//物件画像のナンバリングを行う
 		numbering_estate_pictures();
 
+		//いいえボタンを押下したときの挙動
+		function click_no() {
+			$('h2').html('物件登録');
+			document.title = $('h2').html() + ' - こうがく不動産';
+			$('*').removeAttr('disabled');
+			$('#register').parent().show();
+			$('h3').hide();
+			$('.submit').hide();
+			$('#back').html('戻る').unbind('click').click(function () {
+				history.back();
+			});
+		}
+
 		//登録ボタンを押下したときの挙動をセット
-		$('#confirm').click(function () {
-			$('.buttons').innerHTML = '';
-			$('.buttons').append($('input', {'class': 'submit'}));
+		$('#register').click(function () {
+			$('h2').html('物件登録確認');
+			document.title = $('h2').html() + ' - こうがく不動産';
+			$('*').attr('disabled', true);
+			$('.buttons,.buttons *').removeAttr('disabled');
+			$('#register').parent().hide();
+			$('h3').show();
+			$('.submit').show();
+			$('#back').html('いいえ').unbind('click').click(click_no);
 		});
+
+		click_no();
 	}
 );
