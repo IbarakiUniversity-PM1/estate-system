@@ -29,9 +29,9 @@ class EstateRegistrationController extends AppController
 		if ($this->request->is('post')) {
 			for ($i = 0; $i < count($this->request->data['EstatePicture']); $i++) {
 				if ($i == $this->request->data['Estate']['thumbnail']) {
-					$this->request->data['EstatePicture'][$i]['thumbnail_flag'] = true;
+					$this->request->data['EstatePicture'][$i]['thumbnail_flag'] = 1;
 				} else {
-					$this->request->data['EstatePicture'][$i]['thumbnail_flag'] = false;
+					$this->request->data['EstatePicture'][$i]['thumbnail_flag'] = 0;
 				}
 			}
 			unset($this->request->data['Estate']['thumbnail']);
