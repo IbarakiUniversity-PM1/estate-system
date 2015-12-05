@@ -139,7 +139,7 @@ echo $this->Html->div("label", "間取り図(jpeg)");
 	</tbody>
 </table>
 <?php
-/*echo $this->Html->div("label", "物件画像(jpeg)");
+echo $this->Html->div("label", "物件画像(jpeg)");
 for ($i = 0; $i < 2; $i++) { ?>
 	<table <?php
 	if ($i == 0) {
@@ -174,7 +174,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 	echo $this->Html->tablecells(
 			array(
 				$this->Form->input(
-					"EstatePicture.thumbnail_flag",
+					"Estate.thumbnail",
 					$options
 				),
 				$this->Html->div(
@@ -182,7 +182,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 					"指定なし"
 				),
 				$this->Form->file(
-					"EstatePicture.picture",
+					"EstatePicture.?.picture",
 					array(
 						"label" => false,
 						"div" => false,
@@ -201,7 +201,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 	</tbody>
 </table>
 <?php }
-echo $this->Form->input(
+/*echo $this->Form->input(
 	"frank_opinion_agent",
 	array(
 		"rows" => 3,

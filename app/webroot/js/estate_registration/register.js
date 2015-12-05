@@ -54,11 +54,11 @@ jQuery(
 			//ナンバリングを行う
 			$('#estate_pictures').find('tbody tr').each(function (i, e) {
 				$(e).find('input').each(function () {
-					$(this).attr('id', $(this).attr('id') + i);
 					if ($(this).attr('type') === 'radio') {
 						$(this).attr('value', i);
 					} else {
-						$(this).attr('name', $(this).attr('name') + '[' + i + ']');
+						$(this).attr('id', $(this).attr('id').replace('?', i));
+						$(this).attr('name', $(this).attr('name').replace('?', i));
 					}
 				});
 			});
@@ -138,6 +138,10 @@ jQuery(
 			$('input[type=file], button').hide();
 			$('#register').parent().hide();
 			$('#back').show().html('いいえ').unbind('click').click(click_no);
+		});
+
+		$('input[type=submit]').click(function () {
+			$('.model').remove();
 		});
 
 		click_no();
