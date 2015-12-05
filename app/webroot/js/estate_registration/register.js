@@ -35,7 +35,7 @@ jQuery(
 				}
 				// 末尾の行以外のラジオボタンを表示(ただし、1行しかないときは、その行のラジオボタンを表示する)
 				if (i == 0 || i + 1 < $('#estate_pictures').find('tbody tr').length) {
-					$(e).find('input').show();
+					$(e).find('input').show().attr('required', true);
 				}
 			});
 
@@ -90,6 +90,7 @@ jQuery(
 					var s = $('.model tr').clone();
 					$(s).find('button').hide();
 					$(s).find('input[type=radio]').hide();
+					$(s).find('input').removeAttr('required');
 					$(e.target).parent().parent().parent().append($(s));
 					numbering_estate_pictures();
 				}
@@ -110,8 +111,8 @@ jQuery(
 			$('h2').html('物件登録');
 			document.title = $('h2').html() + ' - こうがく不動産';
 			$('*').removeAttr('disabled');
-			$('#register').parent().show();
 			$('h3, .submit').hide();
+			$('#register').parent().show();
 			$('#back').html('戻る').unbind('click').click(function () {
 				history.back();
 			});
@@ -122,10 +123,14 @@ jQuery(
 			$('h2').html('物件登録確認');
 			document.title = $('h2').html() + ' - こうがく不動産';
 			$('*').attr('disabled', true);
-			$('.buttons, .buttons *').removeAttr('disabled');
-			$('#register').parent().hide();
+			$('.buttons, .buttons *, form').removeAttr('disabled');
 			$('h3, .submit').show();
+			$('#register').parent().hide();
 			$('#back').html('いいえ').unbind('click').click(click_no);
+		});
+
+		$('.submit').click(function () {
+			$('*').removeAttr('disabled');
 		});
 
 		click_no();

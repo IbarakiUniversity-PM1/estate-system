@@ -27,6 +27,7 @@ class EstateRegistrationController extends AppController
 	public function register()
 	{
 		if ($this->request->is('post')) {
+			var_dump($this->request->data);
 			$this->Estate->create();
 			if ($this->Estate->saveAssociated($this->request->data, array('deep' => true))) {
 				$this->redirect(array('action' => 'index'));
