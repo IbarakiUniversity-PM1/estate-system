@@ -127,7 +127,7 @@ jQuery(
 			document.title = $h2.html() + ' - こうがく不動産';
 			$('#main').find('form *').attr('disabled', true);
 			$('select, input').each(function () {
-				if ($(this).is('select') || (!$(this).is('input[type=file]') && (!$(this).is('input[type=radio]') || $(this).is(':checked')))) {
+				if ($(this).find('option:selected').attr('value') !== '-1' && ($(this).is('select') || (!$(this).is('input[type=file]') && (!$(this).is('input[type=radio]') || $(this).is(':checked'))))) {
 					var s = $(this).clone();
 					$(s).attr('id', $(s).attr('id') + '_');
 					$(s).attr('type', 'hidden');
