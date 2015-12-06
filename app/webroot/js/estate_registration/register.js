@@ -25,7 +25,7 @@ jQuery(
 			var $estate_pictures = $('#estate_pictures');
 
 			//物件画像を削除するときの挙動をセット
-			$estate_pictures.find('button').click(function (e) {
+			$estate_pictures.find('button').unbind('click').click(function (e) {
 				$(e.target).parent().parent().remove();
 				numbering_estate_pictures();
 			});
@@ -104,12 +104,12 @@ jQuery(
 		//生の声のナンバリングを行う
 		function numbering_estate_frank_opinions() {
 			//追加ボタンを押下した時の挙動をセット
-			$('.estate_frank_opinion_add').click(add_frank_opinions);
+			$('.estate_frank_opinion_add').unbind('click').click(add_frank_opinions);
 
 			var $estate_frank_opinions = $('#estate_frank_opinions');
 
 			//生の声を削除するときの挙動をセット
-			$('.estate_frank_opinion_delete').click(function (e) {
+			$('.estate_frank_opinion_delete').unbind('click').click(function (e) {
 				$(e.target).parent().parent().remove();
 				numbering_estate_frank_opinions();
 			});
