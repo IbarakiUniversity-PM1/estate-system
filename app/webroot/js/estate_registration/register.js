@@ -25,7 +25,7 @@ jQuery(
 			var $estate_pictures = $('#estate_pictures');
 
 			//物件画像を削除するときの挙動をセット
-			$estate_pictures.find('button').click(function (e) {
+			$estate_pictures.find('button').unbind('click').click(function (e) {
 				$(e.target).parent().parent().remove();
 				numbering_estate_pictures();
 			});
@@ -104,12 +104,12 @@ jQuery(
 		//生の声のナンバリングを行う
 		function numbering_estate_frank_opinions() {
 			//追加ボタンを押下した時の挙動をセット
-			$('.estate_frank_opinion_add').click(add_frank_opinions);
+			$('.estate_frank_opinion_add').unbind('click').click(add_frank_opinions);
 
 			var $estate_frank_opinions = $('#estate_frank_opinions');
 
 			//生の声を削除するときの挙動をセット
-			$('.estate_frank_opinion_delete').click(function (e) {
+			$('.estate_frank_opinion_delete').unbind('click').click(function (e) {
 				$(e.target).parent().parent().remove();
 				numbering_estate_frank_opinions();
 			});
@@ -124,18 +124,20 @@ jQuery(
 
 			//ひな形と同一のidとnameをセット
 			$estate_frank_opinions.find('tbody tr').each(function () {
-				$(this).find('textarea').each(function () {
-					var model = $('#estate_frank_opinions_model');
-					$(this).attr({
-						id: model.find('textarea').attr('id'),
-						name: model.find('textarea').attr('name')
+				if ($(this).find('input[type=hidden]').attr('value') == $('#estate_frank_opinions_model').find('input[type=hidden]').attr('value')) {
+					$(this).find('textarea, input[type=hidden]').each(function () {
+						var model = $('#estate_frank_opinions_model');
+						$(this).attr({
+							id: model.find('textarea').attr('id'),
+							name: model.find('textarea').attr('name')
+						});
 					});
-				});
+				}
 			});
 
 			//ナンバリングを行う
 			$estate_frank_opinions.find('tbody tr').each(function (i, e) {
-				$(e).find('textarea').each(function () {
+				$(e).find('textarea, input[type=hidden]').each(function () {
 					$(this).attr('id', $(this).attr('id').replace('?', i));
 					$(this).attr('name', $(this).attr('name').replace('?', i));
 				});
@@ -160,7 +162,11 @@ jQuery(
 			$('h3, .submit').hide();
 			$('#register').parent().show();
 			$('input[type=file], #register, .estate_frank_opinion_add').show();
-			$('input[type=hidden]').remove();
+			$('input[type=hidden]').each(function () {
+				if (!$(this).is('.estateFrankOpinionEstateFrankOpinionTypeId')) {
+					$(this).remove();
+				}
+			});
 			$('#back').html('戻る').unbind('click').click(function () {
 				history.back();
 			});

@@ -18,7 +18,8 @@ class EstateRegistrationController extends AppController
 		"EstateInternetType",
 		"EstatePicture",
 		"EstateCharacteristic",
-		"EstateCharacteristicReference"
+		"EstateCharacteristicReference",
+		"EstateFrankOpinionType"
 	);
 
 	/**
@@ -85,7 +86,10 @@ class EstateRegistrationController extends AppController
 		$this->set("estateTvTypeList", $estateTvTypeList);
 
 		// 物件特徴
-		$this->set("estateCharacteristic", $test = $this->EstateCharacteristic->find("all"));
+		$this->set("estateCharacteristic", $this->EstateCharacteristic->find("all"));
+
+		// 生の声種別
+		$this->set("estateFrankOpinionType", $this->EstateFrankOpinionType->find("all"));
 	}
 
 	public function index()

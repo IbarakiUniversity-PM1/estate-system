@@ -231,16 +231,28 @@ for ($i = 0; $i < 2; $i++) { ?>
 		<?php } ?>
 		<tbody>
 		<?php
-		for ($j = 0; $j < 3; $j++) {
+		for ($j = 0; $j < count($estateFrankOpinionType); $j++) {
 			$cells = array();
-			if ($i == 1 && $j == 0) {
-				$cells[] = "不動産業者";
-			} else if ($i == 1 && $j == 1) {
-				$cells[] = "大家";
-			} else if ($j == 2) {
-				$cells[] = "入居者";
+			if ($i == 1 && $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] != "入居者") {
+				$cells[] = $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] . PHP_EOL .
+					$this->Form->hidden(
+						"EstateFrankOpinion.?.estate_frank_opinion_type_id",
+						array(
+							"value" => $estateFrankOpinionType[$j]['EstateFrankOpinionType']['estate_frank_opinion_type_id'],
+							"class" => "estateFrankOpinionEstateFrankOpinionTypeId"
+						)
+					);
+			} else if ($estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] == "入居者") {
+				$cells[] = "入居者" . PHP_EOL .
+					$this->Form->hidden(
+						"EstateFrankOpinion.?.estate_frank_opinion_type_id",
+						array(
+							"value" => $estateFrankOpinionType[$j]['EstateFrankOpinionType']['estate_frank_opinion_type_id'],
+							"class" => "estateFrankOpinionEstateFrankOpinionTypeId"
+						)
+					);
 			}
-			if (($i == 1 && $j < 2) || $j == 2) {
+			if (($i == 1 && $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] != "入居者") || $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] == "入居者") {
 				$cells[] = $this->Form->input(
 					"EstateFrankOpinion.?.frank_opinion",
 					array(
@@ -249,7 +261,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 						"div" => false
 					)
 				);
-				if ($j == 2) {
+				if ($estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] == "入居者") {
 					$cells[] = $this->Form->button(
 							"追加",
 							array(
