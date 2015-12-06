@@ -22,11 +22,7 @@ class Estate extends AppModel
 		"EstateCharacteristicReference",
 		"EstateFrankOpinion",
 		"EstateMainFacilitiesDistance",
-		"EstatePicture" => array(
-			'className' => 'EstatePicture',
-			'foreignKey' => 'estate_id',
-			'dependent' => true
-		),
+		"EstatePicture",
 		"EstateRoom"
 	);
 	/**

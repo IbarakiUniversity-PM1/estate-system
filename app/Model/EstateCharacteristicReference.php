@@ -27,5 +27,5 @@ class EstateCharacteristicReference extends AppModel
 	/**
 	 * @var string 主キー
 	 */
-	public $primaryKey = "estate_characteristic_id";
+	public $primaryKey = "estate_characteristic_reference_id";
 }

@@ -27,18 +27,19 @@ class EstateRegistrationController extends AppController
 	 */
 	public function register()
 	{
-		if ($this->request->is('post')) {
-			for ($i = 0; $i < count($this->request->data['EstatePicture']); $i++) {
-				if ($i == $this->request->data['Estate']['thumbnail']) {
-					$this->request->data['EstatePicture'][$i]['thumbnail_flag'] = 1;
+		if ($this->request->is("post")) {
+			for ($i = 0; $i < count($this->request->data["EstatePicture"]); $i++) {
+				if ($i == $this->request->data["Estate"]["thumbnail"]) {
+					$this->request->data["EstatePicture"][$i]["thumbnail_flag"] = 1;
 				} else {
-					$this->request->data['EstatePicture'][$i]['thumbnail_flag'] = 0;
+					$this->request->data["EstatePicture"][$i]["thumbnail_flag"] = 0;
 				}
 			}
-			unset($this->request->data['Estate']['thumbnail']);
+			unset($this->request->data["Estate"]["thumbnail"]);
+			debug($this->request->data);
 			$this->Estate->create();
 			if ($this->Estate->saveAll($this->request->data)) {
-				$this->redirect(array('action' => 'index'));
+				$this->redirect(array("action" => "index"));
 			}
 			debug($this->Estate->validationErrors);
 		}
@@ -58,35 +59,39 @@ class EstateRegistrationController extends AppController
 		$this->set("estateTradingAspectList", $estateTradingAspectList);
 
 		// 物件構造
-		$estateStructureList = array(-1 => '不明');
+		$estateStructureList = array(-1 => "不明");
 		foreach ($this->EstateStructure->find("all") as $estateStructure) {
 			$estateStructureList[$estateStructure["EstateStructure"]["estate_structure_id"]] = $estateStructure["EstateStructure"]["name"];
 		}
 		$this->set("estateStructureList", $estateStructureList);
 
 		// 部屋種別
-		$estateTypeList = array(-1 => '不明');
+		$estateTypeList = array(-1 => "不明");
 		foreach ($this->EstateType->find("all") as $estateType) {
 			$estateTypeList[$estateType["EstateType"]["estate_type_id"]] = $estateType["EstateType"]["name"];
 		}
 		$this->set("estateTypeList", $estateTypeList);
 
 		// インターネット回線
-		$estateInternetTypeList = array(-1 => '不明');
+		$estateInternetTypeList = array(-1 => "不明");
 		foreach ($this->EstateInternetType->find("all") as $estateInternetType) {
 			$estateInternetTypeList[$estateInternetType["EstateInternetType"]["estate_internet_type_id"]] = $estateInternetType["EstateInternetType"]["name"];
 		}
 		$this->set("estateInternetTypeList", $estateInternetTypeList);
 
 		// テレビ
-		$estateTvTypeList = array(-1 => '不明');
+		$estateTvTypeList = array(-1 => "不明");
 		foreach ($this->EstateTvType->find("all") as $estateTvType) {
 			$estateTvTypeList[$estateTvType["EstateTvType"]["estate_tv_type_id"]] = $estateTvType["EstateTvType"]["name"];
 		}
 		$this->set("estateTvTypeList", $estateTvTypeList);
 
 		// 物件特徴
-		$this->set("estateCharacteristic", $this->EstateCharacteristic->find("all"));
+		$estateCharacteristicList = array();
+		foreach ($this->EstateCharacteristic->find("all") as $estateCharacteristic) {
+			$estateCharacteristicList[$estateCharacteristic["EstateCharacteristic"]["estate_characteristic_id"]] = $estateCharacteristic["EstateCharacteristic"]["name"];
+		}
+		$this->set("estateCharacteristicList", $estateCharacteristicList);
 
 		// 生の声種別
 		$this->set("estateFrankOpinionType", $this->EstateFrankOpinionType->find("all"));
@@ -94,7 +99,6 @@ class EstateRegistrationController extends AppController
 
 	public function index()
 	{
-		$this->set('estates', $this->Estate->find('all'));
+		$this->set("estates", $this->Estate->find("all"));
 	}
 }
-
