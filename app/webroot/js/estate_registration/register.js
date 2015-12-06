@@ -124,18 +124,20 @@ jQuery(
 
 			//ひな形と同一のidとnameをセット
 			$estate_frank_opinions.find('tbody tr').each(function () {
-				$(this).find('textarea').each(function () {
-					var model = $('#estate_frank_opinions_model');
-					$(this).attr({
-						id: model.find('textarea').attr('id'),
-						name: model.find('textarea').attr('name')
+				if ($(this).find('input[type=hidden]').attr('value') == $('#estate_frank_opinions_model').find('input[type=hidden]').attr('value')) {
+					$(this).find('textarea, input[type=hidden]').each(function () {
+						var model = $('#estate_frank_opinions_model');
+						$(this).attr({
+							id: model.find('textarea').attr('id'),
+							name: model.find('textarea').attr('name')
+						});
 					});
-				});
+				}
 			});
 
 			//ナンバリングを行う
 			$estate_frank_opinions.find('tbody tr').each(function (i, e) {
-				$(e).find('textarea').each(function () {
+				$(e).find('textarea, input[type=hidden]').each(function () {
 					$(this).attr('id', $(this).attr('id').replace('?', i));
 					$(this).attr('name', $(this).attr('name').replace('?', i));
 				});
@@ -160,7 +162,11 @@ jQuery(
 			$('h3, .submit').hide();
 			$('#register').parent().show();
 			$('input[type=file], #register, .estate_frank_opinion_add').show();
-			$('input[type=hidden]').remove();
+			$('input[type=hidden]').each(function () {
+				if (!$(this).is('.estateFrankOpinionEstateFrankOpinionTypeId')) {
+					$(this).remove();
+				}
+			});
 			$('#back').html('戻る').unbind('click').click(function () {
 				history.back();
 			});
