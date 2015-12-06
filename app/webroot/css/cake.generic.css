@@ -120,10 +120,7 @@ p {
 }
 
 #content div {
-	/*セットすると地図が上書きされ表示されなくなる*/
-	/*background: #fff;*/
-	/*セットすると地図の表記が崩れる*/
-	/*padding: 10px;*/
+	padding: 10px;
 }
 
 #main div {
