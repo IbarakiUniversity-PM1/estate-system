@@ -252,7 +252,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 						)
 					);
 			}
-			if (($i == 1 && $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] != "入居者") || $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] == "入居者") {
+			if ($i == 1 || $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] == "入居者") {
 				$cells[] = $this->Form->input(
 					"EstateFrankOpinion.?.frank_opinion",
 					array(

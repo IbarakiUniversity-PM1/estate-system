@@ -125,11 +125,18 @@ jQuery(
 			//ひな形と同一のidとnameをセット
 			$estate_frank_opinions.find('tbody tr').each(function () {
 				if ($(this).find('input[type=hidden]').attr('value') == $('#estate_frank_opinions_model').find('input[type=hidden]').attr('value')) {
-					$(this).find('textarea, input[type=hidden]').each(function () {
+					$(this).find('textarea').each(function () {
 						var model = $('#estate_frank_opinions_model');
 						$(this).attr({
 							id: model.find('textarea').attr('id'),
 							name: model.find('textarea').attr('name')
+						});
+					});
+					$(this).find('input[type=hidden]').each(function () {
+						var model = $('#estate_frank_opinions_model');
+						$(this).attr({
+							id: model.find('input[type=hidden]').attr('id'),
+							name: model.find('input[type=hidden]').attr('name')
 						});
 					});
 				}
@@ -182,14 +189,16 @@ jQuery(
 			$h2.html('物件登録確認');
 			document.title = $h2.html() + ' - こうがく不動産';
 			$('#main').find('form *').attr('disabled', true);
-			$('select, input').each(function () {
-				if ($(this).find('option:selected').attr('value') !== '-1' && ($(this).is('select') || (!$(this).is('input[type=file]') && (!$(this).is('input[type=radio]') || $(this).is(':checked'))))) {
+			$('select, input, textarea').each(function () {
+				if ($(this).find('option:selected').attr('value') !== '-1' && (!$(this).is('input') || (!$(this).is('input[type=file]') && !$(this).is('input[type=hidden]') && (!$(this).is('input[type=radio]') || $(this).is(':checked'))))) {
 					var s = $(this).clone();
 					$(s).attr('id', $(s).attr('id') + '_');
 					$(s).attr('type', 'hidden');
 					if ($(this).is('select')) {
 						$(s).find('option').remove();
 						s = $($(s)[0].outerHTML.replace('select', 'input')).attr('value', $(this).find('option:selected').attr('value'));
+					} else if ($(this).is('textarea')) {
+						s = $($(s)[0].outerHTML.replace('textarea', 'input')).attr('value', $(this).val());
 					}
 					$(this).parent().append(s);
 				}

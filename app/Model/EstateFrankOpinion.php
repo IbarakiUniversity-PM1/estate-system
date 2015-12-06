@@ -16,13 +16,6 @@ class EstateFrankOpinion extends AppModel
 	 * @var array 入力チェックの定義
 	 */
 	public $validate = array(
-		"estate_id" => array(
-			array(
-				"rule" => "notBlank",
-				"required" => "create",
-				"message" => "必須項目です。"
-			)
-		),
 		"estate_frank_opinion_type_id" => array(
 			array(
 				"rule" => "notBlank",
