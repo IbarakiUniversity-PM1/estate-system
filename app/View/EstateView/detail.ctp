@@ -111,8 +111,6 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 //var_dump($HtmlBody);
 ?>
 
-<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
 <script>
     $(function() {
         $( "#opinion" ).tabs();
