@@ -148,7 +148,8 @@ class Estate extends AppModel
 			//ここでは、"_file_name"を除いたカラム名を書く
 			'floor_plan_picture' => array(
 				'quality' => 75, //画質指定、デフォルトでは75
-				'styles' => array('thumb' => '85w') //リサイズしたいサイズを書く
+				'styles' => array('thumb' => '85w'), //リサイズしたいサイズを書く
+				'path' => ':webroot/upload/:model/:id/:style_:basename.:extension'
 			)
 		)
 	);
