@@ -25,23 +25,6 @@ class EstatePicture extends AppModel
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
-		),
-		"picture" => array(
-			array(
-				'rule' => array('uploadError'),
-				'message' => array('アップロード中にエラーが発生しました。')
-			),
-			array(
-				'rule' => array(
-					'mimeType',
-					array(
-						'image/jpeg',
-						'image/png',
-						'image/gif'
-					)
-				),
-				'message' => array('対応していないファイル形式です。')
-			)
 		)
 	);
 	/**
@@ -56,7 +39,8 @@ class EstatePicture extends AppModel
 			//ここでは、"_file_name"を除いたカラム名を書く
 			'picture' => array(
 				'quality' => 75, //画質指定、デフォルトでは75
-				'styles' => array('thumb' => '85w') //リサイズしたいサイズを書く
+				'styles' => array('thumb' => '85w'), //リサイズしたいサイズを書く
+				'path' => ':webroot/upload/:model/:id/:style_:basename.:extension'
 			)
 		)
 	);

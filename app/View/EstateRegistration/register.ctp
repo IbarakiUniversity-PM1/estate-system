@@ -109,7 +109,7 @@ echo $this->Form->input(
 		"options" => array($estateTvTypeList)
 	)
 );
-echo $this->Html->div("label", "間取り図(jpeg)");
+echo $this->Form->label("Estate.floor_plan_picture", "間取り図(jpeg)");
 ?>
 <table>
 	<thead>
@@ -204,8 +204,6 @@ for ($i = 0; $i < 2; $i++) { ?>
 	</tbody>
 </table>
 <?php }
-
-
 echo $this->Html->div("label", "生の声");
 for ($i = 0; $i < 2; $i++) { ?>
 	<table <?php
@@ -233,26 +231,26 @@ for ($i = 0; $i < 2; $i++) { ?>
 		<?php
 		for ($j = 0; $j < count($estateFrankOpinionType); $j++) {
 			$cells = array();
-			if ($i == 1 && $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] != "入居者") {
-				$cells[] = $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] . PHP_EOL .
+			if ($i == 1 && $estateFrankOpinionType[$j]["EstateFrankOpinionType"]["name"] != "入居者") {
+				$cells[] = $estateFrankOpinionType[$j]["EstateFrankOpinionType"]["name"] . PHP_EOL .
 					$this->Form->hidden(
 						"EstateFrankOpinion.?.estate_frank_opinion_type_id",
 						array(
-							"value" => $estateFrankOpinionType[$j]['EstateFrankOpinionType']['estate_frank_opinion_type_id'],
+							"value" => $estateFrankOpinionType[$j]["EstateFrankOpinionType"]["estate_frank_opinion_type_id"],
 							"class" => "estateFrankOpinionEstateFrankOpinionTypeId"
 						)
 					);
-			} else if ($estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] == "入居者") {
+			} else if ($estateFrankOpinionType[$j]["EstateFrankOpinionType"]["name"] == "入居者") {
 				$cells[] = "入居者" . PHP_EOL .
 					$this->Form->hidden(
 						"EstateFrankOpinion.?.estate_frank_opinion_type_id",
 						array(
-							"value" => $estateFrankOpinionType[$j]['EstateFrankOpinionType']['estate_frank_opinion_type_id'],
+							"value" => $estateFrankOpinionType[$j]["EstateFrankOpinionType"]["estate_frank_opinion_type_id"],
 							"class" => "estateFrankOpinionEstateFrankOpinionTypeId"
 						)
 					);
 			}
-			if ($i == 1 || $estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] == "入居者") {
+			if ($i == 1 || $estateFrankOpinionType[$j]["EstateFrankOpinionType"]["name"] == "入居者") {
 				$cells[] = $this->Form->input(
 					"EstateFrankOpinion.?.frank_opinion",
 					array(
@@ -261,7 +259,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 						"div" => false
 					)
 				);
-				if ($estateFrankOpinionType[$j]['EstateFrankOpinionType']['name'] == "入居者") {
+				if ($estateFrankOpinionType[$j]["EstateFrankOpinionType"]["name"] == "入居者") {
 					$cells[] = $this->Form->button(
 							"追加",
 							array(
@@ -287,54 +285,16 @@ for ($i = 0; $i < 2; $i++) { ?>
 		</tbody>
 	</table>
 <?php }
-/*echo $this->Form->input(
-	"bath_toilet",
-	array("label" => "バストイレ別")
-);
 echo $this->Form->input(
-	"gas_stove",
-	array("label" => "ガスキッチン有り")
+	"EstateCharacteristicReference.estate_characteristic_id",
+	array(
+		"div" => array("id" => "estate_characteristic_reference"),
+		"type" => "select",
+		"multiple" => "checkbox",
+		"options" => array($estateCharacteristicList),
+		"label" => "物件特徴"
+	)
 );
-echo $this->Form->input(
-	"woman_only",
-	array("label" => "女性限定")
-);
-echo $this->Form->input(
-	"student_only",
-	array("label" => "学生限定")
-);
-echo $this->Form->input(
-	"room_share",
-	array("label" => "ルームシェア可")
-);
-echo $this->Form->input(
-	"laundry_area",
-	array("label" => "洗濯機置き場(室内)")
-);
-echo $this->Form->input(
-	"air_conditioner",
-	array("label" => "エアコン有り")
-);
-echo $this->Form->input(
-	"elevator",
-	array("label" => "エレベータ有り")
-);
-echo $this->Form->input(
-	"auto_lock",
-	array("label" => "オートロック有り")
-);
-echo $this->Form->input(
-	"interphone",
-	array("label" => "インターフォン有り")
-);
-echo $this->Form->input(
-	"pet_breeding",
-	array("label" => "ペット飼育可")
-);
-echo $this->Form->input(
-	"playing_an_instrument",
-	array("label" => "楽器演奏可")
-);*/
 ?>
 <h3>上記の内容でよろしいですか？</h3>
 <?php

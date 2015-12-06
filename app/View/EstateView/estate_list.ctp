@@ -42,7 +42,7 @@ $this->Html->script("estate_view/estate_list", array("inline" => false));
                             "value" => $estate["Estate"]["estate_id"]
                         )
                     ),
-                    $this->Html->image(".." . DS . "upload" . DS . "estate_pictures" . DS . $estate["Estate"]["estate_id"] . DS . str_replace(".jpeg", "_thumb.jpeg", $estate["Estate"]["picture_file_name"]), array("alt" => $estate["Estate"]["name"])),
+                    $this->Html->image(".." . DS . "upload" . DS . "estate_pictures" . DS . $estate["Estate"]["estate_id"] . DS . "thumb_" . $estate["Estate"]["picture_file_name"], array("alt" => $estate["Estate"]["name"])),
                     $estate["Estate"]["address"],
                     $this->Number->currency(
                         $estate["Estate"]["rent"],

@@ -91,10 +91,13 @@
     height: 240px;
 }
 
-#map{
-    padding: 20px;
+#map {
     min-width: 400px;
     height: 300px;
+}
+
+div #map * {
+	padding: initial;
 }
 
 #estate_info div table tbody tr:nth-child(2n-1) {

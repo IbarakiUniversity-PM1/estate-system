@@ -190,7 +190,23 @@ jQuery(
 			document.title = $h2.html() + ' - こうがく不動産';
 			$('#main').find('form *').attr('disabled', true);
 			$('select, input, textarea').each(function () {
-				if ($(this).find('option:selected').attr('value') !== '-1' && (!$(this).is('input') || (!$(this).is('input[type=file]') && !$(this).is('input[type=hidden]') && (!$(this).is('input[type=radio]') || $(this).is(':checked'))))) {
+				if (
+					$(this).find('option:selected').attr('value') !== '-1'
+					&& (
+						!$(this).is('input')
+						|| (
+							!$(this).is('input[type=file]')
+							&& !$(this).is('input[type=hidden]')
+							&& (
+								(
+									!$(this).is('input[type=radio]')
+									&& !$(this).is('#estate_characteristic_reference input[type=checkbox]')
+								)
+								|| $(this).is(':checked')
+							)
+						)
+					)
+				) {
 					var s = $(this).clone();
 					$(s).attr('id', $(s).attr('id') + '_');
 					$(s).attr('type', 'hidden');
@@ -199,6 +215,8 @@ jQuery(
 						s = $($(s)[0].outerHTML.replace('select', 'input')).attr('value', $(this).find('option:selected').attr('value'));
 					} else if ($(this).is('textarea')) {
 						s = $($(s)[0].outerHTML.replace('textarea', 'input')).attr('value', $(this).val());
+					} else if($(this).is('#estate_characteristic_reference input[type=checkbox]')) {
+						$(s).attr('name',$(s).attr('name').replace('[]','').replace('][','][]['));
 					}
 					$(this).parent().append(s);
 				}

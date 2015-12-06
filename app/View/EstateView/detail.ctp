@@ -123,12 +123,12 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 
     <div id="estate_img">
         <h4>物件画像</h4>
-        <?php echo $this->Html->image('../upload/estate_pictures/' . $estate["Estate"]["estate_id"] . '/' . str_replace(".jpeg", "_original.jpeg", $estate['EstatePicture'][0]['picture_file_name'])   , array("alt" => $estate["Estate"]["name"]));?>
+        <?php echo $this->Html->image('../upload/estate_pictures/' . $estate["Estate"]["estate_id"] . '/' .  "original_" . $estate['EstatePicture'][0]['picture_file_name']   , array("alt" => $estate["Estate"]["name"]));?>
     </div>
 
     <div id="floor_img">
         <h4>間取り図</h4>
-        <?php echo $this->Html->image('../upload/estates/' . $estate["Estate"]["estate_id"] . '/' . str_replace(".jpeg", "_original.jpeg", $estate['Estate']['floor_plan_picture_file_name'])   , array("alt" => $estate["Estate"]["name"]));?>
+        <?php echo $this->Html->image('../upload/estates/' . $estate["Estate"]["estate_id"] . '/' . "original_" . $estate['Estate']['floor_plan_picture_file_name'] , array("alt" => $estate["Estate"]["name"]));?>
     </div>
 
 
