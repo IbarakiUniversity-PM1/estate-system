@@ -225,3 +225,35 @@ Request URL: /estate-system/css/preview/bbok.css
 Stack Trace:
 #0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-12-06 15:48:07 Error: Fatal Error (4): syntax error, unexpected ';' in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/Elements/nav.ctp, line 3]
+2015-12-06 15:48:07 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /estate-system/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 3, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 3, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-06 15:48:37 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/Applications/XAMPP/xamppfiles/htdocs/estate-system/app/View/Elements/nav.ctp, line 3]
+2015-12-06 15:48:37 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /estate-system/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Applications/X...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Applications/X...', 3, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Applications/X...', 3, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-06 15:51:33 Error: [MissingViewException] View file "EstateView/estatelist.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'EstateView/estatelist.ctp',
+)
+Request URL: /estate-system/estateview/estatelist
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/View/View.php(731): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(1020): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(255): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

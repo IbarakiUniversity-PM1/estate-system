@@ -1,11 +1,9 @@
 <div id="nav">
-    <h3><a href="/estate-system">こうがく不動産</a></h3>
-
+    <h3><?php echo $this->Html->link('こうがく不動産', array('controller' => 'pages', 'action' => 'display')); ?></h3>
     <ul>
-
         <li>
             <div id=search1>
-                <form action="/estate-system/" method="get">
+                <form name="form1" action="/estate-system/" method="get">
                     <p><input type="hidden" name="isSearch" value="true"</p>
                     <p><input type="checkbox" name="rent" value="true"> 家賃
                         <select name="rent_num">
@@ -98,14 +96,8 @@
 
                     <p><input type="submit" name="button" value="検索" /></p>
                 </form>
-
-
-
             </div>
-
-
         </li>
-
 
         <li>
             <div id="agent_list">
