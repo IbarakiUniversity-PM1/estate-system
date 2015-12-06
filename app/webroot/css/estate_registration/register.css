@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#estate_pictures button {
+#estate_pictures button, .estate_frank_opinion_delete {
 	display: none;
 }
 

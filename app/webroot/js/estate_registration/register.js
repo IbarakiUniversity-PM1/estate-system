@@ -41,17 +41,15 @@ jQuery(
 				}
 			});
 
-			var $i = 0;
 			//ひな形と同一のidとnameをセット
 			$estate_pictures.find('tbody tr').each(function () {
 				$(this).find('input').each(function () {
-					var model = $('.model');
+					var model = $('#estate_pictures_model');
 					$(this).attr({
-						'id': model.find('input[type=' + $(this).attr('type') + ']').attr('id'),
-						'name': model.find('input[type=' + $(this).attr('type') + ']').attr('name')
+						id: model.find('input[type=' + $(this).attr('type') + ']').attr('id'),
+						name: model.find('input[type=' + $(this).attr('type') + ']').attr('name')
 					});
 				});
-				$i++;
 			});
 
 			//ナンバリングを行う
@@ -79,7 +77,7 @@ jQuery(
 					//プレビュー欄に画像を表示(サイズはサムネイル画像と同じサイズになるようにしている)
 					$(e.target).parent().parent().find('.previews')
 						.empty()
-						.append($('<img>', {'src': reader.result}));
+						.append($('<img>', {src: reader.result}));
 				};
 
 				//画像を読み込む
@@ -87,7 +85,7 @@ jQuery(
 
 				//対象が物件画像であり、一番下の行であるならば、行を増やし、idとnameのナンバリングを行う
 				if ($(e.target).parent().parent().parent().parent().is('#estate_pictures') && $(e.target).parent().parent().parent().parent().find('tbody tr').length == $(e.target).parent().parent().parent().parent().find('tbody tr').index($(e.target).parent().parent()) + 1) {
-					var s = $('.model tr').clone();
+					var s = $('#estate_pictures_model').find('tr').clone();
 					$(s).find('button').hide();
 					$(s).find('input[type=radio]').hide();
 					$(s).find('input').removeAttr('required');
@@ -103,6 +101,56 @@ jQuery(
 			}
 		}
 
+		//生の声のナンバリングを行う
+		function numbering_estate_frank_opinions() {
+			//追加ボタンを押下した時の挙動をセット
+			$('.estate_frank_opinion_add').click(add_frank_opinions);
+
+			var $estate_frank_opinions = $('#estate_frank_opinions');
+
+			//生の声を削除するときの挙動をセット
+			$('.estate_frank_opinion_delete').click(function (e) {
+				$(e.target).parent().parent().remove();
+				numbering_estate_frank_opinions();
+			});
+
+			$estate_frank_opinions.find('tbody tr').each(function (i, e) {
+				//末尾の行以外の追加ボタンは隠し、削除ボタンは表示
+				if (i + 1 < $estate_frank_opinions.find('tbody tr').length) {
+					$(e).find('.estate_frank_opinion_add').hide();
+					$(e).find('.estate_frank_opinion_delete').show();
+				}
+			});
+
+			//ひな形と同一のidとnameをセット
+			$estate_frank_opinions.find('tbody tr').each(function () {
+				$(this).find('textarea').each(function () {
+					var model = $('#estate_frank_opinions_model');
+					$(this).attr({
+						id: model.find('textarea').attr('id'),
+						name: model.find('textarea').attr('name')
+					});
+				});
+			});
+
+			//ナンバリングを行う
+			$estate_frank_opinions.find('tbody tr').each(function (i, e) {
+				$(e).find('textarea').each(function () {
+					$(this).attr('id', $(this).attr('id').replace('?', i));
+					$(this).attr('name', $(this).attr('name').replace('?', i));
+				});
+			});
+		}
+
+		//生の声の追加ボタンを押下したときの挙動
+		function add_frank_opinions(e) {
+			var s = $('#estate_frank_opinions_model').find('tr').clone();
+			$(s).find('estate_frank_opinion_delete').hide();
+			$(s).find('textarea').removeAttr('required');
+			$(e.target).parent().parent().parent().append($(s));
+			numbering_estate_frank_opinions();
+		}
+
 		//いいえボタンを押下したときの挙動
 		function click_no() {
 			var $h2 = $('h2');
@@ -111,13 +159,15 @@ jQuery(
 			$('#main').find('form *').removeAttr('disabled');
 			$('h3, .submit').hide();
 			$('#register').parent().show();
-			$('input[type=file], #register').show();
+			$('input[type=file], #register, .estate_frank_opinion_add').show();
 			$('input[type=hidden]').remove();
 			$('#back').html('戻る').unbind('click').click(function () {
 				history.back();
 			});
 			//物件画像のナンバリングを行う
 			numbering_estate_pictures();
+			//生の声のナンバリングを行う
+			numbering_estate_frank_opinions();
 		}
 
 		//登録ボタンを押下したときの挙動をセット
@@ -140,9 +190,11 @@ jQuery(
 			});
 			$('.buttons, .buttons *, input[type=hidden], input[type=file]').removeAttr('disabled');
 			$('h3, .submit').show();
-			$('input[type=file], button').hide();
 			$('#register').parent().hide();
+			$('input[type=file], button').hide();
 			$('#back').show().html('いいえ').unbind('click').click(click_no);
+			// ページトップにスクロール
+			$('html, body').animate({scrollTop: 0}, 'slow');
 		});
 
 		$('input[type=submit]').click(function () {

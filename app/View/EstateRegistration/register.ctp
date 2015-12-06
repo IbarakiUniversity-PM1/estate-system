@@ -143,10 +143,13 @@ echo $this->Html->div("label", "物件画像(jpeg)");
 for ($i = 0; $i < 2; $i++) { ?>
 	<table <?php
 	if ($i == 0) {
-		echo "class=\"model\"";
-	} else {
-		echo "id=\"estate_pictures\"";
+		echo "class=\"model\" ";
 	}
+	echo "id=\"estate_pictures";
+	if ($i == 0) {
+		echo "_model";
+	}
+	echo "\"";
 	?>>
 		<?php if ($i == 1) { ?>
 	<thead>
@@ -201,28 +204,78 @@ for ($i = 0; $i < 2; $i++) { ?>
 	</tbody>
 </table>
 <?php }
+
+
+echo $this->Html->div("label", "生の声");
+for ($i = 0; $i < 2; $i++) { ?>
+	<table <?php
+	if ($i == 0) {
+		echo "class=\"model\" ";
+	}
+	echo "id=\"estate_frank_opinions";
+	if ($i == 0) {
+		echo "_model";
+	}
+	echo "\"";
+	?>>
+		<?php if ($i == 1) { ?>
+			<thead>
+			<?php echo $this->Html->tableHeaders(
+					array(
+						"種類",
+						"内容",
+						""
+					)
+				) . PHP_EOL ?>
+			</thead>
+		<?php } ?>
+		<tbody>
+		<?php
+		for ($j = 0; $j < 3; $j++) {
+			$cells = array();
+			if ($i == 1 && $j == 0) {
+				$cells[] = "不動産業者";
+			} else if ($i == 1 && $j == 1) {
+				$cells[] = "大家";
+			} else if ($j == 2) {
+				$cells[] = "入居者";
+			}
+			if (($i == 1 && $j < 2) || $j == 2) {
+				$cells[] = $this->Form->input(
+					"EstateFrankOpinion.?.frank_opinion",
+					array(
+						"rows" => 3,
+						"label" => false,
+						"div" => false
+					)
+				);
+				if ($j == 2) {
+					$cells[] = $this->Form->button(
+							"追加",
+							array(
+								"class" => "estate_frank_opinion_add",
+								"div" => false,
+								"type" => "button"
+							)
+						) . PHP_EOL .
+						$this->Form->button(
+							"削除",
+							array(
+								"class" => "estate_frank_opinion_delete",
+								"div" => false,
+								"type" => "button"
+							)
+						);
+				} else {
+					$cells[] = "";
+				}
+				echo $this->Html->tablecells($cells) . PHP_EOL;
+			}
+		} ?>
+		</tbody>
+	</table>
+<?php }
 /*echo $this->Form->input(
-	"frank_opinion_agent",
-	array(
-		"rows" => 3,
-		"label" => "生の声(不動産業者)"
-	)
-);
-echo $this->Form->input(
-	"frank_opinion_owner",
-	array(
-		"rows" => 3,
-		"label" => "生の声(大家)"
-	)
-);
-echo $this->Form->input(
-	"frank_opinion_resident",
-	array(
-		"rows" => 3,
-		"label" => "生の声(入居者)"
-	)
-);
-echo $this->Form->input(
 	"bath_toilet",
 	array("label" => "バストイレ別")
 );
