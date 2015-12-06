@@ -1,4 +1,4 @@
-jQuery(
+$(
 	function ($) {
 		$('tr[data-href]').click(
 			function (e) {

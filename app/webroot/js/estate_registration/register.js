@@ -1,4 +1,4 @@
-jQuery(
+$(
 	function () {
 		//駐車場フラグを変更したときの挙動
 		function change_estate_parking_flag() {
@@ -226,8 +226,8 @@ jQuery(
 			$('#register').parent().hide();
 			$('input[type=file], button').hide();
 			$('#back').show().html('いいえ').unbind('click').click(click_no);
-			// ページトップにスクロール
-			$('html, body').animate({scrollTop: 0}, 'slow');
+			// ページの上部に移動
+			$('html, body').prop('scrollTop', 0);
 		});
 
 		$('input[type=submit]').click(function () {
