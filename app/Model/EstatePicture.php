@@ -25,23 +25,6 @@ class EstatePicture extends AppModel
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
-		),
-		"picture" => array(
-			array(
-				'rule' => array('uploadError'),
-				'message' => array('アップロード中にエラーが発生しました。')
-			),
-			array(
-				'rule' => array(
-					'mimeType',
-					array(
-						'image/jpeg',
-						'image/png',
-						'image/gif'
-					)
-				),
-				'message' => array('対応していないファイル形式です。')
-			)
 		)
 	);
 	/**
