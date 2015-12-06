@@ -100,7 +100,7 @@ $errmsg = '';
 $items = array();
 
 //$n = getPointsV3($_POST['query'], $items);
-$n = getPointsV3("東京", $items);
+$n = getPointsV3($estate['Estate']['address'], $items);
     if ($n <= 0) {
         $errmsg = 'この住所では検索できません';
     } else {
