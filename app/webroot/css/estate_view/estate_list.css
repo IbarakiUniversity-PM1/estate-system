@@ -1,13 +1,26 @@
 @charset "utf-8";
 
-table img {
+#estate_table{
+    margin: 0 auto;
+    width: 90%;
+}
+
+#estate_table img {
     width: 100%;
 }
 
-tbody:hover {
+#estate_table tbody:hover {
     cursor: pointer;
 }
 
-tbody tr:hover {
+#estate_table tbody tr:nth-child(2n-1) {
+    background: #fff;
+}
+
+#estate_table tbody tr:hover {
     background: #dde1e1;
 }
+
+
+
+
