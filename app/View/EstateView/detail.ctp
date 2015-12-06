@@ -5,76 +5,76 @@
 <?php
 /**
  * GoogleMaps API GeoCode API(V3) のURLを取得する
- * @param	string $query 検索キーワード
- * @return	string URL URL
+ * @param    string $query 検索キーワード
+ * @return    string URL URL
 */
 function getURL_GeoCodeAPI_V3($query) {
-	return "http://maps.google.com/maps/api/geocode/xml?address=" . urlencode($query) . "&sensor=false";
+    return "http://maps.google.com/maps/api/geocode/xml?address=" . urlencode($query) . "&sensor=false";
 }
 
 /**
  * Google Geocoding API V3 を用いて住所・駅名の緯度・経度を求める
- * @param	string $query 検索キーワード
- * @param	array  $items 情報を格納する配列
- * @return	int ヒットした施設数
+ * @param    string $query 検索キーワード
+ * @param    array  $items 情報を格納する配列
+ * @return    int ヒットした施設数
 */
 function getPointsV3($query, &$items) {
-	$url = getURL_GeoCodeAPI_V3($query);			//リクエストURL
+    $url = getURL_GeoCodeAPI_V3($query);            //リクエストURL
 
-		$res = simplexml_load_file($url);
-		//レスポンス・チェック
-		if (preg_match("/ok/i", $res->status) == 0)		return 0;
-		//検索結果取りだし
-		$items[1]['latitude']  = (double)$res->result->geometry->location->lat;
-		$items[1]['longitude'] = (double)$res->result->geometry->location->lng;
-	return 1;
+        $res = simplexml_load_file($url);
+        //レスポンス・チェック
+        if (preg_match("/ok/i", $res->status) == 0)        return 0;
+        //検索結果取りだし
+        $items[1]['latitude']  = (double)$res->result->geometry->location->lat;
+        $items[1]['longitude'] = (double)$res->result->geometry->location->lng;
+    return 1;
 }
 
 /**
  * 世界測地系を日本測地系に変換する
- * @param	double $lat  緯度（世界測地系）
- * @param	double $long 経度（世界測地系）
- * @return	double array(緯度,経度)（日本測地系）
+ * @param    double $lat  緯度（世界測地系）
+ * @param    double $long 経度（世界測地系）
+ * @return    double array(緯度,経度)（日本測地系）
 */
 function wgs84_tokyo($lat, $long) {
-	$glat  = $lat  + $lat * 0.00010696  - $long * 0.000017467 - 0.0046020;
-	$glong = $long + $lat * 0.000046047 + $long * 0.000083049 - 0.010041;
-	return array($glat, $glong);
+    $glat  = $lat  + $lat * 0.00010696  - $long * 0.000017467 - 0.0046020;
+    $glong = $long + $lat * 0.000046047 + $long * 0.000083049 - 0.010041;
+    return array($glat, $glong);
 }
 
 function makeCommonBody($lat, $lng, $errmsg) {
     $type_g = 'ROADMAP';
     if ($errmsg == '') {
         $msg =<<< EOD
-            <div id="gmap" style="width:240px; height:180px;"></div>
+            <div id="gmap" style="width:400px; height:300px;"></div>
             <script type="text/javascript">
             <!--
             google.maps.event.addDomListener(window, 'load', function() {
             var mapdiv = document.getElementById('gmap');
             var myOptions = {
-		zoom: 16,
-		center: new google.maps.LatLng({$lat}, {$lng}),
-		mapTypeId: google.maps.MapTypeId.{$type_g},
-		mapTypeControl: true,
-		scaleControl: true,
+        zoom: 16,
+        center: new google.maps.LatLng({$lat}, {$lng}),
+        mapTypeId: google.maps.MapTypeId.{$type_g},
+        mapTypeControl: true,
+        scaleControl: true,
             };
             var map = new google.maps.Map(mapdiv, myOptions);
-            
+
             //地図情報を取得
             function getPointData() {
-		var point = map.getCenter();
-		document.getElementById("lng").value = point.lng();
-		document.getElementById("lat").value = point.lat();
-		document.getElementById("zm").value  = map.getZoom();
+        var point = map.getCenter();
+        document.getElementById("lng").value = point.lng();
+        document.getElementById("lat").value = point.lat();
+        document.getElementById("zm").value  = map.getZoom();
 
-		var type_g = map.getMapTypeId();
-		var types = {"roadmap":"地図", "satellite":"航空写真", "hybrid":"ハイブリッド", "terrain":"地形図" };
-		for (key in types) {
+        var type_g = map.getMapTypeId();
+        var types = {"roadmap":"地図", "satellite":"航空写真", "hybrid":"ハイブリッド", "terrain":"地形図" };
+        for (key in types) {
                     if (key == type_g) {
                         document.getElementById("type").value = types[key];
                         break;
                     }
-		}
+        }
                 wgs84_tokyo();
             }
             google.maps.event.addListener(map, 'dragend', getPointData);
@@ -82,14 +82,14 @@ function makeCommonBody($lat, $lng, $errmsg) {
             });
             -->
         </script>
-               
+
 EOD;
     } else {
         $msg =<<< EOD
             <div id="gmap" style="width:300px; height:300px; text-align:center;">
             <span style="color:red;">エラー</span>
             </div>
-               
+
 EOD;
     }
     return $msg;
@@ -104,8 +104,8 @@ $n = getPointsV3("東京", $items);
     if ($n <= 0) {
         $errmsg = 'この住所では検索できません';
     } else {
-	$lat = $items[1]['latitude'];
-    	$lng = $items[1]['longitude'];
+    $lat = $items[1]['latitude'];
+        $lng = $items[1]['longitude'];
     }
 $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 //var_dump($HtmlBody);
@@ -128,17 +128,12 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
         <?php echo $this->Html->image('../upload/estate_pictures/' . $estate["Estate"]["estate_id"] . '/' . str_replace(".jpeg", "_original.jpeg", $estate['EstatePicture'][0]['picture_file_name'])   , array("alt" => $estate["Estate"]["name"]));?>
     </div>
 
-    <div id="test">
-        <h4>地図</h4>
-            <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.3&amp;sensor=false"></script>
-
-        <?php echo $HtmlBody; ?>
-    </div>
-
     <div id="floor_img">
         <h4>間取り図</h4>
         <?php echo $this->Html->image('../upload/estates/' . $estate["Estate"]["estate_id"] . '/' . str_replace(".jpeg", "_original.jpeg", $estate['Estate']['floor_plan_picture_file_name'])   , array("alt" => $estate["Estate"]["name"]));?>
     </div>
+
+
 
 
 
@@ -291,8 +286,9 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
             </table>
         </div>
     </div>
-    
+
     <div id="opinion">
+        <center>生の声</center>
         <ul>
             <li><a href="#opinion_agent">不動産業者</a></li>
             <li><a href="#opinion_owner">大家</a></li>
@@ -311,5 +307,15 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
             <?php echo nl2br($estate['Estate']['frank_opinion_resident']); ?>
         </div>
     </div>
+
+
+    <div id="map">
+        <h4>地図</h4>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.3&amp;sensor=false"></script>
+
+        <?php echo $HtmlBody; ?>
+    </div>
+
+
     <?php echo $this->Html->link('内見予約画面へ', array('controller' => 'previewbook', 'action' => 'book', $estate['Estate']['estate_id'])); ?>
 </div>

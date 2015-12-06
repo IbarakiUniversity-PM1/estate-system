@@ -4,7 +4,7 @@ $this->Html->css("estate_view/estate_list", array("inline" => false));
 $this->Html->script("estate_view/estate_list", array("inline" => false));
 ?>
 
-<table>
+<table id="estate_table">
     <thead>
     <?php echo $this->Html->tableHeaders(
             array(
