@@ -6,15 +6,15 @@ echo $this->Form->create('Previewbook', array('url' => array('controller' => 'Pr
 氏名:<?php echo $this->Form->value('user_name', array('label' => '氏名')) . PHP_EOL; ?><br>
 E-Mail:<?php echo $this->Form->value('email_address', array('label' => 'E-Mail')) . PHP_EOL; ?><br>
 電話番号:<?php echo $this->Form->value('tel_number', array('label' => '電話番号')) . PHP_EOL; ?><br>
-第一希望日:<?php echo sprintf('%d年%d月%d日', $this->request->data['Previewbook']['preview_date_1']['year'],
+第一希望日:<?php echo sprintf('%d月%d日', 
 	$this->request->data['Previewbook']['preview_date_2']['month'],
 	$this->request->data['Previewbook']['preview_date_3']['day']);
 ?><br>
-第二希望日:<?php echo sprintf('%d年%d月%d日', $this->request->data['Previewbook']['preview_date_1']['year'],
+第二希望日:<?php echo sprintf('%d月%d日',
 	$this->request->data['Previewbook']['preview_date_2']['month'],
 	$this->request->data['Previewbook']['preview_date_3']['day']);
 ?><br>
-第三希望日:<?php echo sprintf('%d年%d月%d日', $this->request->data['Previewbook']['preview_date_1']['year'],
+第三希望日:<?php echo sprintf('%d月%d日',
 	$this->request->data['Previewbook']['preview_date_2']['month'],
 	$this->request->data['Previewbook']['preview_date_3']['day']);
 ?><br>
