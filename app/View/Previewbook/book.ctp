@@ -39,13 +39,13 @@ $this->assign("nav", true);?>
 
 
                 <li>
-                    <?php echo $this->Form->input('preview_date_2', array('dateFormat' => 'MD', 'maxYear' => date('Y'), 'minYear' => date('Y') - 100, 'monthNames' => false, 'label' => array('text' => '第一希望日')));
+                    <?php echo $this->Form->input('preview_date_2', array('dateFormat' => 'MD', 'maxYear' => date('Y'), 'minYear' => date('Y') - 100, 'monthNames' => false, 'label' => array('text' => '第二希望日')));
                     ?>
                 </li>
 
 
                 <li>
-                    <?php echo $this->Form->input('preview_date_3', array('dateFormat' => 'MD', 'maxYear' => date('Y'), 'minYear' => date('Y') - 100, 'monthNames' => false, 'label' => array('text' => '第一希望日')));
+                    <?php echo $this->Form->input('preview_date_3', array('dateFormat' => 'MD', 'maxYear' => date('Y'), 'minYear' => date('Y') - 100, 'monthNames' => false, 'label' => array('text' => '第三希望日')));
                     ?>
                 </li>
 

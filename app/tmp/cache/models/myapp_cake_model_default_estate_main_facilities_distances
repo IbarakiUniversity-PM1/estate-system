@@ -1,2 +1,2 @@
-1449437881
+1449438045
 a:4:{s:35:"estate_main_facillities_distance_id";a:5:{s:4:"type";s:7:"integer";s:4:"null";b:0;s:7:"default";s:0:"";s:6:"length";i:11;s:3:"key";s:7:"primary";}s:9:"estate_id";a:4:{s:4:"type";s:7:"integer";s:4:"null";b:0;s:7:"default";s:0:"";s:6:"length";N;}s:25:"estate_main_facilities_id";a:4:{s:4:"type";s:7:"integer";s:4:"null";b:0;s:7:"default";s:0:"";s:6:"length";N;}s:8:"distance";a:4:{s:4:"type";s:7:"integer";s:4:"null";b:1;s:7:"default";s:0:"";s:6:"length";N;}}
