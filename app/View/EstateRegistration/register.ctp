@@ -203,7 +203,8 @@ for ($i = 0; $i < 2; $i++) { ?>
 		) . PHP_EOL ?>
 	</tbody>
 </table>
-<?php }
+	<?php
+}
 echo $this->Html->div("label", "生の声");
 for ($i = 0; $i < 2; $i++) { ?>
 	<table <?php
@@ -255,8 +256,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 					"EstateFrankOpinion.?.frank_opinion",
 					array(
 						"rows" => 3,
-						"label" => false,
-						"div" => false
+						"label" => false
 					)
 				);
 				if ($estateFrankOpinionType[$j]["EstateFrankOpinionType"]["name"] == "入居者") {
@@ -284,8 +284,52 @@ for ($i = 0; $i < 2; $i++) { ?>
 		} ?>
 		</tbody>
 	</table>
-<?php }
-echo $this->Form->input(
+	<?php
+}
+echo $this->Html->div("label", "主要施設までの距離");
+?>
+<table id="estate_main_facilities">
+	<thead>
+	<?php echo $this->Html->tableHeaders(
+			array(
+				"種別",
+				"名称",
+				"距離(m)"
+			)
+		) . PHP_EOL ?>
+	</thead>
+	<tbody>
+	<?php
+	for ($j = 0; $j < count($estateMainFacilitiesType); $j++) {
+		echo $this->Html->tablecells(
+				array(
+					$estateMainFacilitiesType[$j]["EstateMainFacilitiesType"]["name"] . PHP_EOL .
+					$this->Form->hidden(
+						"EstateMainFacilities.?.estate_main_facilities_type_id",
+						array(
+							"value" => $estateMainFacilitiesType[$j]["EstateMainFacilitiesType"]["estate_main_facilities_type_id"],
+							"class" => "estateMainFacilitiesEstateestateMainFacilitiesTypeId"
+						)
+					),
+					$this->Form->input(
+						"EstateMainFacilitiesDistance.?.estate_main_facilities_id",
+						array(
+							"type" => "select",
+							"options" => $estateMainFacilitiesType[$j]["EstateMainFacilities"],
+							"label" => false,
+							"div" => false
+						)
+					),
+					$this->Form->input(
+						"EstateMainFacilitiesDistance.?.distance",
+						array("label" => false)
+					)
+				)
+			) . PHP_EOL;
+	} ?>
+	</tbody>
+</table>
+<?php echo $this->Form->input(
 	"EstateCharacteristicReference.estate_characteristic_id",
 	array(
 		"div" => array("id" => "estate_characteristic_reference"),
@@ -294,8 +338,7 @@ echo $this->Form->input(
 		"options" => array($estateCharacteristicList),
 		"label" => "物件特徴"
 	)
-);
-?>
+) ?>
 <h3>上記の内容でよろしいですか？</h3>
 <?php
 echo $this->Html->div(

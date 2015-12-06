@@ -19,7 +19,8 @@ class EstateRegistrationController extends AppController
 		"EstatePicture",
 		"EstateCharacteristic",
 		"EstateCharacteristicReference",
-		"EstateFrankOpinionType"
+		"EstateFrankOpinionType",
+		"EstateMainFacilitiesType"
 	);
 
 	/**
@@ -86,15 +87,33 @@ class EstateRegistrationController extends AppController
 		}
 		$this->set("estateTvTypeList", $estateTvTypeList);
 
+		// 生の声種別
+		$this->set("estateFrankOpinionType", $this->EstateFrankOpinionType->find("all"));
+
+		// 主要施設種別
+		$estateMainFacilitiesTypeList = array();
+		foreach ($this->EstateMainFacilitiesType->find("all") as $estateMainFacilitiesType) {
+			$estateMainFacilitiesTypeList[$estateMainFacilitiesType["EstateMainFacilitiesType"]["estate_main_facilities_type_id"]] = $estateMainFacilitiesType["EstateMainFacilitiesType"]["name"];
+		}
+		$this->set("estateMainFacilitiesTypeList", $estateMainFacilitiesTypeList);
+
+		// 主要施設種別
+		$estateMainFacilitiesType = $this->EstateMainFacilitiesType->find("all");
+		for ($i = 0; $i < count($estateMainFacilitiesType); $i++) {
+			$tmp = array();
+			for ($j = 0; $j < count($estateMainFacilitiesType[$i]["EstateMainFacilities"]); $j++) {
+				$tmp[$estateMainFacilitiesType[$i]["EstateMainFacilities"][$j]["estate_main_facilities_id"]] = $estateMainFacilitiesType[$i]["EstateMainFacilities"][$j]["name"];
+			}
+			$estateMainFacilitiesType[$i]["EstateMainFacilities"] = $tmp;
+		}
+		$this->set("estateMainFacilitiesType", $estateMainFacilitiesType);
+
 		// 物件特徴
 		$estateCharacteristicList = array();
 		foreach ($this->EstateCharacteristic->find("all") as $estateCharacteristic) {
 			$estateCharacteristicList[$estateCharacteristic["EstateCharacteristic"]["estate_characteristic_id"]] = $estateCharacteristic["EstateCharacteristic"]["name"];
 		}
 		$this->set("estateCharacteristicList", $estateCharacteristicList);
-
-		// 生の声種別
-		$this->set("estateFrankOpinionType", $this->EstateFrankOpinionType->find("all"));
 	}
 
 	public function index()

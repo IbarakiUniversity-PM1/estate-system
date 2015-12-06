@@ -234,6 +234,14 @@ jQuery(
 			$('.model').remove();
 		});
 
+		//主要施設のナンバリングを行う
+		$('#estate_main_facilities').find('tbody tr').each(function (i, e) {
+			$(e).find('input, select').each(function () {
+				$(this).attr('id', $(this).attr('id').replace('?', i));
+				$(this).attr('name', $(this).attr('name').replace('?', i));
+			});
+		});
+
 		click_no();
 	}
 );
