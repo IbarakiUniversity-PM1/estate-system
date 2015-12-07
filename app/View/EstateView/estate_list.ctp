@@ -2,7 +2,25 @@
 $this->assign("nav", true);
 $this->Html->css("estate_view/estate_list", array("inline" => false));
 $this->Html->script("estate_view/estate_list", array("inline" => false));
+$this->Html->script("jquery-latest", array("inline" => false));
+$this->Html->script("jquery.tablesorter", array("inline" => false));
+
 ?>
+
+<script type="text/javascript">
+    $(document).ready(function()
+                      {
+        $("#estate_table").tablesorter( {
+            headers: {
+                0: { sorter: false },
+                1: { sorter: false },
+                8: { sorter: false },
+
+            }
+        });
+    });
+</script>
+
 
 <table id="estate_table">
     <thead>
@@ -86,3 +104,7 @@ $this->Html->script("estate_view/estate_list", array("inline" => false));
     ?>
     </tbody>
 </table>
+
+
+
+
