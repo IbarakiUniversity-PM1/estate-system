@@ -892,3 +892,39 @@ Request URL: /estate-system/css/preview/bbok.css
 Stack Trace:
 #0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-12-07 15:03:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/css/preview/bbok.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-07 15:07:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/css/preview/bbok.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-07 15:09:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/css/preview/bbok.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-07 15:09:30 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/css/preview/bbok.css
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

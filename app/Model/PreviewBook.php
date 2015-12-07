@@ -41,5 +41,36 @@ class PreviewBook extends AppModel
 	/**
 	 * @var array 入力チェックの定義
 	 */
-	public $validate = array();
+	public $validate = array(
+            'user_name' => array(
+			array(
+				"rule" => array("maxLength", 20),
+				"message" => "20文字以内です。"
+			),
+			array(
+				"rule" => "notBlank",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		),
+            'email_address' => array(
+			array(
+				"rule" => array("maxLength", 256),
+				"message" => "256文字以内です。"
+			),
+			array(
+				"rule" => "notBlank",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		),
+            'tel_number' => array(
+			array(
+				"rule" => "notBlank",
+				"required" => "create",
+				"message" => "必須項目です。"
+			)
+		)
+            
+        );
 }
