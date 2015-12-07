@@ -1,74 +1,38 @@
 @charset "utf-8";
 
-.sampleTable {
-    border-collapse: collapse;
-    table-layout: fixed;
-}
-
-.sampleTable th,
-.sampleTable td {
-    border: 1px solid #CCCCCC;
-    padding: 5px 10px;
-    text-align: left;
-}
-
-.sampleTable th {
-    background-color: #FFFFFF;
-}
-
-.sampleTable table {
-    width: 200px;
-	margin-left: 0;
-}
-
 #estate_contents{
-    padding: 20px;
-    margin-right: auto;
-    margin-left : auto;
 }
 
 #estate_info{
-    margin: 0 auto;
-	padding: 0;
-    float: left;
 }
 
 #base {
-    padding: 20px;
     width: 250px;
-	margin-left: 0;
+    margin: 0 auto;
     float: left;
+}
+#right{
+    float: left;
+
 }
 
 #distance{
-    padding: 20px;
-    width: auto;
-    margin: auto auto;
-    float: left;
+
 }
 
 #char {
-    padding: 20px;
-    width: auto;
-	margin-right: 0;
-    float: left;
+
 }
 
 #room {
-    padding: 20px;
-    width: 300px;
-    margin: 0 auto;
-    float: left;
+
 }
 
 #opinion{
 /*    align-items: center;*/
-	min-width: 400px;
-    padding: 20px;
 }
 
 #opinion_agent {
-
 }
 
 #opinion_owner{
@@ -80,24 +44,26 @@
 }
 
 #estate_img img{
-    padding: 20px;
-    width: 320px;
-    height: 240px;
+    width: 280px;
+    height: 210px;
+    float: left;
+    margin: 0 auto;
 }
 
 #floor_img img{
-    padding: 20px;
-    width: 320px;
-    height: 240px;
+    width: 280px;
+    height: 210px;
+    float:left;
+    margin: 0 auto;
 }
 
 #map {
-    min-width: 400px;
-    height: 300px;
+    min-width: 280px;
+    height: 210px;
 }
 
 div #map * {
-	padding: initial;
+    padding: initial;
 }
 
 #estate_info div table tbody tr:nth-child(2n-1) {

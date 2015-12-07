@@ -1,19 +1,19 @@
 @charset "utf-8";
 
 * {
-	padding: 0;
-	margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 ul,
 li {
-	list-style: none;
+    list-style: none;
 }
 
 #content {
-	width: 100%;
-	height: auto;
-	margin-top: 10px;
+    width: 100%;
+    height: auto;
+    margin-top: 0px;
 }
 
 #nav div{
@@ -23,20 +23,20 @@ li {
 /* サイドバー */
 #nav,
 #main {
-	display: inline-block;
+    display: inline-block;
 }
 
 #nav {
-	border-right: groove;
-	margin-left: 0;
-	width: 25%;
+    border-right: groove;
+    margin-left: 0;
+    width: 25%;
 }
 
 /* 右側（main） */
 #main {
-	margin-left: 10px;
-	width: 65%;
-	height: auto;
+    margin-left: 10px;
+    width: 65%;
+    height: auto;
 }
 
 #content {
@@ -50,7 +50,7 @@ li {
     border-color: gray;
     border-radius:10px;
     background: #fff;
-    
+
 }
 
 
