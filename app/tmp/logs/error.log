@@ -1381,3 +1381,21 @@ Stack Trace:
 #0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 >>>>>>> 372e4f5ce4cfe7a4932269fe1713910a2df98a23
 #1 {main}
+2015-12-07 23:28:16 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed
+Request URL: /estate-system/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT name FRO...', Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT name FRO...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT name FRO...', Array, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Datasource/Database/Sqlite.php(278): DboSource->fetchAll('SELECT name FRO...', false)
+#4 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(915): Sqlite->listSources()
+#5 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estates')
+#6 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#7 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/Controller/EstateViewController.php(110): Model->find('all', Array)
+#9 [internal function]: EstateViewController->estateList('home')
+#10 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#12 /Applications/XAMPP/xamppfiles/htdocs/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#13 /Applications/XAMPP/xamppfiles/htdocs/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
