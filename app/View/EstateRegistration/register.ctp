@@ -238,7 +238,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 						"EstateFrankOpinion.?.estate_frank_opinion_type_id",
 						array(
 							"value" => $estateFrankOpinionType[$j]["EstateFrankOpinionType"]["estate_frank_opinion_type_id"],
-							"class" => "estateFrankOpinionEstateFrankOpinionTypeId"
+							"class" => "estateFrankOpinionTypeId"
 						)
 					);
 			} else if ($estateFrankOpinionType[$j]["EstateFrankOpinionType"]["name"] == "入居者") {
@@ -247,7 +247,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 						"EstateFrankOpinion.?.estate_frank_opinion_type_id",
 						array(
 							"value" => $estateFrankOpinionType[$j]["EstateFrankOpinionType"]["estate_frank_opinion_type_id"],
-							"class" => "estateFrankOpinionEstateFrankOpinionTypeId"
+							"class" => "estateFrankOpinionTypeId"
 						)
 					);
 			}
@@ -308,7 +308,7 @@ echo $this->Html->div("label", "主要施設までの距離");
 						"EstateMainFacilities.?.estate_main_facilities_type_id",
 						array(
 							"value" => $estateMainFacilitiesType[$j]["EstateMainFacilitiesType"]["estate_main_facilities_type_id"],
-							"class" => "estateMainFacilitiesEstateestateMainFacilitiesTypeId"
+							"class" => "estateMainFacilitiesTypeId"
 						)
 					),
 					$this->Form->input(

@@ -20,7 +20,9 @@ class EstateRegistrationController extends AppController
 		"EstateCharacteristic",
 		"EstateCharacteristicReference",
 		"EstateFrankOpinionType",
-		"EstateMainFacilitiesType"
+		"EstateMainFacilities",
+		"EstateMainFacilitiesType",
+		"EstateMainFacilitiesDistance"
 	);
 
 	/**
@@ -37,12 +39,18 @@ class EstateRegistrationController extends AppController
 				}
 			}
 			unset($this->request->data["Estate"]["thumbnail"]);
-			debug($this->request->data);
 			$this->Estate->create();
-			if ($this->Estate->saveAll($this->request->data)) {
+			if ($this->Estate->saveAll($this->request->data, array("deep" => true))) {
 				$this->redirect(array("action" => "index"));
 			}
-			debug($this->Estate->validationErrors);
+			foreach ($this->Estate->validationErrors as $k1 => $v1) {
+				foreach ($v1 as $k2 => $v2) {
+					foreach ($v2 as $v3) {
+						$this->Flash->set($k1 . "." . $k2 . " : " . $v3);
+					}
+				}
+			}
+			debug($this->request->data);
 		}
 
 		// 不動産業者
@@ -97,13 +105,14 @@ class EstateRegistrationController extends AppController
 		}
 		$this->set("estateMainFacilitiesTypeList", $estateMainFacilitiesTypeList);
 
-		// 主要施設種別
+		// 主要施設
 		$estateMainFacilitiesType = $this->EstateMainFacilitiesType->find("all");
 		for ($i = 0; $i < count($estateMainFacilitiesType); $i++) {
 			$tmp = array();
 			for ($j = 0; $j < count($estateMainFacilitiesType[$i]["EstateMainFacilities"]); $j++) {
 				$tmp[$estateMainFacilitiesType[$i]["EstateMainFacilities"][$j]["estate_main_facilities_id"]] = $estateMainFacilitiesType[$i]["EstateMainFacilities"][$j]["name"];
 			}
+			//$tmp['-1']='その他';
 			$estateMainFacilitiesType[$i]["EstateMainFacilities"] = $tmp;
 		}
 		$this->set("estateMainFacilitiesType", $estateMainFacilitiesType);

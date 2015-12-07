@@ -166,11 +166,16 @@ $(
 			$h2.html('物件登録');
 			document.title = $h2.html() + ' - こうがく不動産';
 			$('#main').find('form *').removeAttr('disabled');
+			$('#estate_main_facilities').find("select").each(function (){
+				if(-1<$(this).val()){
+					$(this).parent().parent().find('input:hidden').attr('disabled',true);
+				}
+			});
 			$('h3, .submit').hide();
 			$('#register').parent().show();
 			$('input[type=file], #register, .estate_frank_opinion_add').show();
 			$('input[type=hidden]').each(function () {
-				if (!$(this).is('.estateFrankOpinionEstateFrankOpinionTypeId')) {
+				if (!$(this).is('.estateFrankOpinionTypeId') && !$(this).is('.estateMainFacilitiesTypeId')) {
 					$(this).remove();
 				}
 			});
@@ -188,10 +193,11 @@ $(
 			var $h2 = $('h2');
 			$h2.html('物件登録確認');
 			document.title = $h2.html() + ' - こうがく不動産';
-			$('#main').find('form *').attr('disabled', true);
 			$('select, input, textarea').each(function () {
 				if (
-					$(this).find('option:selected').attr('value') !== '-1'
+					!$(this).is(':disabled')
+					&& !$(this).is('#estate_main_facilities select[value=-1]')
+					&& $(this).find('option:selected').attr('value') !== '-1'
 					&& (
 						!$(this).is('input')
 						|| (
@@ -208,7 +214,9 @@ $(
 					)
 				) {
 					var s = $(this).clone();
-					$(s).attr('id', $(s).attr('id') + '_');
+					if($(s).attr('id')!==undefined){
+						$(s).attr('id', $(s).attr('id') + '_');
+					}
 					$(s).attr('type', 'hidden');
 					if ($(this).is('select')) {
 						$(s).find('option').remove();
@@ -221,7 +229,13 @@ $(
 					$(this).parent().append(s);
 				}
 			});
+			$('#main').find('form *').attr('disabled', true);
 			$('.buttons, .buttons *, input[type=hidden], input[type=file]').removeAttr('disabled');
+			$('.estateMainFacilitiesTypeId').each(function (){
+				if(-1<$(this).parent().parent().find('option:selected').val()){
+					$(this).attr('disabled', true);
+				}
+			});
 			$('h3, .submit').show();
 			$('#register').parent().hide();
 			$('input[type=file], button').hide();
@@ -234,12 +248,31 @@ $(
 			$('.model').remove();
 		});
 
+		var $estate_main_facilities=$('#estate_main_facilities');
+
 		//主要施設のナンバリングを行う
-		$('#estate_main_facilities').find('tbody tr').each(function (i, e) {
+		$estate_main_facilities.find('tbody tr').each(function (i, e) {
 			$(e).find('input, select').each(function () {
 				$(this).attr('id', $(this).attr('id').replace('?', i));
 				$(this).attr('name', $(this).attr('name').replace('?', i));
 			});
+		});
+
+		$estate_main_facilities.find('select').change(function (e){
+			if($(e.target).find(':selected').val()==-1){
+				$(e.target).parent().parent().find('input').removeAttr('disabled');
+				if($(e.target).parent().find('input').length==1){
+					$(e.target).parent().find('input').show();
+				}else {
+					var $i = $('<input>');
+					$i.attr('name', $(e.target).attr('name').replace('Distance', '').replace('estate_main_facilities_id', 'name'));
+					$i.width($(e.target).width());
+					$(e.target).parent().append($i);
+				}
+			}else if($(e.target).parent().find('input').length==1){
+				$(e.target).parent().find('input').attr('disabled', true).hide();
+				$(e.target).parent().parent().find('.estateMainFacilitiesTypeId').attr('disabled', true);
+			}
 		});
 
 		click_no();

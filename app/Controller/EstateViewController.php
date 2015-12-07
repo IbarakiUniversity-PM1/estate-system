@@ -70,7 +70,7 @@ class EstateViewController extends AppController
         } else { //物件検索・絞り込み
             //タイトルをセットする
             $this->set("title_for_layout", "物件検索結果");
-        
+
             if ($_GET["isKeywordSearch"]) {
                 if($_GET['keyword_kind'] == 'estate_name'){
                     $options["conditions"]['Estate.name LIKE'] = '%'. $_GET['search_key'] . '%';

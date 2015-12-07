@@ -1,4 +1,5 @@
 <?php
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 /**
  * 管理者モデル
@@ -45,8 +46,8 @@ class Administrator extends AppModel
 		),
 		"e_mail_address" => array(
 			array(
-				"rule" => "alphaNumeric",
-				"message" => "英数字しか使用できません。"
+				"rule" => "email",
+				"message" => "Eメールアドレスで用いられる文字しか用いることはできません。"
 			),
 			array(
 				"rule" => array("maxLength", 300),
@@ -59,4 +60,9 @@ class Administrator extends AppModel
 			)
 		)
 	);
+
+	public function beforeSave($options = array()) {
+		$this->data['Administrator']['password'] = Security::hash($this->data['Administrator']['password']);
+		return true;
+	}
 }
