@@ -177,20 +177,19 @@ class EstateViewController extends AppController
 
         $this->Estate->id = $estate_id;
 
-//            if(!$id) {
-//                throw new NotFoundException(__('Invalid post'));
-//            }
+
         $estate = $this->Estate->read();
         $this->set('estate', $estate);
         
-        $str_characteristic = "";
-        foreach($estate['EstateCharacteristicReference'] as $ect) {         
-            $option["conditions"]["estate_characteristic_id"] = $ect["estate_characteristic_id"];
-            $option["fields"] = array('name', 'name');
-            $tmp = $this->EstateCharacteristic->find('all', $option);
-            $str_characteristic .= $tmp[0]['EstateCharacteristic']['name'].PHP_EOL;
-        }
-        $this->set('str_characteristic', $str_characteristic);
+        //あとでもどす
+//        $str_characteristic = "";
+//        foreach($estate['EstateCharacteristicReference'] as $ect) {         
+//            $option["conditions"]["estate_characteristic_id"] = $ect["estate_characteristic_id"];
+//            $option["fields"] = array('name', 'name');
+//            $tmp = $this->EstateCharacteristic->find('all', $option);
+//            $str_characteristic .= $tmp[0]['EstateCharacteristic']['name'].PHP_EOL;
+//        }
+//        $this->set('str_characteristic', $str_characteristic);
         
         $str_emfd = "";
         foreach($estate['EstateMainFacilitiesDistance'] as $emfd) {
@@ -222,6 +221,15 @@ class EstateViewController extends AppController
                 $str_emfd .= "ファミマ"." : ".$emfd['distance']."m".PHP_EOL; continue;
             }
         }
+        
+//        foreach($estate['EstateCharacteristicReference'] as $ect) {         
+//            $option["conditions"]["estate_characteristic_id"] = $ect["estate_characteristic_id"];
+//            $option["fields"] = array('name', 'name');
+//            $tmp = $this->EstateCharacteristic->find('all', $option);
+//            $str_characteristic .= $tmp[0]['EstateCharacteristic']['name'].PHP_EOL;
+//        }
+//        $this->set('str_characteristic', $str_characteristic);
+        
         $this->set('str_emfd', $str_emfd);
         
     }
