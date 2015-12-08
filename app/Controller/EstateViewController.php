@@ -1,4 +1,5 @@
 <?php
+App::uses('Sanitize', 'Utility');
 
 /**
  * 物件検索・詳細コントローラ
@@ -116,6 +117,9 @@ class EstateViewController extends AppController
      */
     private function search(&$options)
     {
+        // サニタイズの応急処置(非推奨)
+        $this->request->data = Sanitize::clean($this->request->data);
+
         if (!isset($_GET['rent'])
             && !isset($_GET['area'])
             && !isset($_GET['age'])
