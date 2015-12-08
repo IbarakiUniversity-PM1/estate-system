@@ -173,6 +173,7 @@ class EstateViewController extends AppController
      */
     public function detail($estate_id = null)
     {
+//        $this->autoLayout = false;
 
         $this->set("title_for_layout", "物件詳細画面");
 //            if(!$id){

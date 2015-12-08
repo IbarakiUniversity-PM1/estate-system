@@ -46,7 +46,7 @@ function makeCommonBody($lat, $lng, $errmsg) {
     $type_g = 'ROADMAP';
     if ($errmsg == '') {
         $msg =<<< EOD
-            <div id="gmap" style="width:280px; height:210px;"></div>
+            <div id="gmap" style="width:300px; height:210px;"></div>
             <script type="text/javascript">
             <!--
             google.maps.event.addDomListener(window, 'load', function() {
@@ -117,31 +117,31 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
     });
 </script>
 
-<center>
 
 
-    <div id="estate_contents">
+
+
+
+
+
 
         <center>
-            <div id="estate_img">
-                <center>物件画像</center>
-                <?php echo $this->Html->image('../upload/estate_pictures/' . $estate["Estate"]["estate_id"] . '/' .  "original_" . $estate['EstatePicture'][0]['picture_file_name']   , array("alt" => $estate["Estate"]["name"]));?>
-            </div>
+            <div id="images">
+                <div id="estate_img">
+                    <center>物件画像</center>
+                    <?php echo $this->Html->image('../upload/estate_pictures/' . $estate["Estate"]["estate_id"] . '/' .  "original_" . $estate['EstatePicture'][0]['picture_file_name']   , array("alt" => $estate["Estate"]["name"]));?>
+                </div>
 
-            <div id="floor_img">
-                <center>間取り図</center>
-                <?php echo $this->Html->image('../upload/estates/' . $estate["Estate"]["estate_id"] . '/' . "original_" . $estate['Estate']['floor_plan_picture_file_name'] , array("alt" => $estate["Estate"]["name"]));?>
+                <div id="floor_img">
+                    <center>間取り図</center>
+                    <?php echo $this->Html->image('../upload/estates/' . $estate["Estate"]["estate_id"] . '/' . "original_" . $estate['Estate']['floor_plan_picture_file_name'] , array("alt" => $estate["Estate"]["name"]));?>
+                </div>
             </div>
-
 
         </center>
-
-
-
-
         <center>
             <div id="estate_info">
-                <div id=base>
+                <div id="base">
                     <table border="1" rules="all">
                         <center>基本情報</center>
                         <tr>
@@ -213,88 +213,114 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                 </div>
 
 
-                
 
-                <ul id="right">
-                    <li>
-                        <div id="distance">
-                            <table  border="1" rules="all" style="width: 200px; height: 100px;;">
-                                <center>主要施設までの距離</center>
+
+
+
+
+                <div id="char">
+                    <center>
+                        <table  border="1" rules="all" >
+                            特徴
+                            <tr>
+                                <td align="center">
+                                    <?php echo nl2br($str_characteristic); ?>
+
+
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </div>
+
+                <div id="room">
+                    <center>
+                        <table  border="1" rules="all" >
+                            部屋の構成
+                            <tr>
+                                <td>
+                                    <!--                    ここに部屋の構成-->
+
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
+                </div>
+                <center>
+
+                    <div id="distance">
+                        <center>
+                            <table  border="1" rules="all" >
+                                主要施設までの距離
                                 <tr>
                                     <td>
                                         <!--                    ここに主要施設までの距離-->
-                                        
+
                                         <?php echo nl2br($str_emfd); ?>
                                     </td>
                                 </tr>
 
                             </table>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="char">
-                            <table  border="1" rules="all" style="width: 200px; height: 100px;;">
-                                <center>特徴</center>
-                                <tr>
-                                    <td align="center">
-                                        <?php echo nl2br($str_characteristic); ?>
-                                        
-                                        
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </li>
-                    <li>
-                        <div id="room">
-                            <table  border="1" rules="all" style="width: 200px; height: 100px;;">
-                                <center>部屋の構成</center>
-                                <tr>
-                                    <td>
-                                        <!--                    ここに部屋の構成-->
-                                        
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-
-        </center>
-
-        <center>
-
-            <div id="opinion">
-                <center>生の声</center>
-                <ul>
-                    <li><a href="#opinion_agent">不動産業者</a></li>
-                    <li><a href="#opinion_owner">大家</a></li>
-                    <li><a href="#opinion_resident">入居者</a></li>
-                </ul>
-
-                <div id="opinion_agent">
-                    <?php echo nl2br($estate['Estate']['frank_opinion_agent']); ?>
-                </div>
-
-                <div id="opinion_owner">
-                    <?php echo nl2br($estate['Estate']['frank_opinion_owner']); ?>
-                </div>
-
-                <div id="opinion_resident">
-                    <?php echo nl2br($estate['Estate']['frank_opinion_resident']); ?>
-                </div>
-            </div>
+                        </center>
+                    </div>
 
 
-            <div id="map">
-                <center>地図</center>
-                <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.3&amp;sensor=false"></script>
+                </center>
 
-                <?php echo $HtmlBody; ?>
+
+
             </div>
         </center>
-        <?php echo $this->Html->link('内見予約画面へ', array('controller' => 'previewbook', 'action' => 'book', $estate['Estate']['estate_id'])); ?>
+<center>
+    <div id="map" title="地図">
+        <center>地図</center>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.3&amp;sensor=false"></script>
+        <?php echo $HtmlBody; ?>
+
     </div>
 </center>
+
+
+        <div class="tab-container">
+            <!-- Codrops top bar -->
+
+            <section class="tabs">
+                <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+                <label for="tab-1" class="tab-label-1">不動産業者</label>
+
+                <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+                <label for="tab-2" class="tab-label-2">大家</label>
+
+                <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+                <label for="tab-3" class="tab-label-3">入居者</label>
+
+                <div class="clear-shadow"></div>
+
+                <div class="tab-content">
+                    <div class="content-1">
+                        <h2>生の声</h2>
+                        <p>test</p>
+                    </div>
+                    <div class="content-2">
+                        <h2>生の声</h2>
+                        <p>test</p>
+                    </div>
+                    <div class="content-3">
+                        <h2>生の声</h2>
+                        <p>test</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+
+
+
+        <?php echo $this->Html->link('内見予約画面へ', array('controller' => 'previewbook', 'action' => 'book', $estate['Estate']['estate_id'])); ?>
+
+

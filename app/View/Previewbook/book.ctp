@@ -12,7 +12,7 @@ $this->assign("nav", true);?>
         echo $this->Form->create('Previewbook', array('url' => array('controller' => 'Previewbook', 'action' => 'confirm')));
         ?>
         <center>
-            <ul>
+            <ul style="list-style:none;">
 
                 <li>
                     <div id="vertical_middle">
