@@ -9,17 +9,36 @@
     width: 100%;
 }
 
-#estate_table tbody:hover {
+tbody.scrollBody:hover {
     cursor: pointer;
 }
 
-#estate_table tbody tr:nth-child(2n-1) {
+tbody.scrollBody tr:nth-child(2n-1) {
     background: #fff;
 }
 
-#estate_table tbody tr:hover {
+tbody.scrollBody tr:hover {
     background: #dde1e1;
 }
 
 
 
+/*スクロール用*/
+thead.scrollHead,tbody.scrollBody{
+    display:block;
+}
+tbody.scrollBody{
+    overflow-y:scroll;
+
+    height: 550px;
+}
+tbody.scrollBody tr{
+    width: 100%;
+}
+
+tbody.scrollBody td{
+    width: 5%;
+}
+thead.scrollHead th{
+    width: 5%;
+}

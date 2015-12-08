@@ -23,7 +23,7 @@ $this->Html->script("jquery.tablesorter", array("inline" => false));
 
 
 <table id="estate_table">
-    <thead>
+    <thead class="scrollHead">
     <?php echo $this->Html->tableHeaders(
             array(
                 $this->Form->button(
@@ -44,7 +44,7 @@ $this->Html->script("jquery.tablesorter", array("inline" => false));
             )
         ) . PHP_EOL ?>
     </thead>
-    <tbody>
+    <tbody class="scrollBody">
     <?php
     $i = 0;
     foreach ($estates as $estate) {
