@@ -237,49 +237,8 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                                 <center>特徴</center>
                                 <tr>
                                     <td align="center">
-                                        
-                                        <?php
-        $str_characteristic = "";
-        if($estate['Estate']['bath_toilet']){
-            $str_characteristic .= 'バストイレ:別'.PHP_EOL;
-        }
-        if($estate['Estate']['gas_stove']) {
-            $str_characteristic .= 'ガスキッチン:あり'.PHP_EOL;
-        }
-        if($estate['Estate']['woman_only']) {
-            $str_characteristic .= '女性限定'.PHP_EOL;
-        }
-        if($estate['Estate']['student_only']) {
-            $str_characteristic .= '学生限定'.PHP_EOL;
-        }
-        if($estate['Estate']['room_share']) {
-            $str_characteristic .= 'ルームシェア:可能'.PHP_EOL;
-        }
-        if($estate['Estate']['laundry_area']) {
-            $str_characteristic .= '洗濯機置き場:室内'.PHP_EOL;
-        }
-        if($estate['Estate']['air_conditioner']) {
-            $str_characteristic .= 'エアコン:あり'.PHP_EOL;
-        }
-        if($estate['Estate']['elevator']) {
-            $str_characteristic .= 'エレベータ:あり'.PHP_EOL;
-        }
-        if($estate['Estate']['auto_lock']) {
-            $str_characteristic .= 'オートロック:あり'.PHP_EOL;
-        }
-        if($estate['Estate']['interphone']) {
-            $str_characteristic .= 'インターホン:あり'.PHP_EOL;
-        }
-        if($estate['Estate']['pet_breeding']) {
-            $str_characteristic .= 'ペット飼育:可能'.PHP_EOL;
-        }
-        if($estate['Estate']['playing_an_instrument']) {
-            $str_characteristic .= '楽器演奏:可能'.PHP_EOL;
-        }
-
-        ?>
                                         <?php echo nl2br($str_characteristic); ?>
-
+                                        
                                         
                                     </td>
                                 </tr>
@@ -315,26 +274,17 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                     <li><a href="#opinion_resident">入居者</a></li>
                 </ul>
 
-                <?php foreach($estate['EstateFrankOpinion'] as $efo):?>
-                
-                    <?php if($efo['estate_frank_opinion_type_id'] == 0) {
-                                echo '<div id="opinion_agent">';
-                                echo nl2br($efo['frank_opinion']); 
-                                echo '</div>';
-                    }?>
-                    <?php if($efo['estate_frank_opinion_type_id'] == 1) {
-                                echo '<div id="opinion_owner">';
-                                echo nl2br($efo['frank_opinion']); 
-                                echo '</div>';
-                    }?>
-                
-                    <?php if($efo['estate_frank_opinion_type_id'] == 2) {
-                                echo '<div id="opinion_resident">';
-                                echo nl2br($efo['frank_opinion']); 
-                                echo '</div>';
-                    }?>
+                <div id="opinion_agent">
+                    <?php echo nl2br($estate['Estate']['frank_opinion_agent']); ?>
+                </div>
 
-                <?php endforeach; ?>
+                <div id="opinion_owner">
+                    <?php echo nl2br($estate['Estate']['frank_opinion_owner']); ?>
+                </div>
+
+                <div id="opinion_resident">
+                    <?php echo nl2br($estate['Estate']['frank_opinion_resident']); ?>
+                </div>
             </div>
 
 

@@ -329,69 +329,16 @@ echo $this->Html->div("label", "主要施設までの距離");
 	} ?>
 	</tbody>
 </table>
-<?php 
-//echo $this->Form->input(
-//	"EstateCharacteristicReference.estate_characteristic_id",
-//	array(
-//		"div" => array("id" => "estate_characteristic_reference"),
-//		"type" => "select",
-//		"multiple" => "checkbox",
-//		"options" => array($estateCharacteristicList),
-//		"label" => "物件特徴"
-//	)
-//) 
-        ?>
-<br><font color="black" size="3">物件特徴</font>
-<?php
-echo $this->Form->input(
-	"Estate.bath_toilet",
-	array("label" => "バストイレ別")
-);
-echo $this->Form->input(
-	"Estate.gas_stove",
-	array("label" => "ガスキッチン有り")
-);
-echo $this->Form->input(
-	"Estate.woman_only",
-	array("label" => "女性限定")
-);
-echo $this->Form->input(
-	"Estate.student_only",
-	array("label" => "学生限定")
-);
-echo $this->Form->input(
-	"Estate.room_share",
-	array("label" => "ルームシェア可")
-);
-echo $this->Form->input(
-	"Estate.laundry_area",
-	array("label" => "洗濯機置き場(室内)")
-);
-echo $this->Form->input(
-	"Estate.air_conditioner",
-	array("label" => "エアコン有り")
-);
-echo $this->Form->input(
-	"Estate.elevator",
-	array("label" => "エレベータ有り")
-);
-echo $this->Form->input(
-	"Estate.auto_lock",
-	array("label" => "オートロック有り")
-);
-echo $this->Form->input(
-	"Estate.interphone",
-	array("label" => "インターフォン有り")
-);
-echo $this->Form->input(
-	"Estate.pet_breeding",
-	array("label" => "ペット飼育可")
-);
-echo $this->Form->input(
-	"Estate.playing_an_instrument",
-	array("label" => "楽器演奏可")
-);?>
-
+<?php echo $this->Form->input(
+	"EstateCharacteristicReference.estate_characteristic_id",
+	array(
+		"div" => array("id" => "estate_characteristic_reference"),
+		"type" => "select",
+		"multiple" => "checkbox",
+		"options" => array($estateCharacteristicList),
+		"label" => "物件特徴"
+	)
+) ?>
 <h3>上記の内容でよろしいですか？</h3>
 <?php
 echo $this->Html->div(
