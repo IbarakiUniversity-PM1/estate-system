@@ -19,6 +19,9 @@ estate_info{
 }
 #base{
     height: 360px;
+    position: relative;
+    top: 0px;
+    left: 20px;
 }
 
 #base,
@@ -27,33 +30,40 @@ estate_info{
 #room{
     float: left;
     width: 45%;
+    position: relative;
+    top: 0px;
+    left: 20px;
 }
 
 #distance,
 #char,
 #room{
-    height: 100px;
+    height: 160px;
     overflow: scroll;
 }
 
 #div.tab-container{
 /*    clear:both;*/
+
 }
 
 #map{
-    width: 300;
-    height: 210;
+    width: 600;
+    height: 300;
+}
 
+#map div{
+    padding: 0;
 }
 tbody tr:nth-child(2n-1) {
     background: #fff;
 }
 
+
 #estate_info{
     width: 300;
 }
 /*生の声のタブ*/
-@import url('normalize.css');
 /* General Demo Style */
 
 a{
@@ -63,6 +73,8 @@ a{
 .tab-container{
     width: 100%;
     position: relative;
+    top: 0px;
+    left: -20px;
 }
 .clr{
     clear: both;
