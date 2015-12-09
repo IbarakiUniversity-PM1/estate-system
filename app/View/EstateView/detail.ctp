@@ -47,7 +47,7 @@ function makeCommonBody($lat, $lng, $errmsg) {
     $type_g = 'ROADMAP';
     if ($errmsg == '') {
         $msg =<<< EOD
-            <div id="gmap" style="width:300px; height:210px;"></div>
+            <div id="gmap" style="width:600px; height:300px;"></div>
             <script type="text/javascript">
             <!--
             google.maps.event.addDomListener(window, 'load', function() {
@@ -234,19 +234,21 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                     </center>
                 </div>
 
+<!--
                 <div id="room">
                     <center>
                         <table  border="1" rules="all" >
                             部屋の構成
                             <tr>
                                 <td>
-                                    <!--                    ここに部屋の構成-->
+                                                        ここに部屋の構成
 
                                 </td>
                             </tr>
                         </table>
                     </center>
                 </div>
+-->
                 <center>
 
                     <div id="distance">
