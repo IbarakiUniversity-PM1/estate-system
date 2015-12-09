@@ -48,6 +48,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <div id="header_contents">
             <ul class="site_header">
 
+
                 <li><span><?php echo $this->element('breadcrumbs'); ?></span></li>
             </ul>
             <ul class="user_menu">
@@ -57,6 +58,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         </div>
     </div>
 <header></header>
+
 
 <body>
 
@@ -99,61 +101,60 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 
 
+    <!--ページトップへ戻る-->
+    <style type="text/css">
+        /* page-top */
+        #page-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 77%;
+        }
+        #page-top a {
+            background: #666;
+            text-decoration: none;
+            color: #fff;
+            width: 100px;
+            padding: 30px 0;
+            text-align: center;
+            display: block;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+        }
+        #page-top a:hover {
+            text-decoration: none;
+            background: #999;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            var showFlug = false;
+            var topBtn = $('#page-top');
+            topBtn.css('bottom', '-100px');
+            var showFlug = false;
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    if (showFlug == false) {
+                        showFlug = true;
+                        topBtn.stop().animate({'bottom' : '20px'}, 200);
+                    }
+                } else {
+                    if (showFlug) {
+                        showFlug = false;
+                        topBtn.stop().animate({'bottom' : '-100px'}, 200);
+                    }
+                }
+            });
+            //スクロールしてトップ
+            topBtn.click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
 </html>
 
 
-
-<!--ページトップへ戻る-->
-<style type="text/css">
-    /* page-top */
-    #page-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        font-size: 77%;
-    }
-    #page-top a {
-        background: #666;
-        text-decoration: none;
-        color: #fff;
-        width: 100px;
-        padding: 30px 0;
-        text-align: center;
-        display: block;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-    }
-    #page-top a:hover {
-        text-decoration: none;
-        background: #999;
-    }
-</style>
-<script type="text/javascript">
-    $(function() {
-        var showFlug = false;
-        var topBtn = $('#page-top');
-        topBtn.css('bottom', '-100px');
-        var showFlug = false;
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                if (showFlug == false) {
-                    showFlug = true;
-                    topBtn.stop().animate({'bottom' : '20px'}, 200);
-                }
-            } else {
-                if (showFlug) {
-                    showFlug = false;
-                    topBtn.stop().animate({'bottom' : '-100px'}, 200);
-                }
-            }
-        });
-        //スクロールしてトップ
-        topBtn.click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 500);
-            return false;
-        });
-    });
-</script>

@@ -18,6 +18,8 @@
 #header_contents li{
     float: left;
     list-style: none;
+    width:auto;
+
 }
 ul.user_menu{
     float:right;
