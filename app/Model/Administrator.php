@@ -1,5 +1,5 @@
 <?php
-App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
+App::uses('SimplePasswordHasher', 'Controller/Component/Auth');
 
 /**
  * 管理者モデル
@@ -62,7 +62,10 @@ class Administrator extends AppModel
 	);
 
 	public function beforeSave($options = array()) {
-		$this->data['Administrator']['password'] = Security::hash($this->data['Administrator']['password']);
+		if (isset($this->data[$this->alias]['password'])) {
+			$passwordHasher = new SimplePasswordHasher();
+			$this->data[$this->alias]['password'] = $passwordHasher->hash($this->data[$this->alias]['password']);
+		}
 		return true;
 	}
 }
