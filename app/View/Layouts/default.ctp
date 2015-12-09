@@ -27,16 +27,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 	echo "		" . $this->Html->meta('icon') . PHP_EOL;
 
-	echo "		" . $this->Html->css('cake.generic') . PHP_EOL;
-
 	echo "		" . $this->fetch('meta') . PHP_EOL;
 	echo "		" . $this->Html->css('//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css') . PHP_EOL;
+	echo "		" . $this->Html->css('cake.generic') . PHP_EOL;
 	echo "		" . $this->fetch('css') . PHP_EOL;
 	//Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
 	if ($this->fetch('nav')) {
 		echo "		" . $this->Html->css("elements/nav") . PHP_EOL;
 	}
-	echo "		" . $this->Html->css("header") . PHP_EOL;
 
 	echo "		" . $this->Html->script('//code.jquery.com/jquery-1.11.3.min.js') . PHP_EOL;
 	echo "		" . $this->Html->script('//code.jquery.com/ui/1.11.4/jquery-ui.min.js') . PHP_EOL;
@@ -46,20 +44,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 	<div id="header">
-		<div id="header_contents">
-			<ul class="site_header">
-				<li><?php echo $this->element('breadcrumbs'); ?></li>
-			</ul>
-			<ul class="user_menu">
-				<li>ログイン状況</li>
-				<li><?php echo $this->Html->link(
-						'ログイン',
-						array(
-							'controller'=>'Administrator',
-							'action'=>'login'
-						)); ?></li>
-			</ul>
-		</div>
+		<?php echo str_replace(PHP_EOL, PHP_EOL . "			", rtrim(
+				$this->requestAction(
+					array(
+						'controller'=>'header',
+						'action'=>'head'
+					)
+				)
+			)) . PHP_EOL; ?>
 	</div>
 	<div id="container">
 	<div id="content">
@@ -67,7 +59,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php
 		//Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
 		if ($this->fetch('nav')) {
-			echo str_replace(PHP_EOL, PHP_EOL . "		", rtrim($this->requestAction('/navigation/nav/', array('return')))) . PHP_EOL;
+			echo str_replace(PHP_EOL, PHP_EOL . "		", rtrim(
+					$this->requestAction(
+						array(
+							'controller'=>'navigation',
+							'action'=>'nav'
+						)
+					)
+				)) . PHP_EOL;
 		}
 		?>
 		<div id="main">

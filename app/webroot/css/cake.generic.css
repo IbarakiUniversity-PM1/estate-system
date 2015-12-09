@@ -85,7 +85,7 @@ p {
 #container {
     text-align: left;
 }
-#head{
+#head {
     background: #003d4c;
 }
 
@@ -892,7 +892,7 @@ pre {
 
 #header_contents li {
 	float: left;
-	width: 100px;
+	width:auto;
 	list-style: none;
 }
 

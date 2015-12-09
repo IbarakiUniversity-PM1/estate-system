@@ -34,6 +34,40 @@ class AppController extends Controller
 {
 	public $components = array(
 		'DebugKit.Toolbar', //TODO:本番環境にアップロードする際にコメントアウトする
-		'Flash'
+		'Flash',
+		'Auth' => array(
+			'loginAction' => array(
+				'controller' => 'Administrator',
+				'action' => 'login'
+			),
+			'loginRedirect' => array(
+				'controller' => 'EstateView',
+				'action' => 'estateList'
+			),
+			'logoutAction' => array(
+				'controller' => 'Administrator',
+				'action' => 'logout'
+			),
+			'logoutRedirect' => array(
+				'controller' => 'EstateView',
+				'action' => 'estateList'
+			),
+			'authError' => '管理者としてログインする必要があります',
+			'authenticate' => array(
+				'Form' => array(
+					'userModel' => 'Administrator',
+					'passwordHasher' => 'Blowfish',
+					'fields' => array(
+						'username' => 'name',
+						'password' => 'password'
+					)
+				)
+			)
+		)
 	);
+
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow();
+	}
 }

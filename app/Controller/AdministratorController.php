@@ -3,35 +3,6 @@
 class AdministratorController extends AppController
 {
 	/**
-	 * @var array 扱う根本的のリスト
-	 */
-	public $components = array(
-		'Auth' => array(
-			'loginAction' => array('action' => 'login'),
-			'loginRedirect' => array(
-				'controller' => 'EstateView',
-				'action' => 'estateList'
-			),
-			'logoutAction' => array('action' => 'logout'),
-			'logoutRedirect' => array(
-				'controller' => 'EstateView',
-				'action' => 'estateList'
-			),
-			'authError' => '管理者としてログインする必要があります',
-			'authenticate' => array(
-				'Form' => array(
-					'userModel'=>'Administrator',
-					'fields' => array(
-						'username' => 'name',
-						'password' => 'password'
-					),
-					'passwordHasher' => 'Blowfish'
-				)
-			)
-		)
-	);
-
-	/**
 	 * 管理者登録
 	 */
 	public function register()
@@ -41,7 +12,13 @@ class AdministratorController extends AppController
 			if ($this->Administrator->save($this->request->data)) {
 				$this->redirect(array("action" => "login"));
 			} else {
-				debug($this->Estate->validationErrors);
+				foreach ($this->Administrator->validationErrors as $k1 => $v1) {
+					foreach ($v1 as $k2 => $v2) {
+						foreach ($v2 as $v3) {
+							$this->Flash->set($k1 . "." . $k2 . " : " . $v3);
+						}
+					}
+				}
 			}
 		}
 		//タイトルをセットする
