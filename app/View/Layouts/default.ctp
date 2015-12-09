@@ -44,14 +44,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 </head>
 <body>
 	<div id="header">
-		<?php echo str_replace(PHP_EOL, PHP_EOL . "			", rtrim(
-				$this->requestAction(
-					array(
-						'controller'=>'header',
-						'action'=>'head'
+		<div id="header_contents">
+			<?php echo str_replace(PHP_EOL, PHP_EOL . "			", rtrim(
+					$this->requestAction(
+						array(
+							'controller'=>'header',
+							'action'=>'head'
+						)
 					)
-				)
-			)) . PHP_EOL; ?>
+				)) . PHP_EOL; ?>
+		</div>
 	</div>
 	<div id="container">
 	<div id="content">

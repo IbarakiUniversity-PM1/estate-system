@@ -90,19 +90,12 @@ p {
 }
 
 #header {
-	padding: 10px 20px;
 	background:#003d4c;
 	position: fixed !important;
 	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
-}
-
-#header li {
-	float: left;
-	width: auto;
-	list-style: none;
 }
 
 #header h1 {
@@ -888,6 +881,17 @@ pre {
 
 .model {
     display: none;
+}
+
+#header_contents {
+	overflow: auto;
+	padding: 10px 20px;
+}
+
+#header_contents li {
+	float: left;
+	width: auto;
+	list-style: none;
 }
 
 ul.user_menu {
