@@ -885,6 +885,7 @@ pre {
 
 #header_contents {
 	overflow: auto;
+	font-weight: bold;
 	padding: 10px 20px;
 }
 
