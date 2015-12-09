@@ -50,7 +50,7 @@ tbody tr:nth-child(2n-1) {
 }
 
 #estate_info{
-    width: 300;
+    width: 300px;
 }
 /*生の声のタブ*/
 @import url('normalize.css');
