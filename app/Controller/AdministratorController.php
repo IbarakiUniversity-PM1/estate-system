@@ -7,16 +7,12 @@ class AdministratorController extends AppController
 	 */
 	public $components = array(
 		'Auth' => array(
-			'loginAction' => array(
-				'action' => 'login'
-			),
+			'loginAction' => array('action' => 'login'),
 			'loginRedirect' => array(
 				'controller' => 'EstateView',
 				'action' => 'estateList'
 			),
-			'logoutAction' => array(
-				'action' => 'logout'
-			),
+			'logoutAction' => array('action' => 'logout'),
 			'logoutRedirect' => array(
 				'controller' => 'EstateView',
 				'action' => 'estateList'
@@ -28,7 +24,8 @@ class AdministratorController extends AppController
 					'fields' => array(
 						'username' => 'name',
 						'password' => 'password'
-					)
+					),
+					'passwordHasher' => 'Blowfish'
 				)
 			)
 		)
