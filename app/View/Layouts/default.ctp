@@ -41,23 +41,27 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     echo "        " . $this->fetch('script') . PHP_EOL;
     ?>
 </head>
-<div id="header">
-    <div id="header_contents">
-        <ul class="site_header">
-            <li><span id="kougaku"><?php echo $this->Html->link('こうがく不動産', array('controller' => 'pages', 'action' => 'display')); ?></span></li>
-        </ul>
-        <ul class="user_menu">
-            <li><span id="status">ログイン状況</span></li>
-            <li><span id="login">ログイン</span></li>
-        </ul>
-    </div>
-</div>
-
 <body>
-
+	<div id="header">
+	    <div id="header_contents">
+	        <ul>
+	            <li><?php echo $this->Html->link('こうがく不動産', '/'); ?></li>
+	        </ul>
+	        <ul class="user_menu">
+	            <li>ログイン状況</li>
+	            <li><?php echo $this->Html->link('ログイン', array(
+						'controller'=>'Administrator',
+						'action'=>'login'
+					)); ?></li>
+			</ul>
+	    </div>
+	</div>
     <div id="container">
     <div id="content">
-        <?php echo $this->Flash->render() . PHP_EOL; ?>
+        <?php
+		echo $this->Session->flash();
+		echo $this->Session->flash('auth');
+		echo $this->Flash->render() . PHP_EOL; ?>
         <?php
         //Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
         if ($this->fetch('nav')) {

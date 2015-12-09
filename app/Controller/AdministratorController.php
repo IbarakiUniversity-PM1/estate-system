@@ -5,18 +5,34 @@ class AdministratorController extends AppController
 	/**
 	 * @var array 扱う根本的のリスト
 	 */
-	public $components = array('Session', 'Auth');
-
-	/**
-	 * アクションの前処理
-	 */
-	public function beforeFilter()
-	{
-		parent::beforeFilter();
-
-		//未ログインでアクセスできるアクションを指定
-		$this->Auth->allow('register', 'login');
-	}
+	public $components = array(
+		'Auth' => array(
+			'loginAction' => array(
+				'action' => 'login'
+			),
+			'loginRedirect' => array(
+				'controller' => 'EstateView',
+				'action' => 'estateList'
+			),
+			'logoutAction' => array(
+				'action' => 'logout'
+			),
+			'logoutRedirect' => array(
+				'controller' => 'EstateView',
+				'action' => 'estateList'
+			),
+			'authError' => '管理者としてログインする必要があります',
+			'authenticate' => array(
+				'Form' => array(
+					'userModel'=>'Administrator',
+					'fields' => array(
+						'username' => 'name',
+						'password' => 'password'
+					)
+				)
+			)
+		)
+	);
 
 	/**
 	 * 管理者登録
@@ -42,17 +58,19 @@ class AdministratorController extends AppController
 	{
 		if ($this->request->is('post')) {
 			if ($this->Auth->login()) {
-				$this->redirect(
-					array(
-						'controller' => 'EstateView',
-						'action' => 'estateList'
-					)
-				);
-			} else {
-				$this->Flash->set('ログインに失敗しました。');
+				$this->redirect($this->Auth->redirectUrl());
+			}else{
+				$this->Flash->set('ユーザ名もしくはパスワードに誤りがあります');
 			}
 		}
 		//タイトルをセットする
 		$this->set("title_for_layout", "ログイン");
+	}
+
+	/**
+	 * ログアウト
+	 */
+	public function logout() {
+		$this->redirect($this->Auth->logout());
 	}
 }
