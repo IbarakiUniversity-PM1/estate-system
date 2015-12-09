@@ -47,7 +47,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="header">
 		<div id="header_contents">
-			<?php echo str_replace(PHP_EOL, PHP_EOL . "        ", rtrim($this->requestAction('/header/head/', array('return')))) . PHP_EOL ?>
+			<?php
+			echo $this->Html->nestedList(array($this->element('breadcrumbs')),array("class"=>"site_header"));
+			echo str_replace(PHP_EOL, PHP_EOL . "        ", rtrim(
+					$this->requestAction(
+						array(
+							'controller'=>'Header',
+							'action'=>'head'
+						)
+					)
+				)) . PHP_EOL;
+			?>
 		</div>
 	</div>
     <div id="container">
@@ -56,7 +66,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <?php
         //Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
         if ($this->fetch('nav')) {
-            echo str_replace(PHP_EOL, PHP_EOL . "        ", rtrim($this->requestAction('/navigation/nav/', array('return')))) . PHP_EOL;
+            echo str_replace(PHP_EOL, PHP_EOL . "        ", rtrim(
+					$this->requestAction(
+						array(
+							'controller'=>'Navigation',
+							'action'=>'nav'
+						)
+					)
+				)) . PHP_EOL;
         }
         ?>
         <div id="main">

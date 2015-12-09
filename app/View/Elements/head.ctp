@@ -1,5 +1,4 @@
 <?php
-echo $this->Html->nestedList(array($this->element('breadcrumbs')),array("class"=>"site_header"));
 $list=array();
 if(isset($loginUser)){
 	$list[]="ログイン中 : ".$loginUser["name"];
