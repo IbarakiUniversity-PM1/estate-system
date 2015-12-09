@@ -16,6 +16,7 @@
  */
 
 * {
+    margin: 0;
     padding: 0;
 }
 
@@ -84,16 +85,19 @@ p {
 #container {
     text-align: left;
 }
-#head {
+#head{
     background: #003d4c;
 }
 
 #header {
-	background:#003d4c;
-	position: fixed !important;
-	top: 0;
-	left: 0;
-	width: 100%;
+    padding: 10px 20px;
+    background:#003d4c;
+    position: fixed !important;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18px;
 }
 
 #header h1 {
@@ -120,7 +124,11 @@ p {
     clear: both;
     color: #333;
     overflow: auto;
-	margin-top: 35px;
+    margin-top: 35px;
+}
+
+#content div {
+    padding: 10px;
 }
 
 #main div {
@@ -882,19 +890,18 @@ pre {
 }
 
 #header_contents {
-	overflow: auto;
-	font-weight: bold;
-	padding: 10px 20px;
+    height: 100%;
+    overflow: auto;
 }
 
 #header_contents li {
-	float: left;
-	width: auto;
-	list-style: none;
+    float: left;
+    width: 100px;
+    list-style: none;
 }
 
 ul.user_menu {
-	float:right;
+    float:right;
 }
 
 /* page-top */

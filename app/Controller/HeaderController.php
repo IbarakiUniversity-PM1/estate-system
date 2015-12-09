@@ -12,6 +12,6 @@ class HeaderController extends AppController
 	{
 		$this->set("loginUser",$this->Auth->user());
 		//ヘッダー用エレメントを呼び出す
-		$this->render(".." . DS . "Elements" . DS . "header");
+		$this->render(".." . DS . "Elements" . DS . "head");
 	}
 }

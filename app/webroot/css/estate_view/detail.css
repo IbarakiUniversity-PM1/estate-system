@@ -5,6 +5,18 @@
     height: 210px;
 }
 
+
+#images {
+}
+
+#estate_img,
+#floor_img{
+    width: 280;
+    height: 210;
+}
+estate_info{
+
+}
 #base{
     height: 360px;
     position: relative;
@@ -53,30 +65,16 @@ tbody tr:nth-child(2n-1) {
 }
 /*生の声のタブ*/
 /* General Demo Style */
-=======
-    height: 100px;
-    overflow: scroll;
-}
-
-tbody tr:nth-child(2n-1) {
-    background: #fff;
-}
->>>>>>> 56d2622edb9846fd62aa3ce67eb09f213f1b7cc9
 
 a{
     color: #555;
     text-decoration: none;
 }
 .tab-container{
-<<<<<<< HEAD
     width: 100%;
     position: relative;
     top: 0px;
     left: -20px;
-=======
-    width: 100%;
-    position: relative;
->>>>>>> 56d2622edb9846fd62aa3ce67eb09f213f1b7cc9
 }
 .clr{
     clear: both;
@@ -124,10 +122,10 @@ a{
     z-index: 9999;
     position: relative;
     font-family: Cambria, Georgia, serif;
-    box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
 .codrops-top a{
-    padding: 0 10px;
+    padding: 0px 10px;
     letter-spacing: 1px;
     color: #333;
     display: inline-block;
@@ -147,12 +145,12 @@ a{
     text-align:center;
     display: block;
     line-height: 30px;
-    padding: 5px 0;
+    padding: 5px 0px;
 }
 .codrops-demos a{
     display: inline-block;
-    margin: 0 4px;
-    padding: 0 6px;
+    margin: 0px 4px;
+    padding: 0px 6px;
     color: #aaa;
     line-height: 20px;
     font-size: 13px;
@@ -166,11 +164,11 @@ a{
     background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
     background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 .codrops-demos a:hover{
     color: #333;
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 .codrops-demos a:active{
     background: #fff;
@@ -235,10 +233,10 @@ a{
     z-index: 9999;
     position: relative;
     font-family: Cambria, Georgia, serif;
-    box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
 .codrops-top a{
-    padding: 0 10px;
+    padding: 0px 10px;
     letter-spacing: 1px;
     color: #333;
     display: inline-block;
@@ -258,12 +256,12 @@ a{
     text-align:center;
     display: block;
     line-height: 30px;
-    padding: 5px 0;
+    padding: 5px 0px;
 }
 .codrops-demos a{
     display: inline-block;
-    margin: 0 4px;
-    padding: 0 6px;
+    margin: 0px 4px;
+    padding: 0px 6px;
     color: #aaa;
     line-height: 20px;
     font-size: 13px;
@@ -277,11 +275,11 @@ a{
     background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
     background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 .codrops-demos a:hover{
     color: #333;
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 .codrops-demos a:active{
     background: #fff;
@@ -345,10 +343,10 @@ a{
     z-index: 9999;
     position: relative;
     font-family: Cambria, Georgia, serif;
-    box-shadow: 1px 0 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 0px 2px rgba(0,0,0,0.2);
 }
 .codrops-top a{
-    padding: 0 10px;
+    padding: 0px 10px;
     letter-spacing: 1px;
     color: #333;
     display: inline-block;
@@ -368,12 +366,12 @@ a{
     text-align:center;
     display: block;
     line-height: 30px;
-    padding: 5px 0;
+    padding: 5px 0px;
 }
 .codrops-demos a{
     display: inline-block;
-    margin: 0 4px;
-    padding: 0 6px;
+    margin: 0px 4px;
+    padding: 0px 6px;
     color: #aaa;
     line-height: 20px;
     font-size: 13px;
@@ -387,11 +385,11 @@ a{
     background: -ms-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* IE10+ */
     background: linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 .codrops-demos a:hover{
     color: #333;
-    box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
 }
 .codrops-demos a:active{
     background: #fff;
@@ -413,8 +411,8 @@ a{
     z-index: 1000;
     width: 120px;
     height: 40px;
-    left: 0;
-    top: 0;
+    left: 0px;
+    top: 0px;
     opacity: 0;
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
@@ -457,6 +455,7 @@ a{
 }
 
 .tabs label:after {
+    tab-content: '';
     background: #fff;
     position: absolute;
     bottom: -2px;
@@ -578,7 +577,7 @@ a{
     border-left: 8px solid rgba(63,148,148, 0.1);
 }
 
-@keyframes page {
+@keyframes "page" {
     0% {
         left: 0;
     }
@@ -604,7 +603,7 @@ a{
 
 }
 
-@-webkit-keyframes page {
+@-webkit-keyframes "page" {
     0% {
         left: 0;
     }
@@ -617,7 +616,7 @@ a{
 
 }
 
-@-ms-keyframes page {
+@-ms-keyframes "page" {
     0% {
         left: 0;
     }
@@ -630,7 +629,7 @@ a{
 
 }
 
-@-o-keyframes page {
+@-o-keyframes "page" {
     0% {
         left: 0;
     }
