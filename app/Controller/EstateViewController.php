@@ -108,7 +108,9 @@ class EstateViewController extends AppController
         );
 
         //データを取得し、Viewの$estatesにセットする
-        $this->set("estates", $this->Estate->find("all", $options));
+        $estates = $this->Estate->find("all", $options);
+        $this->set("estates", $estates);
+        $this->set("hit", "検索結果: " . count($estates) . "件");
     }
 
     /**

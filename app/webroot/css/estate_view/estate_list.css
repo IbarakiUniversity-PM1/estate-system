@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+#hit{
+    width: 100%;
+}
+
 #estate_table{
     margin: 0 auto;
     width: 90%;

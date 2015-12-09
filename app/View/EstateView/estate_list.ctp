@@ -23,6 +23,15 @@ $this->Html->script("jquery.tablesorter", array("inline" => false));
 </script>
 
 
+
+<div id="hit"><h4>
+    <?php
+        if($title_for_layout === "物件検索結果")
+            echo $hit;
+    ?>
+</h4></div>
+
+
 <table id="estate_table">
     <thead class="scrollHead">
     <?php echo $this->Html->tableHeaders(
