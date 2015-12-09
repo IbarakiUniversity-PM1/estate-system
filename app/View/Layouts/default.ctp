@@ -17,6 +17,7 @@
 $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,24 +36,26 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     if ($this->fetch('nav')) {
         echo "        " . $this->Html->css("elements/nav") . PHP_EOL;
     }
+    echo "        " . $this->Html->css("header") . PHP_EOL;
+
     echo "        " . $this->Html->script('//code.jquery.com/jquery-1.11.3.min.js') . PHP_EOL;
     echo "        " . $this->Html->script('//code.jquery.com/ui/1.11.4/jquery-ui.min.js') . PHP_EOL;
     echo "        " . $this->Html->script('cake.generic') . PHP_EOL;
     echo "        " . $this->fetch('script') . PHP_EOL;
     ?>
 </head>
-<div id="header">
-    <div id="header_contents">
-        <ul class="site_header">
-            <li><span id="kougaku"><?php echo $this->Html->link('こうがく不動産', array('controller' => 'pages', 'action' => 'display')); ?></span></li>
-        </ul>
-        <ul class="user_menu">
-            <li><span id="status">ログイン状況</span></li>
-            <li><span id="login">ログイン</span></li>
-        </ul>
-    </div>
-</div>
+    <div id="header">
+        <div id="header_contents">
+            <ul class="site_header">
 
+                <li><span><?php echo $this->element('breadcrumbs'); ?></span></li>
+            </ul>
+            <ul class="user_menu">
+                <li><span id="status">ログイン状況</span></li>
+                <li><span id="login">ログイン</span></li>
+            </ul>
+        </div>
+    </div>
 <header></header>
 
 <body>
@@ -92,37 +95,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
         <p id="page-top"><a href="#container">PAGE TOP</a></p>
     </div>
 </body>
+
+
+
+
 </html>
 
-<!--ヘッダー-->
-<style>
-    #header {
-        background:#003d4c;
-        position: fixed !important;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 18px;
-    }
-    #content{
-        margin-top: 35px;
-    }
-    #header_contents{
-        height: 100%;
-        overflow: auto;
-    }
-    #header_contents li{
-        float: left;
-        width: 100px;
-        list-style: none;
-    }
-    ul.user_menu{
-        float:right;
-    }
-
-</style>
 
 
 <!--ページトップへ戻る-->

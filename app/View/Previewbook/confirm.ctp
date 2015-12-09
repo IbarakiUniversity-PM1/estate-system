@@ -3,6 +3,11 @@
 $this->assign("nav", true);
 echo $this->Form->create('Previewbook', array('url' => array('controller' => 'Previewbook', 'action' => 'confirm')));
 ?>
+    <?php $this->Html->addCrumb('物件詳細',
+                                "/EstateView/detail/" . $this->request->data['Previewbook']['estate_id']); ?>
+    <?php $this->Html->addCrumb('内見予約',
+                                "/previewbook/book/" . $this->request->data['Previewbook']['estate_id']); ?>
+
 
 
     <div id="book_info">
