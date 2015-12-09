@@ -16,7 +16,6 @@
  */
 
 * {
-    margin: 0;
     padding: 0;
 }
 
@@ -92,7 +91,6 @@ p {
 #header {
 	background:#003d4c;
 	position: fixed !important;
-	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
