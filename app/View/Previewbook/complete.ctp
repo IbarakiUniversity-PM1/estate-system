@@ -1,3 +1,9 @@
+<?php $this->Html->addCrumb('物件詳細',
+                            "/EstateView/detail/" . $this->request->data['Previewbook']['estate_id']); ?>
+<?php $this->Html->addCrumb('内見予約',
+                            "/previewbook/book/" . $this->request->data['Previewbook']['estate_id']); ?>
+
+
 <center>
     <?php
     $this->assign("nav", true);

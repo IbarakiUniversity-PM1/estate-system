@@ -4,8 +4,9 @@ $this->Html->css("estate_view/estate_list", array("inline" => false));
 $this->Html->script("estate_view/estate_list", array("inline" => false));
 $this->Html->script("jquery-latest", array("inline" => false));
 $this->Html->script("jquery.tablesorter", array("inline" => false));
-
 ?>
+
+
 
 <script type="text/javascript">
     $(document).ready(function()

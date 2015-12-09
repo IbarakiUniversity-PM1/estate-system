@@ -2,7 +2,10 @@
 <?php
 $this->assign("nav", true);?>
 <?php echo $this->Html->css(array('preview/bbok'), false, array('inline' => false)); ?>
-
+    <?php $this->Html->addCrumb('物件詳細',
+                                "/EstateView/detail/" . $estate["Estate"]["estate_id"]); ?>
+    <?php $this->Html->addCrumb('内見予約',
+                                "/previewbook/book/" . $estate["Estate"]["estate_id"]); ?>
 
     <div>
 
