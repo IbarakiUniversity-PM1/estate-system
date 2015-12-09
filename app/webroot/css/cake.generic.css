@@ -97,7 +97,12 @@ p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 18px;
+}
+
+#header li {
+	float: left;
+	width: auto;
+	list-style: none;
 }
 
 #header h1 {
@@ -883,17 +888,6 @@ pre {
 
 .model {
     display: none;
-}
-
-#header_contents {
-	height: 100%;
-	overflow: auto;
-}
-
-#header_contents li {
-	float: left;
-	width:auto;
-	list-style: none;
 }
 
 ul.user_menu {
