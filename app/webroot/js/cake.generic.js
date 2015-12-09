@@ -4,16 +4,16 @@ $(
 		$buttons.find('div').css('width', 100 / $buttons.children(':visible').length + '%');
 		var topBtn = $('#page-top');
 		topBtn.css('bottom', '-100px');
-		var showFlug = false;
+		var showFlag = false;
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 100) {
-				if (showFlug == false) {
-					showFlug = true;
+				if (showFlag == false) {
+					showFlag = true;
 					topBtn.stop().animate({'bottom' : '20px'}, 200);
 				}
 			} else {
-				if (showFlug) {
-					showFlug = false;
+				if (showFlag) {
+					showFlag = false;
 					topBtn.stop().animate({'bottom' : '-100px'}, 200);
 				}
 			}
