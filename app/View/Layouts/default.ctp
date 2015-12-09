@@ -53,8 +53,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </div>
 </div>
 
-<header></header>
-
 <body>
 
     <div id="container">
@@ -93,89 +91,3 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     </div>
 </body>
 </html>
-
-<!--ヘッダー-->
-<style>
-    #header {
-        background:#003d4c;
-        position: fixed !important;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 18px;
-    }
-    #content{
-        margin-top: 35px;
-    }
-    #header_contents{
-        height: 100%;
-        overflow: auto;
-    }
-    #header_contents li{
-        float: left;
-        width: 100px;
-        list-style: none;
-    }
-    ul.user_menu{
-        float:right;
-    }
-
-</style>
-
-
-<!--ページトップへ戻る-->
-<style type="text/css">
-    /* page-top */
-    #page-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        font-size: 77%;
-    }
-    #page-top a {
-        background: #666;
-        text-decoration: none;
-        color: #fff;
-        width: 100px;
-        padding: 30px 0;
-        text-align: center;
-        display: block;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-    }
-    #page-top a:hover {
-        text-decoration: none;
-        background: #999;
-    }
-</style>
-<script type="text/javascript">
-    $(function() {
-        var showFlug = false;
-        var topBtn = $('#page-top');
-        topBtn.css('bottom', '-100px');
-        var showFlug = false;
-        $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-                if (showFlug == false) {
-                    showFlug = true;
-                    topBtn.stop().animate({'bottom' : '20px'}, 200);
-                }
-            } else {
-                if (showFlug) {
-                    showFlug = false;
-                    topBtn.stop().animate({'bottom' : '-100px'}, 200);
-                }
-            }
-        });
-        //スクロールしてトップ
-        topBtn.click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 500);
-            return false;
-        });
-    });
-</script>
