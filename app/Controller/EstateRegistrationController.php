@@ -25,6 +25,11 @@ class EstateRegistrationController extends AppController
 		"EstateMainFacilitiesDistance"
 	);
 
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->deny();
+	}
+
 	/**
 	 * 登録画面
 	 */
@@ -59,6 +64,9 @@ class EstateRegistrationController extends AppController
 			$estateAgentList[$estateAgent["EstateAgent"]["estate_agent_id"]] = $estateAgent["EstateAgent"]["name"];
 		}
 		$this->set("estateAgentList", $estateAgentList);
+
+		// 窓の向き
+		$this->set("estateWindowList", array("東","西","南","北"));
 
 		// 取引態様
 		$estateTradingAspectList = array();

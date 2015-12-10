@@ -43,10 +43,6 @@ echo $this->Form->input(
 	array("label" => "間取り")
 );
 echo $this->Form->input(
-	"Estate.window_direction",
-	array("label" => "窓の向き")
-);
-echo $this->Form->input(
 	"Estate.story",
 	array("label" => "階建")
 );
@@ -67,6 +63,14 @@ echo $this->Form->input(
 	array(
 		"label" => "駐車場料金(円)",
 		"div" => array("id" => "EstateParkingFeeDiv")
+	)
+);
+echo $this->Form->input(
+	"Estate.window_direction",
+	array(
+		"type"=>"select",
+		"options"=>$estateWindowList,
+		"label" => "窓の向き"
 	)
 );
 echo $this->Form->input(

@@ -49,14 +49,24 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div id="header_contents">
 			<?php
 			echo $this->Html->nestedList(array($this->element('breadcrumbs')),array("class"=>"site_header"));
-			echo str_replace(PHP_EOL, PHP_EOL . "        ", rtrim(
-					$this->requestAction(
-						array(
-							'controller'=>'Header',
-							'action'=>'head'
-						)
-					)
-				)) . PHP_EOL;
+			$list=array();
+			if(isset($loginUser)){
+				$list[]="ログイン中 : ".$loginUser["name"];
+				$list[]=$this->Html->link(
+					'ログアウト',
+					array(
+						'controller'=>'Administrator',
+						'action'=>'logout'
+					));
+			}else{
+				$list[]=$this->Html->link(
+					'ログイン',
+					array(
+						'controller'=>'Administrator',
+						'action'=>'login'
+					));
+			}
+			echo $this->Html->nestedList($list,array("class"=>"user_menu"));
 			?>
 		</div>
 	</div>
