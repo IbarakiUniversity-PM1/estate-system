@@ -119,7 +119,7 @@ a{
     background: #fff;
     background: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
-    z-index: 9999;
+    z-index: 10;
     position: relative;
     font-family: Cambria, Georgia, serif;
     box-shadow: 1px 0px 2px rgba(0,0,0,0.2);

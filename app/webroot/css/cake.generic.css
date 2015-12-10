@@ -906,26 +906,27 @@ ul.user_menu {
 
 /* page-top */
 #page-top {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	font-size: 77%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 77%;
+    z-index: 100;
 }
 
 #page-top a {
-	background: #666;
-	text-decoration: none;
-	color: #fff;
-	width: 100px;
-	padding: 30px 0;
-	text-align: center;
-	display: block;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
+    background: #666;
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 30px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 
 #page-top a:hover {
-	text-decoration: none;
-	background: #999;
+    text-decoration: none;
+    background: #999;
 }
