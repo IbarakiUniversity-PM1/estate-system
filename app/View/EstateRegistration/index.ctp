@@ -22,9 +22,9 @@
 
 <td>
 
-<?php echo $this->Form->postLink('削除', array('controller' => 'estatedelete','action' => 'delete', $estate['Estate']['estate_id']), array('confirm' => 'Are you sure?')); ?>
+<?php echo $this->Form->postLink('削除', array('controller' => 'EstateDelete','action' => 'delete', $estate['Estate']['estate_id']), array('confirm' => '削除しても良いですか？')); ?>
 
-<?php echo $this->Html->link('編集', array('controller' => 'estateedit', 'action' => 'edit', $estate['Estate']['estate_id'])); ?>
+<?php echo $this->Html->link('編集', array('controller' => 'EstateEdit', 'action' => 'edit', $estate['Estate']['estate_id'])); ?>
 
 </td>
 
