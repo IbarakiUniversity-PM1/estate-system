@@ -90,14 +90,6 @@ echo $this->Form->input(
 	)
 );
 echo $this->Form->input(
-	"Estate.estate_type_id",
-	array(
-		"label" => "部屋種別",
-		"type" => "select",
-		"options" => array($estateTypeList)
-	)
-);
-echo $this->Form->input(
 	"Estate.estate_internet_type_id",
 	array(
 		"label" => "インターネット回線",
@@ -333,7 +325,69 @@ echo $this->Html->div("label", "主要施設までの距離");
 	} ?>
 	</tbody>
 </table>
-<?php echo $this->Form->input(
+<?php echo $this->Html->div("label", "部屋") ?>
+<table id="estate_room">
+	<thead>
+	<?php echo $this->Html->tableHeaders(
+			array(
+				"種別",
+				"部屋番号",
+				"入居可能時期",
+				"角部屋",
+				"契約済みフラグ"
+			)
+		) . PHP_EOL ?>
+	</thead>
+	<tbody>
+	<?php
+	for ($j = 0; $j < count($estateMainFacilitiesType); $j++) {
+		echo $this->Html->tablecells(
+				array(
+					$this->Form->input(
+						"EstateRoom.estate_type_id",
+						array(
+							"type" => "select",
+							"options" => array($estateTypeList),
+							"label" => false,
+							"div" => false
+						)
+					),
+					$this->Form->input(
+						"EstateRoom.room_number",
+						array(
+							"label" => false,
+							"div" => false
+						)
+					),
+					$this->Form->input(
+						"EstateRoom.occupancy_date",
+						array(
+							"type"=>"text",
+							"label" => false,
+							"div" => false
+						)
+					),
+					$this->Form->input(
+						"EstateRoom.corner_suite_flag",
+						array(
+							"label" => false,
+							"div" => false
+						)
+					),
+					$this->Form->input(
+						"EstateRoom.contracted_flag",
+						array(
+							"label" => false,
+							"div" => false
+						)
+					)
+				)
+			) . PHP_EOL;
+	} ?>
+	</tbody>
+</table>
+<?php
+echo $this->Form->input(
 	"EstateCharacteristicReference.estate_characteristic_id",
 	array(
 		"div" => array("id" => "estate_characteristic_reference"),

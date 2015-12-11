@@ -27,11 +27,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <?php
     echo "        " . $this->Html->meta('icon') . PHP_EOL;
 
-    echo "        " . $this->Html->css('cake.generic') . PHP_EOL;
+	echo "        " . $this->Html->css('cake.generic') . PHP_EOL;
 
     echo "        " . $this->fetch('meta') . PHP_EOL;
     echo "        " . $this->Html->css('//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css') . PHP_EOL;
-    echo "        " . $this->fetch('css') . PHP_EOL;
+	echo "        " . $this->fetch('css') . PHP_EOL;
     //Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
     if ($this->fetch('nav')) {
         echo "        " . $this->Html->css("elements/nav") . PHP_EOL;
@@ -40,6 +40,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
     echo "        " . $this->Html->script('//code.jquery.com/jquery-1.11.3.min.js') . PHP_EOL;
     echo "        " . $this->Html->script('//code.jquery.com/ui/1.11.4/jquery-ui.min.js') . PHP_EOL;
+	echo "        " . $this->Html->script('//ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js') . PHP_EOL;
     echo "        " . $this->Html->script('cake.generic') . PHP_EOL;
     echo "        " . $this->fetch('script') . PHP_EOL;
     ?>

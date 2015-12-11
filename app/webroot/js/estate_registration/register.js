@@ -276,5 +276,7 @@ $(
 		});
 
 		click_no();
+
+		$("#EstateRoomOccupancyDate").datepicker();
 	}
 );
