@@ -53,12 +53,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			if(isset($loginUser)){
 				$list[]="ログイン中 : ".$loginUser["name"];
 				$list[]=$this->Html->link(
-					'管理者登録',
-					array(
-						'controller'=>'Administrator',
-						'action'=>'register'
-					));
-				$list[]=$this->Html->link(
 					'ログアウト',
 					array(
 						'controller'=>'Administrator',
