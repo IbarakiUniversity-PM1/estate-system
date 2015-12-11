@@ -23,22 +23,31 @@ class EstateDeleteController extends AppController{
 		"EstatePicture"
 	);
 
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->deny();
+	}
+
 	/**
 	 * 物件削除
 	 * @param null $estate_id 物件ID
 	 */
 	public function delete($estate_id = null)
 	{
-		if ($this->request->is('get')) {
-			throw new NotFoundException();
+		if ($this->request->is('post') && $estate_id!=null) {
+			$isFail=!$this->Estate->delete($estate_id);
+			if(!$isFail){
+				foreach($this->EstatePicture->find("list",array("fields"=>"EstatePicture.estate_picture_id","conditions"=>"EstatePicture.estate_id=".$estate_id)) as $e){
+					if(!$this->EstatePicture->delete($e)){
+						$isFail=true;
+						break;
+					}
+				}
+			}
+			if($isFail){
+				$this->Flash->set("正常に物件を削除できませんでした。");
+			}
+			$this->redirect(array('controller' => 'EstateRegistration', 'action' => 'index'));
 		}
-
-		if ($this->Estate->delete($estate_id, $cascade = true)) {
-//			$this->Flash->success(__('The post with id: %s has been deleted.', h($estate_id)));
-		} else {
-//			$this->Flash->error(__('The post with id: %s could not be deleted.', h($estate_id)));
-		}
-
-		$this->redirect(array('controller' => 'estateregistration', 'action' => 'index'));
 	}
 }
