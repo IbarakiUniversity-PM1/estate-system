@@ -57,7 +57,7 @@
                             <option value="18">18</option>
                             <option value="19">19</option>
                             <option value="20">20</option>
-                        </select> m&sup2;以上
+                        </select> 畳以上
                     </p>
                     <p><input type="checkbox" name="age" value="true"/> 築年数:
                         <select name="age_num">

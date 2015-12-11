@@ -179,7 +179,7 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                         </tr>
                         <tr>
                             <td style="background:#ccccff">面積</td>
-                            <td><?php echo h($estate['Estate']['area']); ?>m&sup2;</td>
+                            <td><?php echo h($estate['Estate']['area']); ?>畳</td>
                         </tr>
                         <tr>
                             <td style="background:#ccccff">間取</td>

@@ -330,5 +330,7 @@ $(
 		});
 
 		click_no();
+
+		$('#EstateAge').datepicker();
 	}
 );

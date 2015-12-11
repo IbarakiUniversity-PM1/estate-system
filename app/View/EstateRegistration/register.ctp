@@ -48,7 +48,14 @@ echo $this->Form->input(
 );
 echo $this->Form->input(
 	"Estate.area",
-	array("label" => "面積(m&sup2;)")
+	array("label" => "面積(畳)")
+);
+echo $this->Form->input(
+	"Estate.age",
+	array(
+		"type"=>"text",
+		"label" => "築年月"
+	)
 );
 echo $this->Form->input(
 	"Estate.contract_period",
