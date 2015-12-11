@@ -44,6 +44,11 @@ class EstateRegistrationController extends AppController
 				}
 			}
 			unset($this->request->data["Estate"]["thumbnail"]);
+			date_default_timezone_set("Asia/Tokyo"); //タイムゾーンを設定
+			for($i=0;$i<count($this->request->data["EstateRoom"]);$i++){
+				$dateTime=new DateTime($this->request->data["EstateRoom"][$i]["occupancy_date"]);
+				$this->request->data["EstateRoom"][$i]["occupancy_date"]=$dateTime->getTimestamp()*1000;
+			}
 			$this->Estate->create();
 			if ($this->Estate->saveAll($this->request->data, array("deep" => true))) {
 				$this->redirect(array("action" => "index"));
