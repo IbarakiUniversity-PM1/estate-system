@@ -5,7 +5,12 @@
             <div id=search1>
                 <h4>検索条件指定</h4>
                 <p><font color="red">*</font><u>希望する物件の条件を以下の項目から選び,チェックボックスにチェックして検索ボタンを押してください</u></p>
-                <form action="/estate-system/" method="get">
+                <form action=<?php echo $this->Html->url(
+					array(
+						"controller"=>"EstateView",
+						"action" => "estateList"
+					)
+				) ?> method="get">
                     <input type="hidden" name="isKeywordSearch" value=""/>
                     <p><input type="checkbox" name="rent" value="true"/> 家賃
                         <select name="rent_num">
@@ -103,7 +108,12 @@
             <div id=search2>
                 <h4>キーワード検索</h4>
                 <p><font color="red">*</font><u>物件名,住所,不動産業者名のいずれか一つを指定してください</u></p>
-                <form action="/estate-system/" method="get">
+                <form action=<?php echo $this->Html->url(
+					array(
+						"controller"=>"EstateView",
+						"action" => "estateList"
+					)
+				) ?> method="get">
                     <input type="hidden" name="isKeywordSearch" value="true" />
                     <p>
                         <input type="checkbox" name="window_direction" value="true" checked style="display:none;"/>
