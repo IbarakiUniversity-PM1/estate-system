@@ -58,7 +58,14 @@ $this->Html->script("jquery.tablesorter", array("inline" => false));
     <?php
     $i = 0;
     foreach ($estates as $estate) {
-        $option = array("data-href" => "EstateView" . DS . "detail" . DS . $estate["Estate"]["estate_id"]);
+        $option = array(
+			"data-href" => $this->Html->url(
+				array(
+					"action" => "detail",
+					$estate["Estate"]["estate_id"]
+				)
+			)
+		);
         echo $this->Html->tableCells(
                 array(
                     $this->Form->input(
