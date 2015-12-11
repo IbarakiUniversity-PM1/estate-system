@@ -125,10 +125,7 @@ echo $this->Form->label("Estate.floor_plan_picture", "間取り図(jpeg)");
 				),
 				$this->Form->file(
 					"Estate.floor_plan_picture",
-					array(
-						"label" => false,
-						"div" => false
-					)
+					array("label" => false)
 				)
 			)
 		) . PHP_EOL ?>
@@ -148,57 +145,52 @@ for ($i = 0; $i < 2; $i++) { ?>
 	echo "\"";
 	?>>
 		<?php if ($i == 1) { ?>
-	<thead>
-	<?php echo $this->Html->tableHeaders(
-			array(
-				"サムネイル",
-				"プレビュー",
-				"ファイル名",
-				""
-			)
-		) . PHP_EOL ?>
-	</thead>
-		<?php } ?>
-	<tbody>
-	<?php
-	$options = array(
-		"label" => false,
-		"div" => false,
-		"type" => "radio",
-		"options" => array(0 => null)
-	);
-	if ($i == 1) {
-		$options["value"] = 0;
-	}
-	echo $this->Html->tablecells(
-			array(
-				$this->Form->input(
-					"Estate.thumbnail",
-					$options
-				),
-				$this->Html->div(
-					"previews",
-					"指定なし"
-				),
-				$this->Form->file(
-					"EstatePicture.?.picture",
+			<thead>
+			<?php echo $this->Html->tableHeaders(
 					array(
-						"label" => false,
-						"div" => false,
-						"required" => false
+						"サムネイル",
+						"プレビュー",
+						"ファイル名",
+						""
 					)
-				),
-				$this->Form->button(
-					"削除",
-					array(
-						"div" => false,
-						"type" => "button"
+				) . PHP_EOL ?>
+			</thead>
+		<?php } ?>
+		<tbody>
+		<?php
+		$options = array(
+			"label" => false,
+			"type" => "radio",
+			"options" => array(0 => null)
+		);
+		if ($i == 1) {
+			$options["value"] = 0;
+		}
+		echo $this->Html->tablecells(
+				array(
+					$this->Form->input(
+						"Estate.thumbnail",
+						$options
+					),
+					$this->Html->div(
+						"previews",
+						"指定なし"
+					),
+					$this->Form->file(
+						"EstatePicture.?.picture",
+						array(
+							"label" => false,
+							"required" => false
+						)
+					),
+					$this->Form->button(
+						"削除",
+						array("type" => "button")
 					)
 				)
-			)
-		) . PHP_EOL ?>
-	</tbody>
-</table>
+			) . PHP_EOL ?>
+		</tbody>
+	</table>
 	<?php
 }
 echo $this->Html->div("label", "生の声");
@@ -260,7 +252,6 @@ for ($i = 0; $i < 2; $i++) { ?>
 							"追加",
 							array(
 								"class" => "estate_frank_opinion_add",
-								"div" => false,
 								"type" => "button"
 							)
 						) . PHP_EOL .
@@ -268,7 +259,6 @@ for ($i = 0; $i < 2; $i++) { ?>
 							"削除",
 							array(
 								"class" => "estate_frank_opinion_delete",
-								"div" => false,
 								"type" => "button"
 							)
 						);
@@ -312,8 +302,7 @@ echo $this->Html->div("label", "主要施設までの距離");
 						array(
 							"type" => "select",
 							"options" => $estateMainFacilitiesType[$j]["EstateMainFacilities"],
-							"label" => false,
-							"div" => false
+							"label" => false
 						)
 					),
 					$this->Form->input(
@@ -325,68 +314,96 @@ echo $this->Html->div("label", "主要施設までの距離");
 	} ?>
 	</tbody>
 </table>
-<?php echo $this->Html->div("label", "部屋") ?>
-<table id="estate_room">
-	<thead>
-	<?php echo $this->Html->tableHeaders(
-			array(
-				"種別",
-				"部屋番号",
-				"入居可能時期",
-				"角部屋",
-				"契約済みフラグ"
-			)
-		) . PHP_EOL ?>
-	</thead>
-	<tbody>
-	<?php
-	for ($j = 0; $j < count($estateMainFacilitiesType); $j++) {
+<?php
+echo $this->Html->div("label", "部屋");
+for ($i = 0; $i < 2; $i++) { ?>
+	<table <?php
+	if ($i == 0) {
+		echo "class=\"model\" ";
+	}
+	echo "id=\"estate_room";
+	if ($i == 0) {
+		echo "_model";
+	}
+	echo "\"";
+	?>>
+		<?php if ($i == 1) { ?>
+			<thead>
+			<?php echo $this->Html->tableHeaders(
+					array(
+						"種別",
+						"部屋番号",
+						"入居可能時期",
+						"角部屋",
+						"契約済みフラグ",
+						""
+					)
+				) . PHP_EOL ?>
+			</thead>
+		<?php } ?>
+		<tbody>
+		<?php
 		echo $this->Html->tablecells(
 				array(
 					$this->Form->input(
-						"EstateRoom.estate_type_id",
+						"EstateRoom.?.estate_type_id",
 						array(
+							"class"=>"estate_room_estate_type_id",
 							"type" => "select",
 							"options" => array($estateTypeList),
-							"label" => false,
-							"div" => false
+							"label" => false
 						)
 					),
 					$this->Form->input(
-						"EstateRoom.room_number",
+						"EstateRoom.?.room_number",
 						array(
-							"label" => false,
-							"div" => false
+							"class"=>"estate_room_room_number",
+							"label" => false
 						)
 					),
 					$this->Form->input(
-						"EstateRoom.occupancy_date",
+						"EstateRoom.?.occupancy_date",
 						array(
-							"type"=>"text",
-							"label" => false,
-							"div" => false
+							"class"=>"estate_room_occupancy_date",
+							"type" => "text",
+							"label" => false
 						)
 					),
 					$this->Form->input(
-						"EstateRoom.corner_suite_flag",
+						"EstateRoom.?.corner_suite_flag",
 						array(
-							"label" => false,
-							"div" => false
+							"class"=>"estate_room_corner_suite_flag",
+							"label" => false
 						)
 					),
 					$this->Form->input(
-						"EstateRoom.contracted_flag",
+						"EstateRoom.?.contracted_flag",
 						array(
-							"label" => false,
-							"div" => false
+							"class"=>"estate_room_contracted_flag",
+							"label" => false
+						)
+					),
+					$this->Form->button(
+						"追加",
+						array(
+							"class" => "estate_room_add",
+							"type" => "button"
+						)
+					) . PHP_EOL .
+					$this->Form->button(
+						"削除",
+						array(
+							"class" => "estate_room_delete",
+							"type" => "button"
 						)
 					)
 				)
 			) . PHP_EOL;
-	} ?>
-	</tbody>
-</table>
-<?php
+		?>
+		</tbody>
+	</table>
+	<?php
+}
 echo $this->Form->input(
 	"EstateCharacteristicReference.estate_characteristic_id",
 	array(

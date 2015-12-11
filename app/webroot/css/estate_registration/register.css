@@ -1,11 +1,13 @@
 @charset "utf-8";
 
 #estate_pictures button,
+.estate_room_delete,
 .estate_frank_opinion_delete {
 	display: none;
 }
 
-input[type=radio] {
+input[type=radio],
+input[type="checkbox"] {
 	float: none;
 }
 
