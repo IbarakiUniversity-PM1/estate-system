@@ -196,7 +196,7 @@ $(
 					$(this).attr('id', $(this).attr('id').replace('?', i));
 					$(this).attr('name', $(this).attr('name').replace('?', i));
 					if($(this).is('.estate_room_occupancy_date')){
-						$(this).datepicker();
+						$(this).datepicker({changeMonth: true,changeYear: true});
 					}
 				});
 			});
@@ -331,6 +331,6 @@ $(
 
 		click_no();
 
-		$('#EstateAge').datepicker();
+		$('#EstateAge').datepicker({changeMonth: true,changeYear: true});
 	}
 );

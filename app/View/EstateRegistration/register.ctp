@@ -1,6 +1,6 @@
 <?php
-$this->Html->css("estate_registration/register", array("inline" => false));
-$this->Html->script("estate_registration/register", array("inline" => false));
+$this->Html->css("estate_registration".DS."register", array("inline" => false));
+$this->Html->script("estate_registration".DS."register", array("inline" => false));
 
 echo $this->Form->create(
 	"Estate",
