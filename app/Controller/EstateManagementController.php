@@ -151,24 +151,22 @@ class EstateManagementController extends AppController
 	 * @param null $estate_id 物件ID
 	 */
 	public function edit($estate_id=null){
+		$this->Estate->id=$estate_id;
 		$this->register();
-		if(isset($estate_id)) {
-			$data = $this->Estate->find("all", array("conditions" => "Estate.estate_id=" . $estate_id));
-			$data=$data[0];
-			if(isset($data["Estate"]["age"])){
-				$dateTime=new DateTime();
-				$data["Estate"]["age"]=$dateTime->setTimestamp($data["Estate"]["age"])->format("Y/m/d");
-			}
-			if(isset($data["EstateCharacteristicReference"])){
-				$tmp=array();
-				for($i=0;$i<count($data["EstateCharacteristicReference"]);$i++){
-					$tmp[]=$data["EstateCharacteristicReference"][$i]["estate_characteristic_id"];
-				}
-				$data["EstateCharacteristicReference"]=$tmp;
-			}
-			$this->set("data", $data);
-			$this->render("register");
+		$data = $this->Estate->read();
+		if(isset($data["Estate"]["age"])){
+			$dateTime=new DateTime();
+			$data["Estate"]["age"]=$dateTime->setTimestamp($data["Estate"]["age"])->format("Y/m/d");
 		}
+		if(isset($data["EstateCharacteristicReference"])){
+			$tmp=array();
+			for($i=0;$i<count($data["EstateCharacteristicReference"]);$i++){
+				$tmp[]=$data["EstateCharacteristicReference"][$i]["estate_characteristic_id"];
+			}
+			$data["EstateCharacteristicReference"]=$tmp;
+		}
+		$this->set("data", $data);
+		$this->render("register");
 	}
 
 	/**

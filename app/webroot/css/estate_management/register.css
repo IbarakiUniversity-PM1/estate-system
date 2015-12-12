@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-#estate_pictures button,
 .estate_room_delete,
+.estate_picture_delete,
 .estate_frank_opinion_delete {
 	display: none;
 }

@@ -20,12 +20,15 @@ $(
 		//物件画像のナンバリングを行う
 		function numbering_estate_pictures() {
 			//物件画像を変更したときの挙動をセット
-			$('input[type=file]').change(change_estate_picture);
+			$('input[type=file]').unbind('change').change(change_estate_picture);
+
+			//追加ボタンを押下した時の挙動をセット
+			$('.estate_picture_add').unbind('click').click(add_estate_picture);
 
 			var $estate_pictures = $('#estate_pictures');
 
 			//物件画像を削除するときの挙動をセット
-			$estate_pictures.find('button').unbind('click').click(function (e) {
+			$estate_pictures.find('.estate_picture_delete').unbind('click').click(function (e) {
 				$(e.target).parent().parent().remove();
 				numbering_estate_pictures();
 			});
@@ -33,11 +36,12 @@ $(
 			$estate_pictures.find('tbody tr').each(function (i, e) {
 				//末尾の行以外の削除ボタンを表示
 				if (i + 1 < $estate_pictures.find('tbody tr').length) {
-					$(e).find('button').show();
+					$(e).find('.estate_picture_add').hide();
+					$(e).find('.estate_picture_delete').show();
 				}
 				//末尾の行以外のラジオボタンを表示(ただし、1行しかないときは、その行のラジオボタンを表示する)
-				if (i == 0 || i + 1 < $estate_pictures.find('tbody tr').length) {
-					$(e).find('input').show().attr('required', true);
+				if (i === 0 || i + 1 < $estate_pictures.find('tbody tr').length) {
+					$(e).find('input[type=radio]').show().attr('required', true);
 				}
 			});
 
@@ -65,6 +69,16 @@ $(
 			});
 		}
 
+		//物件画像を追加したときの挙動
+		function add_estate_picture(e) {
+			var s = $('#estate_pictures_model').find('tr').clone();
+			$(s).find('.estate_picture_delete').hide();
+			$(s).find('input[type=radio]').hide();
+			$(s).find('input').removeAttr('required');
+			$(e.target).parent().parent().parent().append($(s));
+			numbering_estate_pictures();
+		}
+
 		//物件画像を変更したときの挙動
 		function change_estate_picture(e) {
 			var file = $(e.target).prop('files')[0];
@@ -84,13 +98,8 @@ $(
 				reader.readAsDataURL(file);
 
 				//対象が物件画像であり、一番下の行であるならば、行を増やし、idとnameのナンバリングを行う
-				if ($(e.target).parent().parent().parent().parent().is('#estate_pictures') && $(e.target).parent().parent().parent().parent().find('tbody tr').length == $(e.target).parent().parent().parent().parent().find('tbody tr').index($(e.target).parent().parent()) + 1) {
-					var s = $('#estate_pictures_model').find('tr').clone();
-					$(s).find('button').hide();
-					$(s).find('input[type=radio]').hide();
-					$(s).find('input').removeAttr('required');
-					$(e.target).parent().parent().parent().append($(s));
-					numbering_estate_pictures();
+				if ($(e.target).parent().parent().parent().parent().is('#estate_pictures') && $(e.target).parent().parent().parent().parent().find('tbody tr').length === $(e.target).parent().parent().parent().parent().find('tbody tr').index($(e.target).parent().parent()) + 1) {
+					add_estate_picture(e);
 				}
 			} else { //画像でないとき
 				//ファイル情報をリセット
@@ -227,9 +236,9 @@ $(
 			});
 			$('h3, .submit').hide();
 			$('#register').parent().show();
-			$('input[type=file], #register, .estate_frank_opinion_add, .estate_room_add').show();
+			$('input[type=file], #register, .estate_frank_opinion_add, .estate_room_add, .estate_picture_add').show();
 			$('input[type=hidden]').each(function () {
-				if (!$(this).is('.estateFrankOpinionTypeId') && !$(this).is('.estateMainFacilitiesTypeId')) {
+				if (!$(this).is('.estate_frank_opinion_type_id') && !$(this).is('.estate_main_facilities_type_id') && !$(this).is('.estate_picture_id')) {
 					$(this).remove();
 				}
 			});
@@ -250,6 +259,7 @@ $(
 			$register.html('登録');
 		}else{
 			$register.html('編集完了');
+			$('.estate_thumbnail:last').hide();
 		}
 
 		//登録ボタンを押下したときの挙動をセット
@@ -300,8 +310,13 @@ $(
 				}
 			});
 			$('#main').find('form *').attr('disabled', true);
-			$('.buttons, .buttons *, input[type=hidden], input[type=file]').removeAttr('disabled');
-			$('.estateMainFacilitiesTypeId').each(function (){
+			$('.buttons, .buttons *, input[type=hidden]').removeAttr('disabled');
+			$('input[type=file]').each(function (){
+				if($(this).val()){
+					$(this).removeAttr('disabled');
+				}
+			});
+			$('.estate_main_facilities_type_id').each(function (){
 				if(-1<$(this).parent().parent().find('option:selected').val()){
 					$(this).attr('disabled', true);
 				}
@@ -341,7 +356,7 @@ $(
 				}
 			}else if($(e.target).parent().find('input').length==1){
 				$(e.target).parent().find('input').attr('disabled', true).hide();
-				$(e.target).parent().parent().find('.estateMainFacilitiesTypeId').attr('disabled', true);
+				$(e.target).parent().parent().find('.estate_main_facilities_type_id').attr('disabled', true);
 			}
 		});
 
