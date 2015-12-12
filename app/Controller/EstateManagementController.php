@@ -1,10 +1,14 @@
 <?php
 
 /**
- * 物件登録コントローラ
+ * 物件管理コントローラ
  */
-class EstateRegistrationController extends AppController
+class EstateManagementController extends AppController
 {
+	/**
+	 * @var array 扱うヘルパーのリスト
+	 */
+	public $helpers = array("UploadPack.Upload");
 	/**
 	 * @var array 扱うモデルのリスト
 	 */
@@ -18,11 +22,11 @@ class EstateRegistrationController extends AppController
 		"EstateInternetType",
 		"EstatePicture",
 		"EstateCharacteristic",
-		"EstateCharacteristicReference",
 		"EstateFrankOpinionType",
 		"EstateMainFacilities",
 		"EstateMainFacilitiesType",
-		"EstateMainFacilitiesDistance"
+		"EstateMainFacilitiesDistance",
+		"EstateCharacteristicReference"
 	);
 
 	public function beforeFilter() {
@@ -31,10 +35,11 @@ class EstateRegistrationController extends AppController
 	}
 
 	/**
-	 * 登録画面
+	 * 物件登録
 	 */
 	public function register()
 	{
+		date_default_timezone_set("Asia/Tokyo"); //タイムゾーンを設定
 		if ($this->request->is("post")) {
 			for ($i = 0; $i < count($this->request->data["EstatePicture"]); $i++) {
 				if ($i == $this->request->data["Estate"]["thumbnail"]) {
@@ -45,7 +50,6 @@ class EstateRegistrationController extends AppController
 			}
 			unset($this->request->data["Estate"]["thumbnail"]);
 
-			date_default_timezone_set("Asia/Tokyo"); //タイムゾーンを設定
 			$dateTime=new DateTime($this->request->data["Estate"]["age"]);
 			$this->request->data["Estate"]["age"]=$dateTime->getTimestamp()*1000;
 			for($i=0;$i<count($this->request->data["EstateRoom"]);$i++){
@@ -140,6 +144,54 @@ class EstateRegistrationController extends AppController
 			$estateCharacteristicList[$estateCharacteristic["EstateCharacteristic"]["estate_characteristic_id"]] = $estateCharacteristic["EstateCharacteristic"]["name"];
 		}
 		$this->set("estateCharacteristicList", $estateCharacteristicList);
+	}
+
+	/**
+	 * 物件編集
+	 * @param null $estate_id 物件ID
+	 */
+	public function edit($estate_id=null){
+		$this->register();
+		if(isset($estate_id)) {
+			$data = $this->Estate->find("all", array("conditions" => "Estate.estate_id=" . $estate_id));
+			$data=$data[0];
+			if(isset($data["Estate"]["age"])){
+				$dateTime=new DateTime();
+				$data["Estate"]["age"]=$dateTime->setTimestamp($data["Estate"]["age"])->format("Y/m/d");
+			}
+			if(isset($data["EstateCharacteristicReference"])){
+				$tmp=array();
+				for($i=0;$i<count($data["EstateCharacteristicReference"]);$i++){
+					$tmp[]=$data["EstateCharacteristicReference"][$i]["estate_characteristic_id"];
+				}
+				$data["EstateCharacteristicReference"]=$tmp;
+			}
+			$this->set("data", $data);
+			$this->render("register");
+		}
+	}
+
+	/**
+	 * 物件削除
+	 * @param null $estate_id 物件ID
+	 */
+	public function delete($estate_id = null)
+	{
+		if ($this->request->is('post') && $estate_id!=null) {
+			$isFail=!$this->Estate->delete($estate_id);
+			if(!$isFail){
+				foreach($this->EstatePicture->find("list",array("fields"=>"EstatePicture.estate_picture_id","conditions"=>"EstatePicture.estate_id=".$estate_id)) as $e){
+					if(!$this->EstatePicture->delete($e)){
+						$isFail=true;
+						break;
+					}
+				}
+			}
+			if($isFail){
+				$this->Flash->set("正常に物件を削除できませんでした。");
+			}
+			$this->redirect(array('controller' => 'EstateManagement', 'action' => 'index'));
+		}
 	}
 
 	public function index()

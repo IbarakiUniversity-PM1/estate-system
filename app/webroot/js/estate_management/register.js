@@ -213,7 +213,11 @@ $(
 		//いいえボタンを押下したときの挙動
 		function click_no() {
 			var $h2 = $('h2');
-			$h2.html('物件登録');
+			if($isRegister){
+				$h2.html('物件登録');
+			}else{
+				$h2.html('物件編集');
+			}
 			document.title = $h2.html() + ' - こうがく不動産';
 			$('#main').find('form *').removeAttr('disabled');
 			$('#estate_main_facilities').find("select").each(function (){
@@ -240,10 +244,22 @@ $(
 			numbering_estate_room();
 		}
 
+		var $register=$('#register');
+
+		if($isRegister) {
+			$register.html('登録');
+		}else{
+			$register.html('編集完了');
+		}
+
 		//登録ボタンを押下したときの挙動をセット
-		$('#register').click(function () {
+		$register.click(function () {
 			var $h2 = $('h2');
-			$h2.html('物件登録確認');
+			if($isRegister){
+				$h2.html('物件登録確認');
+			}else{
+				$h2.html('物件編集確認');
+			}
 			document.title = $h2.html() + ' - こうがく不動産';
 			$('select, input, textarea').each(function () {
 				if (
