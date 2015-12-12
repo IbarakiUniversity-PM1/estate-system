@@ -5,14 +5,14 @@ $this->assign("nav", true);?>
     <?php $this->Html->addCrumb('物件詳細',
                                 "/EstateView/detail/" . $estate["Estate"]["estate_id"]); ?>
     <?php $this->Html->addCrumb('内見予約',
-                                "/previewbook/book/" . $estate["Estate"]["estate_id"]); ?>
+                                "/PreviewBook/book/" . $estate["Estate"]["estate_id"]); ?>
 
     <div>
 
         <h4><?php echo $estate['Estate']['name']; ?>に内見予約のメールを送信します
         </h4>
         <?php
-        echo $this->Form->create('Previewbook', array('url' => array('controller' => 'Previewbook', 'action' => 'confirm')));
+        echo $this->Form->create('PreviewBook', array('url' => array('controller' => 'PreviewBook', 'action' => 'confirm')));
         ?>
         <center>
             <ul style="list-style:none;">
@@ -53,7 +53,7 @@ $this->assign("nav", true);?>
                 </li>
 
                 <li>
-                    <?php echo $this->Form->hidden('Previewbook.estate_id', array('value' => $estate['Estate']['estate_id']));
+                    <?php echo $this->Form->hidden('PreviewBook.estate_id', array('value' => $estate['Estate']['estate_id']));
                     ?>
                 </li>
 

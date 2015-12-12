@@ -324,6 +324,6 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 
 
 
-        <?php echo $this->Html->link('内見予約画面へ', array('controller' => 'previewbook', 'action' => 'book', $estate['Estate']['estate_id'])); ?>
+        <?php echo $this->Html->link('内見予約画面へ', array('controller' => 'PreviewBook', 'action' => 'book', $estate['Estate']['estate_id'])); ?>
 
 

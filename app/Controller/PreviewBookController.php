@@ -49,7 +49,7 @@ class PreviewBookController extends AppController
 
         if (isset($this->request->data['submit'])) {
             //物件idから物件情報を取得
-            $this->Estate->id = $this->request->data['Previewbook']['estate_id'];
+            $this->Estate->id = $this->request->data['PreviewBook']['estate_id'];
             $estate = $this->Estate->read();
 
             //物件情報から不動産業者のE-Mailアドレスを取得
