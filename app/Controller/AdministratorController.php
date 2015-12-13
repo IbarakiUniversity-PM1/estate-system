@@ -7,18 +7,16 @@ class AdministratorController extends AppController
 	 */
 	public function register()
 	{
-		if ($this->request->is('post')) {
-			$this->Administrator->create();
-			if ($this->Administrator->save($this->request->data)) {
+		//管理者登録を有効にするかどうか
+		$isEffective=false;
+		if (($isEffective && $this->request->is('post')) || !$isEffective) {
+			if($isEffective){
+				$this->Administrator->create();
+			}
+			if (($isEffective && $this->Administrator->save($this->request->data)) || !$isEffective) {
 				$this->redirect(array("action" => "login"));
 			} else {
-				foreach ($this->Administrator->validationErrors as $k1 => $v1) {
-					foreach ($v1 as $k2 => $v2) {
-						foreach ($v2 as $v3) {
-							$this->Flash->set($k1 . "." . $k2 . " : " . $v3);
-						}
-					}
-				}
+				$this->MyFlash->set_validation_error($this->Administrator->validationErrors);
 			}
 		}
 		//タイトルをセットする
