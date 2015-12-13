@@ -13,6 +13,7 @@ echo $this->Form->create(
 	"Estate",
 	array("enctype" => "multipart/form-data")
 );
+
 if(isset($data)){
 	echo $this->Form->hidden(
 		"Estate.estate_id",
@@ -22,6 +23,7 @@ if(isset($data)){
 		)
 	);
 }
+
 $options1=array("label"=>"物件名");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["name"];
@@ -30,6 +32,7 @@ echo $this->Form->input(
 	"Estate.name",
 	$options1
 );
+
 $options1=array("label"=>"住所");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["address"];
@@ -38,6 +41,7 @@ echo $this->Form->input(
 	"Estate.address",
 	$options1
 );
+
 $options1=array(
 	"type"=>"select",
 	"label"=>"不動産業者名",
@@ -50,6 +54,7 @@ echo $this->Form->input(
 	"Estate.estate_agent_id",
 	$options1
 );
+
 $options1=array("label"=>"家賃(円)");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["rent"];
@@ -58,6 +63,7 @@ echo $this->Form->input(
 	"Estate.rent",
 	$options1
 );
+
 $options1=array("label"=>"敷金(円)");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["deposit"];
@@ -66,6 +72,7 @@ echo $this->Form->input(
 	"Estate.deposit",
 	$options1
 );
+
 $options1=array("label"=>"礼金(円)");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["key_money"];
@@ -74,6 +81,7 @@ echo $this->Form->input(
 	"Estate.key_money",
 	$options1
 );
+
 $options1=array("label"=>"共益費(円)");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["common_service_pay"];
@@ -82,6 +90,7 @@ echo $this->Form->input(
 	"Estate.common_service_pay",
 	$options1
 );
+
 $options1=array("label"=>"間取り");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["floor_plan"];
@@ -90,6 +99,7 @@ echo $this->Form->input(
 	"Estate.floor_plan",
 	$options1
 );
+
 $options1=array("label"=>"階建");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["story"];
@@ -98,6 +108,7 @@ echo $this->Form->input(
 	"Estate.story",
 	$options1
 );
+
 $options1=array("label"=>"面積(畳)");
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["area"];
@@ -106,6 +117,7 @@ echo $this->Form->input(
 	"Estate.area",
 	$options1
 );
+
 $options1=array(
 	"type"=>"text",
 	"label"=>"築年月"
@@ -117,6 +129,7 @@ echo $this->Form->input(
 	"Estate.age",
 	$options1
 );
+
 $options1=array("label"=>"契約期間(年)");
 if(isset($data["Estate"]["contract_period"])){
 	$options1["value"]=$data["Estate"]["contract_period"];
@@ -125,6 +138,7 @@ echo $this->Form->input(
 	"Estate.contract_period",
 	$options1
 );
+
 $options1=array("label"=>"駐車場");
 if(isset($data) && $data["Estate"]["parking_flag"]){
 	$options1["checked"]=true;
@@ -133,8 +147,11 @@ echo $this->Form->input(
 	"Estate.parking_flag",
 	$options1
 );
-$options1=array("label"=>"駐車場料金(円)");
-$options1["div"]=array("id" => "EstateParkingFeeDiv");
+
+$options1=array(
+	"label"=>"駐車場料金(円)",
+	"div"=>array("id" => "EstateParkingFeeDiv")
+);
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["parking_fee"];
 }
@@ -142,6 +159,7 @@ echo $this->Form->input(
 	"Estate.parking_fee",
 	$options1
 );
+
 $options1=array("label"=>"非表示");
 if(isset($data) && $data["Estate"]["hide_flag"]){
 	$options1["checked"]=true;
@@ -150,11 +168,12 @@ echo $this->Form->input(
 	"Estate.hide_flag",
 	$options1
 );
+
 $options1=array(
 	"type"=>"select",
-	"label"=>"窓の向き"
+	"label"=>"窓の向き",
+	"options"=>$estateWindowList
 );
-$options1["options"]=$estateWindowList;
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["window_direction"];
 }
@@ -162,11 +181,12 @@ echo $this->Form->input(
 	"Estate.window_direction",
 	$options1
 );
+
 $options1=array(
 	"type"=>"select",
-	"label"=>"取引態様"
+	"label"=>"取引態様",
+	"options"=>array($estateTradingAspectList)
 );
-$options1["options"]=array($estateTradingAspectList);
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["estate_trading_aspect_id"];
 }
@@ -174,11 +194,12 @@ echo $this->Form->input(
 	"Estate.estate_trading_aspect_id",
 	$options1
 );
+
 $options1=array(
 	"type"=>"select",
-	"label"=>"物件構造"
+	"label"=>"物件構造",
+	"options"=>array($estateStructureList)
 );
-$options1["options"]=array($estateStructureList);
 if(isset($data["Estate"]["estate_structure_id"])){
 	$options1["value"]=$data["Estate"]["estate_structure_id"];
 }
@@ -186,11 +207,12 @@ echo $this->Form->input(
 	"Estate.estate_structure_id",
 	$options1
 );
+
 $options1=array(
 	"type"=>"select",
-	"label"=>"インターネット回線"
+	"label"=>"インターネット回線",
+	"options"=>array($estateInternetTypeList)
 );
-$options1["options"]=array($estateInternetTypeList);
 if(isset($data["Estate"]["estate_internet_type_id"])){
 	$options1["value"]=$data["Estate"]["estate_internet_type_id"];
 }
@@ -198,11 +220,12 @@ echo $this->Form->input(
 	"Estate.estate_internet_type_id",
 	$options1
 );
+
 $options1=array(
 	"type"=>"select",
-	"label"=>"テレビ"
+	"label"=>"テレビ",
+	"options"=>array($estateTvTypeList)
 );
-$options1["options"]=array($estateTvTypeList);
 if(isset($data["Estate"]["estate_tv_type_id"])){
 	$options1["value"]=$data["Estate"]["estate_tv_type_id"];
 }
@@ -210,7 +233,8 @@ echo $this->Form->input(
 	"Estate.estate_tv_type_id",
 	$options1
 );
-echo $this->Form->label("Estate.floor_plan_picture", "間取り図(jpeg)");
+
+echo $this->Html->div("label required", "間取り図(JPG,PNG,GIF)");
 ?>
 <table>
 	<thead>
@@ -245,7 +269,8 @@ echo $this->Form->label("Estate.floor_plan_picture", "間取り図(jpeg)");
 	</tbody>
 </table>
 <?php
-echo $this->Html->div("label", "物件画像(jpeg)");
+
+echo $this->Html->div("label required", "物件画像(JPG,PNG,GIF)");
 for ($i = 0; $i < 2; $i++) { ?>
 	<table <?php
 	if ($i == 0) {
@@ -282,7 +307,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 				$options1["checked"] = true;
 			}
 			if ($i == 1 && isset($data)) {
-				$html = $this->Html->image(".." . DS . "upload" . DS . "estate_pictures" . DS . $data["Estate"]["estate_id"] . DS . "thumb_" . $data["EstatePicture"][$j]["picture_file_name"]);
+				$html = $this->Html->image(".." . DS . "upload" . DS . "estate_pictures" . DS . $data["EstatePicture"][$j]["estate_picture_id"] . DS . "thumb_" . $data["EstatePicture"][$j]["picture_file_name"]);
 			} else {
 				$html = "指定なし";
 			}
@@ -296,13 +321,24 @@ for ($i = 0; $i < 2; $i++) { ?>
 					$html
 				)
 			);
+			if($i==1 && isset($data)){
+				$cells[]=null;
+			}else{
+				$cells[]=$this->Form->file(
+					"EstatePicture.?.picture",
+					array(
+						"label" => false,
+						"required" => false
+					)
+				);
+			}
 			$cell=$this->Form->button(
 					"追加",
 					array(
 						"type" => "button",
 						"class" => "estate_picture_add"
 					)
-				) .
+				).
 				$this->Form->button(
 					"削除",
 					array(
@@ -325,17 +361,6 @@ for ($i = 0; $i < 2; $i++) { ?>
 					);
 				}
 			}
-			if($i==1 && isset($data)){
-				$cells[]=null;
-			}else{
-				$cells[]=$this->Form->file(
-					"EstatePicture.?.picture",
-					array(
-						"label" => false,
-						"required" => false
-					)
-				);
-			}
 			$cells[]=$cell;
 
 			echo $this->Html->tablecells($cells);
@@ -344,13 +369,14 @@ for ($i = 0; $i < 2; $i++) { ?>
 	</table>
 	<?php
 }
-echo $this->Html->div("label", "生の声");
+
+echo $this->Html->div("label required", "生の声");
 for ($i = 0; $i < 2; $i++) { ?>
 	<table <?php
 	if ($i == 0) {
 		echo "class=\"model\" ";
 	}
-	echo "id=\"estate_frank_opinions";
+	echo "id=\"estate_frank_opinion";
 	if ($i == 0) {
 		echo "_model";
 	}
@@ -431,7 +457,8 @@ for ($i = 0; $i < 2; $i++) { ?>
 	</table>
 	<?php
 }
-echo $this->Html->div("label", "主要施設までの距離");
+
+echo $this->Html->div("label required", "主要施設までの距離");
 ?>
 <table id="estate_main_facilities">
 	<thead>
@@ -491,7 +518,8 @@ echo $this->Html->div("label", "主要施設までの距離");
 	</tbody>
 </table>
 <?php
-echo $this->Html->div("label", "部屋");
+
+echo $this->Html->div("label required", "部屋");
 for ($i = 0; $i < 2; $i++) { ?>
 	<table <?php
 	if ($i == 0) {
@@ -617,6 +645,7 @@ for ($i = 0; $i < 2; $i++) { ?>
 	</table>
 	<?php
 }
+
 $options1=array(
 	"label"=>"物件特徴",
 	"div"=>array("id" => "estate_characteristic_reference"),

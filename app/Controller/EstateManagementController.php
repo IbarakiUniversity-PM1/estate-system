@@ -15,18 +15,18 @@ class EstateManagementController extends AppController
 	public $uses = array(
 		"Estate",
 		"EstateAgent",
-		"EstateTradingAspect",
-		"EstateStructure",
-		"EstateType",
-		"EstateTvType",
-		"EstateInternetType",
-		"EstatePicture",
 		"EstateCharacteristic",
+		"EstateCharacteristicReference",
+		"EstateFrankOpinion",
 		"EstateFrankOpinionType",
-		"EstateMainFacilities",
+		"EstateInternetType",
 		"EstateMainFacilitiesType",
-		"EstateMainFacilitiesDistance",
-		"EstateCharacteristicReference"
+		"EstatePicture",
+		"EstateRoom",
+		"EstateStructure",
+		"EstateTradingAspect",
+		"EstateTvType",
+		"EstateType"
 	);
 
 	public function beforeFilter() {
@@ -50,9 +50,6 @@ class EstateManagementController extends AppController
 			unset($this->request->data["Estate"]["thumbnail"]);
 
 			$this->request->data["Estate"]["age"]=$this->Date->toTimestamp($this->request->data["Estate"]["age"]);
-			for($i=0;$i<count($this->request->data["EstateRoom"]);$i++){
-				$this->request->data["EstateRoom"][$i]["occupancy_date"]=$this->Date->toTimestamp($this->request->data["EstateRoom"][$i]["occupancy_date"]);
-			}
 
 			$this->Estate->create();
 			if ($this->Estate->saveAll($this->request->data, array("deep" => true))) {
@@ -142,8 +139,49 @@ class EstateManagementController extends AppController
 	 * @param null $estate_id 物件ID
 	 */
 	public function edit($estate_id=null){
-		$this->Estate->id=$estate_id;
+		if ($this->request->is("post")) {
+			$options=array("EstatePicture.estate_id=".$estate_id);
+			if(isset($this->request->data["EstatePicture"])) {
+				foreach ($this->request->data["EstatePicture"] as $e) {
+					if(isset($e["estate_picture_id"])){
+						$options[] = "EstatePicture.estate_picture_id!=" . $e["estate_picture_id"];
+					}
+				}
+			}
+			$this->EstatePicture->deleteAll($options);
+
+			$options=array("EstateFrankOpinion.estate_id=".$estate_id);
+			if(isset($this->request->data["EstateFrankOpinion"])) {
+				foreach ($this->request->data["EstateFrankOpinion"] as $e) {
+					if(isset($e["estate_frank_opinion_id"])){
+						$options[] = "EstateFrankOpinion.estate_frank_opinion_id!=" . $e["estate_frank_opinion_id"];
+					}
+				}
+			}
+			$this->EstateFrankOpinion->deleteAll($options);
+
+			$options=array("EstateRoom.estate_id=".$estate_id);
+			if(isset($this->request->data["EstateRoom"])) {
+				foreach ($this->request->data["EstateRoom"] as $e) {
+					if(isset($e["estate_room_id"])){
+						$options[] = "EstateRoom.estate_room_id!=" . $e["estate_room_id"];
+					}
+				}
+			}
+			$this->EstateRoom->deleteAll($options);
+
+			$options=array("EstateCharacteristicReference.estate_id=".$estate_id);
+			if(isset($this->request->data["EstateCharacteristicReference"])) {
+				foreach ($this->request->data["EstateCharacteristicReference"] as $e) {
+					if(isset($e["estate_characteristic_reference_id"])){
+						$options[] = "EstateCharacteristicReference.estate_characteristic_reference_id!=" . $e["estate_characteristic_reference_id"];
+					}
+				}
+			}
+			$this->EstateCharacteristicReference->deleteAll($options);
+		}
 		$this->register();
+		$this->Estate->id=$estate_id;
 		$data = $this->Estate->read();
 		if(isset($data["Estate"]["age"])){
 			$data["Estate"]["age"]=$this->Date->toString($data["Estate"]["age"]);

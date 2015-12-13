@@ -29,7 +29,12 @@ $(
 
 			//物件画像を削除するときの挙動をセット
 			$estate_pictures.find('.estate_picture_delete').unbind('click').click(function (e) {
+				var $estate_pictures = $('#estate_pictures');
+				if($estate_pictures.find('tbody tr').length===1){
+					add_estate_picture(e);
+				}
 				$(e.target).parent().parent().remove();
+				$estate_pictures.find('tr:last .estate_picture_add').show();
 				numbering_estate_pictures();
 			});
 
@@ -73,9 +78,6 @@ $(
 		function add_estate_picture(e) {
 			var s = $('#estate_pictures_model').find('tr').clone();
 			$(s).find('input[type=hidden]').remove();
-			$(s).find('.estate_picture_delete').hide();
-			$(s).find('input[type=radio]').hide();
-			$(s).find('input').removeAttr('required');
 			$(e.target).parent().parent().parent().append($(s));
 			numbering_estate_pictures();
 		}
@@ -107,46 +109,51 @@ $(
 		}
 
 		//生の声のナンバリングを行う
-		function numbering_estate_frank_opinions() {
+		function numbering_estate_frank_opinion() {
 			//追加ボタンを押下した時の挙動をセット
-			$('.estate_frank_opinion_add').unbind('click').click(add_frank_opinions);
+			$('.estate_frank_opinion_add').unbind('click').click(add_frank_opinion);
 
-			var $estate_frank_opinions = $('#estate_frank_opinions');
+			var $estate_frank_opinion = $('#estate_frank_opinion');
 
 			//生の声を削除するときの挙動をセット
 			$('.estate_frank_opinion_delete').unbind('click').click(function (e) {
+				var $estate_frank_opinion = $('#estate_frank_opinion');
+				if($estate_frank_opinion.find('tbody tr').length===3){
+					add_frank_opinion(e);
+				}
 				$(e.target).parent().parent().remove();
-				numbering_estate_frank_opinions();
+				$estate_frank_opinion.find('tr:last .estate_picture_add').show();
+				numbering_estate_frank_opinion();
 			});
 
-			$estate_frank_opinions.find('tbody tr').each(function (i, e) {
+			$estate_frank_opinion.find('tbody tr').each(function (i, e) {
 				//末尾の行以外の追加ボタンは隠し、削除ボタンは表示
-				if (i + 1 < $estate_frank_opinions.find('tbody tr').length) {
+				if (i + 1 < $estate_frank_opinion.find('tbody tr').length) {
 					$(e).find('.estate_frank_opinion_add').hide();
 					$(e).find('.estate_frank_opinion_delete').show();
 				}
 			});
 
 			//ひな形と同一のidとnameをセット
-			$estate_frank_opinions.find('tbody tr').each(function () {
+			$estate_frank_opinion.find('tbody tr').each(function () {
 				$(this).find('select').each(function () {
-					var model = $('#estate_frank_opinions_model');
+					var model = $('#estate_frank_opinion_model');
 					$(this).attr({
 							id: model.find('select').attr('id'),
 							name: model.find('select').attr('name')
 						});
 					});
 					$(this).find('input[type=hidden]').each(function () {
-						var model = $('#estate_frank_opinions_model');
+						var model = $('#estate_frank_opinion_model');
 						$(this).attr({
-							id: model.find('input[type=hidden]').attr('id'),
-							name: model.find('input[type=hidden]').attr('name')
+							id: model.find('input[type=hidden].'+$(this).attr('class')).attr('id'),
+							name: model.find('input[type=hidden].'+$(this).attr('class')).attr('name')
 						});
 					});
 			});
 
 			//ナンバリングを行う
-			$estate_frank_opinions.find('tbody tr').each(function (i, e) {
+			$estate_frank_opinion.find('tbody tr').each(function (i, e) {
 				$(e).find('textarea, input[type=hidden]').each(function () {
 					$(this).attr('id', $(this).attr('id').replace('?', i));
 					$(this).attr('name', $(this).attr('name').replace('?', i));
@@ -155,13 +162,11 @@ $(
 		}
 
 		//生の声の追加ボタンを押下したときの挙動
-		function add_frank_opinions(e) {
-			var s = $('#estate_frank_opinions_model').find('tr').clone();
+		function add_frank_opinion(e) {
+			var s = $('#estate_frank_opinion_model').find('tr').clone();
 			$(s).find('.estate_frank_opinion_id').remove();
-			$(s).find('estate_frank_opinion_delete').hide();
-			$(s).find('textarea').removeAttr('required');
 			$(e.target).parent().parent().parent().append($(s));
-			numbering_estate_frank_opinions();
+			numbering_estate_frank_opinion();
 		}
 
 		//部屋のナンバリングを行う
@@ -173,7 +178,12 @@ $(
 
 			//部屋を削除するときの挙動をセット
 			$('.estate_room_delete').unbind('click').click(function (e) {
+				var $estate_room = $('#estate_room');
+				if($estate_room.find('tbody tr').length===1){
+					add_room(e);
+				}
 				$(e.target).parent().parent().remove();
+				$estate_room.find('tr:last .estate_picture_add').show();
 				numbering_estate_room();
 			});
 
@@ -211,7 +221,6 @@ $(
 		//部屋の追加ボタンを押下したときの挙動
 		function add_room(e) {
 			var s = $('#estate_room_model').find('tr').clone();
-			$(s).find('.estate_room_delete').hide();
 			$(e.target).parent().parent().parent().append($(s));
 			numbering_estate_room();
 		}
@@ -245,7 +254,7 @@ $(
 			//物件画像のナンバリングを行う
 			numbering_estate_pictures();
 			//生の声のナンバリングを行う
-			numbering_estate_frank_opinions();
+			numbering_estate_frank_opinion();
 			//部屋のナンバリングを行う
 			numbering_estate_room();
 		}
@@ -256,7 +265,6 @@ $(
 			$register.html('登録');
 		}else{
 			$register.html('編集完了');
-			$('.estate_thumbnail:last').hide();
 		}
 
 		//登録ボタンを押下したときの挙動をセット
@@ -310,11 +318,7 @@ $(
 			});
 			$('#main').find('form *').attr('disabled', true);
 			$('.buttons, .buttons *, input[type=hidden]').removeAttr('disabled');
-			$('input[type=file]').each(function (){
-				if($(this).val()){
-					$(this).removeAttr('disabled');
-				}
-			});
+			$('input[type=file]').removeAttr('disabled');
 			$('.estate_main_facilities_type_id').each(function (){
 				if(-1<$(this).parent().parent().find('option:selected').val()){
 					$(this).attr('disabled', true);
