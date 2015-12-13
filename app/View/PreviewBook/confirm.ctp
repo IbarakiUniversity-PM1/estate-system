@@ -1,7 +1,7 @@
 <center>
 <?php
 $this->assign("nav", true);
-echo $this->Form->create('PreviewBook', array('url' => array('controller' => 'PreviewBook', 'action' => 'confirm')));
+echo $this->Form->create('PreviewBook', array('url' => array('controller' => 'PreviewBook', 'action' => 'complete')));
 ?>
     <?php $this->Html->addCrumb('物件詳細',
                                 "/EstateView/detail/" . $this->request->data['PreviewBook']['estate_id']); ?>
