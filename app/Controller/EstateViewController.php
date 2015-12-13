@@ -198,6 +198,20 @@ class EstateViewController extends AppController
 //                throw new NotFoundException(__('Invalid post'));
 //            }
         $estate = $this->Estate->read();
+
+		//全ての部屋が契約済みな物件について、非表示フラグを立てる
+		if(!$estate["Estate"]["hide_flag"]) {
+			$isHide = true;
+			for ($i = 0; $isHide && $i < count($estate["EstateRoom"]); $i++) {
+				if (!$estate["EstateRoom"][$i]["contracted_flag"]) {
+					$isHide = false;
+				}
+			}
+			if ($isHide) {
+				$estate["Estate"]["hide_flag"] = 1;
+			}
+		}
+
         $this->set('estate', $estate);
 
         $str_characteristic = "";

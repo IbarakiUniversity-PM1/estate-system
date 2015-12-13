@@ -338,17 +338,20 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 				)
 			);
 		}
-		$links.=$this->Html->div(
-			"",
-			$this->Html->link(
-				'内見予約画面へ',
-				array(
-					'controller' => 'PreviewBook',
-					'action' => 'book',
-					$estate['Estate']['estate_id']
+		//非表示フラグが立っていないならば、内見予約画面へのリンクを追加
+		if(!$estate["Estate"]["hide_flag"]){
+			$links.=$this->Html->div(
+				"",
+				$this->Html->link(
+					'内見予約画面へ',
+					array(
+						'controller' => 'PreviewBook',
+						'action' => 'book',
+						$estate['Estate']['estate_id']
+					)
 				)
-			)
-		);
+			);
+		}
 		if(isset($loginUser)){
 			$links.=$this->Html->div(
 				"",
