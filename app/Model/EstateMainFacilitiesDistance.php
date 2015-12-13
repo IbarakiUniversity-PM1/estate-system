@@ -15,5 +15,5 @@ class EstateMainFacilitiesDistance extends AppModel
 	/**
 	 * @var string 主キー
 	 */
-	public $primaryKey = "estate_main_facillities_distance_id";
+	public $primaryKey = "estate_main_facilities_distance_id";
 }
