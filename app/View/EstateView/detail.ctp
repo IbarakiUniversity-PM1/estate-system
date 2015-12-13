@@ -1,7 +1,11 @@
-<?php $this->assign("nav", true) ?>
-<?php echo $this->Html->css(array('estate_view/detail'), false, array('inline' => false)); ?>
-<?php $this->Html->addCrumb('物件詳細' ,
-                            "/EstateView/detail/" . $estate["Estate"]["estate_id"]); ?>
+<?php
+$this->assign("nav", true);
+$this->Html->css(array('estate_view/detail'), false, array('inline' => false));
+$this->Html->script("estate_view/detail", array("inline" => false));
+$this->Html->addCrumb(
+	'物件詳細' ,
+	"/EstateView/detail/" . $estate["Estate"]["estate_id"]
+); ?>
 
 <?php
 /**
@@ -324,6 +328,49 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 
 
 
-        <?php echo $this->Html->link('内見予約画面へ', array('controller' => 'PreviewBook', 'action' => 'book', $estate['Estate']['estate_id'])); ?>
+        <?php
+		$links="";
+		if(isset($loginUser)){
+			$links.=$this->Html->div(
+				"",
+				$this->Html->link("編集",
+					array(
+						"controller"=>"EstateManagement",
+						"action" => "edit",
+						$estate["Estate"]["estate_id"]
+					)
+				)
+			);
+		}
+		$links.=$this->Html->div(
+			"",
+			$this->Html->link(
+				'内見予約画面へ',
+				array(
+					'controller' => 'PreviewBook',
+					'action' => 'book',
+					$estate['Estate']['estate_id']
+				)
+			)
+		);
+		if(isset($loginUser)){
+			$links.=$this->Html->div(
+				"",
+				$this->Form->postLink(
+					"削除",
+					array(
+						"controller"=>"EstateManagement",
+						"action" => "delete",
+						$estate["Estate"]["estate_id"]
+					),
+					array("confirm" => "この物件を削除しても良いですか？\n※一度削除してしまうと、元に戻すことはできません！")
+				)
+			);
+		}
+		echo $this->Html->div(
+			"buttons",
+			$links
+		);
+		?>
 
 

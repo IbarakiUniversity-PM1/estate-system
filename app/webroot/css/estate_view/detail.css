@@ -576,6 +576,14 @@ a{
     border-left: 8px solid rgba(63,148,148, 0.1);
 }
 
+#main .buttons {
+	display: table;
+}
+
+#main .buttons div {
+	display: table-cell;
+}
+
 @keyframes "page" {
     0% {
         left: 0;
