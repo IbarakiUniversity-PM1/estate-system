@@ -72,6 +72,7 @@ $(
 		//物件画像を追加したときの挙動
 		function add_estate_picture(e) {
 			var s = $('#estate_pictures_model').find('tr').clone();
+			$(s).find('input[type=hidden]').remove();
 			$(s).find('.estate_picture_delete').hide();
 			$(s).find('input[type=radio]').hide();
 			$(s).find('input').removeAttr('required');
@@ -79,7 +80,7 @@ $(
 			numbering_estate_pictures();
 		}
 
-		//物件画像を変更したときの挙動
+		//画像を変更したときの挙動
 		function change_estate_picture(e) {
 			var file = $(e.target).prop('files')[0];
 
@@ -96,11 +97,6 @@ $(
 
 				//画像を読み込む
 				reader.readAsDataURL(file);
-
-				//対象が物件画像であり、一番下の行であるならば、行を増やし、idとnameのナンバリングを行う
-				if ($(e.target).parent().parent().parent().parent().is('#estate_pictures') && $(e.target).parent().parent().parent().parent().find('tbody tr').length === $(e.target).parent().parent().parent().parent().find('tbody tr').index($(e.target).parent().parent()) + 1) {
-					add_estate_picture(e);
-				}
 			} else { //画像でないとき
 				//ファイル情報をリセット
 				$(e.target).val('');
@@ -161,6 +157,7 @@ $(
 		//生の声の追加ボタンを押下したときの挙動
 		function add_frank_opinions(e) {
 			var s = $('#estate_frank_opinions_model').find('tr').clone();
+			$(s).find('.estate_frank_opinion_id').remove();
 			$(s).find('estate_frank_opinion_delete').hide();
 			$(s).find('textarea').removeAttr('required');
 			$(e.target).parent().parent().parent().append($(s));
@@ -238,7 +235,7 @@ $(
 			$('#register').parent().show();
 			$('input[type=file], #register, .estate_frank_opinion_add, .estate_room_add, .estate_picture_add').show();
 			$('input[type=hidden]').each(function () {
-				if (!$(this).is('.estate_frank_opinion_type_id') && !$(this).is('.estate_main_facilities_type_id') && !$(this).is('.estate_picture_id')) {
+				if (!$(this).is('.leave_hidden') && !$(this).is('.estate_frank_opinion_id') && !$(this).is('.estate_main_facilities_type_id')) {
 					$(this).remove();
 				}
 			});
@@ -274,8 +271,8 @@ $(
 			$('select, input, textarea').each(function () {
 				if (
 					!$(this).is(':disabled')
-					&& !$(this).is('#estate_main_facilities select[value=-1]')
 					&& $(this).find('option:selected').attr('value') !== '-1'
+					&& !$(this).is('#estate_main_facilities select[value=-1]')
 					&& (
 						!$(this).is('input')
 						|| (
@@ -300,11 +297,13 @@ $(
 						$(s).find('option').remove();
 						s = $($(s)[0].outerHTML.replace('select', 'input')).attr('value', $(this).find('option:selected').attr('value'));
 					} else if ($(this).is('textarea')) {
-						s = $($(s)[0].outerHTML.replace('textarea', 'input')).attr('value', $(this).val());
-					} else if($(this).is('#estate_characteristic_reference input[type=checkbox]')) {
-						$(s).attr('name',$(s).attr('name').replace('[]','').replace('][','][]['));
-					} else if($(this).is('#estate_room input[type=checkbox]') && !$(this).is(':checked')){
-						$(s).val(0);
+						s = $($(s).html('')[0].outerHTML.replace('textarea', 'input')).attr('value', $(this).val());
+					}  else if($(this).is('input[type=checkbox]')){
+						if(!$(this).is(':checked')){
+							$(s).val(0);
+						}else if($(this).is('#estate_characteristic_reference *')) {
+							$(s).attr('name',$(s).attr('name').replace('[]','').replace('][','][]['));
+						}
 					}
 					$(this).parent().append(s);
 				}

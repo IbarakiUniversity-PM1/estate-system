@@ -39,7 +39,6 @@ class EstateManagementController extends AppController
 	 */
 	public function register()
 	{
-		date_default_timezone_set("Asia/Tokyo"); //タイムゾーンを設定
 		if ($this->request->is("post")) {
 			for ($i = 0; $i < count($this->request->data["EstatePicture"]); $i++) {
 				if ($i == $this->request->data["Estate"]["thumbnail"]) {
@@ -50,25 +49,17 @@ class EstateManagementController extends AppController
 			}
 			unset($this->request->data["Estate"]["thumbnail"]);
 
-			$dateTime=new DateTime($this->request->data["Estate"]["age"]);
-			$this->request->data["Estate"]["age"]=$dateTime->getTimestamp()*1000;
+			$this->request->data["Estate"]["age"]=$this->Date->toTimestamp($this->request->data["Estate"]["age"]);
 			for($i=0;$i<count($this->request->data["EstateRoom"]);$i++){
-				$dateTime=new DateTime($this->request->data["EstateRoom"][$i]["occupancy_date"]);
-				$this->request->data["EstateRoom"][$i]["occupancy_date"]=$dateTime->getTimestamp()*1000;
+				$this->request->data["EstateRoom"][$i]["occupancy_date"]=$this->Date->toTimestamp($this->request->data["EstateRoom"][$i]["occupancy_date"]);
 			}
 
 			$this->Estate->create();
 			if ($this->Estate->saveAll($this->request->data, array("deep" => true))) {
 				$this->redirect(array("action" => "index"));
 			}
-			foreach ($this->Estate->validationErrors as $k1 => $v1) {
-				foreach ($v1 as $k2 => $v2) {
-					foreach ($v2 as $v3) {
-						$this->Flash->set($k1 . "." . $k2 . " : " . $v3);
-					}
-				}
-			}
-			debug($this->request->data);
+			$this->MyFlash->set_validation_error($this->Estate->validationErrors);
+			//debug($this->request->data);
 		}
 
 		// 不動産業者
@@ -155,8 +146,10 @@ class EstateManagementController extends AppController
 		$this->register();
 		$data = $this->Estate->read();
 		if(isset($data["Estate"]["age"])){
-			$dateTime=new DateTime();
-			$data["Estate"]["age"]=$dateTime->setTimestamp($data["Estate"]["age"])->format("Y/m/d");
+			$data["Estate"]["age"]=$this->Date->toString($data["Estate"]["age"]);
+		}
+		for($i=0;isset($data["EstateRoom"]) && $i<count($data["EstateRoom"]);$i++){
+			$data["EstateRoom"][$i]["occupancy_date"]=$this->Date->toString($data["EstateRoom"][$i]["occupancy_date"]);
 		}
 		if(isset($data["EstateCharacteristicReference"])){
 			$tmp=array();
