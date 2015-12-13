@@ -53,7 +53,12 @@ class EstateManagementController extends AppController
 
 			$this->Estate->create();
 			if ($this->Estate->saveAll($this->request->data, array("deep" => true))) {
-				$this->redirect(array("action" => "index"));
+				$this->redirect(
+					array(
+						"controller" => "EstateView",
+						"action" => "estateList"
+					)
+				);
 			}
 			$this->MyFlash->set_validation_error($this->Estate->validationErrors);
 		}
@@ -120,7 +125,7 @@ class EstateManagementController extends AppController
 			for ($j = 0; $j < count($estateMainFacilitiesType[$i]["EstateMainFacilities"]); $j++) {
 				$tmp[$estateMainFacilitiesType[$i]["EstateMainFacilities"][$j]["estate_main_facilities_id"]] = $estateMainFacilitiesType[$i]["EstateMainFacilities"][$j]["name"];
 			}
-			//$tmp['-1']='その他';
+			//$tmp["-1"]="その他";
 			$estateMainFacilitiesType[$i]["EstateMainFacilities"] = $tmp;
 		}
 		$this->set("estateMainFacilitiesType", $estateMainFacilitiesType);
@@ -205,7 +210,7 @@ class EstateManagementController extends AppController
 	 */
 	public function delete($estate_id = null)
 	{
-		if ($this->request->is('post') && $estate_id!=null) {
+		if ($this->request->is("post") && $estate_id!=null) {
 			$isFail=!$this->Estate->delete($estate_id);
 			if(!$isFail){
 				foreach($this->EstatePicture->find("list",array("fields"=>"EstatePicture.estate_picture_id","conditions"=>"EstatePicture.estate_id=".$estate_id)) as $e){
@@ -218,12 +223,12 @@ class EstateManagementController extends AppController
 			if($isFail){
 				$this->Flash->set("正常に物件を削除できませんでした。");
 			}
-			$this->redirect(array('controller' => 'EstateManagement', 'action' => 'index'));
+			$this->redirect(
+				array(
+					"controller" => "EstateView",
+					"action" => "estateList"
+				)
+			);
 		}
-	}
-
-	public function index()
-	{
-		$this->set("estates", $this->Estate->find("all"));
 	}
 }

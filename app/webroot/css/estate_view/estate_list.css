@@ -25,7 +25,9 @@ tbody.scrollBody tr:hover {
     background: #dde1e1;
 }
 
-
+.add_estate a {
+	text-align: center;
+}
 
 /*スクロール用*/
 thead.scrollHead,tbody.scrollBody{
