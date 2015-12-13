@@ -56,7 +56,6 @@ class EstateManagementController extends AppController
 				$this->redirect(array("action" => "index"));
 			}
 			$this->MyFlash->set_validation_error($this->Estate->validationErrors);
-			//debug($this->request->data);
 		}
 
 		// 不動産業者
