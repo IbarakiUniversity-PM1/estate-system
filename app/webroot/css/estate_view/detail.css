@@ -1,8 +1,7 @@
 @charset "utf-8";
 
 #images img {
-    width: 280px;
-    height: 210px;
+    max-width: 205px;
 }
 
 
