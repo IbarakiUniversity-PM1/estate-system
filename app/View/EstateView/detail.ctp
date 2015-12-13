@@ -1,11 +1,7 @@
-<?php
-$this->assign("nav", true);
-$this->Html->css(array('estate_view/detail'), false, array('inline' => false));
-$this->Html->script("estate_view/detail", array("inline" => false));
-$this->Html->addCrumb(
-	'物件詳細' ,
-	"/EstateView/detail/" . $estate["Estate"]["estate_id"]
-); ?>
+<?php $this->assign("nav", true) ?>
+<?php echo $this->Html->css(array('estate_view/detail'), false, array('inline' => false)); ?>
+<?php $this->Html->addCrumb('物件詳細' ,
+                            "/EstateView/detail/" . $estate["Estate"]["estate_id"]); ?>
 
 <?php
 /**
