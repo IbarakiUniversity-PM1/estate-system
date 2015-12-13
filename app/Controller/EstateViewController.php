@@ -52,7 +52,7 @@ class EstateViewController extends AppController
         );
         if (empty($this->request->query)) { //トップ画面
             //タイトルをセットする
-            $this->set("title_for_layout", "オススメ物件一覧");
+            $this->set("title_for_layout", "物件一覧");
             //茨城大学日立キャンパスからの距離をJOINする
             $options["joins"][] = array(
                 "type" => "LEFT",
