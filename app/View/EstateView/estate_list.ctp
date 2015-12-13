@@ -31,7 +31,9 @@ $this->Html->script("jquery.tablesorter", array("inline" => false));
     ?>
 </h4></div>
 
+<?php if(isset($loginUser)){ ?>
 <h4><?php echo $this->Html->link("物件登録", array("controller" => "EstateManagement", "action" => "register")) ?></h4>
+<?php } ?>
 
 <table id="estate_table">
     <thead class="scrollHead">
