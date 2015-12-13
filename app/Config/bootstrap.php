@@ -110,4 +110,9 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+CakeLog::config('login', array(
+	'engine' => 'File',
+	'types' => array('login','logout'),
+	'file' => 'login',
+));
 CakePlugin::loadAll(); // Loads all plugins at once

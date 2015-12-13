@@ -30,8 +30,11 @@ class AdministratorController extends AppController
 	{
 		if ($this->request->is('post')) {
 			if ($this->Auth->login()) {
+				$loginUser=$this->Auth->user();
+				$this->log("[ログイン成功] ".$loginUser["name"], 'login');
 				$this->redirect($this->Auth->redirectUrl());
 			}else{
+				$this->log("[ログイン失敗] ".$this->request->data["Administrator"]["name"], 'login');
 				$this->Flash->set('ユーザ名もしくはパスワードに誤りがあります');
 			}
 		}
@@ -43,6 +46,8 @@ class AdministratorController extends AppController
 	 * ログアウト
 	 */
 	public function logout() {
+		$loginUser=$this->Auth->user();
+		$this->log("[ログアウト成功] ".$loginUser["name"], 'logout');
 		$this->redirect($this->Auth->logout());
 	}
 }
