@@ -39,6 +39,7 @@ class AppController extends Controller
 		'DebugKit.Toolbar', //TODO:本番環境にアップロードする際にコメントアウトする
 		'Flash',
 		'MyFlash',
+		'Date',
 		'Auth' => array(
 			'loginAction' => array(
 				'controller' => 'Administrator',
