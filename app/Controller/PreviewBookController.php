@@ -69,6 +69,9 @@ class PreviewBookController extends AppController
 			$email_ = new CakeEmail('gmail');
 			// フォーマット
 			$email_->emailFormat('text');
+			$k=array_keys($email_->from());
+			$v=array_values($email_->from());
+			$from=array($v[0],$k[0]);
 
 			//不動産業者
 			$email=clone $email_;
@@ -90,7 +93,8 @@ class PreviewBookController extends AppController
 							$this->request->data['PreviewBook']["preview_date_1"],
 							$this->request->data['PreviewBook']["preview_date_2"],
 							$this->request->data['PreviewBook']["preview_date_3"]
-						)
+						),
+					"from"=> $from
 				)
 			);
 			$email->send();
@@ -111,7 +115,8 @@ class PreviewBookController extends AppController
 							$this->request->data['PreviewBook']["preview_date_1"],
 							$this->request->data['PreviewBook']["preview_date_2"],
 							$this->request->data['PreviewBook']["preview_date_3"]
-						)
+						),
+					"from"=> $from
 				)
 			);
 			$email->send();
