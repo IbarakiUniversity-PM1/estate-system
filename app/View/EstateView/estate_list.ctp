@@ -22,7 +22,9 @@ $this->Html->script("jquery.tablesorter", array("inline" => false));
     });
 </script>
 
-
+<?php if(isset($loginUser)){ ?>
+	<h4>※非表示設定がなされている物件や、全ての部屋が契約済みな物件についても表示されています。</h4>
+<?php } ?>
 
 <div id="hit"><h4>
     <?php
