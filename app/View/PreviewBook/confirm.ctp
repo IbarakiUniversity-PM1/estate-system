@@ -14,17 +14,11 @@ echo $this->Form->create('PreviewBook', array('url' => array('controller' => 'Pr
         氏名:<?php echo $this->Form->value('user_name', array('label' => '氏名')) . PHP_EOL; ?><br>
         E-Mail:<?php echo $this->Form->value('email_address', array('label' => 'E-Mail')) . PHP_EOL; ?><br>
         電話番号:<?php echo $this->Form->value('tel_number', array('label' => '電話番号')) . PHP_EOL; ?><br>
-        第一希望日:<?php echo sprintf('%d月%d日',
-                                 $this->request->data['PreviewBook']['preview_date_2']['month'],
-                                 $this->request->data['PreviewBook']['preview_date_3']['day']);
+        第一希望日:<?php echo $this->request->data['PreviewBook']['preview_date_1'];
         ?><br>
-        第二希望日:<?php echo sprintf('%d月%d日',
-                                 $this->request->data['PreviewBook']['preview_date_2']['month'],
-                                 $this->request->data['PreviewBook']['preview_date_3']['day']);
+        第二希望日:<?php echo $this->request->data['PreviewBook']['preview_date_2'];
         ?><br>
-        第三希望日:<?php echo sprintf('%d月%d日',
-                                 $this->request->data['PreviewBook']['preview_date_2']['month'],
-                                 $this->request->data['PreviewBook']['preview_date_3']['day']);
+        第三希望日:<?php echo $this->request->data['PreviewBook']['preview_date_3'];
         ?><br>
 
 
@@ -32,9 +26,9 @@ echo $this->Form->create('PreviewBook', array('url' => array('controller' => 'Pr
         echo $this->Form->hidden('user_name', array('value' => $this->request->data['PreviewBook']['user_name']));
         echo $this->Form->hidden('email_address', array('value' => $this->request->data['PreviewBook']['email_address']));
         echo $this->Form->hidden('tel_number', array('value' => $this->request->data['PreviewBook']['tel_number']));
-        echo $this->Form->hidden('preview_date_1', array('value' => implode("\t", $this->request->data['PreviewBook']['preview_date_1'])));
-        echo $this->Form->hidden('preview_date_2', array('value' => implode("\t", $this->request->data['PreviewBook']['preview_date_2'])));
-        echo $this->Form->hidden('preview_date_3', array('value' => implode("\t", $this->request->data['PreviewBook']['preview_date_3'])));
+        echo $this->Form->hidden('preview_date_1', array('value' => $this->request->data['PreviewBook']['preview_date_1']));
+        echo $this->Form->hidden('preview_date_2', array('value' => $this->request->data['PreviewBook']['preview_date_2']));
+        echo $this->Form->hidden('preview_date_3', array('value' => $this->request->data['PreviewBook']['preview_date_3']));
         echo $this->Form->hidden('PreviewBook.estate_id', array('value' => $this->request->data['PreviewBook']['estate_id']));
 
         echo $this->Form->submit('送信', array('name' => 'submit', 'label' => false));

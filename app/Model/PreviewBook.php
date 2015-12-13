@@ -55,8 +55,8 @@ class PreviewBook extends AppModel
 		),
             'email_address' => array(
 			array(
-				"rule" => array("maxLength", 256),
-				"message" => "256文字以内です。"
+				"rule" => "email",
+				"message" => "Eメールアドレスの形式で入力してください。"
 			),
 			array(
 				"rule" => "notBlank",
@@ -65,12 +65,16 @@ class PreviewBook extends AppModel
 			)
 		),
             'tel_number' => array(
+				array(
+					"rule" => "phone",
+					"message" => "電話番号の形式で入力してください。"
+				),
 			array(
 				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		)
-            
+
         );
 }

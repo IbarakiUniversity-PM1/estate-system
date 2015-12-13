@@ -1,11 +1,15 @@
 <center>
 <?php
-$this->assign("nav", true);?>
-<?php echo $this->Html->css(array('preview/bbok'), false, array('inline' => false)); ?>
-    <?php $this->Html->addCrumb('物件詳細',
-                                "/EstateView/detail/" . $estate["Estate"]["estate_id"]); ?>
-    <?php $this->Html->addCrumb('内見予約',
-                                "/PreviewBook/book/" . $estate["Estate"]["estate_id"]); ?>
+$this->assign("nav", true);
+$this->Html->script("preview_book".DS."book", array("inline" => false));
+$this->Html->addCrumb(
+	'物件詳細',
+	"/EstateView/detail/" . $estate["Estate"]["estate_id"]
+);
+$this->Html->addCrumb(
+	'内見予約',
+	"/PreviewBook/book/" . $estate["Estate"]["estate_id"]
+); ?>
 
     <div>
 
@@ -36,20 +40,38 @@ $this->assign("nav", true);?>
 
 
                 <li>
-                    <?php echo $this->Form->input('preview_date_1', array('dateFormat' => 'MD', 'maxYear' => date('Y'), 'minYear' => date('Y') - 100, 'monthNames' => false, 'label' => array('text' => '第一希望日')));
-                    ?>
+                    <?php echo $this->Form->input(
+						"preview_date_1",
+						array(
+							"class"=>"preview_date",
+							"type"=>"text",
+							"label"=>"第一希望日"
+						)
+					) ?>
                 </li>
 
 
                 <li>
-                    <?php echo $this->Form->input('preview_date_2', array('dateFormat' => 'MD', 'maxYear' => date('Y'), 'minYear' => date('Y') - 100, 'monthNames' => false, 'label' => array('text' => '第二希望日')));
-                    ?>
+                    <?php echo $this->Form->input(
+						"preview_date_2",
+						array(
+							"class"=>"preview_date",
+							"type"=>"text",
+							"label"=>"第二希望日"
+						)
+					) ?>
                 </li>
 
 
                 <li>
-                    <?php echo $this->Form->input('preview_date_3', array('dateFormat' => 'MD', 'maxYear' => date('Y'), 'minYear' => date('Y') - 100, 'monthNames' => false, 'label' => array('text' => '第三希望日')));
-                    ?>
+                    <?php echo $this->Form->input(
+						"preview_date_3",
+						array(
+							"class"=>"preview_date",
+							"type"=>"text",
+							"label"=>"第三希望日"
+						)
+					) ?>
                 </li>
 
                 <li>
