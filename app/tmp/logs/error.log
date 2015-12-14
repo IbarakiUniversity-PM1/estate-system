@@ -1,0 +1,16 @@
+2015-12-14 17:22:21 Error: [PDOException] SQLSTATE[HY000]: General error: 1 no such column: Estate.hide_flag
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT "Estate"...', Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT "Estate"...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT "Estate"...', Array, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(1272): DboSource->fetchAll('SELECT "Estate"...', false)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1917): DboSource->read(Object(Estate), Array)
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('all', Array)
+#6 /Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php(121): Model->find('all', Array)
+#7 [internal function]: EstateViewController->estateList('home')
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#9 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#11 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
