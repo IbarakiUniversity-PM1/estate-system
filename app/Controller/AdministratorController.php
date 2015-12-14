@@ -9,11 +9,11 @@ class AdministratorController extends AppController
 	{
 		//管理者登録を有効にするかどうか
 		$isEffective=false;
-		if (($isEffective && $this->request->is('post')) || !$isEffective) {
+		if (!$isEffective || $this->request->is('post')) {
 			if($isEffective){
 				$this->Administrator->create();
 			}
-			if (($isEffective && $this->Administrator->save($this->request->data)) || !$isEffective) {
+			if (!$isEffective || $this->Administrator->save($this->request->data)) {
 				$this->redirect(array("action" => "login"));
 			} else {
 				$this->MyFlash->set_validation_error($this->Administrator->validationErrors);
@@ -57,18 +57,8 @@ class AdministratorController extends AppController
 	 */
 	public function forget()
 	{
-		//タイトルをセットする
-		$this->set("title_for_layout", "パスワード再発行");
-	}
-
-	/**
-	 * パスワード再発行完了
-	 */
-	public function forgetComplete()
-	{
 		if ($this->request->is('post')) {
-			$this->Administrator->id=$this->request->data["Administrator"]["e_mail_address"];
-			$result=$this->Administrator->read();
+			$result=$this->Administrator->find("all",array("conditions"=>"Administrator.e_mail_address='".$this->request->data["Administrator"]["e_mail_address"]."'"));
 			if(0<count($result)){
 				//メールを送信する
 				$email = new CakeEmail('gmail');
@@ -77,14 +67,14 @@ class AdministratorController extends AppController
 				$k=array_keys($email->from());
 				$v=array_values($email->from());
 				$from=array($v[0],$k[0]);
-				$email->to($result['Administrator'][0]['e_mail_address']);
+				$email->to($result[0]['Administrator']['e_mail_address']);
 				$email->subject('パスワード再発行');
 				// テンプレートファイル
 				$email->template('forget');
 				// テンプレートに渡す変数
 				$email->viewVars(
 					array(
-						"name" => $result['Administrator']['name'],
+						"name" => $result[0]['Administrator']['name'],
 						"url" => "",
 						"from"=> $from
 					)
@@ -93,6 +83,8 @@ class AdministratorController extends AppController
 			}else{
 				$this->Flash->set("一致するメールアドレスがありませんでした");
 			}
+			//物件検索条件指定・提供不動産業者用エレメントを呼び出す
+			$this->render("complete");
 		}
 		//タイトルをセットする
 		$this->set("title_for_layout", "パスワード再発行");

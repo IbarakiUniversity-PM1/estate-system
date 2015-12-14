@@ -1,6 +1,6 @@
 <h4>ログインしたい管理者のEメールアドレスを入力してください。</h4>
 <?php
-echo $this->Form->create("Administrator",array("action"=>"forgetComplete"));
+echo $this->Form->create();
 echo $this->Form->input(
 	"e_mail_address",
 	array("label" => "Eメールアドレス")
