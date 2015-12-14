@@ -23,13 +23,13 @@ $this->Html->addCrumb(
 
                 <li>
                     <div id="vertical_middle">
-                        <?php echo $this->Form->input('user_name', array('label' => '氏名','type'=>'text')); ?>
+                        <?php echo $this->Form->input('user_name', array('label' => '氏名')); ?>
                     </div>
                 </li>
 
 
                 <li>
-                    <?php echo $this->Form->input('email_address', array('label' => 'E-Mail','type'=>'text')); ?>
+                    <?php echo $this->Form->input('email_address', array('label' => 'E-Mail')); ?>
                 </li>
 
 

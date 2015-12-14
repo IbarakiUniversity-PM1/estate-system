@@ -14,11 +14,11 @@ class PreviewBook extends AppModel
 	 */
 	public $_schema = array(
 		'user_name' => array(
-			'type' => 'text',
+			'type' => 'string',
 			'length' => 20
 		),
 		'email_address' => array(
-			'type' => 'text',
+			'type' => 'string',
 			'length' => 256
 		),
 		'tel_number' => array(
