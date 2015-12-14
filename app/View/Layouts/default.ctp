@@ -34,7 +34,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	echo "        " . $this->fetch('css') . PHP_EOL;
     //Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
     if ($this->fetch('nav')) {
-        echo "        " . $this->Html->css("elements/nav") . PHP_EOL;
+        echo "        " . $this->Html->css("elements".DS."nav") . PHP_EOL;
     }
     echo "        " . $this->Html->css("header") . PHP_EOL;
 
@@ -43,7 +43,11 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	echo "        " . $this->Html->script('//ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js') . PHP_EOL;
     echo "        " . $this->Html->script('cake.generic') . PHP_EOL;
     echo "        " . $this->fetch('script') . PHP_EOL;
-    ?>
+	//Viewに『$this->assign("nav", true)』を埋め込むことで、検索条件指定・提供不動産業者を表示できる
+	if ($this->fetch('nav')) {
+		echo "        " . $this->Html->script("elements".DS."nav") . PHP_EOL;
+	}
+	?>
 </head>
 <body>
 	<div id="header">

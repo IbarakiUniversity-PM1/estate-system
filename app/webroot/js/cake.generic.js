@@ -1,7 +1,8 @@
 $(
 	function ($) {
-		var $buttons=$('.buttons');
-		$buttons.find('div').css('width', 100 / $buttons.children().length + '%');
+		$('.buttons').each(function(){
+			$(this).find('div').css('width', 100 / $(this).children().length + '%');
+		});
 		var topBtn = $('#page-top');
 		topBtn.css('bottom', '-100px');
 		var showFlag = false;
