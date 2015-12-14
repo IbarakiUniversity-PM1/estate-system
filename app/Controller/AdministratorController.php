@@ -61,6 +61,9 @@ class AdministratorController extends AppController
 		$this->set("title_for_layout", "パスワード再発行");
 	}
 
+	/**
+	 * パスワード再発行完了
+	 */
 	public function forgetComplete()
 	{
 		if ($this->request->is('post')) {
