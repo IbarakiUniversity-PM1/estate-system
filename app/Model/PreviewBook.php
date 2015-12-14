@@ -42,7 +42,7 @@ class PreviewBook extends AppModel
 	 * @var array 入力チェックの定義
 	 */
 	public $validate = array(
-            'user_name' => array(
+		'user_name' => array(
 			array(
 				"rule" => array("maxLength", 20),
 				"message" => "20文字以内です。"
@@ -53,7 +53,7 @@ class PreviewBook extends AppModel
 				"message" => "必須項目です。"
 			)
 		),
-            'email_address' => array(
+		'email_address' => array(
 			array(
 				"rule" => "email",
 				"message" => "Eメールアドレスの形式で入力してください。"
@@ -64,17 +64,16 @@ class PreviewBook extends AppModel
 				"message" => "必須項目です。"
 			)
 		),
-            'tel_number' => array(
-				array(
-					"rule" => "phone",
-					"message" => "電話番号の形式で入力してください。"
-				),
+		'tel_number' => array(
+			array(
+				"rule" => "phone",
+				"message" => "電話番号の形式で入力してください。"
+			),
 			array(
 				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
 		)
-
-        );
+	);
 }
