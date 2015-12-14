@@ -11,6 +11,9 @@ echo $this->Form->input(
 echo $this->Html->div(
 	"buttons",
 	$this->Form->submit("ログイン")
-);
-$this->Form->end();
-?>
+); ?>
+<h4><?php echo $this->Html->link(
+	'パスワードを忘れた方',
+	array('action' => 'forget')
+) ?></h4>
+<?php echo $this->Form->end() ?>

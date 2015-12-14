@@ -45,9 +45,53 @@ class AdministratorController extends AppController
 	/**
 	 * ログアウト
 	 */
-	public function logout() {
+	public function logout()
+	{
 		$loginUser=$this->Auth->user();
 		$this->log("[ログアウト成功] ".$loginUser["name"], 'logout');
 		$this->redirect($this->Auth->logout());
+	}
+
+	/**
+	 * パスワード再発行
+	 */
+	public function forget()
+	{
+		//タイトルをセットする
+		$this->set("title_for_layout", "パスワード再発行");
+	}
+
+	public function forgetComplete()
+	{
+		if ($this->request->is('post')) {
+			$this->Administrator->id=$this->request->data["Administrator"]["e_mail_address"];
+			$result=$this->Administrator->read();
+			if(0<count($result)){
+				//メールを送信する
+				$email = new CakeEmail('gmail');
+				// フォーマット
+				$email->emailFormat('text');
+				$k=array_keys($email->from());
+				$v=array_values($email->from());
+				$from=array($v[0],$k[0]);
+				$email->to($result['Administrator'][0]['e_mail_address']);
+				$email->subject('パスワード再発行');
+				// テンプレートファイル
+				$email->template('forget');
+				// テンプレートに渡す変数
+				$email->viewVars(
+					array(
+						"name" => $result['Administrator']['name'],
+						"url" => "",
+						"from"=> $from
+					)
+				);
+				$email->send();
+			}else{
+				$this->Flash->set("一致するメールアドレスがありませんでした");
+			}
+		}
+		//タイトルをセットする
+		$this->set("title_for_layout", "パスワード再発行");
 	}
 }
