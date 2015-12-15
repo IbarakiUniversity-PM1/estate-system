@@ -577,11 +577,11 @@ a{
 }
 
 #main .buttons {
-	display: table;
+    display: table;
 }
 
 #main .buttons div {
-	display: table-cell;
+    display: table-cell;
 }
 
 @keyframes "page" {
@@ -670,4 +670,12 @@ a{
 
 div.tab-content h2 {
     text-align : left;
+}
+
+div.content-1,
+div.content-2,
+div.content-3{
+    overflow: scroll;   /* スクロール表示 */
+    width: auto;
+    height: 250px;
 }
