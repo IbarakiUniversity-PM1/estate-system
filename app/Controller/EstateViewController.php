@@ -72,17 +72,19 @@ class EstateViewController extends AppController
 					);
 				}
 				foreach($v1 as $k2=>$v2){
-					if($k1=="Estate" && $k2=="rent"){
-						$options["conditions"][]=$k1.".".$k2."<=".$v2;
-					}else if($k1=="Estate" && ($k2=="age" || $k2=="area")){
-						if($k2=="age") {
-							$v2=$this->Date->toTimestampModify("-".$v2." years");
+					if(!empty($v2)) {
+						if ($k1 == "Estate" && $k2 == "rent") {
+							$options["conditions"][] = $k1 . "." . $k2 . "<=" . $v2;
+						} else if ($k1 == "Estate" && ($k2 == "age" || $k2 == "area")) {
+							if ($k2 == "age") {
+								$v2 = $this->Date->toTimestampModify("-" . $v2 . " years");
+							}
+							$options["conditions"][] = $v2 . "<=" . $k1 . "." . $k2;
+						} else if (($k1 == "Estate" && ($k2 == "name" || $k2 == "address")) || ($k1 == "EstateAgent" && $k2 == "name")) {
+							$options["conditions"][] = $k1 . "." . $k2 . " LIKE '%" . $v2 . "%'";
+						} else {
+							$options["conditions"][$k1 . "." . $k2] = $v2;
 						}
-						$options["conditions"][]=$v2."<=".$k1.".".$k2;
-					}else if(($k1=="Estate" && ($k2=="name" || $k2=="address")) || ($k1=="EstateAgent" && $k2=="name")){
-						$options["conditions"][]=$k1.".".$k2." LIKE '%".$v2."%'";
-					}else{
-						$options["conditions"][$k1.".".$k2]=$v2;
 					}
 				}
 			}
