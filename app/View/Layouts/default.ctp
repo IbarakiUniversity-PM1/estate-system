@@ -54,9 +54,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<div id="header_contents">
 			<?php
 			echo $this->Html->nestedList(array($this->element('breadcrumbs')),array("class"=>"site_header"));
+			$list=array();
 			if(isset($loginUser)){
-				echo $this->Html->nestedList(array("ログイン中 : ".$loginUser["name"]),array("class"=>"user_menu"));
+				$list[]="ログイン中 : ".$loginUser["name"];
+				$list[]=$this->Html->link(
+					'ログアウト',
+					array(
+						'controller'=>'Administrator',
+						'action'=>'logout'
+					));
 			}
+			echo $this->Html->nestedList($list,array("class"=>"user_menu"));
 			?>
 		</div>
 	</div>
@@ -98,6 +106,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             )
         ); ?>
         <p><?php echo $cakeVersion; ?></p>
+		<?php echo $this->Html->link(
+			'ログイン',
+			array(
+				'controller'=>'Administrator',
+				'action'=>'login'
+			)
+		); ?>
     </div>
         <p id="page-top"><a href="#container">PAGE TOP</a></p>
     </div>
