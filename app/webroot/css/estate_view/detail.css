@@ -668,3 +668,6 @@ a{
     src: local('Open Sans Cond Light Italic'), local('OpenSans-CondensedLightItalic'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/jIXlqT1WKafUSwj6s9AzV6XnXbwdDC8wAz6IIzmCDUN2IY20qb3OO3nusUf_NB58.woff) format('woff');
 }
 
+div.tab-content h2 {
+    text-align : left;
+}
