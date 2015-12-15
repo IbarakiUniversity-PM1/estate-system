@@ -19,7 +19,15 @@ class NavigationController extends AppController
 	public function nav()
 	{
 		//窓の向きを$estateWindowListにセット
-		$this->set("estateWindowList",array("東","西","南","北"));
+		$this->set(
+			"estateWindowList",
+			array(
+				"東"=>"東",
+				"西"=>"西",
+				"南"=>"南",
+				"北"=>"北"
+			)
+		);
 
 		//物件特徴テーブルの内容を取得し、$estateCharacteristicListにセット
 		$estateCharacteristicList = array();

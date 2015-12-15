@@ -1,5 +1,5 @@
 $(function(){
-	$('#nav').find('input[type=checkbox]').removeAttr('id').change(function(e){
+	$('#nav').find('input[type=checkbox]').removeAttr('name').change(function(e){
 		if($(e.target).attr('checked')){
 			$(e.target).parent().parent().find('input,select').removeAttr('disabled');
 		}else {
@@ -10,7 +10,8 @@ $(function(){
 			});
 		}
 	});
-	$('#EstateEstateKeywordType').change(function(e){
-		$(e.target).parent().find('input').attr('name',$(e.target).val());
-	});
+	$('#EstateEstateKeywordType').removeAttr('name').change(function(e){
+		$(e.target).parent().find('input[type=text]').attr('name',$(e.target).val());
+	}).trigger('change');
+	$('.check input[type=hidden]').remove();
 });

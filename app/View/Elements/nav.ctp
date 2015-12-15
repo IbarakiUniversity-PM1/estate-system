@@ -173,7 +173,7 @@
 								"label"=>false
 							)
 						).$this->Form->hidden(
-							"data[EstateCharacteristicReference][][estate_characteristic_id]",
+							"data[EstateCharacteristicReference][estate_characteristic_id][]",
 							array(
 								"value"=>$k,
 								"disabled"=>true

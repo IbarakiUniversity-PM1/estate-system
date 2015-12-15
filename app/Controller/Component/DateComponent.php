@@ -19,6 +19,18 @@ class DateComponent extends Component
 	}
 
 	/**
+	 * 今日からの相対的な日付をSQlite用タイムスタンプに変換する
+	 * @param $modify string 相対的な日付
+	 * @return int SQlite用タイムスタンプ
+	 */
+	public function toTimestampModify($modify)
+	{
+		$this->beforeRun();
+		$dateTime=new DateTime();
+		return $dateTime->modify($modify)->getTimestamp()*$this->weighting;
+	}
+
+	/**
 	 * 『Y/m/d』形式の日付文字列をSQlite用タイムスタンプに変換する
 	 * @param $string string 日付文字列(『Y/m/d』形式)
 	 * @return int SQlite用タイムスタンプ
