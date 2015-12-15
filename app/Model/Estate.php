@@ -167,7 +167,7 @@ class Estate extends AppModel
 		),
 		"contract_period" => array(
 			array(
-				'rule' => array('naturalNumber', false), // 0(ゼロ)を許可
+				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
 				'message' => '自然数を入力してください。'
 			)
 		),
