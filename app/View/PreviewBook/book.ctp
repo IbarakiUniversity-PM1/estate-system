@@ -45,7 +45,9 @@ $this->Html->addCrumb(
 						array(
 							"class"=>"preview_date",
 							"type"=>"text",
-							"label"=>"第一希望日"
+							"label"=>"第一希望日",
+							"readonly"=>true,
+							"div"=>"datepicker"
 						)
 					) ?>
                 </li>
@@ -57,7 +59,9 @@ $this->Html->addCrumb(
 						array(
 							"class"=>"preview_date",
 							"type"=>"text",
-							"label"=>"第二希望日"
+							"label"=>"第二希望日",
+							"readonly"=>true,
+							"div"=>"datepicker"
 						)
 					) ?>
                 </li>
@@ -69,7 +73,9 @@ $this->Html->addCrumb(
 						array(
 							"class"=>"preview_date",
 							"type"=>"text",
-							"label"=>"第三希望日"
+							"label"=>"第三希望日",
+							"readonly"=>true,
+							"div"=>"datepicker"
 						)
 					) ?>
                 </li>

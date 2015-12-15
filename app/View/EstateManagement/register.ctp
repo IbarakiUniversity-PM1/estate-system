@@ -120,7 +120,9 @@ echo $this->Form->input(
 
 $options1=array(
 	"type"=>"text",
-	"label"=>"築年月"
+	"label"=>"築年月",
+	"readonly"=>true,
+	"div"=>"datepicker"
 );
 if(isset($data["Estate"]["age"])){
 	$options1["value"]=$data["Estate"]["age"];
@@ -585,7 +587,9 @@ for ($i = 0; $i < 2; $i++) { ?>
 			$options1=array(
 				"class" => "estate_room_occupancy_date",
 				"type" => "text",
-				"label" => false
+				"label" => false,
+				"readonly"=>true,
+				"div"=>"datepicker"
 			);
 			if($i==1 && isset($data)){
 				$options1["value"]=$data["EstateRoom"][$j]["occupancy_date"];

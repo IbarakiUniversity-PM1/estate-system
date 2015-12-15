@@ -930,3 +930,7 @@ ul.user_menu {
     text-decoration: none;
     background: #999;
 }
+
+#main div.datepicker {
+	white-space: nowrap;
+}
