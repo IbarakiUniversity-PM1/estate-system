@@ -212,7 +212,7 @@ $(
 					$(this).attr('id', $(this).attr('id').replace('?', i));
 					$(this).attr('name', $(this).attr('name').replace('?', i));
 					if($(this).is('.estate_room_occupancy_date')){
-						$(this).datepicker({changeMonth: true,changeYear: true,yearRange: "-0:+10"});
+						$(this).datepicker({changeMonth: true,changeYear: true,yearRange: "-0:+10",minDate: '-0d'});
 					}
 				});
 			});
@@ -365,6 +365,6 @@ $(
 
 		click_no();
 
-		$('#EstateAge').datepicker({changeMonth: true,changeYear: true,yearRange: "-150:+0"});
+		$('#EstateAge').datepicker({changeMonth: true,changeYear: true,yearRange: "-150:+0",maxDate: '+0d'});
 	}
 );
