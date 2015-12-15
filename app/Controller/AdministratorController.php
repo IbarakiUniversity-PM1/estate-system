@@ -57,6 +57,12 @@ class AdministratorController extends AppController
 	 */
 	public function forget()
 	{
+		//タイトルをセットする
+		$this->set("title_for_layout", "パスワード再発行");
+	}
+
+	public function complete()
+	{
 		if ($this->request->is('post')) {
 			$result=$this->Administrator->find("all",array("conditions"=>"Administrator.e_mail_address='".$this->request->data["Administrator"]["e_mail_address"]."'"));
 			if(0<count($result)){
@@ -83,10 +89,8 @@ class AdministratorController extends AppController
 			}else{
 				$this->Flash->set("一致するメールアドレスがありませんでした");
 			}
-			//物件検索条件指定・提供不動産業者用エレメントを呼び出す
-			$this->render("complete");
 		}
 		//タイトルをセットする
-		$this->set("title_for_layout", "パスワード再発行");
+		$this->set("title_for_layout", "送信完了");
 	}
 }
