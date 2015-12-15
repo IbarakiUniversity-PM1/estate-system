@@ -22,7 +22,7 @@ class PreviewBook extends AppModel
 			'length' => 256
 		),
 		'tel_number' => array(
-			'type' => 'integer',
+			'type' => 'string',
 			'length' => 11
 		),
 		'preview_date_1' => array(

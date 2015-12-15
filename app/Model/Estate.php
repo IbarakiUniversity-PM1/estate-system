@@ -70,6 +70,10 @@ class Estate extends AppModel
 				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
+			),
+			array(
+				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
+				'message' => '自然数を入力してください。'
 			)
 		),
 		"deposit" => array(
@@ -77,6 +81,10 @@ class Estate extends AppModel
 				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
+			),
+			array(
+				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
+				'message' => '自然数を入力してください。'
 			)
 		),
 		"key_money" => array(
@@ -84,6 +92,10 @@ class Estate extends AppModel
 				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
+			),
+			array(
+				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
+				'message' => '自然数を入力してください。'
 			)
 		),
 		"common_service_pay" => array(
@@ -91,6 +103,10 @@ class Estate extends AppModel
 				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
+			),
+			array(
+				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
+				'message' => '自然数を入力してください。'
 			)
 		),
 		"parking_flag" => array(
@@ -100,11 +116,21 @@ class Estate extends AppModel
 				"message" => "必須項目です。"
 			)
 		),
+		"parking_fee" => array(
+			array(
+				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
+				'message' => '自然数を入力してください。'
+			)
+		),
 		"area" => array(
 			array(
 				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
+			),
+			array(
+				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
+				'message' => '自然数を入力してください。'
 			)
 		),
 		"floor_plan" => array(
@@ -127,6 +153,10 @@ class Estate extends AppModel
 				"rule" => "notBlank",
 				"required" => "create",
 				"message" => "必須項目です。"
+			),
+			array(
+				'rule' => array('naturalNumber', false),
+				'message' => '自然数を入力してください。'
 			)
 		),
 		"window_direction" => array(
@@ -134,7 +164,13 @@ class Estate extends AppModel
 				"rule" => array("maxLength", 5),
 				"message" => "5文字以内です。"
 			)
-		)
+		),
+		"contract_period" => array(
+			array(
+				'rule' => array('naturalNumber', false), // 0(ゼロ)を許可
+				'message' => '自然数を入力してください。'
+			)
+		),
 	);
 	/**
 	 * @var string 主キー

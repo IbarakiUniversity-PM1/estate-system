@@ -13,6 +13,17 @@ class EstateMainFacilitiesDistance extends AppModel
 		"EstateMainFacilities"
 	);
 	/**
+	 * @var array 入力チェックの定義
+	 */
+	public $validate = array(
+		"distance" => array(
+			array(
+				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
+				'message' => '自然数を入力してください。'
+			)
+		)
+	);
+	/**
 	 * @var string 主キー
 	 */
 	public $primaryKey = "estate_main_facilities_distance_id";
