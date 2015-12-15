@@ -190,6 +190,31 @@ class EstateViewController extends AppController
 			}
 		}
 		$this->set('str_emfd', $str_emfd);
+                
+                $efo_agent = "";   //不動産業者の生の声
+                $efo_owner = "";   //大家の生の声
+                $efo_resident = "";//入居者の生の声
+                $resident_num = 1; //入居者の数をカウント
+        
+                foreach($estate['EstateFrankOpinion'] as $efo){
+                        //不動産業者の生の声
+                        if($efo['estate_frank_opinion_type_id'] == 0){
+                           $efo_agent = $efo['frank_opinion'];  
+                        }
+                        //大家の生の声
+                        if($efo['estate_frank_opinion_type_id'] == 1){
+                            $efo_owner = $efo['frank_opinion'];
+                        }
+                        //入居者の生の声
+                        if($efo['estate_frank_opinion_type_id'] == 2){
+                            $efo_resident .= "<h2>生の声&nbsp". $resident_num++ ."</h2>";
+                            $efo_resident .= "<p>".$efo['frank_opinion']."<br>"."<p>";
+                        }
+                }
+        
+                $this->set('efo_agent', $efo_agent);
+                $this->set('efo_owner', $efo_owner);
+                $this->set('efo_resident', $efo_resident);
 
 	}
 }

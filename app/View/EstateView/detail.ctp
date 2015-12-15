@@ -302,15 +302,15 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                 <div class="tab-content">
                     <div class="content-1">
                         <h2>生の声</h2>
-                        <p>test</p>
+                        <p><?php echo $efo_agent; ?></p>
                     </div>
                     <div class="content-2">
                         <h2>生の声</h2>
-                        <p>test</p>
+                        <p><?php echo $efo_owner; ?></p>
                     </div>
                     <div class="content-3">
-                        <h2>生の声</h2>
-                        <p>test</p>
+<!--                        <h2>生の声</h2>-->
+                        <?php echo $efo_resident; ?>
                     </div>
                 </div>
             </section>
