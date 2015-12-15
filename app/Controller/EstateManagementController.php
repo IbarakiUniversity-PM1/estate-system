@@ -188,10 +188,10 @@ class EstateManagementController extends AppController
 		$this->Estate->id=$estate_id;
 		$data = $this->Estate->read();
 		if(isset($data["Estate"]["age"])){
-			$data["Estate"]["age"]=$this->Date->toString($data["Estate"]["age"]);
+			$data["Estate"]["age"]=$this->Date->toDateString($data["Estate"]["age"]);
 		}
 		for($i=0;isset($data["EstateRoom"]) && $i<count($data["EstateRoom"]);$i++){
-			$data["EstateRoom"][$i]["occupancy_date"]=$this->Date->toString($data["EstateRoom"][$i]["occupancy_date"]);
+			$data["EstateRoom"][$i]["occupancy_date"]=$this->Date->toDateString($data["EstateRoom"][$i]["occupancy_date"]);
 		}
 		if(isset($data["EstateCharacteristicReference"])){
 			$tmp=array();

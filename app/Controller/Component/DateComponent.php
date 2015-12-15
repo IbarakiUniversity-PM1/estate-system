@@ -47,7 +47,7 @@ class DateComponent extends Component
 	 * @param $time_stamp int SQlite用タイムスタンプ
 	 * @return string 日付文字列(『Y/m/d』形式)
 	 */
-	public function toString($time_stamp)
+	public function toDateString($time_stamp)
 	{
 		$this->beforeRun();
 		$dateTime=new DateTime();
