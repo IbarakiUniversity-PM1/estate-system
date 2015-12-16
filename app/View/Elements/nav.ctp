@@ -31,7 +31,8 @@
 							"type"=>"number",
 							"label"=> "家賃",
 							"required"=>false,
-							"disabled"=>true
+							"disabled"=>true,
+							"min"=>0
 						)
 					).$this->Html->div(
 						"unit",
@@ -53,7 +54,8 @@
 							"type"=>"number",
 							"label"=> "面積",
 							"required"=>false,
-							"disabled"=>true
+							"disabled"=>true,
+							"min"=>0
 						)
 					).$this->Html->div(
 						"unit",
@@ -75,7 +77,8 @@
 							"type"=>"number",
 							"label"=> "築年数",
 							"required"=>false,
-							"disabled"=>true
+							"disabled"=>true,
+							"min"=>0
 						)
 					).$this->Html->div(
 						"unit",
