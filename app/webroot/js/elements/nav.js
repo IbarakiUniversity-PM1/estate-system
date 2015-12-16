@@ -1,11 +1,11 @@
 $(function(){
 	$('#nav').find('input[type=checkbox]').removeAttr('name').change(function(e){
 		if($(e.target).attr('checked')){
-			$(e.target).parent().parent().find('input,select').removeAttr('disabled');
+			$(e.target).parent().parent().find('input[type=number],select').removeAttr('disabled').attr('required',true);
 		}else {
 			$(e.target).parent().parent().find('input,select').each(function(){
 				if(this!==e.target){
-					$(this).attr('disabled',true);
+					$(this).attr('disabled',true).removeAttr('required');
 				}
 			});
 		}
