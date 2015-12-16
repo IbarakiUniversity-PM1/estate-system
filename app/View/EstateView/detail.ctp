@@ -31,18 +31,6 @@ function getPointsV3($query, &$items) {
     return 1;
 }
 
-/**
- * 世界測地系を日本測地系に変換する
- * @param    double $lat  緯度（世界測地系）
- * @param    double $long 経度（世界測地系）
- * @return    double array(緯度,経度)（日本測地系）
-*/
-function wgs84_tokyo($lat, $long) {
-    $glat  = $lat  + $lat * 0.00010696  - $long * 0.000017467 - 0.0046020;
-    $glong = $long + $lat * 0.000046047 + $long * 0.000083049 - 0.010041;
-    return array($glat, $glong);
-}
-
 function makeCommonBody($lat, $lng, $errmsg) {
     $type_g = 'ROADMAP';
     if ($errmsg == '') {
@@ -86,8 +74,7 @@ function makeCommonBody($lat, $lng, $errmsg) {
     
             directionsService.route(request, function(response,status){
                 if (status == google.maps.DirectionsStatus.OK){
-                    directionsDisplay.setDirections(response);
-                    directionsRenderer.setDirections(result);
+                    directionsDisplay.setDirections(response);                    
                }
               });
             }
