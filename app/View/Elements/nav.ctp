@@ -31,7 +31,7 @@
 						array(
 							"type"=>"number",
 							"label"=> "家賃",
-							"required"=>false,
+							"required"=>true,
 							"disabled"=>true,
 							"min"=>1
 						)
@@ -54,7 +54,7 @@
 						array(
 							"type"=>"number",
 							"label"=> "面積",
-							"required"=>false,
+							"required"=>true,
 							"disabled"=>true,
 							"min"=>1
 						)
@@ -77,7 +77,7 @@
 						array(
 							"type"=>"number",
 							"label"=> "築年数",
-							"required"=>false,
+							"required"=>true,
 							"disabled"=>true,
 							"min"=>0
 						)
@@ -101,7 +101,7 @@
 							"type"=>"select",
 							"options"=>$estateWindowList,
 							"label"=> "窓の向き",
-							"required"=>false,
+							"required"=>true,
 							"disabled"=>true
 						)
 					)

@@ -3,11 +3,11 @@ $(function(){
 	$nav.find('input[type=checkbox]').removeAttr('name').change(function(e){
 		if($(e.target).attr('checked')){
 			$('#nav').find('#search1 .error').hide();
-			$(e.target).parent().parent().find('input[type=number],select').removeAttr('disabled').attr('required',true);
+			$(e.target).parent().parent().find('input[type=number],select').removeAttr('disabled');
 		}else {
 			$(e.target).parent().parent().find('input,select').each(function(){
 				if(this!==e.target){
-					$(this).attr('disabled',true).removeAttr('required');
+					$(this).attr('disabled',true);
 				}
 			});
 		}
