@@ -72,7 +72,7 @@ class EstateViewController extends AppController
 					);
 				}
 				foreach($v1 as $k2=>$v2){
-					if(!empty($v2)) {
+					if($v2!="") {
 						if ($k1 == "Estate" && $k2 == "rent") {
 							$options["conditions"][] = $k1 . "." . $k2 . "<=" . $v2;
 						} else if ($k1 == "Estate" && ($k2 == "age" || $k2 == "area")) {
@@ -192,16 +192,16 @@ class EstateViewController extends AppController
 			}
 		}
 		$this->set('str_emfd', $str_emfd);
-                
+
                 $efo_agent = "";   //不動産業者の生の声
                 $efo_owner = "";   //大家の生の声
                 $efo_resident = "";//入居者の生の声
                 $resident_num = 1; //入居者の数をカウント
-        
+
                 foreach($estate['EstateFrankOpinion'] as $efo){
                         //不動産業者の生の声
                         if($efo['estate_frank_opinion_type_id'] == 0){
-                           $efo_agent = $efo['frank_opinion'];  
+                           $efo_agent = $efo['frank_opinion'];
                         }
                         //大家の生の声
                         if($efo['estate_frank_opinion_type_id'] == 1){
@@ -213,7 +213,7 @@ class EstateViewController extends AppController
                             $efo_resident .= "<p>".$efo['frank_opinion']."<br>"."<p>";
                         }
                 }
-        
+
                 $this->set('efo_agent', $efo_agent);
                 $this->set('efo_owner', $efo_owner);
                 $this->set('efo_resident', $efo_resident);
