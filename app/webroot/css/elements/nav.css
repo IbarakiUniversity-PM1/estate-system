@@ -111,7 +111,7 @@
 	padding: 0;
 }
 
-#nav #search1 .error {
+#nav .error {
 	color: red;
 	display: none;
 }
