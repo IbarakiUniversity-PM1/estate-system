@@ -199,7 +199,7 @@
 		<li>
 			<div id=search2>
 				<h4>キーワード検索</h4>
-				<h4 class="error">検索条件を指定してください</h4>
+				<h4 class="error">キーワードを指定してください</h4>
 				<?php
 				echo $this->Form->create(
 					"Estate",
