@@ -55,7 +55,10 @@ echo $this->Form->input(
 	$options1
 );
 
-$options1=array("label"=>"家賃(円)");
+$options1=array(
+	"label"=>"家賃(円)",
+	"min"=>1
+);
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["rent"];
 }
@@ -64,7 +67,10 @@ echo $this->Form->input(
 	$options1
 );
 
-$options1=array("label"=>"敷金(円)");
+$options1=array(
+	"label"=>"敷金(円)",
+	"min"=>0
+);
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["deposit"];
 }
@@ -73,7 +79,10 @@ echo $this->Form->input(
 	$options1
 );
 
-$options1=array("label"=>"礼金(円)");
+$options1=array(
+	"label"=>"礼金(円)",
+	"min"=>0
+);
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["key_money"];
 }
@@ -82,7 +91,10 @@ echo $this->Form->input(
 	$options1
 );
 
-$options1=array("label"=>"共益費(円)");
+$options1=array(
+	"label"=>"共益費(円)",
+	"min"=>0
+);
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["common_service_pay"];
 }
@@ -100,7 +112,10 @@ echo $this->Form->input(
 	$options1
 );
 
-$options1=array("label"=>"階建");
+$options1=array(
+	"label"=>"階建",
+	"min"=>1
+);
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["story"];
 }
@@ -109,7 +124,10 @@ echo $this->Form->input(
 	$options1
 );
 
-$options1=array("label"=>"面積(畳)");
+$options1=array(
+	"label"=>"面積(畳)",
+	"min"=>1
+);
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["area"];
 }
@@ -132,7 +150,10 @@ echo $this->Form->input(
 	$options1
 );
 
-$options1=array("label"=>"契約期間(年)");
+$options1=array(
+	"label"=>"契約期間(年)",
+	"min"=>0
+);
 if(isset($data["Estate"]["contract_period"])){
 	$options1["value"]=$data["Estate"]["contract_period"];
 }
@@ -152,7 +173,8 @@ echo $this->Form->input(
 
 $options1=array(
 	"label"=>"駐車場料金(円)",
-	"div"=>array("id" => "EstateParkingFeeDiv")
+	"div"=>array("id" => "EstateParkingFeeDiv"),
+	"min"=>0
 );
 if(isset($data)){
 	$options1["value"]=$data["Estate"]["parking_fee"];
@@ -497,7 +519,10 @@ echo $this->Html->div("label required", "主要施設までの距離");
 			"EstateMainFacilitiesDistance.?.estate_main_facilities_id",
 			$options1
 		);
-		$options1=array("label" => false);
+		$options1=array(
+			"label" => false,
+			"min"=>1
+		);
 		if(isset($data)){
 			$options1["value"]=$data["EstateMainFacilitiesDistance"][$j]["distance"];
 		}
@@ -566,7 +591,10 @@ for ($i = 0; $i < 2; $i++) { ?>
 				$options1
 			);
 
-			$options1=array("label" => false);
+			$options1=array(
+				"label" => false,
+				"min"=>1
+			);
 			if($i==1 && isset($data)){
 				$options1["value"]=$data["EstateRoom"][$j]["floor"];
 			}

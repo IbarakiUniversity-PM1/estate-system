@@ -32,7 +32,7 @@
 							"label"=> "家賃",
 							"required"=>false,
 							"disabled"=>true,
-							"min"=>0
+							"min"=>1
 						)
 					).$this->Html->div(
 						"unit",
@@ -55,7 +55,7 @@
 							"label"=> "面積",
 							"required"=>false,
 							"disabled"=>true,
-							"min"=>0
+							"min"=>1
 						)
 					).$this->Html->div(
 						"unit",
@@ -193,11 +193,11 @@
 				);
 				echo $this->Form->end();
 				?>
-            </div>
-        </li>
-        <li>
-            <div id=search2>
-                <h4>キーワード検索</h4>
+			</div>
+		</li>
+		<li>
+			<div id=search2>
+				<h4>キーワード検索</h4>
 				<?php
 				echo $this->Form->create(
 					"Estate",
@@ -232,22 +232,22 @@
 				);
 				echo $this->Form->end();
 				?>
-            </div>
-        </li>
-        <li>
-            <div id="agent_list">
-                <table>
-                    <thead>
-                        <?php echo $this->Html->tableHeaders(array("提供不動産業者")) . PHP_EOL ?>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($estateAgent as $e) {
-                            $e = $e["EstateAgent"];
-                            echo "        " . $this->Html->tableCells(array($e["name"] . "<br>TEL : " . $e["phone_number"])) . PHP_EOL;
-}                       ?>
-                    </tbody>
-                </table>
-            </div>
-        </li>
-    </ul>
+			</div>
+		</li>
+		<li>
+			<div id="agent_list">
+				<table>
+					<thead>
+					<?php echo $this->Html->tableHeaders(array("提供不動産業者")) . PHP_EOL ?>
+					</thead>
+					<tbody>
+					<?php foreach ($estateAgent as $e) {
+						$e = $e["EstateAgent"];
+						echo "        " . $this->Html->tableCells(array($e["name"] . "<br>TEL : " . $e["phone_number"])) . PHP_EOL;
+					} ?>
+					</tbody>
+				</table>
+			</div>
+		</li>
+	</ul>
 </div>
