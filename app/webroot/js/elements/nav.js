@@ -20,21 +20,6 @@ $(function(){
 			return true;
 		}
 	});
-	$nav.find('#search2 form').submit(function (e) {
-		if($(e.target).find('input[type=text]').val()){
-			return true;
-		}else{
-			$('#nav').find('#search2 .error').show();
-			return false;
-		}
-	});
-	$nav.find('#search2 input[type=text]').change(function (e) {
-		var $nav=$('#nav');
-		if($(e.target).val()){
-			$nav.find('#search2 .error').hide();
-			$nav.find('#search2 input[type=submit]').removeAttr('disabled');
-		}
-	});
 	$('#EstateEstateKeywordType').removeAttr('name').change(function(e){
 		$(e.target).parent().find('input[type=text]').attr('name',$(e.target).val());
 	}).trigger('change');

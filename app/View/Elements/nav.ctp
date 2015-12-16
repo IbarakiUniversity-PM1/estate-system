@@ -199,7 +199,6 @@
 		<li>
 			<div id=search2>
 				<h4>キーワード検索</h4>
-				<h4 class="error">キーワードを指定してください</h4>
 				<?php
 				echo $this->Form->create(
 					"Estate",
@@ -225,7 +224,8 @@
 					"",
 					array(
 						"type"=>"text",
-						"div"=>false
+						"div"=>false,
+						"required"=>true
 					)
 				);
 				echo $this->Html->div(
