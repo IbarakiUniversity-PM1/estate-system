@@ -50,38 +50,50 @@ function makeCommonBody($lat, $lng, $errmsg) {
             <div id="gmap" style="width:600px; height:300px;"></div>
             <script type="text/javascript">
             <!--
-            google.maps.event.addDomListener(window, 'load', function() {
-            var mapdiv = document.getElementById('gmap');
-            var myOptions = {
-        zoom: 16,
-        center: new google.maps.LatLng({$lat}, {$lng}),
-        mapTypeId: google.maps.MapTypeId.{$type_g},
-        mapTypeControl: true,
-        scaleControl: true,
+            rendererOptions = {
+                draggable: true,
+                preserveViewport:false
             };
-            var map = new google.maps.Map(mapdiv, myOptions);
+            var directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+            var directionsService = new google.maps.DirectionsService();
+            var map;
 
-            //地図情報を取得
-            function getPointData() {
-        var point = map.getCenter();
-        document.getElementById("lng").value = point.lng();
-        document.getElementById("lat").value = point.lat();
-        document.getElementById("zm").value  = map.getZoom();
+            function initialize() {
+                var zoom = 7;
+                var mapTypeId = google.maps.MapTypeId.ROADMAP
 
-        var type_g = map.getMapTypeId();
-        var types = {"roadmap":"地図", "satellite":"航空写真", "hybrid":"ハイブリッド", "terrain":"地形図" };
-        for (key in types) {
-                    if (key == type_g) {
-                        document.getElementById("type").value = types[key];
-                        break;
-                    }
-        }
-                wgs84_tokyo();
+                var opts = {
+                    zoom: zoom,
+                    mapTypeId: mapTypeId
+                };
+                map = new google.maps.Map(document.getElementById("gmap"),opts);
+                directionsDisplay.setMap(map);
+
+                google.maps.event.addListener(directionsDisplay, 'directions_changed', function(){});
+                calcRoute();
             }
-            google.maps.event.addListener(map, 'dragend', getPointData);
-            google.maps.event.addListener(map, 'zoom_changed', getPointData);
-            });
-            -->
+
+            function calcRoute() {
+                var request = {
+                origin: new google.maps.LatLng({$lat}, {$lng}),
+                destination: new google.maps.LatLng(36.5727889, 140.6410467),
+                travelMode: google.maps.DirectionsTravelMode.WALKING,
+                unitSystem: google.maps.DirectionsUnitSystem.METRIC,
+                optimizeWaypoints: true,
+                avoidHighways: false,
+                avoidTolls: false
+            };
+    
+            directionsService.route(request, function(response,status){
+                if (status == google.maps.DirectionsStatus.OK){
+                    directionsDisplay.setDirections(response);
+                    directionsRenderer.setDirections(result);
+               }
+              });
+            }
+            window.onload = initialize;
+
+           //-->
         </script>
 
 EOD;
@@ -117,15 +129,6 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
         $( "#opinion" ).tabs();
     });
 </script>
-
-
-
-
-
-
-
-
-
         <center>
             <div id="images">
                 <div id="estate_img">
@@ -213,12 +216,6 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                     </table>
                 </div>
 
-
-
-
-
-
-
                 <div id="char">
                     <center>
                         <table  border="1" rules="all" >
@@ -233,7 +230,6 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                         </table>
                     </center>
                 </div>
-
 <!--
                 <div id="room">
                     <center>
@@ -266,12 +262,7 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                             </table>
                         </center>
                     </div>
-
-
                 </center>
-
-
-
             </div>
         </center>
 <center>
@@ -282,8 +273,6 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 
     </div>
 </center>
-
-
         <div class="tab-container">
             <!-- Codrops top bar -->
 
@@ -315,14 +304,6 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                 </div>
             </section>
         </div>
-
-
-
-
-
-
-
-
 
         <?php
 		$links="";
