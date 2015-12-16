@@ -33,9 +33,6 @@ $(function(){
 		if($(e.target).val()){
 			$nav.find('#search2 .error').hide();
 			$nav.find('#search2 input[type=submit]').removeAttr('disabled');
-		}else{
-			$nav.find('#search2 .error').show();
-			$nav.find('#search2 input[type=submit]').attr('disabled',true);
 		}
 	});
 	$('#EstateEstateKeywordType').removeAttr('name').change(function(e){
