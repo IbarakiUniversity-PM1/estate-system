@@ -110,3 +110,8 @@
 	margin: 0;
 	padding: 0;
 }
+
+#nav #search1 .error {
+	color: red;
+	display: none;
+}
