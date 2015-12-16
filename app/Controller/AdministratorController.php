@@ -57,12 +57,6 @@ class AdministratorController extends AppController
 	 */
 	public function forget()
 	{
-		//タイトルをセットする
-		$this->set("title_for_layout", "パスワード再発行");
-	}
-
-	public function complete()
-	{
 		if ($this->request->is('post')) {
 			$result=$this->Administrator->find("all",array("conditions"=>"Administrator.e_mail_address='".$this->request->data["Administrator"]["e_mail_address"]."'"));
 			if(0<count($result)){
@@ -86,10 +80,17 @@ class AdministratorController extends AppController
 					)
 				);
 				$email->send();
+				$this->redirect(array("action"=>"complete"));
 			}else{
 				$this->Flash->set("一致するメールアドレスがありませんでした");
 			}
 		}
+		//タイトルをセットする
+		$this->set("title_for_layout", "パスワード再発行");
+	}
+
+	public function complete()
+	{
 		//タイトルをセットする
 		$this->set("title_for_layout", "送信完了");
 	}
