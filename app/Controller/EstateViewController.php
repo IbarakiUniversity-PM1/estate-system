@@ -64,7 +64,7 @@ class EstateViewController extends AppController
 						if (!$isError && $v2 != "") {
 							if (($k1 == "Estate" && ($k2 == "name" || $k2 == "address")) || ($k1 == "EstateAgent" && $k2 == "name")) {
 								$options["conditions"][] = $k1 . "." . $k2 . " LIKE '%" . $v2 . "%'";
-							} else if (preg_match('/^\d+$/', $v2)) {
+							} else if (($k1 == "Estate" && $k2=="window_direction") || preg_match('/^\d+$/', $v2)) {
 								if ($k1 == "Estate" && $k2 == "rent") {
 									$options["conditions"][] = $k1 . "." . $k2 . "<=" . $v2;
 								} else if ($k1 == "Estate" && ($k2 == "age" || $k2 == "area")) {
