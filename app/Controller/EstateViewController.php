@@ -39,26 +39,10 @@ class EstateViewController extends AppController
 			"group" => array("Estate.estate_id"),
 			"conditions" => array()
 		);
-		if (empty($this->request->query["data"])) { //トップ画面
-			//タイトルをセットする
-			$this->set("title_for_layout", "物件一覧");
 
-			//茨城大学日立キャンパスからの距離をJOINする
-			$options["joins"][] = array(
-				"type" => "LEFT",
-				"table" => "estate_main_facilities_distances",
-				"alias" => "EstateMainFacilitiesDistance",
-				"conditions" =>
-					array(
-						"Estate.estate_id = EstateMainFacilitiesDistance.estate_id",
-						//茨城大学日立キャンパスからの距離に限定する
-						"EstateMainFacilitiesDistance.estate_main_facilities_id=0"
-					)
-			);
+		$isTop=true;
 
-			//茨城大学日立キャンパスからの距離の昇順で並べる
-			$options["order"][] = "EstateMainFacilitiesDistance.distance";
-		} else { //物件検索・絞り込み
+		if(!empty($this->request->query["data"])) { //物件検索・絞り込み
 			//タイトルをセットする
 			$this->set("title_for_layout", "物件検索結果");
 
@@ -99,7 +83,30 @@ class EstateViewController extends AppController
 			if($isError){
 				$options=$options_;
 				$this->Flash->set("数値条件は自然数を使って入力してください。");
+			}else {
+				$isTop = false;
 			}
+		}
+
+		if ($isTop) { //トップ画面
+			//タイトルをセットする
+			$this->set("title_for_layout", "物件一覧");
+
+			//茨城大学日立キャンパスからの距離をJOINする
+			$options["joins"][] = array(
+				"type" => "LEFT",
+				"table" => "estate_main_facilities_distances",
+				"alias" => "EstateMainFacilitiesDistance",
+				"conditions" =>
+					array(
+						"Estate.estate_id = EstateMainFacilitiesDistance.estate_id",
+						//茨城大学日立キャンパスからの距離に限定する
+						"EstateMainFacilitiesDistance.estate_main_facilities_id=0"
+					)
+			);
+
+			//茨城大学日立キャンパスからの距離の昇順で並べる
+			$options["order"][] = "EstateMainFacilitiesDistance.distance";
 		}
 
 		//ログインしていないとき、非表示フラグが立っている、または、全ての部屋が契約済みな物件を表示しないようにする
