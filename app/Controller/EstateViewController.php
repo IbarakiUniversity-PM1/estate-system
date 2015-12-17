@@ -1,4 +1,5 @@
 <?php
+App::uses('Sanitize', 'Utility');
 
 /**
  * 物件検索・詳細コントローラ
@@ -48,6 +49,7 @@ class EstateViewController extends AppController
 
 			$options_=$options;
 			$isError=false;
+			$this->request->query["data"]=Sanitize::clean($this->request->query["data"]);
 			foreach($this->request->query["data"] as $k1=>$v1){
 				if(!$isError) {
 					if ($k1 == "EstateCharacteristicReference") {
