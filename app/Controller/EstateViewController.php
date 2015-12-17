@@ -62,31 +62,43 @@ class EstateViewController extends AppController
 			//タイトルをセットする
 			$this->set("title_for_layout", "物件検索結果");
 
+			$options_=$options;
+			$isError=false;
 			foreach($this->request->query["data"] as $k1=>$v1){
-				if($k1=="EstateCharacteristicReference"){
-					$options["joins"][] = array(
-						"type" => "LEFT",
-						"table" => "estate_characteristic_references",
-						"alias" => "EstateCharacteristicReference",
-						"conditions" => array("Estate.estate_id=EstateCharacteristicReference.estate_id")
-					);
-				}
-				foreach($v1 as $k2=>$v2){
-					if($v2!="") {
-						if ($k1 == "Estate" && $k2 == "rent") {
-							$options["conditions"][] = $k1 . "." . $k2 . "<=" . $v2;
-						} else if ($k1 == "Estate" && ($k2 == "age" || $k2 == "area")) {
-							if ($k2 == "age") {
-								$v2 = $this->Date->toTimestampModify("-" . $v2 . " years");
+				if(!$isError) {
+					if ($k1 == "EstateCharacteristicReference") {
+						$options["joins"][] = array(
+							"type" => "LEFT",
+							"table" => "estate_characteristic_references",
+							"alias" => "EstateCharacteristicReference",
+							"conditions" => array("Estate.estate_id=EstateCharacteristicReference.estate_id")
+						);
+					}
+					foreach ($v1 as $k2 => $v2) {
+						if (!$isError && $v2 != "") {
+							if (($k1 == "Estate" && ($k2 == "name" || $k2 == "address")) || ($k1 == "EstateAgent" && $k2 == "name")) {
+								$options["conditions"][] = $k1 . "." . $k2 . " LIKE '%" . $v2 . "%'";
+							} else if (preg_match('/^\d+$/', $v2)) {
+								if ($k1 == "Estate" && $k2 == "rent") {
+									$options["conditions"][] = $k1 . "." . $k2 . "<=" . $v2;
+								} else if ($k1 == "Estate" && ($k2 == "age" || $k2 == "area")) {
+									if ($k2 == "age") {
+										$v2 = $this->Date->toTimestampModify("-" . $v2 . " years");
+									}
+									$options["conditions"][] = $v2 . "<=" . $k1 . "." . $k2;
+								} else {
+									$options["conditions"][$k1 . "." . $k2] = $v2;
+								}
+							} else {
+								$isError = true;
 							}
-							$options["conditions"][] = $v2 . "<=" . $k1 . "." . $k2;
-						} else if (($k1 == "Estate" && ($k2 == "name" || $k2 == "address")) || ($k1 == "EstateAgent" && $k2 == "name")) {
-							$options["conditions"][] = $k1 . "." . $k2 . " LIKE '%" . $v2 . "%'";
-						} else {
-							$options["conditions"][$k1 . "." . $k2] = $v2;
 						}
 					}
 				}
+			}
+			if($isError){
+				$options=$options_;
+				$this->Flash->set("数値条件は自然数を使って入力してください。");
 			}
 		}
 

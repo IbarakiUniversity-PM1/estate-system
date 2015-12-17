@@ -35,10 +35,6 @@
     height: auto;
 }
 
-#content {
-    display: table;
-}
-
 .check {
 	vertical-align: middle;
 }
