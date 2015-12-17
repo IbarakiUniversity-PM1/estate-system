@@ -5,6 +5,7 @@
  */
 class PreviewBook extends AppModel
 {
+    public $name = "PreviewBook";
 	/**
 	 * @var bool テーブルを使うかどうか
 	 */
@@ -23,7 +24,7 @@ class PreviewBook extends AppModel
 		),
 		'tel_number' => array(
 			'type' => 'string',
-			'length' => 11
+			'length' => 13
 		),
 		'preview_date_1' => array(
 			'type' => 'date',
@@ -66,7 +67,7 @@ class PreviewBook extends AppModel
 		),
 		'tel_number' => array(
 			array(
-				"rule" => "phone",
+				'rule' => array( 'custom', '/^(0\d{1,4}[\s-]?\d{1,4}[\s-]?\d{4})$/'),
 				"message" => "電話番号の形式で入力してください。"
 			),
 			array(
@@ -74,6 +75,13 @@ class PreviewBook extends AppModel
 				"required" => "create",
 				"message" => "必須項目です。"
 			)
-		)
+		),
+//                'preview_date_1'=> array(
+//			array(
+//				"rule" => "notBlank",
+//				"required" => "create",
+//				"message" => "必須項目です。"
+//			)
+//		)
 	);
 }
