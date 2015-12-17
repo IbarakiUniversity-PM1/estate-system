@@ -4,14 +4,14 @@ App::uses('Sanitize', 'Utility');
 
 class PreviewBookController extends AppController
 {
-    /**
-     * @var array 扱うモデルのリスト
-     */
     public $helpers = array(
         "Html",
         "Form",
-        "Flash"
+        "Flash",
+        
     );
+    
+    public $components = array('Session');
     /**
      * @var array 扱うモデルのリスト
      */
@@ -24,15 +24,63 @@ class PreviewBookController extends AppController
      * 物件予約画面
      * @param null $estate_id 物件ID
      */
-    public function book($estate_id = null)
-    {
+    public function book($estate_id = null, $str_dates = null) {
         //タイトルを設定
         $this->set("title_for_layout", "内見予約画面");
 
         //引数estate_idから物件情報を読み込む
-        if ($this->request->is('get')) {
-            $this->Estate->id = $estate_id;
-            $this->set('estate', $this->Estate->read());
+        if ($this->request->is('get')) {  
+            if($this->Session->check('previewbook_return')){
+                /* 正しくリダイレクトされてるときの処理 */
+                $data_return = $this->Session->read('previewbook_return');
+                $this->set('data_return', $data_return);
+                
+                $this->Estate->id = $estate_id;
+                $this->set('estate', $this->Estate->read());
+                
+                if(isset($str_dates)){
+                    $preview_dates = explode(",", $str_dates);
+                    $this->set('preview_dates', $preview_dates);
+                }else{
+                    $preview_dates = explode(",", "".","."".","."");
+                    $this->set('preview_dates', $preview_dates);
+                }
+                
+                $isDefault = false;
+                $this->set('isDefault', $isDefault);
+                
+            }else{
+                /* データが無いときの処理 */
+                $this->Estate->id = $estate_id;
+                $this->set('estate', $this->Estate->read());
+                
+                $isDefault = true;
+                $this->set('isDefault', $isDefault);
+                
+            }
+        }
+        
+        if ($this->request->is('post')) {
+            if (isset($this->request->data['submit'])) {
+                $this->loadModel('PreviewBook');
+                $this->PreviewBook->set($this->request->data);
+
+                $isDefault = true;
+                $this->set('isDefault', $isDefault);
+
+                if ($this->PreviewBook->validates()) {
+                    // 正しい場合のロジック
+                    $this->Session->write('previewbook_content', $this->request->data);
+                    return $this->redirect(array('action' => 'confirm'));
+                } else {
+                    // 正しくない場合のロジック
+                    $errors = $this->PreviewBook->validationErrors;
+                    $this->Estate->id = $this->request->data['PreviewBook']['estate_id'];
+                    $this->set('estate', $this->Estate->read());
+                }
+            }else if (isset($this->request->data['cancel'])){
+                    return $this->redirect(array('controller' => 'EstateView', 'action' => 'detail', $this->request->data['PreviewBook']['estate_id']));
+            }
         }
     }
 
@@ -46,6 +94,14 @@ class PreviewBookController extends AppController
 
         //タイトルを設定
         $this->set("title_for_layout", "送信確認画面");
+        
+        if($this->Session->check('previewbook_content')){
+            /* 正しくリダイレクトされてるときの処理 */
+            $data = $this->Session->read('previewbook_content');
+            $this->set('data', $data);    
+        }else{
+            /* データが無いときの処理 */
+        }
     }
 
     /**
@@ -57,9 +113,10 @@ class PreviewBookController extends AppController
 		$this->request->data = Sanitize::clean($this->request->data);
 
 		if (isset($this->request->data['submit'])) {
+                        debug($this->request->data);
 			//物件idから物件情報を取得
 			$this->Estate->id = $this->request->data['PreviewBook']['estate_id'];
-			$estate = $this->Estate->read();
+                        $estate = $this->Estate->read();
 
 			//物件情報から不動産業者のE-Mailアドレスを取得
 			$this->EstateAgent->id = $estate['Estate']['estate_agent_id'];
@@ -122,7 +179,11 @@ class PreviewBookController extends AppController
 			$email->send();
 		} else if (isset($this->request->data['cancel'])) {
 			//'book'アクション(内見予約画面)へリダイレクト
-			$this->redirect(array('action' => 'book'));
+                        $str_dates = $this->request->data['PreviewBook']["preview_date_1"].",".
+                                    $this->request->data['PreviewBook']["preview_date_2"].",".
+                                    $this->request->data['PreviewBook']["preview_date_3"];
+                        $this->Session->write('previewbook_return', $this->request->data);
+			$this->redirect(array('action' => 'book', $this->request->data['PreviewBook']['estate_id'], $str_dates));
 		}
 
         //タイトルを設定
