@@ -1,5 +1,5 @@
 <?php
-App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
+App::uses("BlowfishPasswordHasher", "Controller/Component/Auth");
 
 /**
  * 管理者モデル
@@ -16,6 +16,11 @@ class Administrator extends AppModel
 	public $validate = array(
 		"name" => array(
 			array(
+				"rule" => "notBlank",
+				"required" => "create",
+				"message" => "必須項目です。"
+			),
+			array(
 				"rule" => "alphaNumeric",
 				"message" => "英数字しか使用できません。"
 			),
@@ -24,9 +29,8 @@ class Administrator extends AppModel
 				"message" => "10文字以内です。"
 			),
 			array(
-				"rule" => "notBlank",
-				"required" => "create",
-				"message" => "必須項目です。"
+				"rule" => "isUnique",
+				"message" => "この管理者は既に登録されています。"
 			)
 		),
 		"password" => array(
@@ -62,9 +66,9 @@ class Administrator extends AppModel
 	);
 
 	public function beforeSave($options = array()) {
-		if (isset($this->data[$this->alias]['password'])) {
+		if (isset($this->data[$this->alias]["password"])) {
 			$passwordHasher = new BlowfishPasswordHasher();
-			$this->data[$this->alias]['password'] = $passwordHasher->hash($this->data[$this->alias]['password']);
+			$this->data[$this->alias]["password"] = $passwordHasher->hash($this->data[$this->alias]["password"]);
 		}
 		return true;
 	}

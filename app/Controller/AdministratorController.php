@@ -13,14 +13,10 @@ class AdministratorController extends AppController
 			if($isEffective){
 				$this->Administrator->create();
 			}
-			$list=$this->Administrator->find("list",array("conditions"=>array("Administrator.name"=>$this->request->data["Administrator"]["name"])));
-			if (!$isEffective || (count($list)==0 && $this->Administrator->save($this->request->data))) {
+			if (!$isEffective || $this->Administrator->save($this->request->data)) {
 				$this->redirect(array("action" => "login"));
 			} else {
 				$this->MyFlash->set_validation_error($this->Administrator->validationErrors);
-				if(0<count($list)){
-					$this->Flash->set("その管理者IDは既に使われています");
-				}
 			}
 		}
 		//タイトルをセットする
