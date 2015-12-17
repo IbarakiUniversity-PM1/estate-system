@@ -25,6 +25,10 @@ class Administrator extends AppModel
 				"message" => "英数字しか使用できません。"
 			),
 			array(
+				"rule" => "halfLetter",
+				"message" => "半角文字しか使用できません。"
+			),
+			array(
 				"rule" => array("maxLength", 10),
 				"message" => "10文字以内です。"
 			),
@@ -37,6 +41,10 @@ class Administrator extends AppModel
 			array(
 				"rule" => "alphaNumeric",
 				"message" => "英数字しか使用できません。"
+			),
+			array(
+				"rule" => "halfLetter",
+				"message" => "半角文字しか使用できません。"
 			),
 			array(
 				"rule" => array("maxLength", 50),
