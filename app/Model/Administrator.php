@@ -62,6 +62,10 @@ class Administrator extends AppModel
 				"message" => "Eメールアドレスで用いられる文字しか用いることはできません。"
 			),
 			array(
+				"rule" => "halfLetter",
+				"message" => "半角文字しか使用できません。"
+			),
+			array(
 				"rule" => array("maxLength", 300),
 				"message" => "300文字以内です。"
 			),
