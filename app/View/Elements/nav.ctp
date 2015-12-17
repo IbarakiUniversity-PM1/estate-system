@@ -4,7 +4,7 @@
 		<li>
 			<div id=search1>
 				<h4>検索条件指定</h4>
-				<h4 class="error">検索条件を指定してください</h4>
+				<h4 class="error"></h4>
 				<?php
 				echo $this->Form->create(
 					"Estate",
