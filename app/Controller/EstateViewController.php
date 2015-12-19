@@ -171,7 +171,8 @@ class EstateViewController extends AppController
         }
 
         // 非表示物件の詳細画面を表示した際の処理
-        if($estate["Estate"]["hide_flag"]) {
+        $loginUser=$this->Auth->user();
+        if($estate["Estate"]["hide_flag"] && empty($loginUser)) {
             throw new NotFoundException(__('404 Not Found'));
         }
 
