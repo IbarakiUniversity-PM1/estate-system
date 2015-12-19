@@ -71,7 +71,15 @@ class EstateManagementController extends AppController
 		$this->set("estateAgentList", $estateAgentList);
 
 		// 窓の向き
-		$this->set("estateWindowList", array("東","西","南","北"));
+		$this->set(
+			"estateWindowList",
+			array(
+				"東"=>"東",
+				"西"=>"西",
+				"南"=>"南",
+				"北"=>"北"
+			)
+		);
 
 		// 取引態様
 		$estateTradingAspectList = array();
