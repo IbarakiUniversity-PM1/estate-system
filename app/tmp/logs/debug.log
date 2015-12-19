@@ -1,0 +1,2359 @@
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: EstateCharacteristicReference in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 179]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 179
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: EstateMainFacilitiesDistance in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 188]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 188
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: EstateFrankOpinion in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 224]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 224
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 4]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 103]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 103
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined variable: lat in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined variable: lng in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: EstatePicture in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: floor_plan_picture_file_name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 140]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 140
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 144]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 144
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: rent in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 148]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 148
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: common_service_pay in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 152]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 152
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: deposit in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 156]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 156
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: key_money in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 160]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 160
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: parking_fee in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 164]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 164
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: EstateTradingAspect in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 168]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 168
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: area in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 172]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 172
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: floor_plan in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 176]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 176
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: EstateStructure in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 181]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 181
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: window_direction in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 185]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 185
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: contract_period in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 189]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 189
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: story in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 193]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 193
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: EstateTvType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 197]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 197
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: EstateInternetType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 201]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 201
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 304]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 304
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:04 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 331]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 331
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: Estate in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 164]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 164
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstateRoom in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 166]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 166
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstateCharacteristicReference in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 179]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 179
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstateMainFacilitiesDistance in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 188]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 188
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstateFrankOpinion in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 224]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 224
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 4]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 103]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 103
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined variable: lat in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined variable: lng in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstatePicture in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: floor_plan_picture_file_name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 140]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 140
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 144]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 144
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: rent in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 148]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 148
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: common_service_pay in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 152]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 152
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: deposit in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 156]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 156
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: key_money in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 160]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 160
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: parking_fee in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 164]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 164
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstateTradingAspect in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 168]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 168
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: area in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 172]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 172
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: floor_plan in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 176]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 176
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstateStructure in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 181]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 181
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: window_direction in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 185]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 185
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: contract_period in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 189]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 189
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: story in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 193]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 193
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstateTvType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 197]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 197
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: EstateInternetType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 201]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 201
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 304]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 304
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:05 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 331]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 331
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: Estate in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 164]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 164
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstateRoom in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 166]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 166
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstateCharacteristicReference in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 179]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 179
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstateMainFacilitiesDistance in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 188]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 188
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstateFrankOpinion in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 224]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 224
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 4]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 103]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 103
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined variable: lat in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined variable: lng in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstatePicture in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: floor_plan_picture_file_name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 140]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 140
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 144]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 144
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: rent in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 148]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 148
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: common_service_pay in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 152]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 152
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: deposit in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 156]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 156
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: key_money in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 160]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 160
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: parking_fee in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 164]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 164
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstateTradingAspect in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 168]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 168
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: area in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 172]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 172
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: floor_plan in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 176]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 176
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstateStructure in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 181]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 181
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: window_direction in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 185]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 185
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: contract_period in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 189]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 189
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: story in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 193]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 193
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstateTvType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 197]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 197
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: EstateInternetType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 201]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 201
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 304]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 304
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:06 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 331]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 331
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateCharacteristicReference in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 179]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 179
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateMainFacilitiesDistance in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 188]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 188
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateFrankOpinion in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 224]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 224
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 4]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 103]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 103
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined variable: lat in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined variable: lng in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstatePicture in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: floor_plan_picture_file_name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 140]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 140
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 144]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 144
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: rent in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 148]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 148
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: common_service_pay in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 152]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 152
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: deposit in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 156]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 156
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: key_money in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 160]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 160
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: parking_fee in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 164]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 164
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateTradingAspect in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 168]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 168
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: area in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 172]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 172
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: floor_plan in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 176]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 176
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateStructure in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 181]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 181
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: window_direction in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 185]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 185
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: contract_period in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 189]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 189
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: story in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 193]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 193
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateTvType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 197]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 197
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateInternetType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 201]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 201
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 304]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 304
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 331]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 331
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateCharacteristicReference in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 179]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 179
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateMainFacilitiesDistance in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 188]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 188
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: EstateFrankOpinion in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 224]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 224
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 4]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:11 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 103]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 103
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined variable: lat in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined variable: lng in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: EstatePicture in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: floor_plan_picture_file_name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 140]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 140
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 144]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 144
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: rent in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 148]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 148
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: common_service_pay in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 152]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 152
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: deposit in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 156]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 156
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: key_money in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 160]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 160
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: parking_fee in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 164]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 164
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: EstateTradingAspect in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 168]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 168
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: area in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 172]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 172
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: floor_plan in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 176]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 176
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: EstateStructure in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 181]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 181
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: window_direction in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 185]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 185
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: contract_period in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 189]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 189
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: story in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 193]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 193
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: EstateTvType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 197]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 197
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: EstateInternetType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 201]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 201
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 304]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 304
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:12 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 331]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 331
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: EstateCharacteristicReference in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 179]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 179
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: EstateMainFacilitiesDistance in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 188]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 188
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: EstateFrankOpinion in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 224]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 224
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 4]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 103]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 103
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined variable: lat in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined variable: lng in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: EstatePicture in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: floor_plan_picture_file_name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 140]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 140
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 144]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 144
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: rent in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 148]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 148
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: common_service_pay in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 152]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 152
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: deposit in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 156]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 156
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: key_money in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 160]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 160
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: parking_fee in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 164]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 164
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: EstateTradingAspect in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 168]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 168
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: area in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 172]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 172
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: floor_plan in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 176]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 176
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: EstateStructure in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 181]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 181
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: window_direction in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 185]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 185
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: contract_period in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 189]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 189
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: story in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 193]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 193
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: EstateTvType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 197]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 197
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: EstateInternetType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 201]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 201
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 304]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 304
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:49:16 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 331]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 331
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: EstateCharacteristicReference in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 179]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 179
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: EstateMainFacilitiesDistance in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 188]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 188
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: EstateFrankOpinion in [/Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php, line 224]
+Trace:
+EstateViewController::detail() - APP/Controller/EstateViewController.php, line 224
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 507
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 248
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 4]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 4
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 103]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 103
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined variable: lat in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined variable: lng in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 110]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 110
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: EstatePicture in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 123]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 123
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: estate_id in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: floor_plan_picture_file_name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 128]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 128
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: name in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 140]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 140
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: address in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 144]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 144
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: rent in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 148]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 148
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: common_service_pay in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 152]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 152
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: deposit in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 156]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 156
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: key_money in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 160]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 160
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: parking_fee in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 164]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 164
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: EstateTradingAspect in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 168]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 168
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: area in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 172]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 172
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: floor_plan in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 176]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 176
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: EstateStructure in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 181]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 181
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: window_direction in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 185]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 185
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: contract_period in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 189]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 189
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: story in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 193]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 193
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: EstateTvType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 197]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 197
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+
+2015-12-19 15:51:47 Notice: Notice (8): Undefined index: EstateInternetType in [/Users/do030b/public_html/estate-system/app/View/EstateView/detail.ctp, line 201]
+Trace:
+include - APP/View/EstateView/detail.ctp, line 201
+View::_evaluate() - CORE/Cake/View/View.php, line 654
+View::_render() - CORE/Cake/View/View.php, line 615
+View::render() - CORE/Cake/View/View.php, line 734
+Controller::render() - CORE/Cake/Controller/Controller.php, line 1020
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 255
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 115
+[main] - APP/webroot/index.php, line 111
+

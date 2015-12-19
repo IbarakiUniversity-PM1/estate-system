@@ -147,18 +147,15 @@ class EstateViewController extends AppController
     public function detail($estate_id = null)
     {
 //        $this->autoLayout = false;
-
         $this->set("title_for_layout", "物件詳細画面");
-//            if(!$id){
-//            throw new NotFoundException(__('Invalid post'));
-//            }
-
         $this->Estate->id = $estate_id;
 
-//            if(!$id) {
-//                throw new NotFoundException(__('Invalid post'));
-//            }
         $estate = $this->Estate->read();
+
+        // 存在しない詳細画面を表示した際の処理
+        if(!$estate){
+            throw new NotFoundException(__('404 Not Found'));
+        }
 
         //全ての部屋が契約済みな物件について、非表示フラグを立てる
         if(!$estate["Estate"]["hide_flag"]) {
@@ -171,6 +168,11 @@ class EstateViewController extends AppController
             if ($isHide) {
                 $estate["Estate"]["hide_flag"] = 1;
             }
+        }
+
+        // 非表示物件の詳細画面を表示した際の処理
+        if($estate["Estate"]["hide_flag"]) {
+            throw new NotFoundException(__('404 Not Found'));
         }
 
         $this->set('estate', $estate);

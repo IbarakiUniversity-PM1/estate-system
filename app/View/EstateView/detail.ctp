@@ -71,10 +71,10 @@ function makeCommonBody($lat, $lng, $errmsg) {
                 avoidHighways: false,
                 avoidTolls: false
             };
-    
+
             directionsService.route(request, function(response,status){
                 if (status == google.maps.DirectionsStatus.OK){
-                    directionsDisplay.setDirections(response);                    
+                    directionsDisplay.setDirections(response);
                }
               });
             }
@@ -293,51 +293,51 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
         </div>
 
         <?php
-		$links="";
-		if(isset($loginUser)){
-			$links.=$this->Html->div(
-				"",
-				$this->Html->link("編集",
-					array(
-						"controller"=>"EstateManagement",
-						"action" => "edit",
-						$estate["Estate"]["estate_id"]
-					)
-				)
-			);
-		}
-		//非表示フラグが立っていないならば、内見予約画面へのリンクを追加
-		if(!$estate["Estate"]["hide_flag"]){
-			$links.=$this->Html->div(
-				"",
-				$this->Html->link(
-					'内見予約画面へ',
-					array(
-						'controller' => 'PreviewBook',
-						'action' => 'book',
-						$estate['Estate']['estate_id']
-					)
-				)
-			);
-		}
-		if(isset($loginUser)){
-			$links.=$this->Html->div(
-				"",
-				$this->Form->postLink(
-					"削除",
-					array(
-						"controller"=>"EstateManagement",
-						"action" => "delete",
-						$estate["Estate"]["estate_id"]
-					),
-					array("confirm" => "この物件を削除しても良いですか？\n※一度削除してしまうと、元に戻すことはできません！")
-				)
-			);
-		}
-		echo $this->Html->div(
-			"buttons",
-			$links
-		);
-		?>
+        $links="";
+        if(isset($loginUser)){
+            $links.=$this->Html->div(
+                "",
+                $this->Html->link("編集",
+                    array(
+                        "controller"=>"EstateManagement",
+                        "action" => "edit",
+                        $estate["Estate"]["estate_id"]
+                    )
+                )
+            );
+        }
+        //非表示フラグが立っていないならば、内見予約画面へのリンクを追加
+        if(!$estate["Estate"]["hide_flag"]){
+            $links.=$this->Html->div(
+                "",
+                $this->Html->link(
+                    '内見予約画面へ',
+                    array(
+                        'controller' => 'PreviewBook',
+                        'action' => 'book',
+                        $estate['Estate']['estate_id']
+                    )
+                )
+            );
+        }
+        if(isset($loginUser)){
+            $links.=$this->Html->div(
+                "",
+                $this->Form->postLink(
+                    "削除",
+                    array(
+                        "controller"=>"EstateManagement",
+                        "action" => "delete",
+                        $estate["Estate"]["estate_id"]
+                    ),
+                    array("confirm" => "この物件を削除しても良いですか？\n※一度削除してしまうと、元に戻すことはできません！")
+                )
+            );
+        }
+        echo $this->Html->div(
+            "buttons",
+            $links
+        );
+        ?>
 
 
