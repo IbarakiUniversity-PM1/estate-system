@@ -2,7 +2,7 @@
 <?php echo $this->Html->css(array('estate_view/detail'), false, array('inline' => false)); ?>
 <?php $this->Html->addCrumb('物件詳細' ,
                             "/EstateView/detail/" . $estate["Estate"]["estate_id"]); ?>
-
+<?php debug($estate); ?>
 <?php
 /**
  * GoogleMaps API GeoCode API(V3) のURLを取得する
@@ -145,27 +145,58 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                         </tr>
                         <tr>
                             <td style="background:#ccccff">家賃</td>
-                            <td><?php echo h($estate['Estate']['rent']); ?>円</td>
+                            <td><?php echo h($estate['Estate']['rent'])."円"; ?></td>
                         </tr>
                         <tr>
                             <td style="background:#ccccff">共益費</td>
-                            <td><?php echo h($estate['Estate']['common_service_pay']); ?>円</td>
+                            <td><?php echo h($estate['Estate']['common_service_pay']."円"); ?></td>
                         </tr>
                         <tr>
                             <td style="background:#ccccff">敷金</td>
-                            <td><?php echo h($estate['Estate']['deposit']); ?>円</td>
+                            <td><?php echo h($estate['Estate']['deposit']."円"); ?></td>
                         </tr>
                         <tr>
                             <td style="background:#ccccff">礼金</td>
-                            <td><?php echo h($estate['Estate']['key_money']); ?>円</td>
+                            <td><?php echo h($estate['Estate']['key_money']."円"); ?></td>
                         </tr>
                         <tr>
                             <td style="background:#ccccff">駐車場</td>
-                            <td><?php echo h($estate['Estate']['parking_fee']); ?>円</td>
+                            <td>
+                                <?php
+                                    if($estate['Estate']['parking_flag'] === '1'){
+                                        echo h($estate['Estate']['parking_fee']."円");
+                                    }else{
+                                        echo "なし";
+                                    }
+                                ?>
+                            </td>
                         </tr>
                         <tr>
                             <td style="background:#ccccff">取引態様</td>
-                            <td><?php echo h($estate['EstateTradingAspect']['name']); ?></td>
+                            <td>
+                                <?php 
+                                    if(is_null($estate['EstateTradingAspect']['estate_trading_aspect_id'])){
+                                        echo "-";
+                                    }else{
+                                        echo h($estate['EstateTradingAspect']['name']);
+                                    }
+                                ?>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background:#ccccff">築年数</td>
+                            <td>
+                                <?php 
+                                    $time_diff = time() - mb_strimwidth($estate['Estate']['age'], 0, 10);
+                                    $age_year = date("Y", $time_diff) - 1970;
+                     
+                                    if($age_year < 1){
+                                        echo "1年未満";   
+                                    }else{
+                                         echo h($age_year."年");
+                                    }
+                                ?>
+                            </td> 
                         </tr>
                         <tr>
                             <td style="background:#ccccff">面積</td>
@@ -178,7 +209,15 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 
                         <tr>
                             <td style="background:#ccccff">物件構造</td>
-                            <td><?php echo h($estate['EstateStructure']['name']); ?></td>
+                            <td>
+                                <?php
+                                    if(is_null($estate['EstateStructure']['estate_structure_id'])){
+                                        echo "-";
+                                    }else{
+                                        echo h($estate['EstateStructure']['name']);
+                                    }
+                                ?>
+                            </td>
                         </tr>
                         <tr>
                             <td style="background:#ccccff">窓の向き</td>
@@ -194,23 +233,40 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
                         </tr>
                         <tr>
                             <td style="background:#ccccff">テレビ</td>
-                            <td><?php echo h($estate['EstateTvType']['name']); ?></td>
+                            <td>
+                                <?php
+                                    if(is_null($estate['EstateTvType']['estate_tv_type_id'])){
+                                        echo "-";
+                                    }else{
+                                        echo h($estate['EstateTvType']['name']);
+                                    }
+                                ?>
+                            </td>
                         </tr>
                         <tr>
                             <td style="background:#ccccff">インターネット回線</td>
-                            <td><?php echo h($estate['EstateInternetType']['name']); ?></td>
+                            <td>
+                                <?php
+                                    if(is_null($estate['EstateInternetType']['estate_internet_type_id'])){
+                                        echo "-";
+                                    }else{
+                                        echo h($estate['EstateInternetType']['name']);
+                                    }
+                                ?>
+                            </td>
                         </tr>
                     </table>
                 </div>
 
                 <div id="char">
                     <center>
-                        特徴
                         <table  border="1" rules="all" >
-
+                            特徴
                             <tr>
                                 <td align="center">
                                     <?php echo nl2br($str_characteristic); ?>
+
+
                                 </td>
                             </tr>
                         </table>
@@ -235,9 +291,8 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 
                     <div id="distance">
                         <center>
-                            主要施設までの距離
                             <table  border="1" rules="all" >
-
+                                主要施設までの距離
                                 <tr>
                                     <td>
                                         <!--                    ここに主要施設までの距離-->

@@ -12,7 +12,8 @@ class EstateViewController extends AppController
     public $uses = array(
         "Estate",
         "EstateCharacteristic",
-        "EstateMainFacilities"
+        "EstateMainFacilities",
+        "EstateMainFacilitiesDistance"
     );
 
     /**
@@ -189,33 +190,36 @@ class EstateViewController extends AppController
 
         $str_emfd = "";
         foreach($estate['EstateMainFacilitiesDistance'] as $emfd) {
-            //$options["conditions"]['EstateMainFacilities.estate_main_facilities_id'] = $emfd['estate_main_facilities_id'];
-            //$options["fields"] = array('name', 'name');
-            //$tmp = $this->EstateMainFacilities->find('all', $options);
+            //debug($emfd['estate_main_facilities_id']);
+            //debug($emfd['distance']);
+            
+            //$opt["conditions"]["estate_main_facilities_id"] = $emfd["estate_main_facilities_id"];
+            //$opt["fields"] = array('name', 'name');
+            //debug($tmp = $this->EstateMainFacilities->find('all', $opt));
             //$str_emfd .= $tmp[0]['EstateMainFacility']['EstateMainFacility.name'].$emfd['distance']."m".PHP_EOL;
 
-            if(!isset($emfd['estate_main_facilities_id'])) continue;
-            if($emfd['estate_main_facilities_id'] == 1){
-                $str_emfd .= "茨城大学日立キャンパス"." : ".$emfd['distance']."m".PHP_EOL; continue;
-            }
-            if($emfd['estate_main_facilities_id'] == 2){
-                $str_emfd .= "日立駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
-            }
-            if($emfd['estate_main_facilities_id'] == 3){
-                $str_emfd .= "大みか駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
-            }
-            if($emfd['estate_main_facilities_id'] == 4){
-                $str_emfd .= "常陸多賀駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
-            }
-            if($emfd['estate_main_facilities_id'] == 5){
-                $str_emfd .= "筑波大学"." : ".$emfd['distance']."m".PHP_EOL; continue;
-            }
-            if($emfd['estate_main_facilities_id'] == 6){
-                $str_emfd .= "711"." : ".$emfd['distance']."m".PHP_EOL; continue;
-            }
-            if($emfd['estate_main_facilities_id'] == 7){
-                $str_emfd .= "ファミマ"." : ".$emfd['distance']."m".PHP_EOL; continue;
-            }
+//            if(!isset($emfd['estate_main_facilities_id'])) continue;
+//            if($emfd['estate_main_facilities_id'] == 1){
+//                $str_emfd .= "茨城大学日立キャンパス"." : ".$emfd['distance']."m".PHP_EOL; continue;
+//            }
+//            if($emfd['estate_main_facilities_id'] == 2){
+//                $str_emfd .= "日立駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
+//            }
+//            if($emfd['estate_main_facilities_id'] == 3){
+//                $str_emfd .= "大みか駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
+//            }
+//            if($emfd['estate_main_facilities_id'] == 4){
+//                $str_emfd .= "常陸多賀駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
+//            }
+//            if($emfd['estate_main_facilities_id'] == 5){
+//                $str_emfd .= "筑波大学"." : ".$emfd['distance']."m".PHP_EOL; continue;
+//            }
+//            if($emfd['estate_main_facilities_id'] == 6){
+//                $str_emfd .= "711"." : ".$emfd['distance']."m".PHP_EOL; continue;
+//            }
+//            if($emfd['estate_main_facilities_id'] == 7){
+//                $str_emfd .= "ファミマ"." : ".$emfd['distance']."m".PHP_EOL; continue;
+//            }
         }
         $this->set('str_emfd', $str_emfd);
 

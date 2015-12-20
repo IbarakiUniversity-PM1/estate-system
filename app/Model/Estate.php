@@ -74,6 +74,10 @@ class Estate extends AppModel
 			array(
 				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
 				'message' => '自然数を入力してください。'
+			),
+                        array(
+				"rule" => array("maxLength", 8),
+				"message" => "8桁以内です。"
 			)
 		),
 		"deposit" => array(
@@ -85,6 +89,10 @@ class Estate extends AppModel
 			array(
 				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
 				'message' => '自然数を入力してください。'
+			),
+                        array(
+				"rule" => array("maxLength", 8),
+				"message" => "8桁以内です。"
 			)
 		),
 		"key_money" => array(
@@ -96,6 +104,10 @@ class Estate extends AppModel
 			array(
 				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
 				'message' => '自然数を入力してください。'
+			),
+                        array(
+				"rule" => array("maxLength", 8),
+				"message" => "8桁以内です。"
 			)
 		),
 		"common_service_pay" => array(
@@ -107,6 +119,10 @@ class Estate extends AppModel
 			array(
 				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
 				'message' => '自然数を入力してください。'
+			),
+                        array(
+				"rule" => array("maxLength", 8),
+				"message" => "8桁以内です。"
 			)
 		),
 		"parking_flag" => array(
@@ -120,6 +136,14 @@ class Estate extends AppModel
 			array(
 				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
 				'message' => '自然数を入力してください。'
+			),
+                        array(
+				"rule" => array("minLength", 1),
+				"message" => "1桁以上です。"
+			),
+                        array(
+				"rule" => array("maxLength", 8),
+				"message" => "8桁以内です。"
 			)
 		),
 		"area" => array(
@@ -131,6 +155,10 @@ class Estate extends AppModel
 			array(
 				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
 				'message' => '自然数を入力してください。'
+			),
+                        array(
+				"rule" => array("maxLength", 2),
+				"message" => "2桁以内です。"
 			)
 		),
 		"floor_plan" => array(
@@ -161,6 +189,10 @@ class Estate extends AppModel
 			array(
 				'rule' => array('naturalNumber', false),
 				'message' => '自然数を入力してください。'
+			),
+                        array(
+				"rule" => array("maxLength", 2),
+				"message" => "2桁以内です。"
 			)
 		),
 		"window_direction" => array(
@@ -173,6 +205,10 @@ class Estate extends AppModel
 			array(
 				'rule' => array('naturalNumber', true), // 0(ゼロ)を許可
 				'message' => '自然数を入力してください。'
+			),
+                        array(
+				"rule" => array("maxLength", 2),
+				"message" => "2桁以内です。"
 			)
 		),
 	);
