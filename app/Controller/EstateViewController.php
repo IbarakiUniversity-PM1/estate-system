@@ -190,36 +190,97 @@ class EstateViewController extends AppController
 
         $str_emfd = "";
         foreach($estate['EstateMainFacilitiesDistance'] as $emfd) {
-            //debug($emfd['estate_main_facilities_id']);
-            //debug($emfd['distance']);
             
             //$opt["conditions"]["estate_main_facilities_id"] = $emfd["estate_main_facilities_id"];
             //$opt["fields"] = array('name', 'name');
             //debug($tmp = $this->EstateMainFacilities->find('all', $opt));
             //$str_emfd .= $tmp[0]['EstateMainFacility']['EstateMainFacility.name'].$emfd['distance']."m".PHP_EOL;
 
-//            if(!isset($emfd['estate_main_facilities_id'])) continue;
-//            if($emfd['estate_main_facilities_id'] == 1){
-//                $str_emfd .= "茨城大学日立キャンパス"." : ".$emfd['distance']."m".PHP_EOL; continue;
-//            }
-//            if($emfd['estate_main_facilities_id'] == 2){
-//                $str_emfd .= "日立駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
-//            }
-//            if($emfd['estate_main_facilities_id'] == 3){
-//                $str_emfd .= "大みか駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
-//            }
-//            if($emfd['estate_main_facilities_id'] == 4){
-//                $str_emfd .= "常陸多賀駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
-//            }
-//            if($emfd['estate_main_facilities_id'] == 5){
-//                $str_emfd .= "筑波大学"." : ".$emfd['distance']."m".PHP_EOL; continue;
-//            }
-//            if($emfd['estate_main_facilities_id'] == 6){
-//                $str_emfd .= "711"." : ".$emfd['distance']."m".PHP_EOL; continue;
-//            }
-//            if($emfd['estate_main_facilities_id'] == 7){
-//                $str_emfd .= "ファミマ"." : ".$emfd['distance']."m".PHP_EOL; continue;
-//            }
+            if(!isset($emfd['estate_main_facilities_id'])) continue;
+            if($emfd['estate_main_facilities_id'] == 0){
+                $str_emfd .= "茨城大学日立キャンパス"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 1){
+                $str_emfd .= "日立駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 2){
+                $str_emfd .= "大みか駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 3){
+                $str_emfd .= "常陸多賀駅"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 4){
+                $str_emfd .= "茨大前バス停"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 5){
+                $str_emfd .= "成沢バス停"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 6){
+                $str_emfd .= "諏訪バス停"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 7){
+                $str_emfd .= "茨城大学水戸キャンパス"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 8){
+                $str_emfd .= "茨城大学阿見キャンパス"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 9){
+                $str_emfd .= "茨城キリスト教大学"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 10){
+                $str_emfd .= "筑波大学"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 11){
+                $str_emfd .= "セブンイレブン日立市民運動公園前店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 12){
+                $str_emfd .= "ファミリーマート日立油縄子店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 13){
+                $str_emfd .= "ローソン日立鮎川町五丁目店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 14){
+                $str_emfd .= "サンクス日立けやき通店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 15){
+                $str_emfd .= "ミニストップ日立鮎川店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 16){
+                $str_emfd .= "ファミリーマート日立会瀬店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 17){
+                $str_emfd .= "ファミリーマート日和サービス日立事業所海上店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 18){
+                $str_emfd .= "セブンイレブン日立鮎川町１丁目店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 19){
+                $str_emfd .= "ファミリーマート日立総合病院店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 20){
+                $str_emfd .= "セブン−イレブン日立助川町５丁目店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 21){
+                $str_emfd .= "ココストア日立幸町店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 22){
+                $str_emfd .= "ローソン日立国分町店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 23){
+                $str_emfd .= "セブンイレブン日立助川町１丁目店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 24){
+                $str_emfd .= "ローソン日立駅前店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 25){
+                $str_emfd .= "コンビニエンスモンペリいなりや"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 26){
+                $str_emfd .= "ファミリーマート日立末広町店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
+            if($emfd['estate_main_facilities_id'] == 27){
+                $str_emfd .= "セイコーマートおおつか店"." : ".$emfd['distance']."m".PHP_EOL; continue;
+            }
         }
         $this->set('str_emfd', $str_emfd);
 
