@@ -112,3 +112,8 @@
     color: red;
     display: none;
 }
+
+#nav label,
+#nav div{
+    font-size: 100%;
+}
