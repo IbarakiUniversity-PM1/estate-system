@@ -44,7 +44,7 @@ $this->Html->addCrumb(
 							"div"=>"datepicker"
 						)) ?></li>
                 <?php } else { ?>
-                                <li><?php echo $this->Form->input('user_name', array('label' => '氏名', 'default' => $data_return['PreviewBook']['user_name'])); ?></li>
+                <li><?php echo $this->Form->input('user_name', array('label' => '氏名', 'default' => $user_name_meta)); ?></li>
                 <li><?php echo $this->Form->input('email_address', array('label' => 'E-Mail' , 'default' => $data_return['PreviewBook']['email_address'])); ?></li>
                 <li><?php echo $this->Form->input('tel_number', array('label' => '電話番号','default' => $data_return['PreviewBook']['tel_number'], 'size' => 13));?></li>
                 <li><?php echo $this->Form->input("preview_date_1",array(

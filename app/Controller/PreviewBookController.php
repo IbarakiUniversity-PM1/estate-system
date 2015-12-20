@@ -29,41 +29,49 @@ class PreviewBookController extends AppController
         $this->set("title_for_layout", "内見予約画面");
 
         $this->Estate->id = $estate_id;
-
         $estate = $this->Estate->read();
-
-        // 存在しない詳細画面を表示した際の処理
-        if(!$estate){
-            throw new NotFoundException(__('404 Not Found'));
-        }
-
-        //全ての部屋が契約済みな物件について、非表示フラグを立てる
-        if(!$estate["Estate"]["hide_flag"]) {
-            $isHide = true;
-            for ($i = 0; $isHide && $i < count($estate["EstateRoom"]); $i++) {
-                if (!$estate["EstateRoom"][$i]["contracted_flag"]) {
-                    $isHide = false;
-                }
-            }
-            if ($isHide) {
-                $estate["Estate"]["hide_flag"] = 1;
-            }
-        }
-
-        // 非表示物件の詳細画面を表示した際の処理
-        $loginUser=$this->Auth->user();
-        if($estate["Estate"]["hide_flag"] && empty($loginUser)) {
-            throw new NotFoundException(__('404 Not Found'));
-        }
 
         //引数estate_idから物件情報を読み込む
         if ($this->request->is('get')) {
+            
+            // 存在しない詳細画面を表示した際の処理
+            if(!$estate){
+                throw new NotFoundException(__('404 Not Found'));
+            }
+
+            //全ての部屋が契約済みな物件について、非表示フラグを立てる
+            if(!$estate["Estate"]["hide_flag"]) {
+                $isHide = true;
+                for ($i = 0; $isHide && $i < count($estate["EstateRoom"]); $i++) {
+                    if (!$estate["EstateRoom"][$i]["contracted_flag"]) {
+                        $isHide = false;
+                    }
+                }
+                if ($isHide) {
+                    $estate["Estate"]["hide_flag"] = 1;
+                }
+            }
+
+            // 非表示物件の詳細画面を表示した際の処理
+            $loginUser=$this->Auth->user();
+            if($estate["Estate"]["hide_flag"] && empty($loginUser)) {
+                throw new NotFoundException(__('404 Not Found'));
+            }
+            
             if($this->Session->check('previewbook_return')){
                 /* 正しくリダイレクトされてるときの処理 */
                 $data_return = $this->Session->read('previewbook_return');
+                
+                //エスケープ文字をメタ文字に変換
+                $user_name_meta = $data_return['PreviewBook']['user_name'];
+                $user_name_meta = str_replace("&amp;lt;", "<", $user_name_meta);
+                $user_name_meta = str_replace("&amp;gt;", ">", $user_name_meta);
+                $user_name_meta = str_replace("&amp;quot;", '"', $user_name_meta);
+                $user_name_meta = str_replace("&amp;nbsp;", " ", $user_name_meta);
+                $user_name_meta = str_replace("&amp;copy;", "©", $user_name_meta);
+                
                 $this->set('data_return', $data_return);
-
-
+                $this->set('user_name_meta', $user_name_meta);
                 $this->set('estate', $estate);
 
                 if(isset($str_dates)){
@@ -117,15 +125,13 @@ class PreviewBookController extends AppController
      */
     public function confirm()
     {
-        // サニタイズの応急処置(非推奨)
-        $this->request->data = Sanitize::clean($this->request->data);
-
         //タイトルを設定
         $this->set("title_for_layout", "送信確認画面");
 
         if($this->Session->check('previewbook_content')){
             /* 正しくリダイレクトされてるときの処理 */
-            $data = $this->Session->read('previewbook_content');
+             // サニタイズの応急処置(非推奨)
+            $data = Sanitize::clean($this->Session->read('previewbook_content'));
             $this->set('data', $data);
         }else{
             /* データが無いときの処理 */

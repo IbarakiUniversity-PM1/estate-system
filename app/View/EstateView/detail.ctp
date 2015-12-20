@@ -2,7 +2,7 @@
 <?php echo $this->Html->css(array('estate_view/detail'), false, array('inline' => false)); ?>
 <?php $this->Html->addCrumb('物件詳細' ,
                             "/EstateView/detail/" . $estate["Estate"]["estate_id"]); ?>
-<?php debug($estate); ?>
+
 <?php
 /**
  * GoogleMaps API GeoCode API(V3) のURLを取得する
