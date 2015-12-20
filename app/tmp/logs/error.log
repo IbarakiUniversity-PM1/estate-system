@@ -2052,3 +2052,112 @@ Request URL: /estate-system/upload/estate_pictures/1/thumb_image1_1.jpeg
 Stack Trace:
 #0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-12-20 17:38:28 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed
+Request URL: /estate-system/EstateView/detail/6
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(375): PDO->prepare('SELECT name FRO...', Array)
+#1 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(342): DboSource->_execute('SELECT name FRO...', Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/DboSource.php(601): DboSource->execute('SELECT name FRO...', Array, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Model/Datasource/Database/Sqlite.php(278): DboSource->fetchAll('SELECT name FRO...', false)
+#4 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(915): Sqlite->listSources()
+#5 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(894): Model->setSource('estates')
+#6 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1917): Model->getDataSource()
+#7 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1791): Model->_readDataSource('first', Array)
+#8 /Users/do030b/public_html/estate-system/lib/Cake/Model/Model.php(1705): Model->find('first', Array)
+#9 /Users/do030b/public_html/estate-system/app/Controller/EstateViewController.php(154): Model->read()
+#10 [internal function]: EstateViewController->detail('6')
+#11 /Users/do030b/public_html/estate-system/lib/Cake/Controller/Controller.php(507): ReflectionMethod->invokeArgs(Object(EstateViewController), Array)
+#12 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(248): Controller->invokeAction(Object(CakeRequest))
+#13 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(EstateViewController), Object(CakeRequest))
+#14 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-20 17:39:00 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/2/thumb_image2_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:39:00 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1/thumb_image1_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:39:10 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/2/thumb_image2_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:39:10 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1/thumb_image1_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:45:28 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estates/2/original_image2_0.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:45:28 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/2/original_image2_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:45:59 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1/thumb_image1_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:45:59 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/2/thumb_image2_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:46:03 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/1/thumb_image1_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-20 17:46:03 Error: [MissingControllerException] Controller class UploadController could not be found.
+Exception Attributes: array (
+  'class' => 'UploadController',
+  'plugin' => NULL,
+)
+Request URL: /estate-system/upload/estate_pictures/2/thumb_image2_1.jpeg
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

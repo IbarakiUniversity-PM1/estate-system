@@ -672,3 +672,7 @@ div.content-3{
     width: auto;
     height: 250px;
 }
+
+td {
+    word-break: break-all;
+}
