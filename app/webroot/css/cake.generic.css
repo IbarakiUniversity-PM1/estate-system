@@ -19,6 +19,10 @@
     margin: 0;
     padding: 0;
 }
+/* footer header と色を揃える */
+html {
+    background: #003d4c;
+}
 
 /** General Style Info **/
 body {
