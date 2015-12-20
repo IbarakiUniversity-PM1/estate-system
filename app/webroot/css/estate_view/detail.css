@@ -1,18 +1,10 @@
 @charset "utf-8";
 
 #images img {
-    max-width: 205px;
+    width: auto;
+    height: 300px;
 }
 
-
-#images {
-}
-
-#estate_img,
-#floor_img{
-    width: 280;
-    height: 210;
-}
 estate_info{
 
 }
@@ -35,8 +27,8 @@ estate_info{
 }
 
 #distance,
-#char,
-#room{
+#char table,
+#room table{
     height: 160px;
     overflow: scroll;
 }

@@ -205,13 +205,12 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 
                 <div id="char">
                     <center>
+                        特徴
                         <table  border="1" rules="all" >
-                            特徴
+
                             <tr>
                                 <td align="center">
                                     <?php echo nl2br($str_characteristic); ?>
-
-
                                 </td>
                             </tr>
                         </table>
@@ -236,8 +235,9 @@ $HtmlBody = makeCommonBody($lat, $lng, $errmsg);
 
                     <div id="distance">
                         <center>
+                            主要施設までの距離
                             <table  border="1" rules="all" >
-                                主要施設までの距離
+
                                 <tr>
                                     <td>
                                         <!--                    ここに主要施設までの距離-->
