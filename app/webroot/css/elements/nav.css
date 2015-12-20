@@ -14,6 +14,7 @@
     width: 100%;
     height: auto;
     margin-top: 0;
+    display: table;
 }
 
 /* サイドバー */
@@ -36,31 +37,31 @@
 }
 
 .check {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 .unit {
-	vertical-align: bottom;
-	white-space: nowrap;
+    vertical-align: bottom;
+    white-space: nowrap;
 }
 
 #search1 {
-	display: table;
+    display: table;
 }
 
 #search1,
 #search2 {
-	border: solid gray;
-	border-radius:10px;
-	background: #fff;
+    border: solid gray;
+    border-radius:10px;
+    background: #fff;
 }
 
 #search1 .condition {
-	display: table-row;
+    display: table-row;
 }
 
 #search1 .condition div {
-	display: table-cell;
+    display: table-cell;
 }
 
 #search1 p{
@@ -84,30 +85,30 @@
     /*    border-left: 2px solid #555;*/
 }
 #main {
-    display: table-cell;
     /*    border-left: 2px solid #555;*/
+    width: 95%;
 }
 
 .under {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .required.under:before {
-	color: #e32;
-	content: '*';
-	display: inline;
+    color: #e32;
+    content: '*';
+    display: inline;
 }
 
 #nav .buttons {
-	margin: 0;
+    margin: 0;
 }
 
 #nav .buttons div {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #nav .error {
-	color: red;
-	display: none;
+    color: red;
+    display: none;
 }
