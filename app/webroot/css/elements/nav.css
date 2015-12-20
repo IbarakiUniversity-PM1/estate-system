@@ -117,3 +117,7 @@
 #nav div{
     font-size: 100%;
 }
+a{
+    color: #555;
+    text-decoration: none;
+}

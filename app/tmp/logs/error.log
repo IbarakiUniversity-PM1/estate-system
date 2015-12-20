@@ -1852,3 +1852,23 @@ Stack Trace:
 #3 /Users/do030b/public_html/estate-system/lib/Cake/Routing/Dispatcher.php(115): Dispatcher->_invoke(Object(PreviewBookController), Object(CakeRequest))
 #4 /Users/do030b/public_html/estate-system/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-12-20 15:13:37 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 37]
+2015-12-20 15:13:37 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 37, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 37, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-20 15:13:46 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/do030b/public_html/estate-system/app/View/EstateView/estate_list.ctp, line 37]
+2015-12-20 15:13:46 Error: [FatalErrorException] parse error, expecting `','' or `';''
+Request URL: /estate-system/
+Stack Trace:
+#0 /Users/do030b/public_html/estate-system/lib/Cake/Error/ErrorHandler.php(218): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/do030b/p...', 37)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/do030b/p...', 37, Array)
+#2 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(945): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/do030b/p...', 37, Array)
+#3 /Users/do030b/public_html/estate-system/lib/Cake/Core/App.php(917): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
