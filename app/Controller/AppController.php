@@ -36,7 +36,7 @@ class AppController extends Controller
 	 * @var array 扱うコンポーネントのリスト
 	 */
 	public $components = array(
-		'DebugKit.Toolbar', //TODO:本番環境にアップロードする際にコメントアウトする
+		//'DebugKit.Toolbar', //TODO:本番環境にアップロードする際にコメントアウトする
 		'Flash',
 		'MyFlash',
 		'Date',

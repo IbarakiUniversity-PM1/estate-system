@@ -33,7 +33,7 @@ class PreviewBookController extends AppController
 
         //引数estate_idから物件情報を読み込む
         if ($this->request->is('get')) {
-            
+
             // 存在しない詳細画面を表示した際の処理
             if(!$estate){
                 throw new NotFoundException(__('404 Not Found'));
@@ -57,11 +57,11 @@ class PreviewBookController extends AppController
             if($estate["Estate"]["hide_flag"] && empty($loginUser)) {
                 throw new NotFoundException(__('404 Not Found'));
             }
-            
+
             if($this->Session->check('previewbook_return')){
                 /* 正しくリダイレクトされてるときの処理 */
                 $data_return = $this->Session->read('previewbook_return');
-                
+
                 //エスケープ文字をメタ文字に変換
                 $user_name_meta = $data_return['PreviewBook']['user_name'];
                 $user_name_meta = str_replace("&amp;lt;", "<", $user_name_meta);
@@ -69,7 +69,7 @@ class PreviewBookController extends AppController
                 $user_name_meta = str_replace("&amp;quot;", '"', $user_name_meta);
                 $user_name_meta = str_replace("&amp;nbsp;", " ", $user_name_meta);
                 $user_name_meta = str_replace("&amp;copy;", "©", $user_name_meta);
-                
+
                 $this->set('data_return', $data_return);
                 $this->set('user_name_meta', $user_name_meta);
                 $this->set('estate', $estate);
@@ -147,7 +147,7 @@ class PreviewBookController extends AppController
         $this->request->data = Sanitize::clean($this->request->data);
 
         if (isset($this->request->data['submit'])) {
-                        debug($this->request->data);
+                        //debug($this->request->data);
             //物件idから物件情報を取得
             $this->Estate->id = $this->request->data['PreviewBook']['estate_id'];
                         $estate = $this->Estate->read();
